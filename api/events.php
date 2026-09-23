@@ -2,6 +2,7 @@
 /**
  * Dâire-i Adliyye - Tekil Olay Çekim API'si (api/events.php)
  * Olaylar veritabanından tek tek çekilir (Stream/On-Demand).
+ * Üyelik zorunludur.
  */
 
 require_once __DIR__ . '/config.php';
@@ -26,11 +27,11 @@ switch ($action) {
 }
 
 /**
- * Sıradaki Tekil Olayı Getir
+ * Sıradaki Tekil Olayı Getir (Üye Zorunlu)
  */
 function handleNextEvent($era) {
+    $userId = requireAuth(); // Misafir oynayamaz, üye girişi şart!
     $pdo = getDbConnection();
-    $userId = getCurrentUserId();
     $crisisKey = $_GET['crisis_key'] ?? null;
     $excludeId = $_GET['exclude_id'] ?? null;
 
@@ -48,30 +49,18 @@ function handleNextEvent($era) {
     }
 
     // 2. Kullanıcının Oynadığı Olay ID'lerini Bul
-    $playedIds = [];
-    if ($userId) {
-        $ansStmt = $pdo->prepare("SELECT DISTINCT event_id FROM user_answers WHERE user_id = ? AND era = ?");
-        $ansStmt->execute([$userId, $era]);
-        $playedIds = $ansStmt->fetchAll(PDO::FETCH_COLUMN);
-    } else {
-        // Misafir oturumunda session'da tutulan oynanmış ID'ler
-        if (!isset($_SESSION['guest_played'][$era])) {
-            $_SESSION['guest_played'][$era] = [];
-        }
-        $playedIds = $_SESSION['guest_played'][$era];
-    }
+    $ansStmt = $pdo->prepare("SELECT DISTINCT event_id FROM user_answers WHERE user_id = ? AND era = ?");
+    $ansStmt->execute([$userId, $era]);
+    $playedIds = $ansStmt->fetchAll(PDO::FETCH_COLUMN);
 
     // Eğer istemci şu an gösterilen olayı hariç tutmak istediyse
     if ($excludeId && !in_array($excludeId, $playedIds)) {
         $playedIds[] = $excludeId;
     }
 
-    // Eğer tüm olaylar oynanmışsa döngüyü sıfırla (veya baştan karıştır)
+    // Eğer tüm olaylar oynanmışsa döngüyü sıfırla
     if (count($playedIds) >= $totalCount) {
         $playedIds = $excludeId ? [$excludeId] : [];
-        if (!$userId) {
-            $_SESSION['guest_played'][$era] = [];
-        }
     }
 
     // 3. Henüz oynanmamış adayları sorgula
@@ -81,7 +70,6 @@ function handleNextEvent($era) {
             WHERE era = ?";
 
     if (!empty($playedIds)) {
-        // SQL IN (?, ?, ...) oluştur
         $placeholders = implode(',', array_fill(0, count($playedIds), '?'));
         $sql .= " AND id NOT IN ($placeholders)";
         $params = array_merge($params, $playedIds);
@@ -89,15 +77,14 @@ function handleNextEvent($era) {
 
     // Kriz filtresi varsa (%70 şansla kriz anahtar kelimelerini arat)
     $crisisKeywords = [
-        'treasury' => ['hazine', 'akçe', 'vergi', 'maliye', 'bütçe', 'döviz', 'enflasyon'],
-        'military' => ['ordu', 'asker', 'yeniçeri', 'güvenlik', 'savunma', 'terör', 'tsk'],
-        'justice'  => ['adalet', 'kadı', 'mahkeme', 'hukuk', 'rüşvet', 'yargı', 'şaibe'],
-        'people'   => ['reaya', 'köylü', 'halk', 'deprem', 'afet', 'sağlık', 'esnaf'],
-        'authority'=> ['mülk', 'otorite', 'darbe', 'muhalefet', 'vesayet', 'isyan']
+        'treasury' => ['hazine', 'akçe', 'vergi', 'maliye', 'bütçe', 'döviz', 'enflasyon', 'sarraf', 'faiz'],
+        'military' => ['ordu', 'asker', 'yeniçeri', 'güvenlik', 'savunma', 'terör', 'tsk', 'sefer', 'sınır'],
+        'justice'  => ['adalet', 'kadı', 'mahkeme', 'hukuk', 'rüşvet', 'yargı', 'şaibe', 'yolsuzluk', 'delil'],
+        'people'   => ['reaya', 'köylü', 'halk', 'deprem', 'afet', 'sağlık', 'esnaf', 'tüketici', 'barınma'],
+        'authority'=> ['mülk', 'otorite', 'darbe', 'muhalefet', 'vesayet', 'isyan', 'sadrazam', 'meclis']
     ];
 
     $matchedEvent = null;
-    $randFunc = ($pdo->getAttribute(PDO::ATTR_DRIVER_NAME) === 'sqlite') ? 'RANDOM()' : 'RAND()';
 
     if ($crisisKey && isset($crisisKeywords[$crisisKey]) && (mt_rand(1, 100) <= 70)) {
         $kwList = $crisisKeywords[$crisisKey];
@@ -109,7 +96,7 @@ function handleNextEvent($era) {
             $kwParams[] = "%$kw%";
             $kwParams[] = "%$kw%";
         }
-        $crisisSql = $sql . " AND (" . implode(" OR ", $kwConditions) . ") ORDER BY $randFunc LIMIT 1";
+        $crisisSql = $sql . " AND (" . implode(" OR ", $kwConditions) . ") ORDER BY RAND() LIMIT 1";
         $cStmt = $pdo->prepare($crisisSql);
         $cStmt->execute($kwParams);
         $matchedEvent = $cStmt->fetch();
@@ -117,7 +104,7 @@ function handleNextEvent($era) {
 
     // Kriz eşleşmesi yoksa rastgele bir unplayed olay çek
     if (!$matchedEvent) {
-        $sql .= " ORDER BY $randFunc LIMIT 1";
+        $sql .= " ORDER BY RAND() LIMIT 1";
         $stmt = $pdo->prepare($sql);
         $stmt->execute($params);
         $matchedEvent = $stmt->fetch();
@@ -125,7 +112,7 @@ function handleNextEvent($era) {
 
     // Hiçbir şey bulunamazsa fallback olarak herhangi birini getir
     if (!$matchedEvent) {
-        $fallbackStmt = $pdo->prepare("SELECT id, era, title, source, `desc`, characters_json, options_json FROM events WHERE era = ? ORDER BY $randFunc LIMIT 1");
+        $fallbackStmt = $pdo->prepare("SELECT id, era, title, source, `desc`, characters_json, options_json FROM events WHERE era = ? ORDER BY RAND() LIMIT 1");
         $fallbackStmt->execute([$era]);
         $matchedEvent = $fallbackStmt->fetch();
     }
@@ -158,9 +145,10 @@ function handleNextEvent($era) {
 }
 
 /**
- * Belirli bir Olayı ID ile Getir
+ * Belirli bir Olayı ID ile Getir (Üye Zorunlu)
  */
 function handleGetEvent() {
+    requireAuth();
     $id = trim($_GET['id'] ?? '');
     if (empty($id)) {
         jsonResponse(['success' => false, 'error' => 'Olay ID gereklidir.'], 400);

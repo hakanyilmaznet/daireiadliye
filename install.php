@@ -37,125 +37,78 @@ if (!$isCli) {
     </head>
     <body>
     <div class='box'>
-        <h1>🏛️ Dâire-i Adliyye: Veritabanı ve Deste Kurulum Sihirbazı</h1>";
+        <h1>🏛️ Dâire-i Adliyye: Veritabanı ve Vaka Kurulum Sihirbazı</h1>";
 }
 
 outputMsg("Veritabanı bağlantısı test ediliyor (Sunucu: " . DB_HOST . ", DB: " . DB_NAME . ")...");
 
 try {
     // 1. Veritabanını oluşturmayı dene (varsa geçer)
-    $rootDsn = "mysql:host=" . DB_HOST . ";port=" . DB_PORT . ";charset=" . DB_CHARSET;
-    $tempPdo = new PDO($rootDsn, DB_USER, DB_PASS, [
-        PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
-    ]);
-    $tempPdo->exec("CREATE DATABASE IF NOT EXISTS `" . DB_NAME . "` CHARACTER SET " . DB_CHARSET . " COLLATE utf8mb4_unicode_ci");
-    outputMsg("Veritabanı '" . DB_NAME . "' hazır veya başarıyla oluşturuldu.", "success");
-} catch (Exception $e) {
-    outputMsg("Veritabanı oluşturma adımı atlandı (Yetki kısıtı olabilir, mevcut veritabanına bağlanılıyor): " . $e->getMessage(), "info");
-}
-
-try {
-    $pdo = getDbConnection();
-    outputMsg("Veritabanına başarıyla bağlanıldı.", "success");
-
-    $driverName = $pdo->getAttribute(PDO::ATTR_DRIVER_NAME);
-
-    // 2. Tabloları oluştur
-    if ($driverName === 'mysql') {
-        $schemaPath = __DIR__ . '/schema.sql';
-        if (!file_exists($schemaPath)) {
-            throw new Exception("schema.sql dosyası bulunamadı!");
-        }
-        outputMsg("MySQL tabloları oluşturuluyor (schema.sql çalıştırılıyor)...");
-        $sqlContent = file_get_contents($schemaPath);
-        $pdo->exec($sqlContent);
+    try {
+        $rootDsn = "mysql:host=" . DB_HOST . ";port=" . DB_PORT . ";charset=" . DB_CHARSET;
+        $tempPdo = new PDO($rootDsn, DB_USER, DB_PASS, [
+            PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
+        ]);
+        $tempPdo->exec("CREATE DATABASE IF NOT EXISTS `" . DB_NAME . "` CHARACTER SET " . DB_CHARSET . " COLLATE utf8mb4_unicode_ci");
+        outputMsg("Veritabanı '" . DB_NAME . "' hazır veya başarıyla oluşturuldu.", "success");
+    } catch (Exception $e) {
+        outputMsg("Veritabanı oluşturma adımı atlandı (Yetki kısıtı olabilir, mevcut veritabanına bağlanılıyor): " . $e->getMessage(), "info");
     }
+
+    $pdo = getDbConnection();
+    outputMsg("Veritabanına başarıyla bağlanıldı (MySQL).", "success");
+
+    // 2. Tabloları oluştur (schema.sql)
+    $schemaPath = __DIR__ . '/schema.sql';
+    if (!file_exists($schemaPath)) {
+        throw new Exception("schema.sql dosyası bulunamadı!");
+    }
+    outputMsg("MySQL tabloları oluşturuluyor (schema.sql çalıştırılıyor)...");
+    $sqlContent = file_get_contents($schemaPath);
+    $pdo->exec($sqlContent);
     outputMsg("users, events, game_progress ve user_answers tabloları hazır.", "success");
 
-    // 3. Olayları JSON dosyalarından oku ve aktar
-    function parseDeckFile($filePath) {
-        if (!file_exists($filePath)) return [];
-        $content = file_get_contents($filePath);
-        $start = strpos($content, '[');
-        $end = strrpos($content, ']');
-        if ($start === false || $end === false) return [];
-        $jsonStr = substr($content, $start, $end - $start + 1);
-        $arr = json_decode($jsonStr, true);
-        return is_array($arr) ? $arr : [];
+    // 3. Olayları events_data.sql dosyasından içe aktar
+    $dataPath = __DIR__ . '/events_data.sql';
+    if (file_exists($dataPath)) {
+        outputMsg("2.000 vaka verisi içe aktarılıyor (events_data.sql)...");
+        $handle = fopen($dataPath, "r");
+        if ($handle) {
+            $pdo->beginTransaction();
+            $stmtCount = 0;
+            $buffer = "";
+            while (($line = fgets($handle)) !== false) {
+                $trimmed = trim($line);
+                if (empty($trimmed) || strpos($trimmed, '--') === 0 || strpos($trimmed, 'SET NAMES') === 0) {
+                    continue;
+                }
+                $buffer .= $line;
+                if (substr($trimmed, -1) === ';') {
+                    $pdo->exec($buffer);
+                    $buffer = "";
+                    $stmtCount++;
+                    if ($stmtCount % 250 === 0) {
+                        $pdo->commit();
+                        $pdo->beginTransaction();
+                    }
+                }
+            }
+            if ($pdo->inTransaction()) {
+                $pdo->commit();
+            }
+            fclose($handle);
+            outputMsg("✓ $stmtCount adet vaka sorgusu başarıyla çalıştırıldı.", "success");
+        }
     }
 
-    if ($driverName === 'sqlite') {
-        $insertStmt = $pdo->prepare("INSERT OR REPLACE INTO events (id, era, title, source, `desc`, characters_json, options_json, sort_order) 
-            VALUES (:id, :era, :title, :source, :desc, :chars, :opts, :sort)");
-    } else {
-        $insertStmt = $pdo->prepare("INSERT INTO events (id, era, title, source, `desc`, characters_json, options_json, sort_order) 
-            VALUES (:id, :era, :title, :source, :desc, :chars, :opts, :sort)
-            ON DUPLICATE KEY UPDATE 
-                title = VALUES(title),
-                source = VALUES(source),
-                `desc` = VALUES(`desc`),
-                characters_json = VALUES(characters_json),
-                options_json = VALUES(options_json),
-                sort_order = VALUES(sort_order)");
-    }
+    // 4. Güncel vaka sayılarını kontrol et
+    $cntStmt = $pdo->query("SELECT era, COUNT(*) as cnt FROM events GROUP BY era");
+    $counts = $cntStmt->fetchAll(PDO::FETCH_KEY_PAIR);
+    $mCount = $counts['modern'] ?? 0;
+    $oCount = $counts['ottoman'] ?? 0;
+    outputMsg("Veritabanındaki toplam vaka durumu: Modern Türkiye = $mCount vaka, Klasik Osmanlı = $oCount vaka.", "success");
 
-    // A. Modern Türkiye Destesi (1.000 Vaka)
-    $modernFile = __DIR__ . '/event_deck_modern.json';
-    if (!file_exists($modernFile)) {
-        $modernFile = __DIR__ . '/event_deck_modern.js';
-    }
-    outputMsg("Modern Türkiye destesi okunuyor ($modernFile)...");
-    $modernEvents = parseDeckFile($modernFile);
-    outputMsg("Modern destede " . count($modernEvents) . " olay bulundu. Veritabanına aktarılıyor...");
-
-    $pdo->beginTransaction();
-    $mCount = 0;
-    foreach ($modernEvents as $idx => $ev) {
-        if (empty($ev['id']) || empty($ev['title'])) continue;
-        $insertStmt->execute([
-            ':id'     => $ev['id'],
-            ':era'    => 'modern',
-            ':title'  => $ev['title'],
-            ':source' => $ev['source'] ?? 'Devlet Brifingi',
-            ':desc'   => $ev['desc'] ?? '',
-            ':chars'  => json_encode($ev['characters'] ?? [], JSON_UNESCAPED_UNICODE),
-            ':opts'   => json_encode($ev['options'] ?? [], JSON_UNESCAPED_UNICODE),
-            ':sort'   => $idx + 1
-        ]);
-        $mCount++;
-    }
-    $pdo->commit();
-    outputMsg("✓ $mCount adet Modern Türkiye olayı veritabanına kaydedildi/güncellendi.", "success");
-
-    // B. Klasik Osmanlı Destesi
-    $ottomanFile = __DIR__ . '/event_deck.json';
-    if (!file_exists($ottomanFile)) {
-        $ottomanFile = __DIR__ . '/event_deck.js';
-    }
-    outputMsg("Klasik Osmanlı destesi okunuyor ($ottomanFile)...");
-    $ottomanEvents = parseDeckFile($ottomanFile);
-    outputMsg("Osmanlı destesinde " . count($ottomanEvents) . " olay bulundu. Veritabanına aktarılıyor...");
-
-    $pdo->beginTransaction();
-    $oCount = 0;
-    foreach ($ottomanEvents as $idx => $ev) {
-        if (empty($ev['id']) || empty($ev['title'])) continue;
-        $insertStmt->execute([
-            ':id'     => $ev['id'],
-            ':era'    => 'ottoman',
-            ':title'  => $ev['title'],
-            ':source' => $ev['source'] ?? 'Dîvân-ı Hümâyûn Maruzu',
-            ':desc'   => $ev['desc'] ?? '',
-            ':chars'  => json_encode($ev['characters'] ?? [], JSON_UNESCAPED_UNICODE),
-            ':opts'   => json_encode($ev['options'] ?? [], JSON_UNESCAPED_UNICODE),
-            ':sort'   => $idx + 1
-        ]);
-        $oCount++;
-    }
-    $pdo->commit();
-    outputMsg("✓ $oCount adet Klasik Osmanlı olayı veritabanına kaydedildi/güncellendi.", "success");
-
-    // 4. Test Kullanıcısı Oluşturma (Demo)
+    // 5. Test Kullanıcısı Oluşturma (Demo)
     $userCheck = $pdo->query("SELECT COUNT(*) AS total FROM users")->fetch();
     if ((int)$userCheck['total'] === 0) {
         $demoPass = password_hash('adliye123', PASSWORD_BCRYPT);
@@ -164,7 +117,7 @@ try {
         outputMsg("Örnek demo kullanıcı oluşturuldu: Kullanıcı: <b>veziriazam</b> | Şifre: <b>adliye123</b>", "info");
     }
 
-    outputMsg("🎉 Tebrikler! Kurulum başarıyla tamamlandı. Artık olaylar veritabanından tek tek çekilecek.", "success");
+    outputMsg("🎉 Tebrikler! Kurulum başarıyla tamamlandı. Artık olaylar doğrudan veritabanından tek tek çekilecek.", "success");
 
     if (!$isCli) {
         echo "<div style='text-align: center;'>
@@ -173,7 +126,7 @@ try {
     }
 
 } catch (Exception $e) {
-    if ($pdo && $pdo->inTransaction()) {
+    if (isset($pdo) && $pdo instanceof PDO && $pdo->inTransaction()) {
         $pdo->rollBack();
     }
     outputMsg("Kurulum sırasında hata oluştu: " . $e->getMessage(), "error");

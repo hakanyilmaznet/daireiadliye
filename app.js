@@ -382,6 +382,11 @@
               this.user = data.user;
               this.isLoggedIn = true;
               this.updateUserUI();
+              const gs = document.getElementById("gameScreen");
+              if (gs) gs.classList.remove("game-locked");
+              if (window.game) {
+                await window.game.initSessionAfterAuth();
+              }
               return;
             }
           }
@@ -389,6 +394,9 @@
         this.user = null;
         this.isLoggedIn = false;
         this.updateUserUI();
+        const gs = document.getElementById("gameScreen");
+        if (gs) gs.classList.add("game-locked");
+        this.openModal(true);
       }
 
       updateUserUI() {
@@ -403,21 +411,25 @@
         } else {
           label.innerText = "Giriş Yap";
           btn.classList.remove("user-logged-pill");
-          btn.title = "Kullanıcı Girişi / Kayıt";
+          btn.title = "Kullanıcı Girişi / Kayıt (Zorunlu)";
         }
       }
 
-      openModal() {
+      openModal(forceGate = false) {
         const modal = document.getElementById("authModal");
         if (!modal) return;
         modal.style.display = "flex";
 
+        const closeBtn = document.getElementById("modalCloseBtn");
+        const gateNotice = document.getElementById("authGateNotice");
         const tabs = document.getElementById("authTabs");
         const loginForm = document.getElementById("loginForm");
         const regForm = document.getElementById("registerForm");
         const profPanel = document.getElementById("userProfilePanel");
 
-        if (this.isLoggedIn && this.user) {
+        if (this.isLoggedIn && this.user && !forceGate) {
+          if (closeBtn) closeBtn.style.display = "block";
+          if (gateNotice) gateNotice.style.display = "none";
           if (tabs) tabs.style.display = "none";
           if (loginForm) loginForm.style.display = "none";
           if (regForm) regForm.style.display = "none";
@@ -426,11 +438,18 @@
             const uEl = document.getElementById("profUsername");
             const eEl = document.getElementById("profEmail");
             const aEl = document.getElementById("profTotalAnswers");
+            const mEl = document.getElementById("profModernTurn");
+            const oEl = document.getElementById("profOttomanTurn");
             if (uEl) uEl.innerText = this.user.username;
             if (eEl) eEl.innerText = this.user.email;
             if (aEl) aEl.innerText = this.user.total_answers || 0;
+            if (mEl && window.game) mEl.innerText = window.game.currentMode === "modern" ? window.game.turn : 1;
+            if (oEl && window.game) oEl.innerText = window.game.currentMode === "ottoman" ? window.game.turn : 1;
           }
         } else {
+          // Giriş yapılmamışsa: modal zorunlu kapalı tutulamaz
+          if (closeBtn) closeBtn.style.display = "none";
+          if (gateNotice) gateNotice.style.display = "block";
           if (tabs) tabs.style.display = "flex";
           if (profPanel) profPanel.style.display = "none";
           this.switchTab("login");
@@ -438,6 +457,14 @@
       }
 
       closeModal() {
+        if (!this.isLoggedIn) {
+          const errEl = document.getElementById("loginError");
+          if (errEl) {
+            errEl.innerText = "Dâire-i Adliyye'ye hükmetmek için lütfen giriş yapınız veya kayıt olunuz.";
+            errEl.style.display = "block";
+          }
+          return;
+        }
         const modal = document.getElementById("authModal");
         if (modal) modal.style.display = "none";
       }
@@ -471,7 +498,9 @@
         const login = document.getElementById("loginUsername").value.trim();
         const password = document.getElementById("loginPassword").value;
         const errEl = document.getElementById("loginError");
+        const btn = document.getElementById("loginSubmitBtn");
         if (errEl) errEl.style.display = "none";
+        if (btn) btn.disabled = true;
 
         try {
           const resp = await fetch("api/auth.php?action=login", {
@@ -484,9 +513,11 @@
             this.user = data.user;
             this.isLoggedIn = true;
             this.updateUserUI();
+            const gs = document.getElementById("gameScreen");
+            if (gs) gs.classList.remove("game-locked");
             this.closeModal();
             if (window.game) {
-              await window.game.checkSavedProgress();
+              await window.game.initSessionAfterAuth();
             }
           } else {
             if (errEl) {
@@ -499,6 +530,8 @@
             errEl.innerText = "Sunucuya bağlanılamadı.";
             errEl.style.display = "block";
           }
+        } finally {
+          if (btn) btn.disabled = false;
         }
       }
 
@@ -508,7 +541,9 @@
         const email = document.getElementById("regEmail").value.trim();
         const password = document.getElementById("regPassword").value;
         const errEl = document.getElementById("registerError");
+        const btn = document.getElementById("registerSubmitBtn");
         if (errEl) errEl.style.display = "none";
+        if (btn) btn.disabled = true;
 
         try {
           const resp = await fetch("api/auth.php?action=register", {
@@ -521,9 +556,11 @@
             this.user = data.user;
             this.isLoggedIn = true;
             this.updateUserUI();
+            const gs = document.getElementById("gameScreen");
+            if (gs) gs.classList.remove("game-locked");
             this.closeModal();
             if (window.game) {
-              await window.game.checkSavedProgress();
+              await window.game.initSessionAfterAuth();
             }
           } else {
             if (errEl) {
@@ -536,6 +573,8 @@
             errEl.innerText = "Sunucuya bağlanılamadı.";
             errEl.style.display = "block";
           }
+        } finally {
+          if (btn) btn.disabled = false;
         }
       }
 
@@ -546,9 +585,11 @@
         this.user = null;
         this.isLoggedIn = false;
         this.updateUserUI();
-        this.closeModal();
+        const gs = document.getElementById("gameScreen");
+        if (gs) gs.classList.add("game-locked");
+        this.openModal(true);
         if (window.game) {
-          window.game.restart();
+          window.game.resetLocalState();
         }
       }
     }
@@ -612,74 +653,35 @@
         return false;
       }
 
-      // Her iki desteyi (Osmanlı & Modern) otomatik yükle ve hazırla
+      async initSessionAfterAuth() {
+        await this.detectApi();
+        await this.checkSavedProgress();
+        this.setDeckMode(this.currentMode, false);
+      }
+
+      resetLocalState() {
+        this.stats = { justice: 60, people: 60, treasury: 50, military: 55, authority: 60 };
+        this.rulerTraits = { adli: 0, sulh: 0, mali: 0, otorite: 0, nizam: 0 };
+        this.turn = 1;
+        this.isGameOver = false;
+        this.currentEvent = null;
+        this.savedProgressData = null;
+        const banner = document.getElementById("resumeBanner");
+        if (banner) banner.style.display = "none";
+        this.updateUI();
+      }
+
+      // API ve Veritabanı Desteği ile Başlat
       async loadDecks() {
         await this.detectApi();
-        // 1. Klasik Osmanlı Destesi
-        if (typeof EVENT_DECK !== "undefined" && Array.isArray(EVENT_DECK) && EVENT_DECK.length > 0) {
-          this.ottomanDeck = EVENT_DECK;
-        } else if (window.EVENT_DECK && Array.isArray(window.EVENT_DECK)) {
-          this.ottomanDeck = window.EVENT_DECK;
-        } else {
-          try {
-            const resp = await fetch("event_deck.js");
-            if (resp.ok) {
-              const text = await resp.text();
-              this.ottomanDeck = DeckManager.parseDeckData(text);
-            } else {
-              const resp2 = await fetch("event_deck.json");
-              if (resp2.ok) {
-                const text2 = await resp2.text();
-                this.ottomanDeck = DeckManager.parseDeckData(text2);
-              }
-            }
-          } catch (e) {
-            try {
-              const resp2 = await fetch("event_deck.json");
-              if (resp2.ok) {
-                const text2 = await resp2.text();
-                this.ottomanDeck = DeckManager.parseDeckData(text2);
-              }
-            } catch (e2) {}
-          }
-        }
 
-        // 2. Modern Türkiye Destesi (Son 30 Yıl)
-        if (typeof EVENT_DECK_MODERN !== "undefined" && Array.isArray(EVENT_DECK_MODERN) && EVENT_DECK_MODERN.length > 0) {
-          this.modernDeck = EVENT_DECK_MODERN;
-        } else if (window.EVENT_DECK_MODERN && Array.isArray(window.EVENT_DECK_MODERN)) {
-          this.modernDeck = window.EVENT_DECK_MODERN;
-        } else {
-          try {
-            const resp = await fetch("event_deck_modern.js");
-            if (resp.ok) {
-              const text = await resp.text();
-              this.modernDeck = DeckManager.parseDeckData(text);
-            } else {
-              const resp2 = await fetch("event_deck_modern.json");
-              if (resp2.ok) {
-                const text2 = await resp2.text();
-                this.modernDeck = DeckManager.parseDeckData(text2);
-              }
-            }
-          } catch (e) {
-            try {
-              const resp2 = await fetch("event_deck_modern.json");
-              if (resp2.ok) {
-                const text2 = await resp2.text();
-                this.modernDeck = DeckManager.parseDeckData(text2);
-              }
-            } catch (e2) {}
-          }
-        }
-
-        // Kaydedilmiş ilerleme var mı kontrol et
-        if (this.isApiAvailable) {
+        if (window.authUI && window.authUI.isLoggedIn) {
           await this.checkSavedProgress();
+          this.setDeckMode(this.currentMode, false);
+        } else {
+          const gs = document.getElementById("gameScreen");
+          if (gs) gs.classList.add("game-locked");
         }
-
-        // Başlangıç destesi olarak varsayılan modu etkinleştir
-        this.setDeckMode(this.currentMode, false);
       }
 
       // Dönem Modunu Değiştir (Osmanlı Klasik <-> Modern Türkiye Son 30 Yıl)
@@ -698,9 +700,7 @@
         const chipMilitaryLbl = document.querySelector("#chip-military .lbl");
         const chipAuthorityLbl = document.querySelector("#chip-authority .lbl");
 
-        let activeDeck = null;
         if (mode === "modern") {
-          activeDeck = this.modernDeck || (typeof EVENT_DECK_MODERN !== "undefined" ? EVENT_DECK_MODERN : null);
           if (tabOttoman) tabOttoman.classList.remove("active");
           if (tabModern) tabModern.classList.add("active");
           if (brandTitle) brandTitle.innerHTML = "🇹🇷 DÂİRE-İ ADLİYYE";
@@ -713,10 +713,9 @@
           if (wisdomAuthor) wisdomAuthor.innerText = "— Hukuk Devleti İlkesi & Anayasa";
           if (statusEl) {
             statusEl.className = "deck-pill";
-            statusEl.innerText = `Deste: Modern Türkiye (${activeDeck ? activeDeck.length : 0} Vaka)`;
+            statusEl.innerText = `Deste: Modern Türkiye (MySQL)`;
           }
         } else {
-          activeDeck = this.ottomanDeck || (typeof EVENT_DECK !== "undefined" ? EVENT_DECK : null);
           if (tabOttoman) tabOttoman.classList.add("active");
           if (tabModern) tabModern.classList.remove("active");
           if (brandTitle) brandTitle.innerHTML = "⚜️ DÂİRE-İ ADLİYYE";
@@ -729,14 +728,8 @@
           if (wisdomAuthor) wisdomAuthor.innerText = "— Kınalızâde Ali Çelebi, Ahlâk-ı Alâî";
           if (statusEl) {
             statusEl.className = "deck-pill";
-            statusEl.innerText = `Deste: Klasik Osmanlı (${activeDeck ? activeDeck.length : 0} Vaka)`;
+            statusEl.innerText = `Deste: Klasik Osmanlı (MySQL)`;
           }
-        }
-
-        if (Array.isArray(activeDeck) && activeDeck.length > 0) {
-          this.deckManager.init(activeDeck);
-        } else {
-          this.deckManager.init(FALLBACK_DECK);
         }
 
         if (resetGame) {
@@ -752,7 +745,9 @@
         }
 
         this.updateUI();
-        this.nextEvent();
+        if (window.authUI && window.authUI.isLoggedIn) {
+          this.nextEvent();
+        }
       }
 
       toggleDeckMode() {
@@ -1020,6 +1015,13 @@
 
       applyChoice(choice, btnElement) {
         if (this.isGameOver) return;
+        if (!window.authUI || !window.authUI.isLoggedIn) {
+          const gs = document.getElementById("gameScreen");
+          if (gs) gs.classList.add("game-locked");
+          if (window.authUI) window.authUI.openModal(true);
+          return;
+        }
+
         soundFX.playGong();
 
         // 1. Karakter / Meşrep Puanını Artır
@@ -1073,32 +1075,44 @@
           this.triggerScreenShake();
         }
 
-        // 4. Veritabanına Hükmü ve İlerlemeyi Kaydet (API üzerinden)
-        if (this.isApiAvailable) {
-          const choiceLabel = choice.label || "";
-          const effects = choice.effects || {};
-          const logText = choice.log || "";
-          const reasonEl = document.getElementById("goReason");
-          const gameOverReason = this.isGameOver ? (reasonEl ? reasonEl.innerText : "Mülk nizamı muhafaza edilemedi.") : "";
+        // 4. Veritabanına Hükmü ve İlerlemeyi Kaydet (API üzerinden her cevap kaydedilir)
+        const choiceLabel = choice.label || "";
+        const effects = choice.effects || {};
+        const logText = choice.log || "";
+        const reasonEl = document.getElementById("goReason");
+        const gameOverReason = this.isGameOver ? (reasonEl ? reasonEl.innerText : "Mülk nizamı muhafaza edilemedi.") : "";
 
-          fetch("api/game.php?action=save_answer", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({
-              era: this.currentMode,
-              event_id: this.currentEvent ? this.currentEvent.id : "",
-              turn_number: this.turn - 1,
-              choice_index: choice.index !== undefined ? choice.index : 0,
-              choice_label: choiceLabel,
-              effects: effects,
-              log: logText,
-              stats: this.stats,
-              traits: this.rulerTraits,
-              is_game_over: this.isGameOver,
-              game_over_reason: gameOverReason
-            })
-          }).catch(err => console.warn("Save answer error:", err));
-        }
+        fetch("api/game.php?action=save_answer", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            era: this.currentMode,
+            event_id: this.currentEvent ? this.currentEvent.id : "",
+            turn_number: this.turn - 1,
+            choice_index: choice.index !== undefined ? choice.index : 0,
+            choice_label: choiceLabel,
+            effects: effects,
+            log: logText,
+            stats: this.stats,
+            traits: this.rulerTraits,
+            is_game_over: this.isGameOver,
+            game_over_reason: gameOverReason
+          })
+        }).then(res => {
+          if (res.status === 401 && window.authUI) {
+            window.authUI.isLoggedIn = false;
+            window.authUI.updateUserUI();
+            const gs = document.getElementById("gameScreen");
+            if (gs) gs.classList.add("game-locked");
+            window.authUI.openModal(true);
+          }
+          return res.json();
+        }).then(data => {
+          if (data && data.success && window.authUI && window.authUI.user) {
+            window.authUI.user.total_answers = (window.authUI.user.total_answers || 0) + 1;
+            window.authUI.updateUserUI();
+          }
+        }).catch(err => console.warn("Save answer error:", err));
 
         this.checkGameOver();
         this.updateUI();
@@ -1239,36 +1253,56 @@
         }
       }
 
-      // Sıradaki Olayı Çek (Veritabanından Tek Tek veya Yerel Desteden)
+      // Sıradaki Olayı Çek (MySQL Veritabanından API Üzerinden)
       async nextEvent(isVerdictTransition = false) {
+        if (!window.authUI || !window.authUI.isLoggedIn) {
+          const gs = document.getElementById("gameScreen");
+          if (gs) gs.classList.add("game-locked");
+          if (window.authUI) window.authUI.openModal(true);
+          return;
+        }
+
         let ev = null;
 
-        // 1. API aktifse veritabanından tekil olay çek
-        if (this.isApiAvailable) {
-          try {
-            const crisisKey = this.deckManager ? this.deckManager.identifyCrisis(this.stats) : null;
-            const excludeParam = this.currentEvent ? `&exclude_id=${encodeURIComponent(this.currentEvent.id)}` : '';
-            const crisisParam = crisisKey ? `&crisis_key=${encodeURIComponent(crisisKey)}` : '';
-            const resp = await fetch(`api/events.php?action=next&era=${this.currentMode}${crisisParam}${excludeParam}`);
-            if (resp.ok) {
-              const data = await resp.json();
-              if (data.success && data.event) {
-                ev = data.event;
-                this.apiPlayedCount = data.played_count || 0;
-                this.apiTotalCount = data.total_count || 0;
-              }
+        // API üzerinden veritabanından tekil olay çek
+        try {
+          const crisisKey = this.deckManager ? this.deckManager.identifyCrisis(this.stats) : null;
+          const excludeParam = this.currentEvent ? `&exclude_id=${encodeURIComponent(this.currentEvent.id)}` : '';
+          const crisisParam = crisisKey ? `&crisis_key=${encodeURIComponent(crisisKey)}` : '';
+          const resp = await fetch(`api/events.php?action=next&era=${this.currentMode}${crisisParam}${excludeParam}`);
+
+          if (resp.status === 401) {
+            if (window.authUI) {
+              window.authUI.isLoggedIn = false;
+              window.authUI.updateUserUI();
+              const gs = document.getElementById("gameScreen");
+              if (gs) gs.classList.add("game-locked");
+              window.authUI.openModal(true);
             }
-          } catch (e) {
-            console.warn("API nextEvent hatası, yerel desteye geçiliyor:", e);
+            return;
           }
+
+          if (resp.ok) {
+            const data = await resp.json();
+            if (data.success && data.event) {
+              ev = data.event;
+              this.apiPlayedCount = data.played_count || 0;
+              this.apiTotalCount = data.total_count || 0;
+            } else if (data.error) {
+              this.log(`<span style="color:var(--danger)">Vaka yüklenemedi: ${data.error}</span>`);
+            }
+          }
+        } catch (e) {
+          console.warn("API nextEvent hatası:", e);
         }
 
-        // 2. API çevrimdışıysa yerel desteden çek
-        if (!ev && this.deckManager) {
-          ev = this.deckManager.drawNext(this.stats);
+        if (!ev) {
+          const titleEl = document.getElementById("eventTitle");
+          const descEl = document.getElementById("eventDesc");
+          if (titleEl) titleEl.innerText = "Vaka Alınamadı";
+          if (descEl) descEl.innerText = "Veritabanından vaka çekilemedi. Lütfen bağlantınızı kontrol ediniz veya install.php dosyasını çalıştırınız.";
+          return;
         }
-
-        if (!ev) return;
         this.currentEvent = ev;
 
         const sourceTextEl = document.getElementById("sourceText");

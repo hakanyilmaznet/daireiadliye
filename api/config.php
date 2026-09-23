@@ -1,9 +1,10 @@
 <?php
 /**
- * Dâire-i Adliyye - Veritabanı ve API Yapılandırması
+ * Dâire-i Adliyye - Veritabanı ve API Yapılandırması (api/config.php)
+ * Salt MySQL Veritabanı Mimarisi
  */
 
-// 1. Hata Raporlama (Canlıda 0 yapılabilir)
+// 1. Hata Raporlama
 error_reporting(E_ALL);
 ini_set('display_errors', '0');
 
@@ -27,9 +28,7 @@ if (($_SERVER['REQUEST_METHOD'] ?? '') === 'OPTIONS') {
     exit;
 }
 
-// 4. Veritabanı Bağlantı Sabitleri
-// cPanel veya yerel sunucunuzun MySQL bilgilerine göre düzenleyebilirsiniz:
-define('DB_DRIVER', getenv('DB_DRIVER') ?: 'mysql');
+// 4. Veritabanı Bağlantı Sabitleri (cPanel / Canlı MySQL)
 define('DB_HOST', getenv('DB_HOST') ?: 'localhost');
 define('DB_PORT', getenv('DB_PORT') ?: '3306');
 define('DB_NAME', getenv('DB_NAME') ?: 'mukerre_daireiadliye');
@@ -38,8 +37,7 @@ define('DB_PASS', getenv('DB_PASS') ?: 'tAv_xibbhbPWe7R6');
 define('DB_CHARSET', 'utf8mb4');
 
 /**
- * PDO Veritabanı Bağlantısı (Singleton Pattern)
- * cPanel'de doğrudan MySQL kullanılır; yerel geliştirme için SQLite yedekliliği desteklenir.
+ * PDO MySQL Veritabanı Bağlantısı (Singleton Pattern)
  */
 function getDbConnection() {
     static $pdo = null;
@@ -47,109 +45,23 @@ function getDbConnection() {
         return $pdo;
     }
 
-    $availableDrivers = class_exists('PDO') ? PDO::getAvailableDrivers() : [];
-
-    // 1. MySQL Denemesi
-    if (in_array('mysql', $availableDrivers) && DB_DRIVER !== 'sqlite') {
-        try {
-            $dsn = "mysql:host=" . DB_HOST . ";port=" . DB_PORT . ";dbname=" . DB_NAME . ";charset=" . DB_CHARSET;
-            $options = [
-                PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
-                PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
-                PDO::ATTR_EMULATE_PREPARES   => false,
-                PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES " . DB_CHARSET
-            ];
-            $pdo = new PDO($dsn, DB_USER, DB_PASS, $options);
-            return $pdo;
-        } catch (PDOException $e) {
-            // Eğer SQLite mevcut değilse veya açıkça MySQL isteniyorsa hata fırlat
-            if (!in_array('sqlite', $availableDrivers)) {
-                jsonResponse([
-                    'success' => false,
-                    'error'   => 'MySQL veritabanı bağlantı hatası: ' . $e->getMessage(),
-                    'code'    => 'DB_CONNECTION_ERROR'
-                ], 500);
-            }
-        }
+    try {
+        $dsn = "mysql:host=" . DB_HOST . ";port=" . DB_PORT . ";dbname=" . DB_NAME . ";charset=" . DB_CHARSET;
+        $options = [
+            PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
+            PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
+            PDO::ATTR_EMULATE_PREPARES   => false,
+            PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES " . DB_CHARSET
+        ];
+        $pdo = new PDO($dsn, DB_USER, DB_PASS, $options);
+        return $pdo;
+    } catch (PDOException $e) {
+        jsonResponse([
+            'success' => false,
+            'error'   => 'MySQL veritabanı bağlantı hatası: ' . $e->getMessage(),
+            'code'    => 'DB_CONNECTION_ERROR'
+        ], 500);
     }
-
-    // 2. SQLite Yedekliliği (Yerel veya Çevrimdışı Geliştirme İçin)
-    if (in_array('sqlite', $availableDrivers)) {
-        try {
-            $sqliteFile = __DIR__ . '/daireiadliye.sqlite';
-            $isNew = !file_exists($sqliteFile);
-            $pdo = new PDO("sqlite:" . $sqliteFile, null, null, [
-                PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
-                PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
-            ]);
-
-            if ($isNew) {
-                // Tabloları otomatik ilklendir
-                $pdo->exec("CREATE TABLE IF NOT EXISTS users (
-                    id INTEGER PRIMARY KEY AUTOINCREMENT,
-                    username TEXT NOT NULL UNIQUE,
-                    email TEXT NOT NULL UNIQUE,
-                    password_hash TEXT NOT NULL,
-                    created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
-                    last_login_at DATETIME
-                )");
-                $pdo->exec("CREATE TABLE IF NOT EXISTS events (
-                    id TEXT PRIMARY KEY,
-                    era TEXT NOT NULL,
-                    title TEXT NOT NULL,
-                    source TEXT NOT NULL,
-                    desc TEXT NOT NULL,
-                    characters_json TEXT NOT NULL,
-                    options_json TEXT NOT NULL,
-                    sort_order INTEGER DEFAULT 0,
-                    created_at DATETIME DEFAULT CURRENT_TIMESTAMP
-                )");
-                $pdo->exec("CREATE TABLE IF NOT EXISTS game_progress (
-                    id INTEGER PRIMARY KEY AUTOINCREMENT,
-                    user_id INTEGER NOT NULL,
-                    era TEXT NOT NULL,
-                    turn_number INTEGER NOT NULL DEFAULT 1,
-                    current_event_id TEXT,
-                    stat_justice INTEGER NOT NULL DEFAULT 60,
-                    stat_people INTEGER NOT NULL DEFAULT 60,
-                    stat_treasury INTEGER NOT NULL DEFAULT 50,
-                    stat_military INTEGER NOT NULL DEFAULT 55,
-                    stat_authority INTEGER NOT NULL DEFAULT 60,
-                    traits_json TEXT,
-                    is_game_over INTEGER NOT NULL DEFAULT 0,
-                    game_over_reason TEXT,
-                    updated_at DATETIME DEFAULT CURRENT_TIMESTAMP,
-                    UNIQUE(user_id, era)
-                )");
-                $pdo->exec("CREATE TABLE IF NOT EXISTS user_answers (
-                    id INTEGER PRIMARY KEY AUTOINCREMENT,
-                    user_id INTEGER NOT NULL,
-                    era TEXT NOT NULL,
-                    event_id TEXT NOT NULL,
-                    turn_number INTEGER NOT NULL,
-                    choice_index INTEGER NOT NULL,
-                    choice_label TEXT NOT NULL,
-                    effects_json TEXT NOT NULL,
-                    log_text TEXT NOT NULL,
-                    created_at DATETIME DEFAULT CURRENT_TIMESTAMP
-                )");
-            }
-
-            return $pdo;
-        } catch (PDOException $e) {
-            jsonResponse([
-                'success' => false,
-                'error'   => 'Veritabanı bağlantı hatası: ' . $e->getMessage(),
-                'code'    => 'DB_CONNECTION_ERROR'
-            ], 500);
-        }
-    }
-
-    jsonResponse([
-        'success' => false,
-        'error'   => 'Sistemde ne MySQL ne de SQLite PDO sürücüsü bulunamadı. Lütfen PHP PDO eklentisini etkinleştiriniz.',
-        'code'    => 'NO_PDO_DRIVER'
-    ], 500);
 }
 
 /**
@@ -182,7 +94,6 @@ function getCurrentUserId() {
     if (!empty($_SESSION['user_id'])) {
         return (int)$_SESSION['user_id'];
     }
-    // Opsiyonel: Header'da iletilen Bearer token veya misafir takibi için
     return null;
 }
 
@@ -194,7 +105,7 @@ function requireAuth() {
     if (!$userId) {
         jsonResponse([
             'success' => false,
-            'error'   => 'Bu işlem için giriş yapmanız gerekmektedir.',
+            'error'   => 'Bu işlem için üye girişi yapmanız gerekmektedir.',
             'code'    => 'UNAUTHORIZED'
         ], 401);
     }

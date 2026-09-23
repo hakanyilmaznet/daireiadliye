@@ -12,9 +12,7 @@
   <link rel="alternate icon" type="image/x-icon" href="favicon.ico">
   <link rel="apple-touch-icon" href="favicon.png">
 
-  <!-- Deste Veri Kaynakları (.js formatı tarayıcıların katı MIME kontrolünü tam uyumla geçer) -->
-  <script src="event_deck.js"></script>
-  <script src="event_deck_modern.js"></script>
+  <!-- Dinamik Deste: Olaylar MySQL Veritabanından API ile Çekilir -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -330,12 +328,16 @@
     </div>
   </div>
 
-  <!-- Kullanıcı Giriş / Kayıt Modal Penceresi -->
+  <!-- Kullanıcı Giriş / Kayıt Modal Penceresi (Üyelik Zorunludur) -->
   <div id="authModal" class="modal-backdrop" style="display: none;">
     <div class="modal-content auth-modal-box">
       <div class="auth-modal-header">
         <h3 id="authModalTitle">🏛️ Kullanıcı Girişi / Kayıt</h3>
-        <button class="modal-close-btn" onclick="authUI.closeModal()">&times;</button>
+        <button id="modalCloseBtn" class="modal-close-btn" onclick="authUI.closeModal()">&times;</button>
+      </div>
+
+      <div id="authGateNotice" class="auth-gate-notice" style="display: none;">
+        <span>⚠️ Dâire-i Adliyye'ye hükmetmek için oturum açmalısınız. Üyelik olmadan oyun oynanamaz.</span>
       </div>
 
       <div class="auth-tabs" id="authTabs">
@@ -354,7 +356,7 @@
           <input type="password" id="loginPassword" placeholder="••••••••" required autocomplete="current-password">
         </div>
         <div id="loginError" class="auth-error-msg" style="display: none;"></div>
-        <button type="submit" class="auth-submit-btn">Giriş Yap</button>
+        <button type="submit" id="loginSubmitBtn" class="auth-submit-btn">Giriş Yap</button>
       </form>
 
       <!-- Kayıt Formu -->
@@ -372,7 +374,7 @@
           <input type="password" id="regPassword" placeholder="••••••••" required minlength="6" autocomplete="new-password">
         </div>
         <div id="registerError" class="auth-error-msg" style="display: none;"></div>
-        <button type="submit" class="auth-submit-btn">Hesap Oluştur</button>
+        <button type="submit" id="registerSubmitBtn" class="auth-submit-btn">Hesap Oluştur</button>
       </form>
 
       <!-- Profil & Oturum Bilgisi (Giriş Yapılmışsa) -->
@@ -391,7 +393,7 @@
       </div>
 
       <div class="auth-footer-note">
-        <span>Misafir olarak da oynayabilirsiniz; üye olduğunuzda ilerlemeniz ve verdiğiniz tüm kararlar veritabanında saklanır.</span>
+        <span>🏛️ Simülasyonu oynamak ve devlet idaresinde hüküm vermek için üye girişi zorunludur. Tüm kararlarınız veritabanında saklanır.</span>
       </div>
     </div>
   </div>

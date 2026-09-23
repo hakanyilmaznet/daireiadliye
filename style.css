@@ -1526,6 +1526,52 @@ header {
   color: #f1f5f9;
 }
 
+/* Modal Backdrop Overlay */
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(3, 7, 18, 0.85);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  z-index: 99999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  animation: backdropFadeIn 0.25s ease-out forwards;
+}
+
+@keyframes backdropFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.auth-gate-notice {
+  background: rgba(220, 38, 38, 0.15);
+  border: 1px solid rgba(239, 68, 68, 0.4);
+  color: #fca5a5;
+  font-size: 0.82rem;
+  padding: 10px 14px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  line-height: 1.45;
+  text-align: center;
+  font-weight: 500;
+}
+
+.game-locked {
+  pointer-events: none !important;
+  filter: blur(2px) grayscale(30%);
+  user-select: none !important;
+  transition: filter 0.3s ease;
+}
+
 /* Auth Modal Box */
 .auth-modal-box {
   background: rgba(15, 23, 42, 0.95);
