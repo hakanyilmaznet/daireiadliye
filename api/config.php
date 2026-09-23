@@ -8,6 +8,20 @@
 error_reporting(E_ALL);
 ini_set('display_errors', '0');
 
+// Global İstisna Yakalayıcı (500 hatalarında boş sayfa dönmesini engeller)
+set_exception_handler(function(Throwable $e) {
+    if (!headers_sent()) {
+        header("Content-Type: application/json; charset=UTF-8");
+        http_response_code(500);
+    }
+    echo json_encode([
+        'success' => false,
+        'error'   => 'Sunucu Hatası: ' . $e->getMessage(),
+        'code'    => 'INTERNAL_SERVER_ERROR'
+    ], JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
+    exit;
+});
+
 // 2. Güvenli Oturum Başlatma
 if (session_status() === PHP_SESSION_NONE && !headers_sent()) {
     @ini_set('session.cookie_httponly', '1');

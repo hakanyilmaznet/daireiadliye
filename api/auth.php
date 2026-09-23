@@ -60,37 +60,54 @@ function handleRegister() {
         ], 400);
     }
 
-    $pdo = getDbConnection();
+    try {
+        $pdo = getDbConnection();
 
-    // Kullanıcı adı veya e-posta kullanımda mı kontrol et
-    $stmt = $pdo->prepare("SELECT id FROM users WHERE username = ? OR email = ? LIMIT 1");
-    $stmt->execute([$username, $email]);
-    if ($stmt->fetch()) {
+        // Kullanıcı adı veya e-posta kullanımda mı kontrol et
+        $stmt = $pdo->prepare("SELECT id FROM users WHERE username = ? OR email = ? LIMIT 1");
+        $stmt->execute([$username, $email]);
+        if ($stmt->fetch()) {
+            jsonResponse([
+                'success' => false,
+                'error'   => 'Bu kullanıcı adı veya e-posta adresi zaten kayıtlı.'
+            ], 409);
+        }
+
+        $hash = password_hash($password, PASSWORD_BCRYPT);
+        $stmt = $pdo->prepare("INSERT INTO users (username, email, password_hash) VALUES (?, ?, ?)");
+        $stmt->execute([$username, $email, $hash]);
+        $userId = (int)$pdo->lastInsertId();
+
+        try {
+            $upStmt = $pdo->prepare("UPDATE users SET last_login_at = NOW() WHERE id = ?");
+            $upStmt->execute([$userId]);
+        } catch (Exception $e) {}
+
+        // Oturumu başlat
+        $_SESSION['user_id'] = $userId;
+        $_SESSION['username'] = $username;
+        $_SESSION['email'] = $email;
+
+        jsonResponse([
+            'success' => true,
+            'message' => 'Kayıt başarılı. Hoş geldiniz!',
+            'user'    => [
+                'id'       => $userId,
+                'username' => $username,
+                'email'    => $email
+            ]
+        ], 201);
+    } catch (PDOException $e) {
         jsonResponse([
             'success' => false,
-            'error'   => 'Bu kullanıcı adı veya e-posta adresi zaten kayıtlı.'
-        ], 409);
+            'error'   => 'Veritabanı kayıt hatası: ' . $e->getMessage()
+        ], 500);
+    } catch (Throwable $e) {
+        jsonResponse([
+            'success' => false,
+            'error'   => 'Kayıt işlemi sırasında hata: ' . $e->getMessage()
+        ], 500);
     }
-
-    $hash = password_hash($password, PASSWORD_BCRYPT);
-    $stmt = $pdo->prepare("INSERT INTO users (username, email, password_hash, created_at, last_login_at) VALUES (?, ?, ?, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP)");
-    $stmt->execute([$username, $email, $hash]);
-    $userId = (int)$pdo->lastInsertId();
-
-    // Oturumu başlat
-    $_SESSION['user_id'] = $userId;
-    $_SESSION['username'] = $username;
-    $_SESSION['email'] = $email;
-
-    jsonResponse([
-        'success' => true,
-        'message' => 'Kayıt başarılı. Hoş geldiniz!',
-        'user'    => [
-            'id'       => $userId,
-            'username' => $username,
-            'email'    => $email
-        ]
-    ], 201);
 }
 
 /**
@@ -108,36 +125,50 @@ function handleLogin() {
         ], 400);
     }
 
-    $pdo = getDbConnection();
-    $stmt = $pdo->prepare("SELECT id, username, email, password_hash FROM users WHERE username = ? OR email = ? LIMIT 1");
-    $stmt->execute([$login, $login]);
-    $user = $stmt->fetch();
+    try {
+        $pdo = getDbConnection();
+        $stmt = $pdo->prepare("SELECT id, username, email, password_hash FROM users WHERE username = ? OR email = ? LIMIT 1");
+        $stmt->execute([$login, $login]);
+        $user = $stmt->fetch();
 
-    if (!$user || !password_verify($password, $user['password_hash'])) {
+        if (!$user || !password_verify($password, $user['password_hash'])) {
+            jsonResponse([
+                'success' => false,
+                'error'   => 'Kullanıcı adı veya şifre hatalı.'
+            ], 401);
+        }
+
+        // Son giriş zamanını güncelle
+        try {
+            $upStmt = $pdo->prepare("UPDATE users SET last_login_at = NOW() WHERE id = ?");
+            $upStmt->execute([$user['id']]);
+        } catch (Exception $e) {}
+
+        // Oturumu başlat
+        $_SESSION['user_id'] = (int)$user['id'];
+        $_SESSION['username'] = $user['username'];
+        $_SESSION['email'] = $user['email'];
+
+        jsonResponse([
+            'success' => true,
+            'message' => 'Giriş başarılı.',
+            'user'    => [
+                'id'       => (int)$user['id'],
+                'username' => $user['username'],
+                'email'    => $user['email']
+            ]
+        ]);
+    } catch (PDOException $e) {
         jsonResponse([
             'success' => false,
-            'error'   => 'Kullanıcı adı veya şifre hatalı.'
-        ], 401);
+            'error'   => 'Veritabanı giriş hatası: ' . $e->getMessage()
+        ], 500);
+    } catch (Throwable $e) {
+        jsonResponse([
+            'success' => false,
+            'error'   => 'Giriş işlemi sırasında hata: ' . $e->getMessage()
+        ], 500);
     }
-
-    // Son giriş zamanını güncelle
-    $upStmt = $pdo->prepare("UPDATE users SET last_login_at = CURRENT_TIMESTAMP WHERE id = ?");
-    $upStmt->execute([$user['id']]);
-
-    // Oturumu başlat
-    $_SESSION['user_id'] = (int)$user['id'];
-    $_SESSION['username'] = $user['username'];
-    $_SESSION['email'] = $user['email'];
-
-    jsonResponse([
-        'success' => true,
-        'message' => 'Giriş başarılı.',
-        'user'    => [
-            'id'       => (int)$user['id'],
-            'username' => $user['username'],
-            'email'    => $user['email']
-        ]
-    ]);
 }
 
 /**
@@ -173,41 +204,53 @@ function handleMe() {
         ]);
     }
 
-    $pdo = getDbConnection();
-    $stmt = $pdo->prepare("SELECT id, username, email, created_at, last_login_at FROM users WHERE id = ? LIMIT 1");
-    $stmt->execute([$userId]);
-    $user = $stmt->fetch();
+    try {
+        $pdo = getDbConnection();
+        $stmt = $pdo->prepare("SELECT id, username, email, created_at, last_login_at FROM users WHERE id = ? LIMIT 1");
+        $stmt->execute([$userId]);
+        $user = $stmt->fetch();
 
-    if (!$user) {
-        // Oturumdaki kullanıcı veritabanında yoksa oturumu sil
-        session_destroy();
+        if (!$user) {
+            // Oturumdaki kullanıcı veritabanında yoksa oturumu sil
+            session_destroy();
+            jsonResponse([
+                'success'   => true,
+                'logged_in' => false,
+                'user'      => null
+            ]);
+        }
+
+        // Kullanıcının kayıtlı ilerlemeleri ve toplam cevap sayısı
+        $progStmt = $pdo->prepare("SELECT era, turn_number, stat_justice, stat_people, stat_treasury, stat_military, stat_authority, is_game_over, updated_at FROM game_progress WHERE user_id = ?");
+        $progStmt->execute([$userId]);
+        $progressList = $progStmt->fetchAll();
+
+        $ansStmt = $pdo->prepare("SELECT COUNT(*) AS total_answers FROM user_answers WHERE user_id = ?");
+        $ansStmt->execute([$userId]);
+        $ansRow = $ansStmt->fetch();
+
         jsonResponse([
             'success'   => true,
-            'logged_in' => false,
-            'user'      => null
+            'logged_in' => true,
+            'user'      => [
+                'id'            => (int)$user['id'],
+                'username'      => $user['username'],
+                'email'         => $user['email'],
+                'created_at'    => $user['created_at'],
+                'last_login_at' => $user['last_login_at'],
+                'total_answers' => (int)($ansRow['total_answers'] ?? 0),
+                'progress'      => $progressList
+            ]
         ]);
+    } catch (PDOException $e) {
+        jsonResponse([
+            'success' => false,
+            'error'   => 'Veritabanı sorgu hatası: ' . $e->getMessage()
+        ], 500);
+    } catch (Throwable $e) {
+        jsonResponse([
+            'success' => false,
+            'error'   => 'Kullanıcı bilgisi alınırken hata: ' . $e->getMessage()
+        ], 500);
     }
-
-    // Kullanıcının kayıtlı ilerlemeleri ve toplam cevap sayısı
-    $progStmt = $pdo->prepare("SELECT era, turn_number, stat_justice, stat_people, stat_treasury, stat_military, stat_authority, is_game_over, updated_at FROM game_progress WHERE user_id = ?");
-    $progStmt->execute([$userId]);
-    $progressList = $progStmt->fetchAll();
-
-    $ansStmt = $pdo->prepare("SELECT COUNT(*) AS total_answers FROM user_answers WHERE user_id = ?");
-    $ansStmt->execute([$userId]);
-    $ansRow = $ansStmt->fetch();
-
-    jsonResponse([
-        'success'   => true,
-        'logged_in' => true,
-        'user'      => [
-            'id'            => (int)$user['id'],
-            'username'      => $user['username'],
-            'email'         => $user['email'],
-            'created_at'    => $user['created_at'],
-            'last_login_at' => $user['last_login_at'],
-            'total_answers' => (int)($ansRow['total_answers'] ?? 0),
-            'progress'      => $progressList
-        ]
-    ]);
 }
