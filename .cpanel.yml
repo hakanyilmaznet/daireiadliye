@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/mukerre/public_html/pws/daireiadliye/
+    - /bin/cp -R * $DEPLOYPATH
