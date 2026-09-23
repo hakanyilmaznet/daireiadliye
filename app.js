@@ -372,7 +372,7 @@
         this.initParticles();
 
         const urlParams = typeof window !== "undefined" && window.location ? new URLSearchParams(window.location.search) : null;
-        this.currentMode = urlParams && urlParams.get("mode") === "modern" ? "modern" : "ottoman";
+        this.currentMode = urlParams && urlParams.get("mode") === "ottoman" ? "ottoman" : "modern";
         this.ottomanDeck = null;
         this.modernDeck = null;
 
@@ -858,10 +858,28 @@
           if (btnElement) {
             btnElement.classList.add("choice-btn-selected");
           }
-          // Hüküm verildikten sonra yeni olaya görsel geçiş ve vurgu tetikle
+          // 1. Seçim yapıldıktan sonra sayfayı derhal olay kutusunun başına götür
+          this.scrollToEventBox();
+
+          // 2. Sayfa olay kutusunun başına yöneldikten sonra yeni olayı yükle ve kutuyu vurgula
           setTimeout(() => {
             this.nextEvent(true);
-          }, 180);
+          }, 240);
+        }
+      }
+
+      // Sayfayı olay kutusunun başına pürüzsüzce kaydır
+      scrollToEventBox() {
+        const targetEl = document.getElementById("eventDossier") || document.getElementById("cardPanel");
+        if (targetEl) {
+          const rect = targetEl.getBoundingClientRect();
+          const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+          // Üstten 18px ferah pay bırakarak kaydır
+          const targetY = Math.max(0, rect.top + scrollTop - 18);
+          window.scrollTo({
+            top: targetY,
+            behavior: "smooth"
+          });
         }
       }
 

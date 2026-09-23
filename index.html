@@ -21,8 +21,8 @@
 
   <header>
     <div class="brand">
-      <h1 id="brandTitle">⚜️ DÂİRE-İ ADLİYYE</h1>
-      <span id="brandSub">Hüküm, Adalet ve Asabiye Simülasyonu</span>
+      <h1 id="brandTitle">🇹🇷 DÂİRE-İ ADLİYYE</h1>
+      <span id="brandSub">Modern Türkiye (Son 30 Yıl) Kriz Simülasyonu</span>
     </div>
     
     <div class="header-controls">
@@ -44,7 +44,7 @@
       <div class="era-switcher-wrap">
         <div class="era-switcher-label">HÜKÜMRANLIK DÖNEMİ</div>
         <div class="era-tabs">
-          <button id="tabOttoman" class="era-tab active" onclick="game.setDeckMode('ottoman', true)" title="Klasik Osmanlı Dönemi (1000 Kadim Vaka)">
+          <button id="tabOttoman" class="era-tab" onclick="game.setDeckMode('ottoman', true)" title="Klasik Osmanlı Dönemi (1000 Kadim Vaka)">
             <span class="era-tab-badge">⚜️</span>
             <div class="era-tab-text">
               <span class="era-tab-title">Klasik Osmanlı</span>
@@ -52,7 +52,7 @@
             </div>
           </button>
           
-          <button id="tabModern" class="era-tab" onclick="game.setDeckMode('modern', true)" title="Modern Türkiye (Son 30 Yılın Krizleri)">
+          <button id="tabModern" class="era-tab active" onclick="game.setDeckMode('modern', true)" title="Modern Türkiye (Son 30 Yılın Krizleri)">
             <span class="era-tab-badge">
               <svg width="22" height="15" viewBox="0 0 1200 800" style="border-radius: 3px; display: block; box-shadow: 0 1px 3px rgba(0,0,0,0.5);">
                 <rect width="1200" height="800" fill="#e30a17"/>
@@ -72,7 +72,7 @@
       <!-- 2. Çember HUD & Animasyonlu Usturlab -->
       <div class="hud-canvas-wrap">
         <canvas id="hudCanvas" width="600" height="600"></canvas>
-        <div id="reignBadge" class="reign-badge">Cülûs Yılı: 1</div>
+        <div id="reignBadge" class="reign-badge">Hükümet Yılı: 1</div>
         <span class="hud-corner tl"></span>
         <span class="hud-corner tr"></span>
         <span class="hud-corner bl"></span>
@@ -80,9 +80,9 @@
       </div>
 
       <!-- 3. Muvazene & Devlet İstikrar Endeksi (Equilibrium Gauge) -->
-      <div class="equilibrium-card" id="equilibriumCard" title="Dâire-i Adliyye Beş Direğinin Genel Muvazenesi">
+      <div class="equilibrium-card" id="equilibriumCard" title="Cumhuriyet ve Devlet İstikrarı Genel Dengesi">
         <div class="eq-head">
-          <span class="eq-title" id="eqTitle">DÂİRE-İ ADLİYYE İSTİKRARI</span>
+          <span class="eq-title" id="eqTitle">CUMHURİYET & DEVLET İSTİKRARI</span>
           <span class="eq-score" id="eqScore">%57 • Dengeli</span>
         </div>
         <div class="eq-track">
@@ -103,10 +103,10 @@
           </div>
         </div>
 
-        <div class="metric-chip" id="chip-people" title="Reaya ve Milletin Refahı">
+        <div class="metric-chip" id="chip-people" title="Halkın Refahı ve Yaşam Standardı">
           <div class="chip-head">
-            <span class="icon">🌾</span>
-            <span class="lbl">Reaya</span>
+            <span class="icon">👥</span>
+            <span class="lbl">Halk</span>
           </div>
           <div class="val" id="val-people">60</div>
           <div class="stat-bar-track">
@@ -125,10 +125,10 @@
           </div>
         </div>
 
-        <div class="metric-chip" id="chip-military" title="Ordu ve Kapıkulu Ocakları">
+        <div class="metric-chip" id="chip-military" title="Milli Savunma ve İç Güvenlik">
           <div class="chip-head">
-            <span class="icon">⚔️</span>
-            <span class="lbl">Ordu</span>
+            <span class="icon">🛡️</span>
+            <span class="lbl">Güvenlik</span>
           </div>
           <div class="val" id="val-military">55</div>
           <div class="stat-bar-track">
@@ -136,10 +136,10 @@
           </div>
         </div>
 
-        <div class="metric-chip" id="chip-authority" title="Mülk ve Saltanat Nüfuzu">
+        <div class="metric-chip" id="chip-authority" title="Devlet Otoritesi ve Siyasi İstikrar">
           <div class="chip-head">
-            <span class="icon">👑</span>
-            <span class="lbl">Mülk</span>
+            <span class="icon">🏛️</span>
+            <span class="lbl">Otorite</span>
           </div>
           <div class="val" id="val-authority">60</div>
           <div class="stat-bar-track">
@@ -148,14 +148,14 @@
         </div>
       </div>
 
-      <!-- 5. Hükümdar Şahsiyeti & Karakter Puanlama Tablosu -->
-      <div class="personality-card" id="personalityCard" title="Oyun boyunca verilen hükümlerin idare profiline yansıması">
+      <!-- 5. Hükümdar / Lider Şahsiyeti & Karakter Puanlama Tablosu -->
+      <div class="personality-card" id="personalityCard" title="Oyun boyunca verilen kararların yönetim profiline yansıması">
         <div class="personality-head">
           <div class="personality-title-wrap">
-            <span class="personality-badge-icon" id="personaIcon">👑</span>
+            <span class="personality-badge-icon" id="personaIcon">🏛️</span>
             <div>
-              <span class="personality-label" id="personaTitleLabel">HÜKÜMDAR ŞAHSİYETİ</span>
-              <div class="personality-trait" id="personaArchetype">✦ Muvazene Kutbu (Dengeli)</div>
+              <span class="personality-label" id="personaTitleLabel">LİDERLİK PROFİLİ & ÜSLUP</span>
+              <div class="personality-trait" id="personaArchetype">✦ Dengeli Devlet Adamı</div>
             </div>
           </div>
           <span class="personality-decisions-badge" id="personaTotalDecisions">0 Karar</span>
@@ -173,7 +173,7 @@
             <tr id="row-adli">
               <td class="trait-name">
                 <span class="trait-icon">⚖️</span>
-                <span class="trait-text" id="traitName-adli">Şer'i Adalet</span>
+                <span class="trait-text" id="traitName-adli">Hukuk & Adalet</span>
               </td>
               <td class="trait-count" id="traitCount-adli">0</td>
               <td class="trait-bar-cell">
@@ -186,7 +186,7 @@
             <tr id="row-sulh">
               <td class="trait-name">
                 <span class="trait-icon">🤝</span>
-                <span class="trait-text" id="traitName-sulh">Sulh & Maslahat</span>
+                <span class="trait-text" id="traitName-sulh">Uzlaşı & Diyalog</span>
               </td>
               <td class="trait-count" id="traitCount-sulh">0</td>
               <td class="trait-bar-cell">
@@ -199,7 +199,7 @@
             <tr id="row-mali">
               <td class="trait-name">
                 <span class="trait-icon">🪙</span>
-                <span class="trait-text" id="traitName-mali">Mali Basiret</span>
+                <span class="trait-text" id="traitName-mali">Mali Disiplin</span>
               </td>
               <td class="trait-count" id="traitCount-mali">0</td>
               <td class="trait-bar-cell">
@@ -211,8 +211,8 @@
             </tr>
             <tr id="row-otorite">
               <td class="trait-name">
-                <span class="trait-icon" id="traitIcon-otorite">⚔️</span>
-                <span class="trait-text" id="traitName-otorite">Sert Otorite</span>
+                <span class="trait-icon" id="traitIcon-otorite">🛡️</span>
+                <span class="trait-text" id="traitName-otorite">Kamu Düzeni</span>
               </td>
               <td class="trait-count" id="traitCount-otorite">0</td>
               <td class="trait-bar-cell">
@@ -225,7 +225,7 @@
             <tr id="row-nizam">
               <td class="trait-name">
                 <span class="trait-icon">📜</span>
-                <span class="trait-text" id="traitName-nizam">Nizam & Ferman</span>
+                <span class="trait-text" id="traitName-nizam">Mevzuat & Reform</span>
               </td>
               <td class="trait-count" id="traitCount-nizam">0</td>
               <td class="trait-bar-cell">
@@ -243,8 +243,8 @@
       <div class="wisdom-card" id="wisdomCard">
         <div class="wisdom-icon">📜</div>
         <div class="wisdom-content">
-          <p id="wisdomText">"Adl ile mülk ber-karar olur, reaya mülkün aslıdır; hazine reayanın refahından hâsıl olur; ordu hazine ile beslenir; adalet olmazsa cihan harab olur."</p>
-          <span class="wisdom-author" id="wisdomAuthor">— Kınalızâde Ali Çelebi, Ahlâk-ı Alâî</span>
+          <p id="wisdomText">"Egemenlik kayıtsız şartsız milletindir. Adalet mülkün temelidir; hukukun üstünlüğü ve iktisadi istikrar, cumhuriyetin yegâne teminatıdır."</p>
+          <span class="wisdom-author" id="wisdomAuthor">— Hukuk Devleti İlkesi & Anayasa</span>
         </div>
       </div>
 
@@ -305,7 +305,7 @@
         <span>📜 VAK'ANÜVİS DEFTERİ (TARİH-İ DEVLET)</span>
       </div>
       <div id="chronicleEntries">
-        <div>✦ <b>Sene 1:</b> Yeni saltanat dönemi başladı. Dâire-i Adliyye çarkları adaletle dönüyor.</div>
+        <div>✦ <b>Sene 1:</b> Cumhuriyet dönemine geçildi. Son 30 yılın krizleri, siyasi, askeri ve ekonomik olayları devrede.</div>
       </div>
     </div>
 
