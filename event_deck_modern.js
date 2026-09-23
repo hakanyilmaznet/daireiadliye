@@ -29565,77 +29565,77 @@ const EVENT_DECK_MODERN = [
     "id": "tr_vaka_380",
     "characters": [
       {
-        "id": "char_afad_baskani",
-        "name": "AFAD / Kriz Masası Başkanı"
+        "id": "char_icisleri_bakani",
+        "name": "İçişleri Bakanı"
       },
       {
-        "id": "char_cevre_sehircilik_bakani",
-        "name": "Çevre ve Şehircilik Bakanı"
+        "id": "char_sehir_plancisi",
+        "name": "Mimarlar ve Şehir Plancıları Temsilcisi"
       }
     ],
     "source": "Kriz Masası & AFAD",
-    "title": "Van Depremi Sonrası TOKİ Kalıcı Konut Seferberliği",
-    "desc": "Bir yıl gibi rekor sürede dağ yamaçlarına 17 bin deprem konutu inşa edilerek hak sahiplerine teslim edildi.",
+    "title": "Van Depremi Sonrası Dondurucu Kış Şartları ve Acil Konut Güvenliği İkilemi",
+    "desc": "Eksi 20 dereceye varan dondurucu kışta çadırlarda çıkan yangınlar ve çocuk ölümleri devleti acil kalıcı konut seferberliğine zorlarken, acele inşaatlarda zemin etütlerinin ve denetimlerin atlandığı istihbaratı geldi.",
     "options": [
       {
-        "label": "Afet bölgesindeki usulsüzlükler, ihmaller ve mevzuata aykırı yapılaşmalar hakkında adli soruşturma açtır.",
-        "preview": "Adalet +9, Halk +8, Otorite +3 | Hazine -2",
+        "label": "TOKİ'yi dağ yamaçlarındaki sağlam kayalık zeminlere yönlendirip 1 yıl içinde 17 bin deprem konutunu rekor hızla inşa et.",
+        "preview": "Adalet +4, Halk +9, Otorite +7 | Hazine -8",
+        "effects": {
+          "justice": 4,
+          "people": 9,
+          "treasury": -8,
+          "military": 0,
+          "authority": 7
+        },
+        "log": "Dondurucu kışta on binlerce depremzede sıcak yuvalara kavuştu; Hazine bütçesi konut seferberliğine aktarıldı."
+      },
+      {
+        "label": "Tüm şantiyelerde bağımsız üniversite jeoloji heyetlerine zorunlu zemin ve beton denetimi şartı koyarak tek bir riskli binaya izin verme.",
+        "preview": "Adalet +9, Halk +6, Otorite +4 | Hazine -4",
         "effects": {
           "justice": 9,
-          "people": 8,
-          "treasury": -2,
-          "military": 0,
-          "authority": 3
-        },
-        "log": "Hukuki tahkikat başlatıldı; afet sorumluları hakkında yargı süreci işletildi."
-      },
-      {
-        "label": "Afetzede vatandaşlar, mahalle muhtarları ve sivil toplumla koordinasyon kurarak acil insani yardım ulaştır.",
-        "preview": "Adalet +2, Halk +9, Hazine +4, Güvenlik +2, Otorite +5",
-        "effects": {
-          "justice": 2,
-          "people": 9,
-          "treasury": 4,
-          "military": 2,
-          "authority": 5
-        },
-        "log": "Halkın acil ihtiyaçları karşılandı; toplumsal dayanışma ile yaralar hızla sarıldı."
-      },
-      {
-        "label": "Hasar gören yerleşim yerlerinin yeniden inşası ve esnafa faizsiz can suyu kredisi için Hazine fonlarını devreye sok.",
-        "preview": "Hazine +8, Otorite +4 | Halk -5",
-        "effects": {
-          "justice": 0,
-          "people": -5,
-          "treasury": 8,
+          "people": 6,
+          "treasury": -4,
           "military": 0,
           "authority": 4
         },
-        "log": "Mali kaynaklar seferber edildi; afetin bölge ekonomisinde yol açtığı hasar sübvanse edildi."
+        "log": "Zemin güvenliği tavizsiz korundu; inşaat takvimi biraz uzasa da binalar depreme tam dayanıklı yapıldı."
       },
       {
-        "label": "Arama-kurtarma ve enkaz kaldırma sahalarında yağma ve kargaşayı önlemek için jandarma ve polis devriyelerini artır.",
-        "preview": "Adalet +2, Halk +8, Güvenlik +6, Otorite +6 | Hazine -4",
+        "label": "Konteyner kentlere geçici olarak doğalgaz ve merkezi elektrikli ısıtma altyapısı kurarak çadır yangınlarını derhal sıfırla.",
+        "preview": "Adalet +5, Halk +8, Güvenlik +2, Otorite +5 | Hazine -5",
         "effects": {
-          "justice": 2,
+          "justice": 5,
           "people": 8,
-          "treasury": -4,
-          "military": 6,
-          "authority": 6
+          "treasury": -5,
+          "military": 2,
+          "authority": 5
         },
-        "log": "Sahada tam kamu düzeni ve asayiş sağlandı; devletin koruyucu otoritesi hissettirildi."
+        "log": "Çadır yangınları tamamen durduruldu; konteyner kentlerde can güvenliği sağlandı."
       },
       {
-        "label": "Afet risklerini önceden azaltan ve yerel yönetimlerin imar denetimini sıkılaştıran 'Kentsel Dayanıklılık Kanunu' çıkar.",
-        "preview": "Adalet +8, Halk +8, Güvenlik +1, Otorite +6 | Hazine -4",
+        "label": "Bölgede fahiş kira isteyen fırsatçılara ve yardım malzemesi kaçakçılarına karşı olağanüstü hal zabıta timleri kur.",
+        "preview": "Adalet +7, Halk +5, Hazine +2, Güvenlik +3, Otorite +8",
         "effects": {
-          "justice": 8,
-          "people": 8,
-          "treasury": -4,
-          "military": 1,
-          "authority": 6
+          "justice": 7,
+          "people": 5,
+          "treasury": 2,
+          "military": 3,
+          "authority": 8
         },
-        "log": "Afet yönetimi modern yasal standartlara kavuşturuldu; benzer felaketlerin önlenmesi için zemin hazırlandı."
+        "log": "Deprem fırsatçılığına ve stokçuluğa sert darbe vuruldu; kamu düzeni sağlandı."
+      },
+      {
+        "label": "Depremzede ailelere doğrudan kira yardımı ve faizsiz taşınma kredisi vererek isteyenlerin batı illerinde kamu misafirhanelerine yerleşmesini sağla.",
+        "preview": "Adalet +6, Halk +8, Otorite +5 | Hazine -6",
+        "effects": {
+          "justice": 6,
+          "people": 8,
+          "treasury": -6,
+          "military": 0,
+          "authority": 5
+        },
+        "log": "Sosyal tahliye planıyla dondurucu kış şartlarındaki binlerce aile sıcak bölgelere nakledildi."
       }
     ]
   },
@@ -32217,77 +32217,77 @@ const EVENT_DECK_MODERN = [
     "id": "tr_vaka_414",
     "characters": [
       {
-        "id": "char_afad_baskani",
-        "name": "AFAD / Kriz Masası Başkanı"
+        "id": "char_tarim_bakani",
+        "name": "Tarım ve Orman Bakanı"
       },
       {
-        "id": "char_cevre_sehircilik_bakani",
-        "name": "Çevre ve Şehircilik Bakanı"
+        "id": "char_hazine_bakani",
+        "name": "Hazine ve Maliye Bakanı"
       }
     ],
     "source": "AFAD & Kriz Masası",
-    "title": "Köy Evleri İnşası: Yöresel Ahır ve Müstakil Konutlar",
-    "desc": "Kırsal bölgelerde hayvan yetiştiricilerine özel çelik konstrüksiyon köy evleri hızla teslim edildi.",
+    "title": "Deprem Bölgesi Köy Evleri İnşası ve Çimento-Demir Kartelleriyle Mücadele",
+    "desc": "Kırsal bölgelerde ahırlı çelik konstrüksiyon köy evleri inşa edilirken, inşaat malzemesi kartellerinin deprem bölgesine fahiş fiyat dayattığı ve tedariki yavaşlattığı MASAK raporuyla belgelendi.",
     "options": [
       {
-        "label": "Deprem bölgesindeki kamu hizmetlerini, adli teftişi ve zarar tespit davalarını şeffafça yürüt.",
-        "preview": "Adalet +9, Halk +8, Otorite +3 | Hazine -2",
+        "label": "Fahiş fiyat uygulayan çimento ve demir kartellerine Rekabet Kurumu ve MASAK üzerinden en üst sınırdan ceza kesip haksız kârı Hazineye aktar.",
+        "preview": "Adalet +9, Halk +7, Hazine +6, Otorite +8",
         "effects": {
           "justice": 9,
-          "people": 8,
-          "treasury": -2,
+          "people": 7,
+          "treasury": 6,
           "military": 0,
-          "authority": 3
+          "authority": 8
         },
-        "log": "Adli ve idari süreçler işletildi; depremzedelerin hak kayıpları önlendi."
+        "log": "İnşaat kartellerinin fahiş kâr oyunu bozuldu; devlet yaptırımıyla malzeme fiyatları dizginlendi."
       },
       {
-        "label": "Afet bölgesindeki sivil toplum, yerel esnaf ve vatandaşlarla kriz masasında buluşarak dayanışmayı güçlendir.",
-        "preview": "Adalet +3, Halk +9, Otorite +6 | Hazine -4",
+        "label": "Köy evleri ve ahır inşasını hızlandırmak için kamu fabrikalarından deprem bölgesine sübvansiyonlu doğrudan demir ve çimento sevkiyatı başlat.",
+        "preview": "Adalet +6, Halk +9, Otorite +6 | Hazine -7",
         "effects": {
-          "justice": 3,
+          "justice": 6,
           "people": 9,
-          "treasury": -4,
+          "treasury": -7,
           "military": 0,
           "authority": 6
         },
-        "log": "Halkla el ele verildi; bölgede hayatın normale dönmesi için toplumsal mutabakat sağlandı."
+        "log": "Köylülerin ahır ve ev inşası hızla tamamlandı; hayvancılık üretimi canlandırıldı."
       },
       {
-        "label": "Deprem illerindeki esnaf ve çiftçiye vergi terki, SGK muafiyeti ve hibe kredileri Hazinece tahsis et.",
-        "preview": "Hazine +8, Otorite +4 | Halk -5",
+        "label": "Bölgedeki yerel yapı kooperatiflerine doğrudan hibe ve yetki vererek köylünün kendi evini denetimli imece usulüyle yapmasını destekle.",
+        "preview": "Adalet +7, Halk +8, Otorite +4 | Hazine -4",
         "effects": {
-          "justice": 0,
-          "people": -5,
-          "treasury": 8,
+          "justice": 7,
+          "people": 8,
+          "treasury": -4,
           "military": 0,
           "authority": 4
         },
-        "log": "Bölge ekonomisi canlandırıldı; vergi muafiyetleriyle üreticilerin iflas etmesi önlendi."
+        "log": "Yerel katılım ve imece kültürüyle inşaat maliyeti düştü, halkın devlete güveni arttı."
       },
       {
-        "label": "Konteyner kentler ve lojistik depolarda emniyet ve jandarma nöbetlerini 24 saat kesintisiz sürdür.",
-        "preview": "Adalet +2, Halk +8, Güvenlik +6, Otorite +6 | Hazine -4",
-        "effects": {
-          "justice": 2,
-          "people": 8,
-          "treasury": -4,
-          "military": 6,
-          "authority": 6
-        },
-        "log": "Huzur ve asayiş temin edildi; geçici barınma alanlarında vatandaşın can ve mal güvenliği korundu."
-      },
-      {
-        "label": "TBMM'de deprem bölgesinin kalkınmasını 10 yıl süresince güvenceye alan 'Deprem İlleri İmar ve Teşvik Kanunu' çıkar.",
-        "preview": "Adalet +8, Halk +8, Güvenlik +1, Otorite +6 | Hazine -4",
+        "label": "Köy evlerinin tapu ve zilyetlik ihtilaflarını çözmek için bölgeye seyyar kadastro ve sulh komisyonları görevlendir.",
+        "preview": "Adalet +8, Halk +6, Otorite +5 | Hazine -2",
         "effects": {
           "justice": 8,
-          "people": 8,
-          "treasury": -4,
-          "military": 1,
+          "people": 6,
+          "treasury": -2,
+          "military": 0,
+          "authority": 5
+        },
+        "log": "Miras ve arazi anlaşmazlıkları yerinde çözüldü; hak sahipliği tartışmaları sona erdi."
+      },
+      {
+        "label": "Köy konutlarında güneş enerjisi ve biyogaz ünitelerini zorunlu kılarak kırsalda kendi kendine yeten yeşil kalkınma modeli kur.",
+        "preview": "Adalet +5, Halk +6, Otorite +6 | Hazine -5",
+        "effects": {
+          "justice": 5,
+          "people": 6,
+          "treasury": -5,
+          "military": 0,
           "authority": 6
         },
-        "log": "Bölgeye kalıcı ekonomik ve hukuki teşvik sağlandı; tersine göç için zemin hazırlandı."
+        "log": "Kırsalda enerji bağımsızlığı adımı atıldı; köy evleri modern bir vizyona kavuştu."
       }
     ]
   },
@@ -33387,77 +33387,77 @@ const EVENT_DECK_MODERN = [
     "id": "tr_vaka_429",
     "characters": [
       {
-        "id": "char_afad_baskani",
-        "name": "AFAD / Kriz Masası Başkanı"
+        "id": "char_adalet_bakani",
+        "name": "Adalet Bakanı"
       },
       {
-        "id": "char_cevre_sehircilik_bakani",
-        "name": "Çevre ve Şehircilik Bakanı"
+        "id": "char_sehir_plancisi",
+        "name": "Mimarlar ve Şehir Plancıları Temsilcisi"
       }
     ],
     "source": "AFAD & Kriz Masası",
-    "title": "Kalıcı Konut Kura Çekilişleri ve İlk Anahtar Teslimleri",
-    "desc": "Depremin 1. yıl dönümünde 76 bin konut kura çekilişiyle hak sahibi ailelere teslim edildi.",
+    "title": "6 Şubat Depremzedeleri Rezerv Alan İhtilafı ve Hızlı Mülkiyet Tahsisi",
+    "desc": "Yüz binlerce kalıcı konutun hak sahiplerine teslimi öncesinde, şehir merkezlerindeki rezerv alan ilanlarının mülkiyet gasbı olduğu iddiaları muhalefet ve mülk sahipleri tarafından yargıya taşındı.",
     "options": [
       {
-        "label": "Kalıcı konut kura çekilişlerini noter huzurunda ve canlı yayında şeffafça yaparak hak sahipliği itirazlarını adilce sonuçlandır.",
-        "preview": "Adalet +9, Halk +8, Otorite +3 | Hazine -2",
+        "label": "Rezerv alan ilan edilen yerlerde vatandaşın tapulu yerinde aynı metrekarede yeni dairesini garanti eden kanuni güvence kararnamesi çıkar.",
+        "preview": "Adalet +9, Halk +8, Otorite +6 | Hazine -5",
         "effects": {
           "justice": 9,
           "people": 8,
-          "treasury": -2,
+          "treasury": -5,
           "military": 0,
-          "authority": 3
+          "authority": 6
         },
-        "log": "Kura çekimi şeffaflıkla yapıldı; hiçbir şaibeye yer bırakılmadan evler hak sahiplerine teslim edildi."
+        "log": "Mülkiyet tartışmaları ve yargı iptal riski giderildi; vatandaş devletine güvenle anahtarını teslim aldı."
       },
       {
-        "label": "Konteyner kentlerde yaşayan yüz binlerce aileye kalıcı evleri teslim edilene kadar kira ve taşınma yardımlarını kesintisiz sürdür.",
-        "preview": "Adalet +2, Halk +9, Hazine +4, Güvenlik +2, Otorite +5",
+        "label": "Kura çekilişlerini noter huzurunda ve tüm televizyonlarda canlı yayınlayarak şeffaflığı tartışmasız tescil et.",
+        "preview": "Adalet +7, Halk +8, Otorite +7 | Hazine -1",
         "effects": {
-          "justice": 2,
-          "people": 9,
-          "treasury": 4,
-          "military": 2,
+          "justice": 7,
+          "people": 8,
+          "treasury": -1,
+          "military": 0,
+          "authority": 7
+        },
+        "log": "Kura şaibesi dedikoduları canlı yayın şeffaflığıyla anında çöktü."
+      },
+      {
+        "label": "Kalıcı konut hakkından feragat edip kendi arazisinde yerinde dönüşüm yapmak isteyenlere karşılıksız 750 bin TL hibe ve kredi ver.",
+        "preview": "Adalet +8, Halk +8, Otorite +5 | Hazine -8",
+        "effects": {
+          "justice": 8,
+          "people": 8,
+          "treasury": -8,
+          "military": 0,
           "authority": 5
         },
-        "log": "Halkın barınma güvencesi korundu; depremzedelerin yalnız bırakılmadığı devlet şefkatiyle gösterildi."
+        "log": "Yerinde dönüşüm seferberliğiyle şehirlerin tarihi dokusu korundu."
       },
       {
-        "label": "46 bin konutun inşa edildiği tünel kalıp şantiyelerine Hazine bütçesinden hak ediş ödemelerini aksatmadan aktar.",
-        "preview": "Hazine +8, Otorite +4 | Halk -5",
+        "label": "Rezerv alanlara karşı provokatif dezenformasyon yayan sosyal medya hesaplarına adli soruşturma açtırarak süreci hızlandır.",
+        "preview": "Adalet +4, Hazine +1, Güvenlik +2, Otorite +8 | Halk -2",
         "effects": {
-          "justice": 0,
-          "people": -5,
-          "treasury": 8,
-          "military": 0,
-          "authority": 4
+          "justice": 4,
+          "people": -2,
+          "treasury": 1,
+          "military": 2,
+          "authority": 8
         },
-        "log": "İnşaatlar gece gündüz sürdürüldü; 1 yılda yüz bin konutun tamamlanması için nakit akışı korundu."
+        "log": "İnşaat takvimi aksatılmadan korundu; ancak muhalefetle gerginlik tırmandı."
       },
       {
-        "label": "Fay hatları üzerinde yapılaşmaya kesinlikle izin verme; şehir merkezlerini sağlam zeminli dağ eteklerine kaydır.",
-        "preview": "Adalet +2, Halk +8, Güvenlik +6, Otorite +6 | Hazine -4",
-        "effects": {
-          "justice": 2,
-          "people": 8,
-          "treasury": -4,
-          "military": 6,
-          "authority": 6
-        },
-        "log": "Bilimsel zemin etütlerine uyuldu; yeni şehirler radye temel ve tünel kalıp ile kaya zeminlere kuruldu."
-      },
-      {
-        "label": "Şehir merkezlerinin tarihi ve kültürel dokusunu koruyarak ayağa kaldıran 'Kentsel Dönüşüm ve Rezerv Alan Kanunu'nu çıkar.",
-        "preview": "Adalet +6, Halk +4, Hazine +5, Otorite +6",
+        "label": "Yeni konut teslim alan tüm ailelere ilk 2 yıl faizsiz ve geri ödemesiz taşınma ve eşya desteği sağla.",
+        "preview": "Adalet +6, Halk +9, Otorite +5 | Hazine -6",
         "effects": {
           "justice": 6,
-          "people": 4,
-          "treasury": 5,
+          "people": 9,
+          "treasury": -6,
           "military": 0,
-          "authority": 6
+          "authority": 5
         },
-        "log": "Yasal engeller kaldırıldı; Antakya, Maraş ve Malatya meydanları devlet eliyle baştan inşa edilmeye başlandı."
+        "log": "Depremzedelerin ekonomik yükü hafifletildi; sosyal devlet anlayışı takdir topladı."
       }
     ]
   },
@@ -33552,47 +33552,47 @@ const EVENT_DECK_MODERN = [
       }
     ],
     "source": "Ulaştırma Bakanlığı",
-    "title": "Marmaray: Asya ile Avrupa'yı Bağlayan Asrın Projesi",
-    "desc": "İstanbul Boğazı'nın 60 metre derinliğine batırılan tüp tünellerle iki kıta demiryoluyla birleştirildi.",
+    "title": "İstanbul Boğazı Demiryolu Tıkanması ve Marmaray Tüp Geçiş İkilemi",
+    "desc": "Avrupa ile Asya arasındaki yük ve banliyö hatları kilitlendi; her gün milyonlarca yolcu feribot ve köprü trafiğinde sıkışıyor. Japon JICA ve Avrupa fonları Boğaz tüp geçişi için Hazine garantisi ve uluslararası teknik denetim şartı koşuyor. İstihbarat, deniz tabanındaki fay hatları ve siber sabotaj risklerine dikkat çekiyor.",
     "options": [
       {
-        "label": "Yenikapı kazılarında ortaya çıkan Theodosius Limanı ve 37 antik batığı arkeolojik kurallarla koruma altına al.",
-        "preview": "Adalet +8, Halk +6, Otorite +2 | Hazine -2",
+        "label": "JICA ve mühendislik konsorsiyumuyla bağımsız teknik teftiş altında Marmaray tüp geçiş projesini derhal başlat.",
+        "preview": "Adalet +9, Halk +8, Otorite +3 | Hazine -2",
         "effects": {
-          "justice": 8,
-          "people": 6,
+          "justice": 9,
+          "people": 8,
           "treasury": -2,
           "military": 0,
-          "authority": 2
+          "authority": 3
         },
-        "log": "Tarihi miras korundu; İstanbul'un 8500 yıllık tarihi tüm dünyanın hayranlıkla izlediği müzeye dönüştürüldü."
+        "log": "Marmaray inşaatı başladı; iki kıta deniz tabanından birleştirilerek asrın raylı sistemi devreye alındı."
       },
       {
-        "label": "Günde 1 milyon yolcu taşıyan hatta tren seferlerini sıklaştır; iki yaka arasındaki toplu taşıma biletlerini sübvanse et.",
-        "preview": "Adalet +2, Halk +9, Hazine +4, Güvenlik +2, Otorite +5",
+        "label": "Denizcilik işletmeleri ve şehir hatlarıyla meşveret et; deniz otobüsü ve arabalı vapur filolarını sübvanse ederek tüp geçişi ertele.",
+        "preview": "Adalet +3, Halk +6, Hazine +3, Otorite +7",
+        "effects": {
+          "justice": 3,
+          "people": 6,
+          "treasury": 3,
+          "military": 0,
+          "authority": 7
+        },
+        "log": "Deniz taşımacılığı takviye edildi; ancak boğaz trafiğinde uzun vadeli rahatlama sağlanamadı."
+      },
+      {
+        "label": "Projeyi dış borç yerine Hazine garantili kamu-özel ortaklığıyla finanse et; bütçe açığını frenleyerek inşaat takvimini hızlandır.",
+        "preview": "Adalet +2, Halk +8, Güvenlik +2, Otorite +4 | Hazine -6",
         "effects": {
           "justice": 2,
-          "people": 9,
-          "treasury": 4,
+          "people": 8,
+          "treasury": -6,
           "military": 2,
-          "authority": 5
-        },
-        "log": "Vatandaşın ulaşım çilesi bitti; Boğaz geçişi 4 dakikaya inerek İstanbulluların hayatı kolaylaştı."
-      },
-      {
-        "label": "Tünel geçiş ücretleri ve banliyö hattı gelirleriyle Hazine garantilerini ve dış kredi geri ödemelerini dengeli yürüt.",
-        "preview": "Hazine +8, Otorite +4 | Halk -5",
-        "effects": {
-          "justice": 0,
-          "people": -5,
-          "treasury": 8,
-          "military": 0,
           "authority": 4
         },
-        "log": "Proje kendi kendini finanse eder hale geldi; kamu bütçesine döviz katkısı sağlandı."
+        "log": "Finansman modeli kuruldu; Hazine nakit çıkışı yapmadan küresel fonlar yatırıma çekildi."
       },
       {
-        "label": "Boğaz'ın 60 metre altındaki tüp tünellerde sismik erken uyarı ve su geçirmez tsunami kapaklarıyla askeri düzeyde güvenlik sağla.",
+        "label": "Boğaz tabanına döşenecek batırma tüplerin çevresine gizli denizaltı tespit sonarları ve sismik izleme sensörleri yerleştir.",
         "preview": "Adalet +2, Halk +8, Güvenlik +6, Otorite +6 | Hazine -4",
         "effects": {
           "justice": 2,
@@ -33601,10 +33601,10 @@ const EVENT_DECK_MODERN = [
           "military": 6,
           "authority": 6
         },
-        "log": "Dünyanın en güvenli tüneli işletildi; 9 büyüklüğündeki depreme dayanıklı mühendislik güvenceye alındı."
+        "log": "Stratejik tüp geçiş askeri koruma altına alındı; yabancı denizaltıların boğaz sızıntıları kontrol altına alındı."
       },
       {
-        "label": "Türkiye'nin demiryolu ve metro hatlarını entegre eden 'Milli Raylı Sistemler ve Tünel Altyapı Kanunu' çıkar.",
+        "label": "Kıtalararası demiryolu koridorlarını milli stratejik güvenlik alanı ilan eden 'Boğaz Raylı Altyapı Koruma Kanunu' çıkar.",
         "preview": "Adalet +8, Halk +8, Güvenlik +1, Otorite +6 | Hazine -4",
         "effects": {
           "justice": 8,
@@ -33613,7 +33613,7 @@ const EVENT_DECK_MODERN = [
           "military": 1,
           "authority": 6
         },
-        "log": "Demiryolu ulaşımı stratejik öncelik oldu; Londra'dan Pekin'e demir ipekyolu kesintisiz bağlandı."
+        "log": "Marmaray yasal güvenceye bağlandı; projenin işletme ve güvenlik standartları kanunlaştı."
       }
     ]
   },
@@ -33630,35 +33630,35 @@ const EVENT_DECK_MODERN = [
       }
     ],
     "source": "Ulaştırma Bakanlığı",
-    "title": "Marmaray Kazılarında Çıkan Theodosius Limanı Arkeolojisi",
-    "desc": "Yenikapı istasyonu kazılarında 37 antik batık gemi ve binlerce tarihi eser ortaya çıkarıldı.",
+    "title": "Yenikapı Marmaray Kazısında Theodosius Limanı Buluntuları ve Gecikme Krizi",
+    "desc": "Marmaray Yenikapı istasyon kazılarında 37 Bizans batığı, neolitik mezarlar ve paha biçilmez tarihi liman ortaya çıktı. Arkeologlar kazının yıllarca sürmesini talep ederken, müteahhitler her gecikme günü için devasa tazminat faturası çıkarıyor; şehir trafiği felç olmuş durumda.",
     "options": [
       {
-        "label": "Yenikapı kazılarında ortaya çıkan Theodosius Limanı ve 37 antik batığı arkeolojik kurallarla koruma altına al.",
-        "preview": "Adalet +8, Halk +6, Otorite +2 | Hazine -2",
+        "label": "Kültür Varlıklarını Koruma Kurulu ve üniversitelerin bilimsel heyetine tam yetki ver; tarihi batıklar tek tek çıkarılana kadar inşaatı beklet.",
+        "preview": "Adalet +9, Halk +8, Otorite +3 | Hazine -2",
         "effects": {
-          "justice": 8,
-          "people": 6,
+          "justice": 9,
+          "people": 8,
           "treasury": -2,
           "military": 0,
-          "authority": 2
+          "authority": 3
         },
-        "log": "Tarihi miras korundu; İstanbul'un 8500 yıllık tarihi tüm dünyanın hayranlıkla izlediği müzeye dönüştürüldü."
+        "log": "Dünya arkeoloji tarihinin en büyük batık koleksiyonu kurtarıldı; ancak proje 5 yıl gecikerek maliyeti katlandı."
       },
       {
-        "label": "Günde 1 milyon yolcu taşıyan hatta tren seferlerini sıklaştır; iki yaka arasındaki toplu taşıma biletlerini sübvanse et.",
-        "preview": "Adalet +2, Halk +9, Hazine +4, Güvenlik +2, Otorite +5",
+        "label": "Ulaştırma bürokrasisi ve arkeologlar arasında uzlaşı sağla; istasyon planını revize ederek arkeopark ve müze istasyon formülü uygula.",
+        "preview": "Adalet +3, Halk +9, Otorite +6 | Hazine -4",
         "effects": {
-          "justice": 2,
+          "justice": 3,
           "people": 9,
-          "treasury": 4,
-          "military": 2,
-          "authority": 5
+          "treasury": -4,
+          "military": 0,
+          "authority": 6
         },
-        "log": "Vatandaşın ulaşım çilesi bitti; Boğaz geçişi 4 dakikaya inerek İstanbulluların hayatı kolaylaştı."
+        "log": "Tarih ile modern ulaşım buluştu; Yenikapı İstasyonu dünyanın en zengin açık hava müze istasyonuna dönüştü."
       },
       {
-        "label": "Tünel geçiş ücretleri ve banliyö hattı gelirleriyle Hazine garantilerini ve dış kredi geri ödemelerini dengeli yürüt.",
+        "label": "Müteahhit konsorsiyumunun gecikme cezası taleplerini Hazine avukatlarıyla tahkime taşı; kamu bütçesini haksız tazminattan koru.",
         "preview": "Hazine +8, Otorite +4 | Halk -5",
         "effects": {
           "justice": 0,
@@ -33667,31 +33667,31 @@ const EVENT_DECK_MODERN = [
           "military": 0,
           "authority": 4
         },
-        "log": "Proje kendi kendini finanse eder hale geldi; kamu bütçesine döviz katkısı sağlandı."
+        "log": "Hazine tazminat yükünden kurtarıldı; konsorsiyumla ek süre üzerinde mali uzlaşmaya varıldı."
       },
       {
-        "label": "Boğaz'ın 60 metre altındaki tüp tünellerde sismik erken uyarı ve su geçirmez tsunami kapaklarıyla askeri düzeyde güvenlik sağla.",
-        "preview": "Adalet +2, Halk +8, Güvenlik +6, Otorite +6 | Hazine -4",
+        "label": "Tarihi kazı alanında kaçakçılık ve yağma riskine karşı emniyet ve müzeler müdürlüğüyle özel güvenlik kordonu kur.",
+        "preview": "Adalet +5, Halk +5, Güvenlik +9, Otorite +8 | Hazine -5",
         "effects": {
-          "justice": 2,
-          "people": 8,
-          "treasury": -4,
-          "military": 6,
-          "authority": 6
+          "justice": 5,
+          "people": 5,
+          "treasury": -5,
+          "military": 9,
+          "authority": 8
         },
-        "log": "Dünyanın en güvenli tüneli işletildi; 9 büyüklüğündeki depreme dayanıklı mühendislik güvenceye alındı."
+        "log": "Paha biçilmez Bizans sikkeleri ve neolitik eserlerin karaborsaya düşmesi engellendi."
       },
       {
-        "label": "Türkiye'nin demiryolu ve metro hatlarını entegre eden 'Milli Raylı Sistemler ve Tünel Altyapı Kanunu' çıkar.",
-        "preview": "Adalet +8, Halk +8, Güvenlik +1, Otorite +6 | Hazine -4",
+        "label": "Mega altyapı projelerinde tarihi miras çıktığında işletilecek prosedürleri tanzim eden 'Tarihi Miras ve Altyapı Reform Kanunu' çıkar.",
+        "preview": "Adalet +7, Halk +5, Otorite +6 | Hazine -4",
         "effects": {
-          "justice": 8,
-          "people": 8,
+          "justice": 7,
+          "people": 5,
           "treasury": -4,
-          "military": 1,
+          "military": 0,
           "authority": 6
         },
-        "log": "Demiryolu ulaşımı stratejik öncelik oldu; Londra'dan Pekin'e demir ipekyolu kesintisiz bağlandı."
+        "log": "Yasal çerçeve netleşti; gelecekteki metro projelerinde arkeolojik buluntuların yönetimi kurala bağlandı."
       }
     ]
   },
@@ -33708,59 +33708,59 @@ const EVENT_DECK_MODERN = [
       }
     ],
     "source": "Ulaştırma Bakanlığı",
-    "title": "Avrasya Tüneli: İki Kıta Arasında Araç Geçişi",
-    "desc": "Boğaz'ın altından otomobillerin geçişini sağlayan çift katlı tüp tünel trafiği 15 dakikaya indirdi.",
+    "title": "Tarihi Yarımada Araç Kilitlenmesi ve Avrasya Karayolu Tüp Tüneli Kararı",
+    "desc": "İstanbul Boğazı üzerindeki iki asma köprüde trafik durma noktasına geldi; acil ambulans, itfaiye ve protokol geçişleri saatlerce aksıyor. Denizaltından iki katlı lastik tekerlekli karayolu tüneli projesi masada; ancak fay hattı sarsıntıları ve yangın/güvenlik riskleri yoğun tartışılıyor.",
     "options": [
       {
-        "label": "Yenikapı kazılarında ortaya çıkan Theodosius Limanı ve 37 antik batığı arkeolojik kurallarla koruma altına al.",
-        "preview": "Adalet +8, Halk +6, Otorite +2 | Hazine -2",
+        "label": "Deprem uzmanları ve uluslararası tünelcilik birliğinin en katı güvenlik standartlarını şart koşarak Avrasya Tüneli ihalesini aç.",
+        "preview": "Adalet +9, Halk +8, Otorite +3 | Hazine -2",
         "effects": {
-          "justice": 8,
-          "people": 6,
+          "justice": 9,
+          "people": 8,
           "treasury": -2,
           "military": 0,
-          "authority": 2
+          "authority": 3
         },
-        "log": "Tarihi miras korundu; İstanbul'un 8500 yıllık tarihi tüm dünyanın hayranlıkla izlediği müzeye dönüştürüldü."
+        "log": "7.5 büyüklüğünde depreme dayanıklı çift katlı tünel projesi bağımsız denetim onayından geçti."
       },
       {
-        "label": "Günde 1 milyon yolcu taşıyan hatta tren seferlerini sıklaştır; iki yaka arasındaki toplu taşıma biletlerini sübvanse et.",
-        "preview": "Adalet +2, Halk +9, Hazine +4, Güvenlik +2, Otorite +5",
+        "label": "Tarihi Yarımada esnafı ve sivil toplumla istişare et; tünel giriş ve çıkışlarındaki tarihi dokuyu koruyacak güzergah revizyonu yap.",
+        "preview": "Adalet +3, Halk +9, Otorite +6 | Hazine -4",
         "effects": {
-          "justice": 2,
+          "justice": 3,
           "people": 9,
-          "treasury": 4,
-          "military": 2,
-          "authority": 5
-        },
-        "log": "Vatandaşın ulaşım çilesi bitti; Boğaz geçişi 4 dakikaya inerek İstanbulluların hayatı kolaylaştı."
-      },
-      {
-        "label": "Tünel geçiş ücretleri ve banliyö hattı gelirleriyle Hazine garantilerini ve dış kredi geri ödemelerini dengeli yürüt.",
-        "preview": "Hazine +8, Otorite +4 | Halk -5",
-        "effects": {
-          "justice": 0,
-          "people": -5,
-          "treasury": 8,
+          "treasury": -4,
           "military": 0,
-          "authority": 4
+          "authority": 6
         },
-        "log": "Proje kendi kendini finanse eder hale geldi; kamu bütçesine döviz katkısı sağlandı."
+        "log": "Çatladıkapı ve Yenikapı sahil şeridinde tarihi silüet korundu; kamuoyu desteği sağlandı."
       },
       {
-        "label": "Boğaz'ın 60 metre altındaki tüp tünellerde sismik erken uyarı ve su geçirmez tsunami kapaklarıyla askeri düzeyde güvenlik sağla.",
-        "preview": "Adalet +2, Halk +8, Güvenlik +6, Otorite +6 | Hazine -4",
+        "label": "Yap-İşlet-Devret modeliyle projeyi ihale et; geçiş ücretini dövize endeksleyip Hazineye nakit harcatmadan tüneli tamamlat.",
+        "preview": "Adalet +2, Halk +8, Güvenlik +2, Otorite +4 | Hazine -6",
         "effects": {
           "justice": 2,
           "people": 8,
-          "treasury": -4,
-          "military": 6,
-          "authority": 6
+          "treasury": -6,
+          "military": 2,
+          "authority": 4
         },
-        "log": "Dünyanın en güvenli tüneli işletildi; 9 büyüklüğündeki depreme dayanıklı mühendislik güvenceye alındı."
+        "log": "Avrasya Tüneli rekor sürede inşa edildi; ancak kur yükselişlerinde Hazine geçiş farkı ödemek durumunda kaldı."
       },
       {
-        "label": "Türkiye'nin demiryolu ve metro hatlarını entegre eden 'Milli Raylı Sistemler ve Tünel Altyapı Kanunu' çıkar.",
+        "label": "Tünel içinde akıllı yangın söndürme, sığınma cepleri ve 24 saat zırhlı eskort noktalarıyla terör sabotaj kalkanı kur.",
+        "preview": "Adalet +5, Halk +5, Güvenlik +9, Otorite +8 | Hazine -5",
+        "effects": {
+          "justice": 5,
+          "people": 5,
+          "treasury": -5,
+          "military": 9,
+          "authority": 8
+        },
+        "log": "Dünyanın en derin denizaltı karayolu tüneli askeri ve sivil acil durum protokolleriyle tahkim edildi."
+      },
+      {
+        "label": "Denizaltı karayolu tünellerinin işletme ve güvenlik rejimini düzenleyen 'Kritik Karayolu Tünelleri Kanunu' çıkar.",
         "preview": "Adalet +8, Halk +8, Güvenlik +1, Otorite +6 | Hazine -4",
         "effects": {
           "justice": 8,
@@ -33769,7 +33769,7 @@ const EVENT_DECK_MODERN = [
           "military": 1,
           "authority": 6
         },
-        "log": "Demiryolu ulaşımı stratejik öncelik oldu; Londra'dan Pekin'e demir ipekyolu kesintisiz bağlandı."
+        "log": "Tünel işletmesi yasal çerçeveye kavuştu; Avrupa ile Asya arası araç geçişi 5 dakikaya indi."
       }
     ]
   },
@@ -33786,47 +33786,47 @@ const EVENT_DECK_MODERN = [
       }
     ],
     "source": "Ulaştırma Bakanlığı",
-    "title": "Yavuz Sultan Selim Köprüsü (3. Boğaz Köprüsü)",
-    "desc": "59 metre tabliye genişliği ve üzerindeki raylı sistem hattıyla dünyanın en geniş asma köprüsü açıldı.",
+    "title": "Kuzey Marmara Transit Koridoru ve 3. Boğaz Köprüsü Güzergah Krizi",
+    "desc": "Fatih Sultan Mehmet Köprüsü ağır tonajlı transit tırların yoğunluğu altında eziliyor; şehir içi trafik her gün kilitleniyor. Boğaz'ın kuzeyine 3. bir asma köprü yapılması planlanıyor; ancak güzergahın su havzaları ve orman arazilerinden geçmesi sert çevreci itirazlara yol açıyor.",
     "options": [
       {
-        "label": "Köprü ve otoyol yapım sözleşmelerindeki Hazine geçiş garantilerini bağımsız Sayıştay denetimine tabi tutarak şeffaflığı sağla.",
-        "preview": "Adalet +9, Halk +8, Otorite +3 | Hazine -2",
+        "label": "Sayıştay ve bağımsız çevre denetçilerini görevlendir; kesilen her ağaç yerine beş katı fidan dikme taahhüdüyle Yavuz Sultan Selim Köprüsü'nü başlat.",
+        "preview": "Adalet +8, Halk +5, Hazine +2, Otorite +6",
         "effects": {
-          "justice": 9,
-          "people": 8,
-          "treasury": -2,
+          "justice": 8,
+          "people": 5,
+          "treasury": 2,
           "military": 0,
-          "authority": 3
+          "authority": 6
         },
-        "log": "Sayıştay raporlarıyla sözleşmeler incelendi; geçiş garantisi ve maliyet dengesi kamuoyuyla paylaşıldı."
+        "log": "YSS Köprüsü inşaatına başlandı; güzergah üzerindeki su havzaları koruma taahhüdüyle denetlendi."
       },
       {
-        "label": "Bayramlarda ve tatillerde köprü ve otoyolları ücretsiz yaparak vatandaşın memleketine güvenle ulaşmasını temin et.",
-        "preview": "Adalet +2, Halk +9, Hazine +4, Güvenlik +2, Otorite +5",
+        "label": "Şehir plancıları ve çevre örgütleriyle çalıştay topla; tırları Ro-Ro deniz hatlarına yönlendirerek 3. köprüyü askıya al.",
+        "preview": "Adalet +3, Halk +6, Hazine +3, Otorite +7",
         "effects": {
-          "justice": 2,
-          "people": 9,
-          "treasury": 4,
-          "military": 2,
-          "authority": 5
+          "justice": 3,
+          "people": 6,
+          "treasury": 3,
+          "military": 0,
+          "authority": 7
         },
-        "log": "Milyonlarca vatandaş bayram sevinci yaşadı; feribot kuyrukları tarihe karıştı."
+        "log": "Deniz taşımacılığı denendi; fakat karayolu transit tır akışının yarattığı şehir içi tıkanıklık aşılamadı."
       },
       {
-        "label": "Geçiş garantilerinin Hazineye oluşturduğu kur farkı yükünü frenlemek için sözleşmelerdeki araç başı tarifeyi TL bazında revize et.",
-        "preview": "Hazine +8, Otorite +4 | Halk -5",
+        "label": "Köprü ve Kuzey Marmara Otoyolu'nu YİD modeliyle konsorsiyuma devret; transit ağır vasıtaların geçişini zorunlu kılarak bütçeye gelir sağla.",
+        "preview": "Adalet +1, Halk +4, Hazine +8, Otorite +5",
         "effects": {
-          "justice": 0,
-          "people": -5,
+          "justice": 1,
+          "people": 4,
           "treasury": 8,
           "military": 0,
-          "authority": 4
+          "authority": 5
         },
-        "log": "Hazine borç yükü hafifletildi; kamu-özel işbirliği projelerinde bütçe dengesi korundu."
+        "log": "İstanbul içi tır trafiğinden kurtuldu; YSS Köprüsü 59 metrelik genişliğiyle ağır vasıtaları şehir dışına taşıdı."
       },
       {
-        "label": "Stratejik asma köprülerin kulelerinde radar, kamera ve hava savunma sensörleriyle 24 saat kesintisiz koruma çemberi kur.",
+        "label": "Köprü kulelerine ve viyadüklere askeri hava radar ve uçaksavar koruma bataryaları konuşlandırarak stratejik geçişi koru.",
         "preview": "Adalet +3, Güvenlik +4, Otorite +7 | Halk -2, Hazine -3",
         "effects": {
           "justice": 3,
@@ -33835,19 +33835,19 @@ const EVENT_DECK_MODERN = [
           "military": 4,
           "authority": 7
         },
-        "log": "Boğaz ve körfez köprüleri terör ve sabotaj tehdidine karşı yüksek teknolojiyle korundu."
+        "log": "Üçüncü Boğaz Köprüsü sabotaj ve terör saldırılarına karşı en üst seviye güvenlik kalkanıyla donatıldı."
       },
       {
-        "label": "Yap-İşlet-Devret (YİD) projelerinde kamu menfaatini maksimize eden 'Kamu-Özel İşbirliği Çerçeve Reform Kanunu' çıkar.",
-        "preview": "Adalet +5, Halk +3, Güvenlik +7, Otorite +7 | Hazine -4",
+        "label": "Kuzey ormanlarını ve su havzalarını imara kapatan 'Kuzey Marmara Koruma ve Transit Lojistik Kanunu' çıkar.",
+        "preview": "Adalet +7, Halk +5, Otorite +6 | Hazine -4",
         "effects": {
-          "justice": 5,
-          "people": 3,
+          "justice": 7,
+          "people": 5,
           "treasury": -4,
-          "military": 7,
-          "authority": 7
+          "military": 0,
+          "authority": 6
         },
-        "log": "Gelecek mega projelerin ihale ve garanti şartları kanuni şeffaflık standartlarına bağlandı."
+        "log": "Otoyol çevresinde kaçak yapılaşma kanunla yasaklandı; sadece transit lojistik koridoru işletildi."
       }
     ]
   },
@@ -33864,11 +33864,11 @@ const EVENT_DECK_MODERN = [
       }
     ],
     "source": "Ulaştırma Bakanlığı",
-    "title": "Osmangazi Köprüsü: Körfez Geçişi 4 Dakika",
-    "desc": "İzmit Körfezi'ni boydan boya geçen asma köprüyle İstanbul-İzmir otoyolu bağlantısı tamamlandı.",
+    "title": "İzmit Körfezi Sanayi Kilitlenmesi ve Osmangazi Asma Köprüsü İhalesi",
+    "desc": "Kocaeli ile Yalova arasındaki feribot iskelelerinde araç kuyrukları kilometreleri buluyor; Marmara sanayisi saatte milyonlarca dolar lojistik kaybı yaşıyor. İzmit Körfezi'ni 4 dakikada geçirecek dev asma köprü projesi hazırlandı; ancak deprem fayı üzerinde olması ve yüksek Hazine garantisi riski var.",
     "options": [
       {
-        "label": "Köprü ve otoyol yapım sözleşmelerindeki Hazine geçiş garantilerini bağımsız Sayıştay denetimine tabi tutarak şeffaflığı sağla.",
+        "label": "Kuzey Anadolu Fayı'nın zemin etütlerini bağımsız Japon sismoloji enstitüsüne incelet; onay verilirse Osmangazi Köprüsü'nü inşa et.",
         "preview": "Adalet +9, Halk +8, Otorite +3 | Hazine -2",
         "effects": {
           "justice": 9,
@@ -33877,10 +33877,10 @@ const EVENT_DECK_MODERN = [
           "military": 0,
           "authority": 3
         },
-        "log": "Sayıştay raporlarıyla sözleşmeler incelendi; geçiş garantisi ve maliyet dengesi kamuoyuyla paylaşıldı."
+        "log": "En ileri deprem yalıtım teknolojisiyle dünyanın dördüncü en uzun asma köprüsü inşaatına başlandı."
       },
       {
-        "label": "Bayramlarda ve tatillerde köprü ve otoyolları ücretsiz yaparak vatandaşın memleketine güvenle ulaşmasını temin et.",
+        "label": "Marmara sanayi odaları ve nakliyeciler kooperatifiyle masaya otur; feribot kapasitesini üç katına çıkarıp köprüyü ertele.",
         "preview": "Adalet +2, Halk +9, Hazine +4, Güvenlik +2, Otorite +5",
         "effects": {
           "justice": 2,
@@ -33889,10 +33889,10 @@ const EVENT_DECK_MODERN = [
           "military": 2,
           "authority": 5
         },
-        "log": "Milyonlarca vatandaş bayram sevinci yaşadı; feribot kuyrukları tarihe karıştı."
+        "log": "Feribot filosu artırıldı; fakat bayram ve tatil yoğunluklarında körfez çilesi tam olarak çözülemedi."
       },
       {
-        "label": "Geçiş garantilerinin Hazineye oluşturduğu kur farkı yükünü frenlemek için sözleşmelerdeki araç başı tarifeyi TL bazında revize et.",
+        "label": "İstanbul-İzmir otoyoluyla entegre YİD ihalesi aç; köprü geçiş süresini 4 dakikaya indirerek Ege turizm ve ticaretini şahlandır.",
         "preview": "Hazine +8, Otorite +4 | Halk -5",
         "effects": {
           "justice": 0,
@@ -33901,31 +33901,31 @@ const EVENT_DECK_MODERN = [
           "military": 0,
           "authority": 4
         },
-        "log": "Hazine borç yükü hafifletildi; kamu-özel işbirliği projelerinde bütçe dengesi korundu."
+        "log": "Osmangazi Köprüsü tamamlandı; İstanbul-İzmir seyahati 8 saatten 3.5 saate inerek milli lojistik devrimi yapıldı."
       },
       {
-        "label": "Stratejik asma köprülerin kulelerinde radar, kamera ve hava savunma sensörleriyle 24 saat kesintisiz koruma çemberi kur.",
-        "preview": "Adalet +3, Güvenlik +4, Otorite +7 | Halk -2, Hazine -3",
-        "effects": {
-          "justice": 3,
-          "people": -2,
-          "treasury": -3,
-          "military": 4,
-          "authority": 7
-        },
-        "log": "Boğaz ve körfez köprüleri terör ve sabotaj tehdidine karşı yüksek teknolojiyle korundu."
-      },
-      {
-        "label": "Yap-İşlet-Devret (YİD) projelerinde kamu menfaatini maksimize eden 'Kamu-Özel İşbirliği Çerçeve Reform Kanunu' çıkar.",
-        "preview": "Adalet +5, Halk +3, Güvenlik +7, Otorite +7 | Hazine -4",
+        "label": "Körfez geçiş kulelerine ve otoyol viyadüklerine sabotaj erken uyarı sensörleri ve deniz devriye botları yerleştir.",
+        "preview": "Adalet +5, Halk +5, Güvenlik +9, Otorite +8 | Hazine -5",
         "effects": {
           "justice": 5,
-          "people": 3,
-          "treasury": -4,
-          "military": 7,
-          "authority": 7
+          "people": 5,
+          "treasury": -5,
+          "military": 9,
+          "authority": 8
         },
-        "log": "Gelecek mega projelerin ihale ve garanti şartları kanuni şeffaflık standartlarına bağlandı."
+        "log": "Körfez geçiş koridoru terör ve sabotaj tehditlerine karşı 24 saat kesintisiz koruma çemberine alındı."
+      },
+      {
+        "label": "Kamu-özel ortaklığı projelerinde Hazine garanti risklerini sınırlayan 'Mega Altyapı Finansman Reform Kanunu' çıkar.",
+        "preview": "Adalet +6, Halk +4, Hazine +5, Otorite +6",
+        "effects": {
+          "justice": 6,
+          "people": 4,
+          "treasury": 5,
+          "military": 0,
+          "authority": 6
+        },
+        "log": "Köprü ve otoyol sözleşmelerinde kur dalgalanmalarına karşı kamu yararını gözeten denetim mekanizması kuruldu."
       }
     ]
   },
@@ -33942,11 +33942,11 @@ const EVENT_DECK_MODERN = [
       }
     ],
     "source": "Ulaştırma Bakanlığı",
-    "title": "1915 Çanakkale Köprüsü: 2023 Metre Orta Açıklık",
-    "desc": "Cumhuriyetin 100. yılını simgeleyen ve kırmızı-beyaz kuleleriyle Çanakkale Boğazı'nı birleştiren köprü açıldı.",
+    "title": "Çanakkale Boğazı Lojistik Kilitlenmesi ve Ege Savunma Koridoru",
+    "desc": "Kış fırtınalarında Gelibolu-Lapseki feribot seferleri günlerce iptal oluyor; Trakya ve Ege sanayisi kilitleniyor, Ege adaları ve Akdeniz gerilimlerinde TSK'nın savunma ikmal hattı felç olma riski taşıyor. Çanakkale Boğazı'na 2023 metre açıklıklı dünyanın en uzun asma köprüsünü yapma projesi masaya geldi.",
     "options": [
       {
-        "label": "Köprü ve otoyol yapım sözleşmelerindeki Hazine geçiş garantilerini bağımsız Sayıştay denetimine tabi tutarak şeffaflığı sağla.",
+        "label": "Güney Kore ve Türk ortaklığıyla uluslararası mühendislik denetimi altında 1915 Çanakkale Köprüsü ve otoyolunu inşa et.",
         "preview": "Adalet +9, Halk +8, Otorite +3 | Hazine -2",
         "effects": {
           "justice": 9,
@@ -33955,46 +33955,46 @@ const EVENT_DECK_MODERN = [
           "military": 0,
           "authority": 3
         },
-        "log": "Sayıştay raporlarıyla sözleşmeler incelendi; geçiş garantisi ve maliyet dengesi kamuoyuyla paylaşıldı."
+        "log": "1915 Çanakkale Köprüsü kırmızı-beyaz kuleleriyle Çanakkale Boğazı'nı birleştirdi; feribot çilesi 6 dakikaya indi."
       },
       {
-        "label": "Bayramlarda ve tatillerde köprü ve otoyolları ücretsiz yaparak vatandaşın memleketine güvenle ulaşmasını temin et.",
-        "preview": "Adalet +2, Halk +9, Hazine +4, Güvenlik +2, Otorite +5",
-        "effects": {
-          "justice": 2,
-          "people": 9,
-          "treasury": 4,
-          "military": 2,
-          "authority": 5
-        },
-        "log": "Milyonlarca vatandaş bayram sevinci yaşadı; feribot kuyrukları tarihe karıştı."
-      },
-      {
-        "label": "Geçiş garantilerinin Hazineye oluşturduğu kur farkı yükünü frenlemek için sözleşmelerdeki araç başı tarifeyi TL bazında revize et.",
-        "preview": "Hazine +8, Otorite +4 | Halk -5",
-        "effects": {
-          "justice": 0,
-          "people": -5,
-          "treasury": 8,
-          "military": 0,
-          "authority": 4
-        },
-        "log": "Hazine borç yükü hafifletildi; kamu-özel işbirliği projelerinde bütçe dengesi korundu."
-      },
-      {
-        "label": "Stratejik asma köprülerin kulelerinde radar, kamera ve hava savunma sensörleriyle 24 saat kesintisiz koruma çemberi kur.",
-        "preview": "Adalet +3, Güvenlik +4, Otorite +7 | Halk -2, Hazine -3",
+        "label": "Denizcilik müsteşarlığı ve bölge balıkçılarıyla istişare et; boğaz akıntılarını bozmamak için feribot limanlarını tahkim edip köprüyü ertele.",
+        "preview": "Adalet +3, Halk +6, Hazine +3, Otorite +7",
         "effects": {
           "justice": 3,
-          "people": -2,
-          "treasury": -3,
-          "military": 4,
+          "people": 6,
+          "treasury": 3,
+          "military": 0,
           "authority": 7
         },
-        "log": "Boğaz ve körfez köprüleri terör ve sabotaj tehdidine karşı yüksek teknolojiyle korundu."
+        "log": "Feribotlar iyileştirildi; fakat şiddetli kış lodoslarında Ege sevkiyatı yine günlerce durma noktasına geldi."
       },
       {
-        "label": "Yap-İşlet-Devret (YİD) projelerinde kamu menfaatini maksimize eden 'Kamu-Özel İşbirliği Çerçeve Reform Kanunu' çıkar.",
+        "label": "Köprüyü Hazine garantili YİD modeliyle finanse et; Trakya-Ege lojistik hattını bağlayarak yıllık yüz milyonlarca avro yakıt ve zaman tasarrufu sağla.",
+        "preview": "Adalet +1, Halk +4, Hazine +8, Otorite +5",
+        "effects": {
+          "justice": 1,
+          "people": 4,
+          "treasury": 8,
+          "military": 0,
+          "authority": 5
+        },
+        "log": "Ekonomik koridor açıldı; Çanakkale üzerinden Ege limanlarına kesintisiz Avrupa ihracat hattı kuruldu."
+      },
+      {
+        "label": "Köprü kulelerine gizli hava savunma radarları, boğaz gözetleme optikleri ve askeri konvoy öncelikli şeritler entegre et.",
+        "preview": "Adalet +2, Halk +8, Güvenlik +6, Otorite +6 | Hazine -4",
+        "effects": {
+          "justice": 2,
+          "people": 8,
+          "treasury": -4,
+          "military": 6,
+          "authority": 6
+        },
+        "log": "Çanakkale Boğazı askeri açıdan geçilmez kılındı; Ege savunma koridoru Mehmetçik için stratejik güvenceye bağlandı."
+      },
+      {
+        "label": "Boğaz ve stratejik suyolları üzerindeki asma köprüleri askeri stratejik tesis statüsüne alan 'Milli Boğaz Altyapısı Kanunu' çıkar.",
         "preview": "Adalet +5, Halk +3, Güvenlik +7, Otorite +7 | Hazine -4",
         "effects": {
           "justice": 5,
@@ -34003,7 +34003,7 @@ const EVENT_DECK_MODERN = [
           "military": 7,
           "authority": 7
         },
-        "log": "Gelecek mega projelerin ihale ve garanti şartları kanuni şeffaflık standartlarına bağlandı."
+        "log": "Çanakkale Köprüsü kanuni koruma altına alındı; Cumhuriyetin 100. yıl simgesi milli güvenliğin ayrılmaz parçası oldu."
       }
     ]
   },
@@ -34020,11 +34020,11 @@ const EVENT_DECK_MODERN = [
       }
     ],
     "source": "Ulaştırma Bakanlığı",
-    "title": "İstanbul Havalimanı (İGA) İnşası ve Dünyanın En Büyükleri",
-    "desc": "Karadeniz kıyısında eski kömür ocakları üzerine kurulan mega havalimanı ilk fazıyla hizmete girdi.",
+    "title": "Atatürk Havalimanı Kapasite İflası ve Karadeniz Mega Havalimanı Kararı",
+    "desc": "Atatürk Havalimanı günde 1500 uçağa ulaşarak slot kapasitesini tüketti; uçaklar Marmara üzerinde saatlerce havada yakıt harcıyor, kargo talebi karşılanamıyor. Avrupa ve Körfez havayollarının Türkiye'nin transit hub olmasını engellemeye çalıştığı istihbarat raporlarına yansırken, Karadeniz kıyısında dev havalimanı kararı gündemde.",
     "options": [
       {
-        "label": "Atatürk Havalimanı'ndan İstanbul Havalimanı'na yapılan 45 saatlik 'Büyük Göç' lojistiğini sıfır kaza ve hatayla adli güvenceye al.",
+        "label": "Uluslararası Sivil Havacılık Örgütü (ICAO) standartlarında bağımsız ÇED ve rüzgar etüdü yaptırarak İstanbul Havalimanı ihalesini başlat.",
         "preview": "Adalet +9, Halk +8, Otorite +3 | Hazine -2",
         "effects": {
           "justice": 9,
@@ -34033,10 +34033,10 @@ const EVENT_DECK_MODERN = [
           "military": 0,
           "authority": 3
         },
-        "log": "Dünya havacılık tarihinin en büyük lojistik taşınması kusursuz tamamlandı; uçuşlar aksatılmadan yeni meydana geçti."
+        "log": "Yıllık 150 milyon yolcu kapasiteli İstanbul Havalimanı (İGA) inşasına başlandı; Türkiye küresel hava lojistiğinde liderliğe yürüdü."
       },
       {
-        "label": "Atatürk Havalimanı arazisini ranta açmayıp halkın kullanımına 2 milyon metrekarelik dev Millet Bahçesi ve acil durum hastanesi yap.",
+        "label": "Havacılık sendikaları ve havayolu şirketleriyle istişare et; Atatürk Havalimanı'na ek pist ve Sabiha Gökçen'e 2. pist yaparak yeni meydanı ertele.",
         "preview": "Adalet +3, Halk +9, Otorite +6 | Hazine -4",
         "effects": {
           "justice": 3,
@@ -34045,10 +34045,10 @@ const EVENT_DECK_MODERN = [
           "military": 0,
           "authority": 6
         },
-        "log": "Şehre devasa bir nefes alanı kazandırıldı; pandemi döneminde 1008 yataklı acil hastane hızla açıldı."
+        "log": "Mevcut meydanlar genişletildi; ancak küresel aktarma merkezi olma potansiyeli ertelenmiş oldu."
       },
       {
-        "label": "Yılda 90 milyon yolcu ağırlayan İGA'nın devlete ödediği yıllık 1 milyar Euro'luk kira gelirini Hazine kasasına aktar.",
+        "label": "YİD modeliyle 5'li Türk konsorsiyumuna ihale et; devlete 22 milyar avro kira geliri ve yüz binlerce istihdam sağla.",
         "preview": "Hazine +8, Otorite +4 | Halk -5",
         "effects": {
           "justice": 0,
@@ -34057,22 +34057,22 @@ const EVENT_DECK_MODERN = [
           "military": 0,
           "authority": 4
         },
-        "log": "Havalimanı devlete para basan bir kuruluşa dönüştü; Hazineye rekor döviz geliri girdi."
+        "log": "Kamu bütçesinden tek kuruş çıkmadan dünyanın en büyük havalimanı kompleksi inşa edilerek Hazineye dev kira geliri aktarıldı."
       },
       {
-        "label": "Havalimanı çevresinde siber radar, İHA savar ve uçaksavar bataryalarıyla dünyanın en korunaklı hava sahasını tesis et.",
-        "preview": "Adalet +2, Halk +8, Güvenlik +6, Otorite +6 | Hazine -4",
+        "label": "Mega havalimanı sahasında yabancı istihbarat servislerinin sabotaj ve siber saldırı girişimlerine karşı MİT ve USOM güvenlik kalkanı kur.",
+        "preview": "Adalet +5, Halk +5, Güvenlik +9, Otorite +8 | Hazine -5",
         "effects": {
-          "justice": 2,
-          "people": 8,
-          "treasury": -4,
-          "military": 6,
-          "authority": 6
+          "justice": 5,
+          "people": 5,
+          "treasury": -5,
+          "military": 9,
+          "authority": 8
         },
-        "log": "Havacılık güvenliği küresel çapta tescillendi; havalimanı uluslararası transit trafiğin 1 numaralı merkezi oldu."
+        "log": "Havalimanının hava trafik kontrol yazılımları ve radar sistemleri siber casusluğa karşı milli yazılımlarla korundu."
       },
       {
-        "label": "Türkiye'yi küresel havacılık ve lojistik üssü yapan 'Sivil Havacılık ve Uluslararası Transit Merkezleri Kanunu' çıkar.",
+        "label": "Türkiye'yi Avrasya'nın hava kargo ve aktarma üssü yapan 'Milli Havacılık ve Slot Düzenleme Kanunu' çıkar.",
         "preview": "Adalet +8, Halk +8, Güvenlik +1, Otorite +6 | Hazine -4",
         "effects": {
           "justice": 8,
@@ -34081,7 +34081,7 @@ const EVENT_DECK_MODERN = [
           "military": 1,
           "authority": 6
         },
-        "log": "THY ve Türk sivil havacılığı dünya liderliğine taşındı; transit uçuş gelirleri yasal güvenceye alındı."
+        "log": "Havacılık mevzuatı güncellendi; THY dünyanın en çok ülkesine uçan bayrak taşıyıcısı unvanını perçinledi."
       }
     ]
   },
@@ -34098,11 +34098,11 @@ const EVENT_DECK_MODERN = [
       }
     ],
     "source": "Ulaştırma Bakanlığı",
-    "title": "Atatürk Havalimanı'nın Taşınması: Tarihi Büyük Göç",
-    "desc": "Cumhuriyet tarihinin en büyük lojistik taşınmasıyla yüzlerce uçak ve binlerce tır 45 saatte İGA'ya geçti.",
+    "title": "Atatürk Havalimanı'nın Taşınması: 'Büyük Göç' Lojistik Güvenliği ve Sabotaj Tehdidi",
+    "desc": "Dünya havacılık tarihinin en büyük meydan taşınması 45 saatte gerçekleşecek; binlerce tır dolusu hassas radar, yer hizmeti ve uçuş ekipmanı taşınacak. MİT ve Emniyet İstihbarat, taşınma sırasında yabancı servislerin veya terör hücrelerinin lojistik koridorda kaos yaratma istihbaratını bildiriyor.",
     "options": [
       {
-        "label": "Atatürk Havalimanı'ndan İstanbul Havalimanı'na yapılan 45 saatlik 'Büyük Göç' lojistiğini sıfır kaza ve hatayla adli güvenceye al.",
+        "label": "Devlet Denetleme Kurulu ve Mülkiye müfettişlerini güzergah boyunca görevlendirerek taşınmayı dakika dakika şeffaf denetle.",
         "preview": "Adalet +9, Halk +8, Otorite +3 | Hazine -2",
         "effects": {
           "justice": 9,
@@ -34111,10 +34111,10 @@ const EVENT_DECK_MODERN = [
           "military": 0,
           "authority": 3
         },
-        "log": "Dünya havacılık tarihinin en büyük lojistik taşınması kusursuz tamamlandı; uçuşlar aksatılmadan yeni meydana geçti."
+        "log": "Lojistik süreç kusursuz yürütüldü; 45 saatlik tarihi operasyon hiçbir kaza yaşanmadan tamamlandı."
       },
       {
-        "label": "Atatürk Havalimanı arazisini ranta açmayıp halkın kullanımına 2 milyon metrekarelik dev Millet Bahçesi ve acil durum hastanesi yap.",
+        "label": "Havayolu çalışanları, pilotlar ve yer hizmetleri sendikalarıyla koordinasyon masası kur; taşınma süresini 1 haftaya yay.",
         "preview": "Adalet +3, Halk +9, Otorite +6 | Hazine -4",
         "effects": {
           "justice": 3,
@@ -34123,10 +34123,10 @@ const EVENT_DECK_MODERN = [
           "military": 0,
           "authority": 6
         },
-        "log": "Şehre devasa bir nefes alanı kazandırıldı; pandemi döneminde 1008 yataklı acil hastane hızla açıldı."
+        "log": "Taşınma yavaşlatıldı; aksaklıklar azaldı fakat Atatürk Havalimanı'nın kapanış takvimi uzadı."
       },
       {
-        "label": "Yılda 90 milyon yolcu ağırlayan İGA'nın devlete ödediği yıllık 1 milyar Euro'luk kira gelirini Hazine kasasına aktar.",
+        "label": "Taşınma operasyonunun yol kapama ve güvenlik maliyetlerini havayolu şirketleri ve İGA konsorsiyumu arasında adil paylaştır.",
         "preview": "Hazine +8, Otorite +4 | Halk -5",
         "effects": {
           "justice": 0,
@@ -34135,10 +34135,10 @@ const EVENT_DECK_MODERN = [
           "military": 0,
           "authority": 4
         },
-        "log": "Havalimanı devlete para basan bir kuruluşa dönüştü; Hazineye rekor döviz geliri girdi."
+        "log": "Bütçe dengesi korundu; kamu kurumlarına ek maliyet binmeden dev lojistik transfer finanse edildi."
       },
       {
-        "label": "Havalimanı çevresinde siber radar, İHA savar ve uçaksavar bataryalarıyla dünyanın en korunaklı hava sahasını tesis et.",
+        "label": "Atatürk Havalimanı ile İstanbul Havalimanı arasındaki Basın Ekspres ve Kuzey Marmara hatlarını askeri/polisiye kordonla kapat.",
         "preview": "Adalet +2, Halk +8, Güvenlik +6, Otorite +6 | Hazine -4",
         "effects": {
           "justice": 2,
@@ -34147,19 +34147,19 @@ const EVENT_DECK_MODERN = [
           "military": 6,
           "authority": 6
         },
-        "log": "Havacılık güvenliği küresel çapta tescillendi; havalimanı uluslararası transit trafiğin 1 numaralı merkezi oldu."
+        "log": "Büyük Göç Mehmetçik ve polisin çelik kalkanı altında tamamlandı; terör ve sabotaj girişimleri başlamadan engellendi."
       },
       {
-        "label": "Türkiye'yi küresel havacılık ve lojistik üssü yapan 'Sivil Havacılık ve Uluslararası Transit Merkezleri Kanunu' çıkar.",
-        "preview": "Adalet +8, Halk +8, Güvenlik +1, Otorite +6 | Hazine -4",
+        "label": "Stratejik kamu tesislerinin acil taşınma ve lojistik protokollerini tanzim eden 'Kritik Ulaşım Güvenliği Kanunu' çıkar.",
+        "preview": "Adalet +5, Halk +3, Güvenlik +7, Otorite +7 | Hazine -4",
         "effects": {
-          "justice": 8,
-          "people": 8,
+          "justice": 5,
+          "people": 3,
           "treasury": -4,
-          "military": 1,
-          "authority": 6
+          "military": 7,
+          "authority": 7
         },
-        "log": "THY ve Türk sivil havacılığı dünya liderliğine taşındı; transit uçuş gelirleri yasal güvenceye alındı."
+        "log": "Dünya sivil havacılık literatürüne örnek teşkil eden taşınma harekatı yasal mevzuatla kurumsallaştı."
       }
     ]
   },
@@ -34176,11 +34176,11 @@ const EVENT_DECK_MODERN = [
       }
     ],
     "source": "Ulaştırma Bakanlığı",
-    "title": "Atatürk Havalimanı Pistlerine Şehir Hastanesi Yapımı",
-    "desc": "Pandemi döneminde kullanılmayan pistler üzerine 1008 yataklı Prof. Dr. Murat Dilmener Acil Durum Hastanesi açıldı.",
+    "title": "Pandemi Krizinde Yoğun Bakım İflası ve Atatürk Havalimanı Pist İkilemi",
+    "desc": "Koronavirüs salgınında hastaneler doldu; kritik solunum cihazı ve yoğun bakım yatağı tükendi. Atatürk Havalimanı'nın kullanım dışı kalan iki pistinin üzerine 45 günde 1008 yataklı acil şehir hastanesi yapılması planlanıyor; muhalefet pistlerin kırılarak havalimanının yok edilmek istendiğini savunuyor.",
     "options": [
       {
-        "label": "Atatürk Havalimanı'ndan İstanbul Havalimanı'na yapılan 45 saatlik 'Büyük Göç' lojistiğini sıfır kaza ve hatayla adli güvenceye al.",
+        "label": "Sağlık Bakanlığı ve Tabipler Birliği'ni sürece dahil et; pistlerin kırım gerekçesini ve acil yoğun bakım ihtiyacını halka şeffaf açıkla.",
         "preview": "Adalet +9, Halk +8, Otorite +3 | Hazine -2",
         "effects": {
           "justice": 9,
@@ -34189,10 +34189,10 @@ const EVENT_DECK_MODERN = [
           "military": 0,
           "authority": 3
         },
-        "log": "Dünya havacılık tarihinin en büyük lojistik taşınması kusursuz tamamlandı; uçuşlar aksatılmadan yeni meydana geçti."
+        "log": "Şeffaf kriz iletişimi yürütüldü; yoğun bakım çaresizliği yaşayan halkın tepkisi dindirildi."
       },
       {
-        "label": "Atatürk Havalimanı arazisini ranta açmayıp halkın kullanımına 2 milyon metrekarelik dev Millet Bahçesi ve acil durum hastanesi yap.",
+        "label": "Mimarlar odası ve sivil toplumla istişare et; hastaneyi pistlerin üzerine değil apronun boş hangarlarına modüler kur.",
         "preview": "Adalet +3, Halk +9, Otorite +6 | Hazine -4",
         "effects": {
           "justice": 3,
@@ -34201,22 +34201,22 @@ const EVENT_DECK_MODERN = [
           "military": 0,
           "authority": 6
         },
-        "log": "Şehre devasa bir nefes alanı kazandırıldı; pandemi döneminde 1008 yataklı acil hastane hızla açıldı."
+        "log": "Pistler korundu; fakat modüler hastanenin yatak kapasitesi salgının zirve noktasında yetersiz kaldı."
       },
       {
-        "label": "Yılda 90 milyon yolcu ağırlayan İGA'nın devlete ödediği yıllık 1 milyar Euro'luk kira gelirini Hazine kasasına aktar.",
-        "preview": "Hazine +8, Otorite +4 | Halk -5",
+        "label": "Hazine acil afet fonundan 45 günde 1008 yataklı Prof. Dr. Murat Dilmener Şehir Hastanesi'ni rekor sürede inşa et.",
+        "preview": "Adalet +2, Halk +8, Güvenlik +2, Otorite +4 | Hazine -6",
         "effects": {
-          "justice": 0,
-          "people": -5,
-          "treasury": 8,
-          "military": 0,
+          "justice": 2,
+          "people": 8,
+          "treasury": -6,
+          "military": 2,
           "authority": 4
         },
-        "log": "Havalimanı devlete para basan bir kuruluşa dönüştü; Hazineye rekor döviz geliri girdi."
+        "log": "Pandemiye çelik kalkan kuruldu; binlerce vatandaş yoğun bakımda tedavi edilerek ölüm oranları frenlendi."
       },
       {
-        "label": "Havalimanı çevresinde siber radar, İHA savar ve uçaksavar bataryalarıyla dünyanın en korunaklı hava sahasını tesis et.",
+        "label": "Salgın fırsatçılığıyla hastane inşaatına provokasyon yapmaya çalışan marjinal gruplara karşı güvenlik çemberi kur.",
         "preview": "Adalet +2, Halk +8, Güvenlik +6, Otorite +6 | Hazine -4",
         "effects": {
           "justice": 2,
@@ -34225,19 +34225,19 @@ const EVENT_DECK_MODERN = [
           "military": 6,
           "authority": 6
         },
-        "log": "Havacılık güvenliği küresel çapta tescillendi; havalimanı uluslararası transit trafiğin 1 numaralı merkezi oldu."
+        "log": "İnşaat güvenliği sağlandı; hastane 45 günde teslim edilerek sağlık ordusunun emrine verildi."
       },
       {
-        "label": "Türkiye'yi küresel havacılık ve lojistik üssü yapan 'Sivil Havacılık ve Uluslararası Transit Merkezleri Kanunu' çıkar.",
-        "preview": "Adalet +8, Halk +8, Güvenlik +1, Otorite +6 | Hazine -4",
+        "label": "Salgın ve nükleer/biyolojik afetlerde kullanılacak sahra hastanelerini yasal çerçeveye alan 'Acil Sağlık Savunma Kanunu' çıkar.",
+        "preview": "Adalet +5, Halk +3, Güvenlik +7, Otorite +7 | Hazine -4",
         "effects": {
-          "justice": 8,
-          "people": 8,
+          "justice": 5,
+          "people": 3,
           "treasury": -4,
-          "military": 1,
-          "authority": 6
+          "military": 7,
+          "authority": 7
         },
-        "log": "THY ve Türk sivil havacılığı dünya liderliğine taşındı; transit uçuş gelirleri yasal güvenceye alındı."
+        "log": "Havalimanı hastanesi sağlık turizmi ve afet üssü olarak tescillendi; Türkiye'nin sağlık altyapısı tescillendi."
       }
     ]
   },
@@ -34254,35 +34254,35 @@ const EVENT_DECK_MODERN = [
       }
     ],
     "source": "Ulaştırma Bakanlığı",
-    "title": "Atatürk Havalimanı Millet Bahçesi Projesi",
-    "desc": "Eski havalimanı arazisi 2 milyon metrekarelik dev yeşil alan ve kültür merkezine dönüştürüldü.",
+    "title": "Atatürk Havalimanı Arazisinde Rant Baskısı ve Millet Bahçesi İkilemi",
+    "desc": "Atatürk Havalimanı'nın boşalan milyonlarca metrekarelik arazisi için dev inşaat şirketleri ve uluslararası emlak fonları konut/AVM projeleriyle kapıyı çalıyor. İstihbarat, arazinin ranta kurban edilmesi halinde büyük toplumsal infial çıkacağını raporlarken; arazinin halka açık devasa Millet Bahçesi'ne dönüştürülmesi tartışılıyor.",
     "options": [
       {
-        "label": "Atatürk Havalimanı'ndan İstanbul Havalimanı'na yapılan 45 saatlik 'Büyük Göç' lojistiğini sıfır kaza ve hatayla adli güvenceye al.",
-        "preview": "Adalet +9, Halk +8, Otorite +3 | Hazine -2",
+        "label": "Araziyi bağımsız Şehir Plancıları ve Mimarlar Kurulu'na devret; imar planını kamu yararına yeşil alan olarak tescil ettir.",
+        "preview": "Adalet +8, Halk +5, Hazine +2, Otorite +6",
         "effects": {
-          "justice": 9,
-          "people": 8,
-          "treasury": -2,
-          "military": 0,
-          "authority": 3
-        },
-        "log": "Dünya havacılık tarihinin en büyük lojistik taşınması kusursuz tamamlandı; uçuşlar aksatılmadan yeni meydana geçti."
-      },
-      {
-        "label": "Atatürk Havalimanı arazisini ranta açmayıp halkın kullanımına 2 milyon metrekarelik dev Millet Bahçesi ve acil durum hastanesi yap.",
-        "preview": "Adalet +3, Halk +9, Otorite +6 | Hazine -4",
-        "effects": {
-          "justice": 3,
-          "people": 9,
-          "treasury": -4,
+          "justice": 8,
+          "people": 5,
+          "treasury": 2,
           "military": 0,
           "authority": 6
         },
-        "log": "Şehre devasa bir nefes alanı kazandırıldı; pandemi döneminde 1008 yataklı acil hastane hızla açıldı."
+        "log": "Rant kapısı kapatıldı; arazinin satışı veya yapılaşmaya açılması bağımsız yargı ve planla kilitlendi."
       },
       {
-        "label": "Yılda 90 milyon yolcu ağırlayan İGA'nın devlete ödediği yıllık 1 milyar Euro'luk kira gelirini Hazine kasasına aktar.",
+        "label": "İstanbul halkı ve meslek odalarıyla anket ve istişare meclisi kur; ağaçlandırma ve spor alanlarını halkın talebine göre çiz.",
+        "preview": "Adalet +3, Halk +6, Hazine +3, Otorite +7",
+        "effects": {
+          "justice": 3,
+          "people": 6,
+          "treasury": 3,
+          "military": 0,
+          "authority": 7
+        },
+        "log": "Toplumsal mutabakat sağlandı; İstanbulluların nefes alacağı 2 milyon metrekarelik Millet Bahçesi projesi benimsendi."
+      },
+      {
+        "label": "Arazinin bir kısmını uluslararası fuar ve kongre merkezine ayırarak İstanbul turizmine yıllık milyarlarca lira kaynak kazandır.",
         "preview": "Hazine +8, Otorite +4 | Halk -5",
         "effects": {
           "justice": 0,
@@ -34291,10 +34291,10 @@ const EVENT_DECK_MODERN = [
           "military": 0,
           "authority": 4
         },
-        "log": "Havalimanı devlete para basan bir kuruluşa dönüştü; Hazineye rekor döviz geliri girdi."
+        "log": "Ekonomik akıl devreye girdi; dev fuar alanıyla Hazineye turizm geliri sağlanırken kalan alan yeşil bırakıldı."
       },
       {
-        "label": "Havalimanı çevresinde siber radar, İHA savar ve uçaksavar bataryalarıyla dünyanın en korunaklı hava sahasını tesis et.",
+        "label": "Arazideki acil iniş pistini ve askeri hangarları koru; olası İstanbul depreminde lojistik yardım ve arama-kurtarma üssü olarak tahkim et.",
         "preview": "Adalet +2, Halk +8, Güvenlik +6, Otorite +6 | Hazine -4",
         "effects": {
           "justice": 2,
@@ -34303,19 +34303,19 @@ const EVENT_DECK_MODERN = [
           "military": 6,
           "authority": 6
         },
-        "log": "Havacılık güvenliği küresel çapta tescillendi; havalimanı uluslararası transit trafiğin 1 numaralı merkezi oldu."
+        "log": "Stratejik afet kalkanı kuruldu; pistler deprem anında yardım uçaklarının inmesi için hazır tutuldu."
       },
       {
-        "label": "Türkiye'yi küresel havacılık ve lojistik üssü yapan 'Sivil Havacılık ve Uluslararası Transit Merkezleri Kanunu' çıkar.",
-        "preview": "Adalet +8, Halk +8, Güvenlik +1, Otorite +6 | Hazine -4",
+        "label": "Milli parklar ve askeri arazilerin imara açılmasını anayasal güvenceyle yasaklayan 'Yeşil Şehirler ve Millet Bahçeleri Kanunu' çıkar.",
+        "preview": "Adalet +5, Halk +3, Güvenlik +7, Otorite +7 | Hazine -4",
         "effects": {
-          "justice": 8,
-          "people": 8,
+          "justice": 5,
+          "people": 3,
           "treasury": -4,
-          "military": 1,
-          "authority": 6
+          "military": 7,
+          "authority": 7
         },
-        "log": "THY ve Türk sivil havacılığı dünya liderliğine taşındı; transit uçuş gelirleri yasal güvenceye alındı."
+        "log": "Arazinin tapusuna kamuya terk şerhi düşüldü; gelecek nesiller için dev şehir parkı güvenceye alındı."
       }
     ]
   },
@@ -34332,11 +34332,11 @@ const EVENT_DECK_MODERN = [
       }
     ],
     "source": "Ulaştırma Bakanlığı",
-    "title": "Ankara-Eskişehir Yüksek Hızlı Treninin (YHT) Açılışı (2009)",
-    "desc": "Türkiye hızlı tren işleten dünyadaki 8. ülke olarak ilk hızlı tren seferini başlattı.",
+    "title": "Ankara-Eskişehir Koridorunda Karayolu Katliamları ve İlk YHT Kararı",
+    "desc": "Başkent ile sanayi kenti Eskişehir arasındaki karayolunda otobüs ve tır kazaları yılda yüzlerce can alıyor; demiryolu altyapısı ise 100 yıllık buharlı tren hızında. İspanyol ve Türk ortaklığıyla Türkiye'nin ilk Yüksek Hızlı Tren (YHT) hattının inşası için karar bekleniyor.",
     "options": [
       {
-        "label": "Hızlı tren hatlarındaki sinyalizasyon, hat bakım ve makinist kontrollerini en katı uluslararası güvenlik denetimine bağla.",
+        "label": "Uluslararası demiryolu güvenliği denetçilerini görevlendir; sıfır hata toleransıyla Ankara-Eskişehir YHT hattını inşa et.",
         "preview": "Adalet +8, Halk +5, Hazine +2, Otorite +6",
         "effects": {
           "justice": 8,
@@ -34345,10 +34345,10 @@ const EVENT_DECK_MODERN = [
           "military": 0,
           "authority": 6
         },
-        "log": "Demiryolu güvenliği tescillendi; sinyalizasyon açıkları ve kaza riskleri sıfırlandı."
+        "log": "Türkiye hızlı trenle tanıştı; 250 km hızla iki şehir arası seyahat süresi 1 saat 20 dakikaya indi."
       },
       {
-        "label": "Ankara, Eskişehir, Konya, Sivas ve İstanbul hatlarında bilet fiyatlarını öğrenci ve emekliler için indirimli tut.",
+        "label": "Şehirlerarası otobüs işletmeleri ve yerel esnafla meşveret et; otobüs firmalarının bilet tarifelerini sübvanse ederek YHT'yi ertele.",
         "preview": "Adalet +3, Halk +9, Otorite +6 | Hazine -4",
         "effects": {
           "justice": 3,
@@ -34357,22 +34357,22 @@ const EVENT_DECK_MODERN = [
           "military": 0,
           "authority": 6
         },
-        "log": "Hızlı tren halkın gözbebeği oldu; milyonlarca vatandaş otobüs ve uçak yerine konforlu treni seçti."
+        "log": "Otobüs esnafı korundu; fakat karayollarındaki ölümcül kaza oranları düşürülemedi."
       },
       {
-        "label": "YHT bilet gelirleri ve yük taşımacılığı karıyla TCDD'nin yeni hızlı tren seti alımlarını özkaynaklarla finanse et.",
-        "preview": "Adalet +2, Halk +8, Güvenlik +2, Otorite +4 | Hazine -6",
+        "label": "İspanyol dış kredisi ve Hazine tahvilleriyle hattı finanse et; karayolu akaryakıt tüketimini azaltarak döviz tasarrufu sağla.",
+        "preview": "Adalet +1, Halk +4, Hazine +8, Otorite +5",
         "effects": {
-          "justice": 2,
-          "people": 8,
-          "treasury": -6,
-          "military": 2,
-          "authority": 4
+          "justice": 1,
+          "people": 4,
+          "treasury": 8,
+          "military": 0,
+          "authority": 5
         },
-        "log": "Demiryolları mali bağımsızlığa kavuştu; Hazineye yük olmadan yeni hızlı tren setleri satın alındı."
+        "log": "Milli ekonomi kazandı; vatandaş güvenli ve ucuz seyahat konforuna kavuştu."
       },
       {
-        "label": "400 kilometreyi aşan viyadük ve dağ tünellerinde sabotaj ve hırsızlığa karşı jandarma ray devriyelerini görevlendir.",
+        "label": "Hızlı tren hattı boyunca elektro-optik kameralar ve sabotaj erken uyarı sensörleri kurarak ray güvenliğini sağla.",
         "preview": "Adalet +5, Halk +5, Güvenlik +9, Otorite +8 | Hazine -5",
         "effects": {
           "justice": 5,
@@ -34381,10 +34381,10 @@ const EVENT_DECK_MODERN = [
           "military": 9,
           "authority": 8
         },
-        "log": "Ray boylarında kesintisiz güvenlik kuruldu; hızlı tren seferlerinin aksamasına izin verilmedi."
+        "log": "Raylar terör ve ray sabotajı girişimlerine karşı 24 saat kesintisiz koruma altına alındı."
       },
       {
-        "label": "Türkiye'nin 81 ilini yüksek hızlı demiryolu ağıyla buluşturmayı hedefleyen 'Milli Demiryolu Seferberlik Kanunu' çıkar.",
+        "label": "Türkiye'yi demir ağlarla ören hızlı tren projelerini milli öncelik ilan eden 'Milli Hızlı Tren ve Raylı Sistemler Kanunu' çıkar.",
         "preview": "Adalet +7, Halk +5, Otorite +6 | Hazine -4",
         "effects": {
           "justice": 7,
@@ -34393,7 +34393,7 @@ const EVENT_DECK_MODERN = [
           "military": 0,
           "authority": 6
         },
-        "log": "Cumhuriyetin demiryolu ideali yeniden şahlandı; Anadolu hızlı raylarla baştan başa örüldü."
+        "log": "YHT seferleri yasal güvenceye bağlandı; Türkiye dünyada hızlı tren işleten sekizinci ülke oldu."
       }
     ]
   },
@@ -34410,23 +34410,23 @@ const EVENT_DECK_MODERN = [
       }
     ],
     "source": "Ulaştırma Bakanlığı",
-    "title": "Ankara-Konya YHT Hattı ve Seyahat Süresinin Düşmesi",
-    "desc": "Konya ovasından geçen hızlı tren başkent ile Mevlana şehrini 1.5 saate bağladı.",
+    "title": "İç Anadolu Bozkırının İzolasyonu ve Ankara-Konya YHT Stratejisi",
+    "desc": "Konya Ovası'nın dev sanayi ve tarım potansiyeli başkent Ankara'dan kopuk; mevcut trenle 10 saat süren yolculuk ticareti felç ediyor. Düz arazide 300 km hız yapacak YHT hattı için ray ve sinyalizasyon ihaleleri gündemde; ancak yerli mühendislik kapasitesi tartışılıyor.",
     "options": [
       {
-        "label": "Hızlı tren hatlarındaki sinyalizasyon, hat bakım ve makinist kontrollerini en katı uluslararası güvenlik denetimine bağla.",
-        "preview": "Adalet +8, Halk +5, Hazine +2, Otorite +6",
+        "label": "Devlet Demiryolları (TCDD) mühendislerine tam yetki ver; hattın altyapı ve ray döşeme işlerini tamamen yerli firmalarla tamamla.",
+        "preview": "Adalet +8, Halk +4, Güvenlik +4, Otorite +5 | Hazine -2",
         "effects": {
           "justice": 8,
-          "people": 5,
-          "treasury": 2,
-          "military": 0,
-          "authority": 6
+          "people": 4,
+          "treasury": -2,
+          "military": 4,
+          "authority": 5
         },
-        "log": "Demiryolu güvenliği tescillendi; sinyalizasyon açıkları ve kaza riskleri sıfırlandı."
+        "log": "Türk mühendisleri tarihi bir başarıya imza attı; Ankara-Konya YHT hattı rekor sürede ve düşük maliyetle tamamlandı."
       },
       {
-        "label": "Ankara, Eskişehir, Konya, Sivas ve İstanbul hatlarında bilet fiyatlarını öğrenci ve emekliler için indirimli tut.",
+        "label": "Mevlana turizmi ve esnaf odalarıyla istişare et; tren sefer saatlerini tarım fuarları ve kültürel etkinliklere göre planla.",
         "preview": "Adalet +3, Halk +9, Otorite +6 | Hazine -4",
         "effects": {
           "justice": 3,
@@ -34435,43 +34435,43 @@ const EVENT_DECK_MODERN = [
           "military": 0,
           "authority": 6
         },
-        "log": "Hızlı tren halkın gözbebeği oldu; milyonlarca vatandaş otobüs ve uçak yerine konforlu treni seçti."
+        "log": "Kültür ve ticaret entegrasyonu sağlandı; seyahat süresi 1 saat 45 dakikaya inerek iki şehir birleşti."
       },
       {
-        "label": "YHT bilet gelirleri ve yük taşımacılığı karıyla TCDD'nin yeni hızlı tren seti alımlarını özkaynaklarla finanse et.",
-        "preview": "Adalet +2, Halk +8, Güvenlik +2, Otorite +4 | Hazine -6",
+        "label": "Hattın işletme gelirlerini doğrudan Hazineye aktararak yeni Doğu ve Güney hızlı tren projeleri için döner sermaye oluştur.",
+        "preview": "Hazine +8, Otorite +4 | Halk -5",
         "effects": {
-          "justice": 2,
-          "people": 8,
-          "treasury": -6,
-          "military": 2,
+          "justice": 0,
+          "people": -5,
+          "treasury": 8,
+          "military": 0,
           "authority": 4
         },
-        "log": "Demiryolları mali bağımsızlığa kavuştu; Hazineye yük olmadan yeni hızlı tren setleri satın alındı."
+        "log": "Kendi kendini amorti eden başarılı bir kamu yatırımı modeli kuruldu."
       },
       {
-        "label": "400 kilometreyi aşan viyadük ve dağ tünellerinde sabotaj ve hırsızlığa karşı jandarma ray devriyelerini görevlendir.",
-        "preview": "Adalet +5, Halk +5, Güvenlik +9, Otorite +8 | Hazine -5",
+        "label": "Bozkırdan geçen yüzlerce kilometrelik açık ray hattına jandarma devriyeleri ve İHA gözetleme uçuşları tahsis et.",
+        "preview": "Adalet +3, Güvenlik +4, Otorite +7 | Halk -2, Hazine -3",
+        "effects": {
+          "justice": 3,
+          "people": -2,
+          "treasury": -3,
+          "military": 4,
+          "authority": 7
+        },
+        "log": "Açık bozkır hattı terör ve sabotaj tehditlerine karşı tam emniyete alındı."
+      },
+      {
+        "label": "Yüksek hızlı tren makinistliği ve sinyalizasyon uzmanlığını yüksek mesleki statüye bağlayan kanun çıkar.",
+        "preview": "Adalet +5, Halk +3, Güvenlik +7, Otorite +7 | Hazine -4",
         "effects": {
           "justice": 5,
-          "people": 5,
-          "treasury": -5,
-          "military": 9,
-          "authority": 8
-        },
-        "log": "Ray boylarında kesintisiz güvenlik kuruldu; hızlı tren seferlerinin aksamasına izin verilmedi."
-      },
-      {
-        "label": "Türkiye'nin 81 ilini yüksek hızlı demiryolu ağıyla buluşturmayı hedefleyen 'Milli Demiryolu Seferberlik Kanunu' çıkar.",
-        "preview": "Adalet +7, Halk +5, Otorite +6 | Hazine -4",
-        "effects": {
-          "justice": 7,
-          "people": 5,
+          "people": 3,
           "treasury": -4,
-          "military": 0,
-          "authority": 6
+          "military": 7,
+          "authority": 7
         },
-        "log": "Cumhuriyetin demiryolu ideali yeniden şahlandı; Anadolu hızlı raylarla baştan başa örüldü."
+        "log": "Demiryolu emniyet kültürü kurumsallaştı; YHT seferleri kazasız ve güvenle işletildi."
       }
     ]
   },
@@ -34488,68 +34488,68 @@ const EVENT_DECK_MODERN = [
       }
     ],
     "source": "Ulaştırma Bakanlığı",
-    "title": "Ankara-İstanbul YHT Hattı ve Doğançay Ripajı",
-    "desc": "Bilecik ve Sakarya dağlarını delen tünellerle başkent ile metropol hızlı trenle kavuştu.",
+    "title": "Ankara-İstanbul YHT Doğançay Ripajı ve Tünel Çökme Krizi",
+    "desc": "Ankara ile İstanbul'u bağlayacak YHT hattının en kritik Boğaz-Sapanca geçişinde (Doğançay Ripajı) devasa heyelanlar ve tünel göçükleri meydana geldi. Yabancı danışmanlar hattın bu noktada yapılamayacağını iddia ederken, milyarlarca dolarlık yatırımın boşa gitme tehlikesi doğdu.",
     "options": [
       {
-        "label": "Hızlı tren hatlarındaki sinyalizasyon, hat bakım ve makinist kontrollerini en katı uluslararası güvenlik denetimine bağla.",
-        "preview": "Adalet +8, Halk +5, Hazine +2, Otorite +6",
+        "label": "Maden Tetkik ve Arama (MTA) ve üniversite jeologlarını sahaya sür; zemin güçlendirme tünelleriyle Doğançay geçişini tamamla.",
+        "preview": "Adalet +9, Halk +8, Otorite +3 | Hazine -2",
         "effects": {
-          "justice": 8,
-          "people": 5,
-          "treasury": 2,
+          "justice": 9,
+          "people": 8,
+          "treasury": -2,
           "military": 0,
-          "authority": 6
+          "authority": 3
         },
-        "log": "Demiryolu güvenliği tescillendi; sinyalizasyon açıkları ve kaza riskleri sıfırlandı."
+        "log": "Zorlu coğrafya aşıldı; viyadükler ve tünellerle Ankara-İstanbul hızlı tren hattı hizmete açıldı."
       },
       {
-        "label": "Ankara, Eskişehir, Konya, Sivas ve İstanbul hatlarında bilet fiyatlarını öğrenci ve emekliler için indirimli tut.",
-        "preview": "Adalet +3, Halk +9, Otorite +6 | Hazine -4",
+        "label": "Bölge köylüleri ve çevre uzmanlarıyla meşveret et; tünel güzergahını heyelan vadisinin dışındaki alternatif yamaca kaydır.",
+        "preview": "Adalet +2, Halk +9, Hazine +4, Güvenlik +2, Otorite +5",
         "effects": {
-          "justice": 3,
+          "justice": 2,
           "people": 9,
-          "treasury": -4,
-          "military": 0,
-          "authority": 6
+          "treasury": 4,
+          "military": 2,
+          "authority": 5
         },
-        "log": "Hızlı tren halkın gözbebeği oldu; milyonlarca vatandaş otobüs ve uçak yerine konforlu treni seçti."
+        "log": "Güzergah revize edildi; inşaat maliyeti bir miktar arttı fakat zemin çökme riski sıfırlandı."
       },
       {
-        "label": "YHT bilet gelirleri ve yük taşımacılığı karıyla TCDD'nin yeni hızlı tren seti alımlarını özkaynaklarla finanse et.",
-        "preview": "Adalet +2, Halk +8, Güvenlik +2, Otorite +4 | Hazine -6",
+        "label": "Göçüğe neden olan eksik zemin etüdü yapan yabancı müşavirlik firmasına Hazine tarafından devasa tazminat davası aç.",
+        "preview": "Hazine +8, Otorite +4 | Halk -5",
+        "effects": {
+          "justice": 0,
+          "people": -5,
+          "treasury": 8,
+          "military": 0,
+          "authority": 4
+        },
+        "log": "Hazine zararı tanzim edildi; kusurlu yabancı denetçilerden tazminat tahsil edildi."
+      },
+      {
+        "label": "Tünel inşaat sahasına termal kameralar ve acil arama-kurtarma timleri konuşlandırarak işçi güvenliğini en üst seviyeye al.",
+        "preview": "Adalet +2, Halk +8, Güvenlik +6, Otorite +6 | Hazine -4",
         "effects": {
           "justice": 2,
           "people": 8,
-          "treasury": -6,
-          "military": 2,
-          "authority": 4
-        },
-        "log": "Demiryolları mali bağımsızlığa kavuştu; Hazineye yük olmadan yeni hızlı tren setleri satın alındı."
-      },
-      {
-        "label": "400 kilometreyi aşan viyadük ve dağ tünellerinde sabotaj ve hırsızlığa karşı jandarma ray devriyelerini görevlendir.",
-        "preview": "Adalet +5, Halk +5, Güvenlik +9, Otorite +8 | Hazine -5",
-        "effects": {
-          "justice": 5,
-          "people": 5,
-          "treasury": -5,
-          "military": 9,
-          "authority": 8
-        },
-        "log": "Ray boylarında kesintisiz güvenlik kuruldu; hızlı tren seferlerinin aksamasına izin verilmedi."
-      },
-      {
-        "label": "Türkiye'nin 81 ilini yüksek hızlı demiryolu ağıyla buluşturmayı hedefleyen 'Milli Demiryolu Seferberlik Kanunu' çıkar.",
-        "preview": "Adalet +7, Halk +5, Otorite +6 | Hazine -4",
-        "effects": {
-          "justice": 7,
-          "people": 5,
           "treasury": -4,
-          "military": 0,
+          "military": 6,
           "authority": 6
         },
-        "log": "Cumhuriyetin demiryolu ideali yeniden şahlandı; Anadolu hızlı raylarla baştan başa örüldü."
+        "log": "İş güvenliği tavizsiz uygulandı; Doğançay tünellerinde can kaybı yaşanmadan delme işlemi bitti."
+      },
+      {
+        "label": "Mega tünel ve viyadük projelerinde jeoteknik zorunlu sigorta şartı getiren 'Milli Altyapı Denetim Kanunu' çıkar.",
+        "preview": "Adalet +8, Halk +8, Güvenlik +1, Otorite +6 | Hazine -4",
+        "effects": {
+          "justice": 8,
+          "people": 8,
+          "treasury": -4,
+          "military": 1,
+          "authority": 6
+        },
+        "log": "Altyapı mühendisliği mevzuatı güçlendirildi; Ankara-İstanbul seyahat süresi 4 saate indi."
       }
     ]
   },
@@ -34566,47 +34566,47 @@ const EVENT_DECK_MODERN = [
       }
     ],
     "source": "Ulaştırma Bakanlığı",
-    "title": "Ankara-Sivas YHT Hattı: Doğuya Açılan Hızlı Raylar",
-    "desc": "Kırıkkale ve Yozgat üzerinden geçen 405 kilometrelik hat seyahat süresini 2 saate indirdi.",
+    "title": "Doğu Anadolu İzolasyonu ve Ankara-Sivas Hızlı Tren Jeolojik Zorluğu",
+    "desc": "Kırıkkale, Yozgat ve Sivas hattında kış aylarında karayolları kapanıyor; Doğu Anadolu'dan göç durdurulamıyor. Ankara-Sivas YHT hattı planlandı; ancak güzergah boyunca 49 tünel ve 49 viyadük gerektiren zorlu jeolojik yapı Hazineye ağır maliyet yüklüyor.",
     "options": [
       {
-        "label": "Hızlı tren hatlarındaki sinyalizasyon, hat bakım ve makinist kontrollerini en katı uluslararası güvenlik denetimine bağla.",
-        "preview": "Adalet +8, Halk +5, Hazine +2, Otorite +6",
+        "label": "Yerli demiryolu konsorsiyumuyla 66 kilometrelik tünelleri ve 27 kilometrelik viyadükleri inşa ederek Ankara-Sivas YHT'yi aç.",
+        "preview": "Adalet +8, Halk +6, Otorite +2 | Hazine -2",
         "effects": {
           "justice": 8,
-          "people": 5,
-          "treasury": 2,
+          "people": 6,
+          "treasury": -2,
           "military": 0,
-          "authority": 6
+          "authority": 2
         },
-        "log": "Demiryolu güvenliği tescillendi; sinyalizasyon açıkları ve kaza riskleri sıfırlandı."
+        "log": "Ankara-Sivas arası 12 saatten 2 saate indi; Doğu Anadolu başkente hızlı ve konforlu raylarla bağlandı."
       },
       {
-        "label": "Ankara, Eskişehir, Konya, Sivas ve İstanbul hatlarında bilet fiyatlarını öğrenci ve emekliler için indirimli tut.",
-        "preview": "Adalet +3, Halk +9, Otorite +6 | Hazine -4",
-        "effects": {
-          "justice": 3,
-          "people": 9,
-          "treasury": -4,
-          "military": 0,
-          "authority": 6
-        },
-        "log": "Hızlı tren halkın gözbebeği oldu; milyonlarca vatandaş otobüs ve uçak yerine konforlu treni seçti."
-      },
-      {
-        "label": "YHT bilet gelirleri ve yük taşımacılığı karıyla TCDD'nin yeni hızlı tren seti alımlarını özkaynaklarla finanse et.",
-        "preview": "Adalet +2, Halk +8, Güvenlik +2, Otorite +4 | Hazine -6",
+        "label": "Yozgat ve Sivas yerel dinamikleriyle istişare et; ara istasyonları organize sanayi bölgelerine bağlayarak tersine göçü teşvik et.",
+        "preview": "Adalet +2, Halk +9, Hazine +4, Güvenlik +2, Otorite +5",
         "effects": {
           "justice": 2,
-          "people": 8,
-          "treasury": -6,
+          "people": 9,
+          "treasury": 4,
           "military": 2,
-          "authority": 4
+          "authority": 5
         },
-        "log": "Demiryolları mali bağımsızlığa kavuştu; Hazineye yük olmadan yeni hızlı tren setleri satın alındı."
+        "log": "Bölgesel kalkınma hızlandı; Sivas ve Yozgat'ta sanayi yatırımları patlama yaptı."
       },
       {
-        "label": "400 kilometreyi aşan viyadük ve dağ tünellerinde sabotaj ve hırsızlığa karşı jandarma ray devriyelerini görevlendir.",
+        "label": "Proje finansmanını dış kredi yerine iç borçlanma ve bütçe tasarruflarıyla karşılayarak Hazine döviz riskini bertaraf et.",
+        "preview": "Adalet +1, Halk +4, Hazine +8, Otorite +5",
+        "effects": {
+          "justice": 1,
+          "people": 4,
+          "treasury": 8,
+          "military": 0,
+          "authority": 5
+        },
+        "log": "Milli para birimiyle devasa bir mega proje hayata geçirildi."
+      },
+      {
+        "label": "Dağlık Sivas ve Yozgat vadilerindeki viyadüklere sabotaj ve kış donmasına karşı akıllı sensörler yerleştir.",
         "preview": "Adalet +5, Halk +5, Güvenlik +9, Otorite +8 | Hazine -5",
         "effects": {
           "justice": 5,
@@ -34615,10 +34615,10 @@ const EVENT_DECK_MODERN = [
           "military": 9,
           "authority": 8
         },
-        "log": "Ray boylarında kesintisiz güvenlik kuruldu; hızlı tren seferlerinin aksamasına izin verilmedi."
+        "log": "YHT hattı aşırı soğuk ve terör tehdidine karşı yüksek teknolojiyle korundu."
       },
       {
-        "label": "Türkiye'nin 81 ilini yüksek hızlı demiryolu ağıyla buluşturmayı hedefleyen 'Milli Demiryolu Seferberlik Kanunu' çıkar.",
+        "label": "Ankara-Sivas hattını Erzincan ve Kars üzerinden Bakü'ye uzatacak 'Doğu Raylı Koridor Kanunu' çıkar.",
         "preview": "Adalet +7, Halk +5, Otorite +6 | Hazine -4",
         "effects": {
           "justice": 7,
@@ -34627,7 +34627,7 @@ const EVENT_DECK_MODERN = [
           "military": 0,
           "authority": 6
         },
-        "log": "Cumhuriyetin demiryolu ideali yeniden şahlandı; Anadolu hızlı raylarla baştan başa örüldü."
+        "log": "Hızlı tren Kafkasya vizyonuyla taçlandırıldı; Demir İpekyolu'nun omurgası kuruldu."
       }
     ]
   },
@@ -34644,11 +34644,11 @@ const EVENT_DECK_MODERN = [
       }
     ],
     "source": "Ulaştırma Bakanlığı",
-    "title": "Bakü-Tiflis-Kars (BTK) Demiryolu: Demir İpekyolu",
-    "desc": "Londra'dan Pekin'e kesintisiz demiryolu yük taşımacılığı sağlayan hat Kafkasları birleştirdi.",
+    "title": "Bakü-Tiflis-Kars (BTK) Demiryolu ve Ermenistan/Rusya Baskısına Karşı Demir İpekyolu",
+    "desc": "Ermenistan'ı baypas ederek Azerbaycan, Gürcistan ve Türkiye'yi doğrudan demiryoluyla birleştirecek Bakü-Tiflis-Kars hattı için yabancı diplomatik baskılar ve Gürcistan sınırındaki lojistik güvenlik sorunları baş gösterdi. Londra'dan Pekin'e uzanan koridorda Türkiye'nin stratejik kararı bekleniyor.",
     "options": [
       {
-        "label": "Ulaşım ve altyapı projelerinin ihale, kamulaştırma ve sözleşme süreçlerini şeffaf adli denetime tabi tut.",
+        "label": "Azerbaycan ve Gürcistan ile üçlü hükümetlerarası anlaşmaya sadık kal; uluslararası baskılara boyun eğmeyerek BTK hattını aç.",
         "preview": "Adalet +9, Halk +8, Otorite +3 | Hazine -2",
         "effects": {
           "justice": 9,
@@ -34657,22 +34657,22 @@ const EVENT_DECK_MODERN = [
           "military": 0,
           "authority": 3
         },
-        "log": "Altyapı yatırımlarında hukuki şeffaflık sağlandı; kamulaştırma bedelleri hak sahiplerine ödendi."
+        "log": "Demir İpekyolu faaliyete geçti; Çin'den Avrupa'ya kesintisiz yük taşımacılığı Türkiye üzerinden sağlandı."
       },
       {
-        "label": "Mega projelerin hizmete girmesiyle birlikte vatandaşın erişimini kolaylaştıracak uygun tarife ve indirimleri uygula.",
-        "preview": "Adalet +2, Halk +9, Hazine +4, Güvenlik +2, Otorite +5",
+        "label": "Bölge ülkeleri ve Kafkasya paydaşlarıyla diplomatik temasları artır; hattın sadece ticari barış koridoru olduğunu dünyaya anlat.",
+        "preview": "Adalet +3, Halk +6, Hazine +3, Otorite +7",
         "effects": {
-          "justice": 2,
-          "people": 9,
-          "treasury": 4,
-          "military": 2,
-          "authority": 5
+          "justice": 3,
+          "people": 6,
+          "treasury": 3,
+          "military": 0,
+          "authority": 7
         },
-        "log": "Vatandaş memnuniyeti sağlandı; modern ulaşım imkanları halkın refahına sunuldu."
+        "log": "Diplomatik baskılar püskürtüldü; Kafkasya'da bölgesel refah ve ticaret hacmi katlandı."
       },
       {
-        "label": "Proje finansmanında Hazine dengelerini koru; gelir getirici ticari alanlarla kamu bütçesine katkı sağla.",
+        "label": "Kars Lojistik Merkezi'ni kurarak Hazineye transit konteyner gelirleri aktar; Kars'ı Avrasya'nın aktarma üssü yap.",
         "preview": "Hazine +8, Otorite +4 | Halk -5",
         "effects": {
           "justice": 0,
@@ -34681,22 +34681,22 @@ const EVENT_DECK_MODERN = [
           "military": 0,
           "authority": 4
         },
-        "log": "Altyapı yatırımları bütçeyi sarsmadan finanse edildi; kamu maliyesi korundu."
+        "log": "Doğu Anadolu kalkındı; Kars üzerinden yıllık milyonlarca ton transit yük aktarımı başladı."
       },
       {
-        "label": "Stratejik liman, tünel ve köprü altyapısını terör ve siber sabotajlara karşı kolluk teyakkuzuna al.",
-        "preview": "Adalet +5, Halk +5, Güvenlik +9, Otorite +8 | Hazine -5",
+        "label": "Sınır hattı boyunca Gürcistan ve Azerbaycan güvenlik birimleriyle ortak sınır devriyesi ve ray koruma protokolü imzala.",
+        "preview": "Adalet +3, Güvenlik +4, Otorite +7 | Halk -2, Hazine -3",
         "effects": {
-          "justice": 5,
-          "people": 5,
-          "treasury": -5,
-          "military": 9,
-          "authority": 8
+          "justice": 3,
+          "people": -2,
+          "treasury": -3,
+          "military": 4,
+          "authority": 7
         },
-        "log": "Kritik ulaşım koridorları korundu; devletin lojistik güvenliği sağlandı."
+        "log": "BTK demiryolu hattı terör sabotajlarına ve tren kaçırma tehditlerine karşı çelik kalkanla korundu."
       },
       {
-        "label": "Türkiye'nin ulaştırma ve lojistik master planını yasal güvenceye bağlayan 'Milli Altyapı ve Ulaştırma Kanunu' çıkar.",
+        "label": "Türkiye'yi Asya-Avrupa demiryolu taşımacılığının imtiyazlı transit ülkesi yapan 'Milli Lojistik ve Transit Taşımacılık Kanunu' çıkar.",
         "preview": "Adalet +8, Halk +8, Güvenlik +1, Otorite +6 | Hazine -4",
         "effects": {
           "justice": 8,
@@ -34705,7 +34705,7 @@ const EVENT_DECK_MODERN = [
           "military": 1,
           "authority": 6
         },
-        "log": "Ulaştırma politikası kanunlaştı; Türkiye küresel ticaretin vazgeçilmez köprüsü haline geldi."
+        "log": "Türkiye küresel tedarik zincirinde vazgeçilmez köprü konumuna yükseldi."
       }
     ]
   },
@@ -34722,11 +34722,11 @@ const EVENT_DECK_MODERN = [
       }
     ],
     "source": "Ulaştırma Bakanlığı",
-    "title": "Gayrettepe-İstanbul Havalimanı Hızlı Metrosu (M11)",
-    "desc": "Türkiye'nin 120 km/s ile en hızlı giden sürücüsüz metro hattı havalimanını şehir merkezine bağladı.",
+    "title": "İstanbul Havalimanı Ulaşım Krizinde Gayrettepe Hızlı Metro Hattı",
+    "desc": "Şehir merkezinden 40 kilometre uzakta kurulan yeni havalimanına sadece karayoluyla ulaşılması yoğun trafik saatlerinde uçak kaçırma krizlerine yol açıyor. Türkiye'nin en hızlı (120 km/s) ve en derin metro hattı olan Gayrettepe-Havalimanı projesi için yeraltı delme makineleri hazır bekliyor.",
     "options": [
       {
-        "label": "Atatürk Havalimanı'ndan İstanbul Havalimanı'na yapılan 45 saatlik 'Büyük Göç' lojistiğini sıfır kaza ve hatayla adli güvenceye al.",
+        "label": "Milli sinyalizasyon yazılımı ASELSAN tarafından geliştirilen Türkiye'nin en hızlı metrosunu rekor sürede inşa et.",
         "preview": "Adalet +9, Halk +8, Otorite +3 | Hazine -2",
         "effects": {
           "justice": 9,
@@ -34735,22 +34735,22 @@ const EVENT_DECK_MODERN = [
           "military": 0,
           "authority": 3
         },
-        "log": "Dünya havacılık tarihinin en büyük lojistik taşınması kusursuz tamamlandı; uçuşlar aksatılmadan yeni meydana geçti."
+        "log": "M11 Metro hattı açıldı; Kağıthane'den havalimanına 24 dakikada ulaşım sağlandı."
       },
       {
-        "label": "Atatürk Havalimanı arazisini ranta açmayıp halkın kullanımına 2 milyon metrekarelik dev Millet Bahçesi ve acil durum hastanesi yap.",
-        "preview": "Adalet +3, Halk +9, Otorite +6 | Hazine -4",
+        "label": "İETT ve HAVAİST otobüs işletmeleriyle koordinasyon sağla; metro tamamlanana kadar ekspres otobüs hatlarını sübvanse et.",
+        "preview": "Adalet +2, Halk +9, Hazine +4, Güvenlik +2, Otorite +5",
         "effects": {
-          "justice": 3,
+          "justice": 2,
           "people": 9,
-          "treasury": -4,
-          "military": 0,
-          "authority": 6
+          "treasury": 4,
+          "military": 2,
+          "authority": 5
         },
-        "log": "Şehre devasa bir nefes alanı kazandırıldı; pandemi döneminde 1008 yataklı acil hastane hızla açıldı."
+        "log": "Geçici mağduriyetler önlendi; ancak kalıcı çözüm için metro inşaatı zorunlu kaldı."
       },
       {
-        "label": "Yılda 90 milyon yolcu ağırlayan İGA'nın devlete ödediği yıllık 1 milyar Euro'luk kira gelirini Hazine kasasına aktar.",
+        "label": "Metro vagonlarının yerlilik oranını yüzde 60 şartına bağla; yerli raylı sistem sanayisine milyarlarca liralık sipariş kazandır.",
         "preview": "Hazine +8, Otorite +4 | Halk -5",
         "effects": {
           "justice": 0,
@@ -34759,10 +34759,10 @@ const EVENT_DECK_MODERN = [
           "military": 0,
           "authority": 4
         },
-        "log": "Havalimanı devlete para basan bir kuruluşa dönüştü; Hazineye rekor döviz geliri girdi."
+        "log": "Yerli vagon sanayisi doğdu; Hazine kaynakları yurtdışına akmak yerine içeride kaldı."
       },
       {
-        "label": "Havalimanı çevresinde siber radar, İHA savar ve uçaksavar bataryalarıyla dünyanın en korunaklı hava sahasını tesis et.",
+        "label": "Derin metro istasyonlarında olası kimyasal, biyolojik ve nükleer (KBRN) sızıntılara karşı askeri sığınak standardı uygula.",
         "preview": "Adalet +2, Halk +8, Güvenlik +6, Otorite +6 | Hazine -4",
         "effects": {
           "justice": 2,
@@ -34771,10 +34771,10 @@ const EVENT_DECK_MODERN = [
           "military": 6,
           "authority": 6
         },
-        "log": "Havacılık güvenliği küresel çapta tescillendi; havalimanı uluslararası transit trafiğin 1 numaralı merkezi oldu."
+        "log": "Gayrettepe hattı aynı zamanda İstanbul'un en güvenli yeraltı sığınak ağı olarak tasarlandı."
       },
       {
-        "label": "Türkiye'yi küresel havacılık ve lojistik üssü yapan 'Sivil Havacılık ve Uluslararası Transit Merkezleri Kanunu' çıkar.",
+        "label": "Havalimanı ve metro entegrasyonunu güvenceye alan 'Büyükşehir Raylı Toplu Taşıma Reform Kanunu' çıkar.",
         "preview": "Adalet +8, Halk +8, Güvenlik +1, Otorite +6 | Hazine -4",
         "effects": {
           "justice": 8,
@@ -34783,7 +34783,7 @@ const EVENT_DECK_MODERN = [
           "military": 1,
           "authority": 6
         },
-        "log": "THY ve Türk sivil havacılığı dünya liderliğine taşındı; transit uçuş gelirleri yasal güvenceye alındı."
+        "log": "İstanbul ulaşım ağı modernize edildi; metro hattı daha sonra Halkalı'ya kadar uzatıldı."
       }
     ]
   },
@@ -34800,11 +34800,11 @@ const EVENT_DECK_MODERN = [
       }
     ],
     "source": "Ulaştırma Bakanlığı",
-    "title": "Kuzey Marmara Otoyolu ve Akıllı Ulaşım Sistemleri",
-    "desc": "Akyazı'dan Kınalı'ya kadar uzanan otoyol transit ağır vasıtaları İstanbul şehir içinden çıkardı.",
+    "title": "Kuzey Marmara Otoyolu Akıllı Ulaşım Sistemlerine Yönelik Siber Tehdit",
+    "desc": "Kuzey Marmara Otoyolu akıllı trafik kameraları, otomatik gişeler ve tünel havalandırma sistemleriyle donatıldı. USOM ve MİT, otoyolun ana kontrol merkezine yabancı IP'lerden siber sızma girişimi yapıldığını ve tünel havalandırmalarını kilitleyerek toplu facia çıkarma planı olduğunu raporladı.",
     "options": [
       {
-        "label": "Ulaşım ve altyapı projelerinin ihale, kamulaştırma ve sözleşme süreçlerini şeffaf adli denetime tabi tut.",
+        "label": "Siber saldırı girişimini yapan yabancı sunucuları uluslararası bilişim suçları kapsamında adli soruşturmaya sevk et.",
         "preview": "Adalet +9, Halk +8, Otorite +3 | Hazine -2",
         "effects": {
           "justice": 9,
@@ -34813,10 +34813,10 @@ const EVENT_DECK_MODERN = [
           "military": 0,
           "authority": 3
         },
-        "log": "Altyapı yatırımlarında hukuki şeffaflık sağlandı; kamulaştırma bedelleri hak sahiplerine ödendi."
+        "log": "Siber saldırı kaynakları tespit edildi; deliller uluslararası adli mercilerle paylaşıldı."
       },
       {
-        "label": "Mega projelerin hizmete girmesiyle birlikte vatandaşın erişimini kolaylaştıracak uygun tarife ve indirimleri uygula.",
+        "label": "Otoyol işletmeci konsorsiyumu ve Ulaştırma Bakanlığı bilişim daireleriyle acil kriz masası kur; sistemleri geçici olarak manuel kontrole al.",
         "preview": "Adalet +2, Halk +9, Hazine +4, Güvenlik +2, Otorite +5",
         "effects": {
           "justice": 2,
@@ -34825,34 +34825,34 @@ const EVENT_DECK_MODERN = [
           "military": 2,
           "authority": 5
         },
-        "log": "Vatandaş memnuniyeti sağlandı; modern ulaşım imkanları halkın refahına sunuldu."
+        "log": "Trafik akışı kesintiye uğramadan manuel güvenlik protokolleriyle yönetildi."
       },
       {
-        "label": "Proje finansmanında Hazine dengelerini koru; gelir getirici ticari alanlarla kamu bütçesine katkı sağla.",
-        "preview": "Hazine +8, Otorite +4 | Halk -5",
+        "label": "Milli siber güvenlik firmalarına acil bütçe tahsis et; otoyolun tüm SCADA kontrol sistemlerini yerli yazılıma geçir.",
+        "preview": "Adalet +2, Halk +8, Güvenlik +2, Otorite +4 | Hazine -6",
         "effects": {
-          "justice": 0,
-          "people": -5,
-          "treasury": 8,
-          "military": 0,
+          "justice": 2,
+          "people": 8,
+          "treasury": -6,
+          "military": 2,
           "authority": 4
         },
-        "log": "Altyapı yatırımları bütçeyi sarsmadan finanse edildi; kamu maliyesi korundu."
+        "log": "Dışa bağımlı yazılımlar tasfiye edildi; yerli firewall ve siber savunma kalkanı kuruldu."
       },
       {
-        "label": "Stratejik liman, tünel ve köprü altyapısını terör ve siber sabotajlara karşı kolluk teyakkuzuna al.",
-        "preview": "Adalet +5, Halk +5, Güvenlik +9, Otorite +8 | Hazine -5",
+        "label": "MİT Siber Daire ve Emniyet Siber Suçlarla Mücadele timleriyle karşı siber operasyon düzenle; sızma yapan bilgisayarları çökert.",
+        "preview": "Adalet +2, Halk +8, Güvenlik +6, Otorite +6 | Hazine -4",
         "effects": {
-          "justice": 5,
-          "people": 5,
-          "treasury": -5,
-          "military": 9,
-          "authority": 8
+          "justice": 2,
+          "people": 8,
+          "treasury": -4,
+          "military": 6,
+          "authority": 6
         },
-        "log": "Kritik ulaşım koridorları korundu; devletin lojistik güvenliği sağlandı."
+        "log": "Otoyola yönelik siber sabotaj girişimi kökünden ezildi; tünel kontrol merkezleri tam korumaya alındı."
       },
       {
-        "label": "Türkiye'nin ulaştırma ve lojistik master planını yasal güvenceye bağlayan 'Milli Altyapı ve Ulaştırma Kanunu' çıkar.",
+        "label": "Kritik karayolu ve tünel SCADA sistemlerini yerli yazılıma bağlamayı zorunlu kılan 'Akıllı Altyapı Siber Güvenlik Kanunu' çıkar.",
         "preview": "Adalet +8, Halk +8, Güvenlik +1, Otorite +6 | Hazine -4",
         "effects": {
           "justice": 8,
@@ -34861,7 +34861,7 @@ const EVENT_DECK_MODERN = [
           "military": 1,
           "authority": 6
         },
-        "log": "Ulaştırma politikası kanunlaştı; Türkiye küresel ticaretin vazgeçilmez köprüsü haline geldi."
+        "log": "Milli altyapı siber güvenceye kavuştu; otoyollar dijital saldırılara karşı korundu."
       }
     ]
   },
@@ -34878,11 +34878,11 @@ const EVENT_DECK_MODERN = [
       }
     ],
     "source": "Ulaştırma Bakanlığı",
-    "title": "İstanbul-İzmir Otoyolu ile 3.5 Saate İnen Seyahat",
-    "desc": "Eski yoldaki 8 saatlik yolculuk yeni otoyol ile Ege turizmini ve sanayisini şahlandırdı.",
+    "title": "İstanbul-İzmir Otoyolu Güzergahında Verimli Tarım Arazileri İkilemi",
+    "desc": "İstanbul ile İzmir arasındaki sanayi ve turizm akışını 3.5 saate düşürecek otoyol projesinde kamulaştırma başladı. Ancak güzergahın Balıkesir ve Manisa'nın en verimli zeytinlik ve üzüm bağlarından geçmesi çiftçilerin ve çevre derneklerinin yargıya başvurmasına yol açtı.",
     "options": [
       {
-        "label": "Ulaşım ve altyapı projelerinin ihale, kamulaştırma ve sözleşme süreçlerini şeffaf adli denetime tabi tut.",
+        "label": "Danıştay kararlarına ve ziraat mühendisleri odasının raporlarına uy; otoyol güzergahını zeytinliklerin dışındaki çorak tepeye kaydır.",
         "preview": "Adalet +9, Halk +8, Otorite +3 | Hazine -2",
         "effects": {
           "justice": 9,
@@ -34891,46 +34891,46 @@ const EVENT_DECK_MODERN = [
           "military": 0,
           "authority": 3
         },
-        "log": "Altyapı yatırımlarında hukuki şeffaflık sağlandı; kamulaştırma bedelleri hak sahiplerine ödendi."
+        "log": "Verimli zeytinlikler kurtarıldı; otoyol viyadüklerle yamaçlara taşınarak kamu vicdanı rahatlatıldı."
       },
       {
-        "label": "Mega projelerin hizmete girmesiyle birlikte vatandaşın erişimini kolaylaştıracak uygun tarife ve indirimleri uygula.",
-        "preview": "Adalet +2, Halk +9, Hazine +4, Güvenlik +2, Otorite +5",
+        "label": "Bölge çiftçileri, ziraat odaları ve kooperatiflerle masaya otur; kamulaştırma bedellerini piyasanın yüzde 50 üzerinde ödeyerek uzlaş.",
+        "preview": "Adalet +2, Halk +8, Otorite +5 | Hazine -2",
         "effects": {
           "justice": 2,
-          "people": 9,
-          "treasury": 4,
-          "military": 2,
+          "people": 8,
+          "treasury": -2,
+          "military": 0,
           "authority": 5
         },
-        "log": "Vatandaş memnuniyeti sağlandı; modern ulaşım imkanları halkın refahına sunuldu."
+        "log": "Çiftçilerle helalleşildi; tarımsal kayıplar devlet sübvansiyonuyla telafi edildi."
       },
       {
-        "label": "Proje finansmanında Hazine dengelerini koru; gelir getirici ticari alanlarla kamu bütçesine katkı sağla.",
-        "preview": "Hazine +8, Otorite +4 | Halk -5",
+        "label": "Otoyolu YİD modeliyle rekor sürede tamamla; Ege sanayisini ve yaş sebze/meyve ihracatını limanlara 3.5 saatte ulaştırarak milli gelir üret.",
+        "preview": "Adalet +1, Halk +4, Hazine +8, Otorite +5",
         "effects": {
-          "justice": 0,
-          "people": -5,
+          "justice": 1,
+          "people": 4,
           "treasury": 8,
           "military": 0,
-          "authority": 4
+          "authority": 5
         },
-        "log": "Altyapı yatırımları bütçeyi sarsmadan finanse edildi; kamu maliyesi korundu."
+        "log": "İstanbul-İzmir otoyolu açıldı; yaş meyve-sebze bozulmadan Avrupa ve Rusya pazarlarına sevk edildi."
       },
       {
-        "label": "Stratejik liman, tünel ve köprü altyapısını terör ve siber sabotajlara karşı kolluk teyakkuzuna al.",
-        "preview": "Adalet +5, Halk +5, Güvenlik +9, Otorite +8 | Hazine -5",
+        "label": "Kamulaştırma arazilerini fırsata çevirip köylünün arazisini ucuza kapatmaya çalışan arsa tefecilerine polisle operasyon yap.",
+        "preview": "Adalet +3, Güvenlik +4, Otorite +7 | Halk -2, Hazine -3",
         "effects": {
-          "justice": 5,
-          "people": 5,
-          "treasury": -5,
-          "military": 9,
-          "authority": 8
+          "justice": 3,
+          "people": -2,
+          "treasury": -3,
+          "military": 4,
+          "authority": 7
         },
-        "log": "Kritik ulaşım koridorları korundu; devletin lojistik güvenliği sağlandı."
+        "log": "Rant çeteleri çökertildi; köylünün hakkı tefecilere yedirilmedi."
       },
       {
-        "label": "Türkiye'nin ulaştırma ve lojistik master planını yasal güvenceye bağlayan 'Milli Altyapı ve Ulaştırma Kanunu' çıkar.",
+        "label": "Otoyol çevresinde tarım arazilerinin sanayi ve konuta açılmasını yasaklayan 'Tarım Arazilerini Koruma ve Otoyol Kanunu' çıkar.",
         "preview": "Adalet +8, Halk +8, Güvenlik +1, Otorite +6 | Hazine -4",
         "effects": {
           "justice": 8,
@@ -34939,7 +34939,7 @@ const EVENT_DECK_MODERN = [
           "military": 1,
           "authority": 6
         },
-        "log": "Ulaştırma politikası kanunlaştı; Türkiye küresel ticaretin vazgeçilmez köprüsü haline geldi."
+        "log": "Otoyol kenarı betonlaşmadan korundu; tarım ve modern ulaşım dengesi yasal teminata bağlandı."
       }
     ]
   },
@@ -34956,11 +34956,11 @@ const EVENT_DECK_MODERN = [
       }
     ],
     "source": "Ulaştırma Bakanlığı",
-    "title": "Zigana Tüneli: Avrupa'nın En Uzun Çift Tüplü Tüneli",
-    "desc": "Trabzon ile Gümüşhane arasında 14.5 kilometrelik devasa tünelle kışın geçit vermeyen dağ aşıldı.",
+    "title": "Zigana Geçidinde Buzlanma Faciası ve Avrupa'nın En Uzun Çift Tüp Tüneli",
+    "desc": "Tarihi İpek Yolu'nun Doğu Karadeniz'i Orta Doğu'ya bağlayan Zigana Geçidi'nde kışın yaşanan buzlanma ve çığ felaketleri onlarca tır şoförünün ve ailenin uçurumlara yuvarlanmasına yol açıyor. Dağın altına 14.5 kilometrelik Avrupa'nın en uzun çift tüplü tünelinin yapılması projesi masada.",
     "options": [
       {
-        "label": "Ulaşım ve altyapı projelerinin ihale, kamulaştırma ve sözleşme süreçlerini şeffaf adli denetime tabi tut.",
+        "label": "Uluslararası Tünelcilik Birliği (ITA) standartlarında bağımsız jeolojik denetimle Yeni Zigana Tüneli projesini başlat.",
         "preview": "Adalet +9, Halk +8, Otorite +3 | Hazine -2",
         "effects": {
           "justice": 9,
@@ -34969,10 +34969,10 @@ const EVENT_DECK_MODERN = [
           "military": 0,
           "authority": 3
         },
-        "log": "Altyapı yatırımlarında hukuki şeffaflık sağlandı; kamulaştırma bedelleri hak sahiplerine ödendi."
+        "log": "Yeni Zigana Tüneli inşaatı başladı; 14.5 kilometrelik çift tüp tünel rekor sürede dağın altından geçirildi."
       },
       {
-        "label": "Mega projelerin hizmete girmesiyle birlikte vatandaşın erişimini kolaylaştıracak uygun tarife ve indirimleri uygula.",
+        "label": "Bölge nakliyecileri ve otobüs kooperatifleriyle istişare et; eski geçide kar siperleri ve ısıtmalı asfalt döşeyerek tüneli ertele.",
         "preview": "Adalet +2, Halk +9, Hazine +4, Güvenlik +2, Otorite +5",
         "effects": {
           "justice": 2,
@@ -34981,22 +34981,22 @@ const EVENT_DECK_MODERN = [
           "military": 2,
           "authority": 5
         },
-        "log": "Vatandaş memnuniyeti sağlandı; modern ulaşım imkanları halkın refahına sunuldu."
+        "log": "Eski yolda geçici iyileştirme yapıldı; ancak kış şartlarında ölümcül çığ riski önlenemedi."
       },
       {
-        "label": "Proje finansmanında Hazine dengelerini koru; gelir getirici ticari alanlarla kamu bütçesine katkı sağla.",
-        "preview": "Hazine +8, Otorite +4 | Halk -5",
+        "label": "Tünel inşasını yerli mühendislik ve Hazine bütçesiyle tamamla; yıllık yüz milyonlarca lira akaryakıt ve bakım tasarrufu sağla.",
+        "preview": "Adalet +1, Halk +4, Hazine +8, Otorite +5",
         "effects": {
-          "justice": 0,
-          "people": -5,
+          "justice": 1,
+          "people": 4,
           "treasury": 8,
           "military": 0,
-          "authority": 4
+          "authority": 5
         },
-        "log": "Altyapı yatırımları bütçeyi sarsmadan finanse edildi; kamu maliyesi korundu."
+        "log": "Zigana Tüneli açıldı; Trabzon'dan Gümüşhane ve Erzurum'a kesintisiz, güvenli transit hat kuruldu."
       },
       {
-        "label": "Stratejik liman, tünel ve köprü altyapısını terör ve siber sabotajlara karşı kolluk teyakkuzuna al.",
+        "label": "Tünel içine acil durum karakolları, yangın söndürme robotları ve sabotaj erken uyarı sensörleri yerleştir.",
         "preview": "Adalet +5, Halk +5, Güvenlik +9, Otorite +8 | Hazine -5",
         "effects": {
           "justice": 5,
@@ -35005,10 +35005,10 @@ const EVENT_DECK_MODERN = [
           "military": 9,
           "authority": 8
         },
-        "log": "Kritik ulaşım koridorları korundu; devletin lojistik güvenliği sağlandı."
+        "log": "Avrupa'nın en uzun çift tüp tüneli her türlü kaza ve terör senaryosuna karşı emniyete alındı."
       },
       {
-        "label": "Türkiye'nin ulaştırma ve lojistik master planını yasal güvenceye bağlayan 'Milli Altyapı ve Ulaştırma Kanunu' çıkar.",
+        "label": "Dağlık bölgelerde tünel ve viyadük standartlarını zorunlu kılan 'Karayolu Kış Güvenliği ve Tünel Kanunu' çıkar.",
         "preview": "Adalet +8, Halk +8, Güvenlik +1, Otorite +6 | Hazine -4",
         "effects": {
           "justice": 8,
@@ -35017,7 +35017,7 @@ const EVENT_DECK_MODERN = [
           "military": 1,
           "authority": 6
         },
-        "log": "Ulaştırma politikası kanunlaştı; Türkiye küresel ticaretin vazgeçilmez köprüsü haline geldi."
+        "log": "Tünel işletmesi yasal güvenceye bağlandı; Doğu Karadeniz lojistiği 12 ay açık hale geldi."
       }
     ]
   },
@@ -35034,11 +35034,11 @@ const EVENT_DECK_MODERN = [
       }
     ],
     "source": "Ulaştırma Bakanlığı",
-    "title": "Ovit Tüneli: Rize-Erzurum Arasında 14 Kilometrelik Kış Zaferi",
-    "desc": "2 bin 640 rakımlı Ovit Dağı kış aylarında 5 ay kapanırken tünel ile 12 ay açık hale geldi.",
+    "title": "Ovit Dağı Kış İzolasyonu ve İran Transit Hattında 14 Kilometrelik Tünel İkilemi",
+    "desc": "Rize ile Erzurum arasındaki 2640 rakımlı Ovit Dağı geçidi kışın 5 ay boyunca yoğun kar ve çığ nedeniyle kapanıyor; Karadeniz limanları ile Doğu Anadolu ve İran arasındaki ticaret kesintiye uğruyor. 14 kilometrelik Ovit Tüneli projesi için ağır kış şartlarında karar bekleniyor.",
     "options": [
       {
-        "label": "Ulaşım ve altyapı projelerinin ihale, kamulaştırma ve sözleşme süreçlerini şeffaf adli denetime tabi tut.",
+        "label": "Deprem fay hatları ve yeraltı su kaynaklarını koruyacak bağımsız mühendislik denetimiyle Ovit Tüneli ihalesini aç.",
         "preview": "Adalet +9, Halk +8, Otorite +3 | Hazine -2",
         "effects": {
           "justice": 9,
@@ -35047,10 +35047,10 @@ const EVENT_DECK_MODERN = [
           "military": 0,
           "authority": 3
         },
-        "log": "Altyapı yatırımlarında hukuki şeffaflık sağlandı; kamulaştırma bedelleri hak sahiplerine ödendi."
+        "log": "Ovit Dağı delindi; Türkiye'nin ve dünyanın en uzun çift tüplü tünellerinden biri inşa edildi."
       },
       {
-        "label": "Mega projelerin hizmete girmesiyle birlikte vatandaşın erişimini kolaylaştıracak uygun tarife ve indirimleri uygula.",
+        "label": "Bölge tüccarları ve şoförler odasıyla kriz masası kur; kış aylarında ağır vasıtaları alternatif sahil güzergahına yönlendir.",
         "preview": "Adalet +2, Halk +9, Hazine +4, Güvenlik +2, Otorite +5",
         "effects": {
           "justice": 2,
@@ -35059,10 +35059,10 @@ const EVENT_DECK_MODERN = [
           "military": 2,
           "authority": 5
         },
-        "log": "Vatandaş memnuniyeti sağlandı; modern ulaşım imkanları halkın refahına sunuldu."
+        "log": "Sahil yolu tır yoğunluğundan kilitlendi; Ovit Tüneli'nin kaçınılmaz olduğu anlaşıldı."
       },
       {
-        "label": "Proje finansmanında Hazine dengelerini koru; gelir getirici ticari alanlarla kamu bütçesine katkı sağla.",
+        "label": "Projeyi Hazine kaynaklarıyla finanse ederek tamamla; Rize Limanı'nı İran ve Orta Asya pazarlarına doğrudan bağla.",
         "preview": "Hazine +8, Otorite +4 | Halk -5",
         "effects": {
           "justice": 0,
@@ -35071,10 +35071,10 @@ const EVENT_DECK_MODERN = [
           "military": 0,
           "authority": 4
         },
-        "log": "Altyapı yatırımları bütçeyi sarsmadan finanse edildi; kamu maliyesi korundu."
+        "log": "Ovit Tüneli hizmete girdi; Karadeniz ile Doğu Anadolu arası seyahat süresi ve maliyeti yarı yarıya düştü."
       },
       {
-        "label": "Stratejik liman, tünel ve köprü altyapısını terör ve siber sabotajlara karşı kolluk teyakkuzuna al.",
+        "label": "Tünel girişlerine çığ fırlatma sistemleri ve askeri kontrol noktaları kurarak sınır ötesi kaçakçılığı engelle.",
         "preview": "Adalet +5, Halk +5, Güvenlik +9, Otorite +8 | Hazine -5",
         "effects": {
           "justice": 5,
@@ -35083,10 +35083,10 @@ const EVENT_DECK_MODERN = [
           "military": 9,
           "authority": 8
         },
-        "log": "Kritik ulaşım koridorları korundu; devletin lojistik güvenliği sağlandı."
+        "log": "Ovit Tüneli hem çığ tehlikesine hem de kaçakçılık şebekelerine karşı tam güvenli hale getirildi."
       },
       {
-        "label": "Türkiye'nin ulaştırma ve lojistik master planını yasal güvenceye bağlayan 'Milli Altyapı ve Ulaştırma Kanunu' çıkar.",
+        "label": "Sınır aşan transit koridorları devlet himayesine alan 'İpek Yolu Lojistik Koridoru Kanunu' çıkar.",
         "preview": "Adalet +8, Halk +8, Güvenlik +1, Otorite +6 | Hazine -4",
         "effects": {
           "justice": 8,
@@ -35095,7 +35095,7 @@ const EVENT_DECK_MODERN = [
           "military": 1,
           "authority": 6
         },
-        "log": "Ulaştırma politikası kanunlaştı; Türkiye küresel ticaretin vazgeçilmez köprüsü haline geldi."
+        "log": "Ovit Tüneli stratejik koridor olarak tescillendi; kış izolasyonu tarihe karıştı."
       }
     ]
   },
@@ -35112,11 +35112,11 @@ const EVENT_DECK_MODERN = [
       }
     ],
     "source": "Ulaştırma Bakanlığı",
-    "title": "Ilgaz 15 Temmuz İstiklal Tüneli",
-    "desc": "Karadeniz'i İç Anadolu'ya bağlayan zorlu Ilgaz Dağı geçişi tünelle güvenli hale getirildi.",
+    "title": "Ilgaz Dağı Kış Tehlikesi ve Kastamonu-Ankara İstiklal Tüneli İhtiyacı",
+    "desc": "Milli Mücadele'nin İstiklal Yolu olan Ilgaz Dağı geçidinde kış aylarında buzlanma ve yoğun sis sebebiyle başkent bağlantısı kopuyor; ambulanslar dağda mahsur kalıyor. Ilgaz 15 Temmuz İstiklal Tüneli projesi masaya geldi; ancak sarp kayalık arazide tünel delme maliyeti tartışılıyor.",
     "options": [
       {
-        "label": "Ulaşım ve altyapı projelerinin ihale, kamulaştırma ve sözleşme süreçlerini şeffaf adli denetime tabi tut.",
+        "label": "Karayolları Genel Müdürlüğü mühendisleriyle tam koordinasyon sağlayarak Ilgaz İstiklal Tüneli projesini başlat.",
         "preview": "Adalet +9, Halk +8, Otorite +3 | Hazine -2",
         "effects": {
           "justice": 9,
@@ -35125,46 +35125,46 @@ const EVENT_DECK_MODERN = [
           "military": 0,
           "authority": 3
         },
-        "log": "Altyapı yatırımlarında hukuki şeffaflık sağlandı; kamulaştırma bedelleri hak sahiplerine ödendi."
+        "log": "Ilgaz Dağı tünelle aşıldı; Kastamonu ile Ankara arası 1.5 saate inerek dağ çilesi sona erdi."
       },
       {
-        "label": "Mega projelerin hizmete girmesiyle birlikte vatandaşın erişimini kolaylaştıracak uygun tarife ve indirimleri uygula.",
-        "preview": "Adalet +2, Halk +9, Hazine +4, Güvenlik +2, Otorite +5",
+        "label": "Bölge esnafı ve dağ turizmi işletmecileriyle istişare et; kayak merkezinin yolunu açık tutarak tüneli ertele.",
+        "preview": "Adalet +3, Halk +9, Otorite +6 | Hazine -4",
         "effects": {
-          "justice": 2,
+          "justice": 3,
           "people": 9,
-          "treasury": 4,
-          "military": 2,
-          "authority": 5
+          "treasury": -4,
+          "military": 0,
+          "authority": 6
         },
-        "log": "Vatandaş memnuniyeti sağlandı; modern ulaşım imkanları halkın refahına sunuldu."
+        "log": "Turizm yolu açık tutuldu; fakat transit ağır vasıta taşımacılığı buzlanmadan kurtarılamadı."
       },
       {
-        "label": "Proje finansmanında Hazine dengelerini koru; gelir getirici ticari alanlarla kamu bütçesine katkı sağla.",
-        "preview": "Hazine +8, Otorite +4 | Halk -5",
+        "label": "Tünel finansmanını Hazine bütçesinden karşıla; yakıt tasarrufu ve turizm canlılığıyla maliyeti 3 yılda amorti et.",
+        "preview": "Adalet +1, Halk +4, Hazine +8, Otorite +5",
         "effects": {
-          "justice": 0,
-          "people": -5,
+          "justice": 1,
+          "people": 4,
           "treasury": 8,
           "military": 0,
-          "authority": 4
+          "authority": 5
         },
-        "log": "Altyapı yatırımları bütçeyi sarsmadan finanse edildi; kamu maliyesi korundu."
+        "log": "Yatırım kendini kısa sürede ödedi; Batı Karadeniz sanayisi başkente doğrudan bağlandı."
       },
       {
-        "label": "Stratejik liman, tünel ve köprü altyapısını terör ve siber sabotajlara karşı kolluk teyakkuzuna al.",
-        "preview": "Adalet +5, Halk +5, Güvenlik +9, Otorite +8 | Hazine -5",
+        "label": "Tünel içine akıllı sis sensörleri, yangın bariyerleri ve polis devriye noktaları konuşlandır.",
+        "preview": "Adalet +2, Halk +8, Güvenlik +6, Otorite +6 | Hazine -4",
         "effects": {
-          "justice": 5,
-          "people": 5,
-          "treasury": -5,
-          "military": 9,
-          "authority": 8
+          "justice": 2,
+          "people": 8,
+          "treasury": -4,
+          "military": 6,
+          "authority": 6
         },
-        "log": "Kritik ulaşım koridorları korundu; devletin lojistik güvenliği sağlandı."
+        "log": "Ilgaz Tüneli kış şartlarında sıfır kaza hedefiyle emniyete alındı."
       },
       {
-        "label": "Türkiye'nin ulaştırma ve lojistik master planını yasal güvenceye bağlayan 'Milli Altyapı ve Ulaştırma Kanunu' çıkar.",
+        "label": "Milli Mücadele rotalarını koruma ve modern ulaşıma kavuşturma kanunu çıkar.",
         "preview": "Adalet +8, Halk +8, Güvenlik +1, Otorite +6 | Hazine -4",
         "effects": {
           "justice": 8,
@@ -35173,7 +35173,7 @@ const EVENT_DECK_MODERN = [
           "military": 1,
           "authority": 6
         },
-        "log": "Ulaştırma politikası kanunlaştı; Türkiye küresel ticaretin vazgeçilmez köprüsü haline geldi."
+        "log": "İstiklal Tüneli milli hatıra ve modern mühendisliğin simgesi olarak hizmete girdi."
       }
     ]
   },
@@ -35190,11 +35190,11 @@ const EVENT_DECK_MODERN = [
       }
     ],
     "source": "Ulaştırma Bakanlığı",
-    "title": "Kamu-Özel İşbirliği (KÖİ) Modeli ve Geçiş Garantileri",
-    "desc": "Köprü ve otoyollardaki Hazine araç geçiş garantileri mecliste ve kamuoyunda bütçe tartışmalarına yol açtı.",
+    "title": "Kamu-Özel İşbirliği (KÖİ) Modeli ve Hazine Geçiş Garantilerinin Bütçe Yükü Krizi",
+    "desc": "Köprü, otoyol ve şehir hastanelerinde uygulanan dövize endeksli Hazine geçiş garantileri kur artışlarıyla bütçeye ağır yük getirmeye başladı. Sayıştay raporları ve muhalefet garantilerin kamu maliyesini ipotek altına aldığını savunurken, müteahhitler uluslararası tahkime gitme tehdidi savuruyor.",
     "options": [
       {
-        "label": "Ulaşım ve altyapı projelerinin ihale, kamulaştırma ve sözleşme süreçlerini şeffaf adli denetime tabi tut.",
+        "label": "Sayıştay ve bağımsız denetçilere tam yetki ver; tüm KÖİ sözleşmelerini inceleyip haksız garanti fazlalarını adli yargıya taşı.",
         "preview": "Adalet +9, Halk +8, Otorite +3 | Hazine -2",
         "effects": {
           "justice": 9,
@@ -35203,22 +35203,22 @@ const EVENT_DECK_MODERN = [
           "military": 0,
           "authority": 3
         },
-        "log": "Altyapı yatırımlarında hukuki şeffaflık sağlandı; kamulaştırma bedelleri hak sahiplerine ödendi."
+        "log": "Sözleşmeler mercek altına alındı; fahiş garanti hesaplamaları yargı kararıyla iptal edildi."
       },
       {
-        "label": "Mega projelerin hizmete girmesiyle birlikte vatandaşın erişimini kolaylaştıracak uygun tarife ve indirimleri uygula.",
-        "preview": "Adalet +2, Halk +7, Hazine +4, Otorite +6",
+        "label": "İşletmeci konsorsiyumlarla uzlaşma masası kur; dövize endeksli garantileri TÜFE/ÜFE sepetine bağlayarak revize et.",
+        "preview": "Adalet +3, Halk +9, Otorite +6 | Hazine -4",
         "effects": {
-          "justice": 2,
-          "people": 7,
-          "treasury": 4,
+          "justice": 3,
+          "people": 9,
+          "treasury": -4,
           "military": 0,
           "authority": 6
         },
-        "log": "Vatandaş memnuniyeti sağlandı; modern ulaşım imkanları halkın refahına sunuldu."
+        "log": "Konsorsiyumlarla uzlaşma sağlandı; Hazine üzerindeki kur şoku baskısı yumuşatıldı."
       },
       {
-        "label": "Proje finansmanında Hazine dengelerini koru; gelir getirici ticari alanlarla kamu bütçesine katkı sağla.",
+        "label": "Geçiş ücretlerini vatandaş için makul seviyeye çek; aradaki farkı Hazine bütçesinden kamu yararı adına karşıla.",
         "preview": "Hazine +8, Otorite +4 | Halk -5",
         "effects": {
           "justice": 0,
@@ -35227,10 +35227,10 @@ const EVENT_DECK_MODERN = [
           "military": 0,
           "authority": 4
         },
-        "log": "Altyapı yatırımları bütçeyi sarsmadan finanse edildi; kamu maliyesi korundu."
+        "log": "Vatandaş uygun fiyata köprü ve otoyolları kullandı; ancak Hazineye maliyet bindi."
       },
       {
-        "label": "Stratejik liman, tünel ve köprü altyapısını terör ve siber sabotajlara karşı kolluk teyakkuzuna al.",
+        "label": "Garanti sayılarını şişirmek için gişelerden usulsüz plaka okutan ve devleti soyan çetelere MASAK ve polisle baskın yap.",
         "preview": "Adalet +5, Halk +5, Güvenlik +9, Otorite +8 | Hazine -5",
         "effects": {
           "justice": 5,
@@ -35239,10 +35239,10 @@ const EVENT_DECK_MODERN = [
           "military": 9,
           "authority": 8
         },
-        "log": "Kritik ulaşım koridorları korundu; devletin lojistik güvenliği sağlandı."
+        "log": "Sanal araç geçiş yolsuzlukları çökertildi; kamunun milyonlarca liralık zararı önlendi."
       },
       {
-        "label": "Türkiye'nin ulaştırma ve lojistik master planını yasal güvenceye bağlayan 'Milli Altyapı ve Ulaştırma Kanunu' çıkar.",
+        "label": "Gelecek tüm KÖİ projelerinde döviz garantisini yasaklayan 'Kamu-Özel İşbirliği Çerçeve Reform Kanunu' çıkar.",
         "preview": "Adalet +6, Halk +4, Hazine +5, Otorite +6",
         "effects": {
           "justice": 6,
@@ -35251,7 +35251,7 @@ const EVENT_DECK_MODERN = [
           "military": 0,
           "authority": 6
         },
-        "log": "Ulaştırma politikası kanunlaştı; Türkiye küresel ticaretin vazgeçilmez köprüsü haline geldi."
+        "log": "Milli para birimi zorunlu kılındı; kamu maliyesi uluslararası spekülasyonlara karşı güvenceye alındı."
       }
     ]
   },
@@ -35268,68 +35268,68 @@ const EVENT_DECK_MODERN = [
       }
     ],
     "source": "Ulaştırma Bakanlığı",
-    "title": "Kanal İstanbul ÇED Raporu ve İtiraz Davaları",
-    "desc": "Marmara ile Karadeniz'i bağlayacak yapay su yolu projesinin çevre etki raporu tartışıldı.",
+    "title": "Kanal İstanbul Projesi: Montrö Boğazlar Sözleşmesi ve Jeopolitik Deniz İkilemi",
+    "desc": "İstanbul Boğazı'ndan geçen petrol tankerlerinin kaza ve patlama riski şehri tehdit ediyor. Karadeniz ile Marmara'yı bağlayacak yapay Kanal İstanbul projesi gündeme geldi; ancak Montrö Boğazlar Sözleşmesi'nin delinmesi riski, askeri gemilerin geçişi ve Karadeniz ekosisteminin bozulması uluslararası diplomatik kriz yarattı.",
     "options": [
       {
-        "label": "Ulaşım ve altyapı projelerinin ihale, kamulaştırma ve sözleşme süreçlerini şeffaf adli denetime tabi tut.",
-        "preview": "Adalet +9, Halk +8, Otorite +3 | Hazine -2",
-        "effects": {
-          "justice": 9,
-          "people": 8,
-          "treasury": -2,
-          "military": 0,
-          "authority": 3
-        },
-        "log": "Altyapı yatırımlarında hukuki şeffaflık sağlandı; kamulaştırma bedelleri hak sahiplerine ödendi."
-      },
-      {
-        "label": "Mega projelerin hizmete girmesiyle birlikte vatandaşın erişimini kolaylaştıracak uygun tarife ve indirimleri uygula.",
-        "preview": "Adalet +2, Halk +9, Hazine +4, Güvenlik +2, Otorite +5",
-        "effects": {
-          "justice": 2,
-          "people": 9,
-          "treasury": 4,
-          "military": 2,
-          "authority": 5
-        },
-        "log": "Vatandaş memnuniyeti sağlandı; modern ulaşım imkanları halkın refahına sunuldu."
-      },
-      {
-        "label": "Proje finansmanında Hazine dengelerini koru; gelir getirici ticari alanlarla kamu bütçesine katkı sağla.",
-        "preview": "Hazine +8, Otorite +4 | Halk -5",
-        "effects": {
-          "justice": 0,
-          "people": -5,
-          "treasury": 8,
-          "military": 0,
-          "authority": 4
-        },
-        "log": "Altyapı yatırımları bütçeyi sarsmadan finanse edildi; kamu maliyesi korundu."
-      },
-      {
-        "label": "Stratejik liman, tünel ve köprü altyapısını terör ve siber sabotajlara karşı kolluk teyakkuzuna al.",
-        "preview": "Adalet +5, Halk +5, Güvenlik +9, Otorite +8 | Hazine -5",
-        "effects": {
-          "justice": 5,
-          "people": 5,
-          "treasury": -5,
-          "military": 9,
-          "authority": 8
-        },
-        "log": "Kritik ulaşım koridorları korundu; devletin lojistik güvenliği sağlandı."
-      },
-      {
-        "label": "Türkiye'nin ulaştırma ve lojistik master planını yasal güvenceye bağlayan 'Milli Altyapı ve Ulaştırma Kanunu' çıkar.",
-        "preview": "Adalet +8, Halk +8, Güvenlik +1, Otorite +6 | Hazine -4",
+        "label": "Uluslararası deniz hukuku ve Montrö Sözleşmesi'ne tam bağlı kal; Kanal İstanbul'un hukuki statüsünü BM ve Karadeniz ülkelerine deklare et.",
+        "preview": "Adalet +8, Halk +5, Hazine +2, Otorite +6",
         "effects": {
           "justice": 8,
-          "people": 8,
-          "treasury": -4,
-          "military": 1,
+          "people": 5,
+          "treasury": 2,
+          "military": 0,
           "authority": 6
         },
-        "log": "Ulaştırma politikası kanunlaştı; Türkiye küresel ticaretin vazgeçilmez köprüsü haline geldi."
+        "log": "Türkiye'nin egemenlik hakları savunuldu; fakat uluslararası itirazlar ve diplomatik baskılar sürdü."
+      },
+      {
+        "label": "Bilim insanları, çevre örgütleri ve şehir sakinleriyle halk referandumu düzenle; projeyi toplumsal mutabakata bağla.",
+        "preview": "Adalet +3, Halk +6, Hazine +3, Otorite +7",
+        "effects": {
+          "justice": 3,
+          "people": 6,
+          "treasury": 3,
+          "military": 0,
+          "authority": 7
+        },
+        "log": "Demokratik istişare işletildi; kanal projesindeki kutuplaşma ve gerilim dindirildi."
+      },
+      {
+        "label": "Projeyi kamu bütçesinden tek kuruş harcamadan uluslararası konsorsiyumla YİD modeliyle ihale et; Boğaz tanker trafiğinden devasa geçiş geliri sağla.",
+        "preview": "Adalet +2, Halk +8, Güvenlik +2, Otorite +4 | Hazine -6",
+        "effects": {
+          "justice": 2,
+          "people": 8,
+          "treasury": -6,
+          "military": 2,
+          "authority": 4
+        },
+        "log": "Finansman modeli kuruldu; fakat devasa maliyet sebebiyle uluslararası fonlar temkinli yaklaştı."
+      },
+      {
+        "label": "Kanal güzergahında yabancı istihbarat servislerinin etki ajanlığı ve arsa spekülasyonu operasyonlarını MİT ile deşifre et.",
+        "preview": "Adalet +3, Güvenlik +4, Otorite +7 | Halk -2, Hazine -3",
+        "effects": {
+          "justice": 3,
+          "people": -2,
+          "treasury": -3,
+          "military": 4,
+          "authority": 7
+        },
+        "log": "Kanal çevresindeki karanlık yabancı fon hareketleri MASAK ve MİT tarafından tespit edilip bloke edildi."
+      },
+      {
+        "label": "Boğaz ve iç suyollarının güvenliğini münhasıran Türkiye'nin egemenliğine bağlayan 'Milli Su Yolları Kanunu' çıkar.",
+        "preview": "Adalet +5, Halk +3, Güvenlik +7, Otorite +7 | Hazine -4",
+        "effects": {
+          "justice": 5,
+          "people": 3,
+          "treasury": -4,
+          "military": 7,
+          "authority": 7
+        },
+        "log": "Kanal İstanbul'un hukuki çerçevesi kanunlaştı; Türkiye'nin deniz jeopolitiğindeki kozu tahkim edildi."
       }
     ]
   },
@@ -35346,68 +35346,68 @@ const EVENT_DECK_MODERN = [
       }
     ],
     "source": "Ulaştırma Bakanlığı",
-    "title": "Kanal İstanbul Sazlıdere Köprüsü Temel Atma Töreni",
-    "desc": "Proje güzergahında inşa edilen ilk köprünün temelleri Cumhurbaşkanı tarafından atıldı.",
+    "title": "Kanal İstanbul Sazlıdere Köprüsü ve Arsa Rantı Spekülasyonu Krizi",
+    "desc": "Kanal İstanbul projesinin ilk adımı olan Sazlıdere Asma Köprüsü'nün temeli atılacak. Ancak güzergahtaki tarım ve su havzası arazilerinin yabancı şirketler ve siyasi nüfuz sahipleri tarafından ucuza kapatıldığı iddiaları büyük bir yolsuzluk ve etik tartışması başlattı.",
     "options": [
       {
-        "label": "Köprü ve otoyol yapım sözleşmelerindeki Hazine geçiş garantilerini bağımsız Sayıştay denetimine tabi tutarak şeffaflığı sağla.",
-        "preview": "Adalet +9, Halk +8, Otorite +3 | Hazine -2",
+        "label": "Devlet Denetleme Kurulu ve MASAK'ı görevlendir; güzergahtaki tüm şüpheli tapu devirlerini inceleyip haksız rantları iptal et.",
+        "preview": "Adalet +9, Halk +7, Hazine +5, Otorite +3",
         "effects": {
           "justice": 9,
-          "people": 8,
-          "treasury": -2,
+          "people": 7,
+          "treasury": 5,
           "military": 0,
           "authority": 3
         },
-        "log": "Sayıştay raporlarıyla sözleşmeler incelendi; geçiş garantisi ve maliyet dengesi kamuoyuyla paylaşıldı."
+        "log": "Spekülatif arazi rantları donduruldu; şeffaf adli süreç kamu vicdanını rahatlattı."
       },
       {
-        "label": "Bayramlarda ve tatillerde köprü ve otoyolları ücretsiz yaparak vatandaşın memleketine güvenle ulaşmasını temin et.",
-        "preview": "Adalet +2, Halk +9, Hazine +4, Güvenlik +2, Otorite +5",
+        "label": "Bölge çiftçileri ve muhtarlarla toplantı yap; köylünün elindeki toprağı satmasını önleyecek tarımsal destek paketi açıkla.",
+        "preview": "Adalet +2, Halk +8, Otorite +5 | Hazine -2",
         "effects": {
           "justice": 2,
-          "people": 9,
-          "treasury": 4,
-          "military": 2,
+          "people": 8,
+          "treasury": -2,
+          "military": 0,
           "authority": 5
         },
-        "log": "Milyonlarca vatandaş bayram sevinci yaşadı; feribot kuyrukları tarihe karıştı."
+        "log": "Köylü toprağına sahip çıktı; arazilerin spekülatörlerin eline geçmesi engellendi."
       },
       {
-        "label": "Geçiş garantilerinin Hazineye oluşturduğu kur farkı yükünü frenlemek için sözleşmelerdeki araç başı tarifeyi TL bazında revize et.",
-        "preview": "Hazine +8, Otorite +4 | Halk -5",
+        "label": "Sazlıdere Köprüsü'nü Kuzey Marmara Otoyolu entegrasyonuyla tamamla; transit araç geçişlerinden Hazineye gelir sağla.",
+        "preview": "Adalet +1, Halk +4, Hazine +8, Otorite +5",
         "effects": {
-          "justice": 0,
-          "people": -5,
+          "justice": 1,
+          "people": 4,
           "treasury": 8,
           "military": 0,
-          "authority": 4
+          "authority": 5
         },
-        "log": "Hazine borç yükü hafifletildi; kamu-özel işbirliği projelerinde bütçe dengesi korundu."
+        "log": "Köprü inşası ilerledi; Başakşehir ile Hadımköy arasındaki karayolu bağlantısı güçlendi."
       },
       {
-        "label": "Stratejik asma köprülerin kulelerinde radar, kamera ve hava savunma sensörleriyle 24 saat kesintisiz koruma çemberi kur.",
-        "preview": "Adalet +3, Güvenlik +4, Otorite +7 | Halk -2, Hazine -3",
-        "effects": {
-          "justice": 3,
-          "people": -2,
-          "treasury": -3,
-          "military": 4,
-          "authority": 7
-        },
-        "log": "Boğaz ve körfez köprüleri terör ve sabotaj tehdidine karşı yüksek teknolojiyle korundu."
-      },
-      {
-        "label": "Yap-İşlet-Devret (YİD) projelerinde kamu menfaatini maksimize eden 'Kamu-Özel İşbirliği Çerçeve Reform Kanunu' çıkar.",
-        "preview": "Adalet +5, Halk +3, Güvenlik +7, Otorite +7 | Hazine -4",
+        "label": "İnşaat sahasında terör ve sabotaj tehditlerine karşı jandarma ve emniyet timleriyle 24 saat zırhlı koruma kordonu kur.",
+        "preview": "Adalet +5, Halk +5, Güvenlik +9, Otorite +8 | Hazine -5",
         "effects": {
           "justice": 5,
-          "people": 3,
-          "treasury": -4,
-          "military": 7,
-          "authority": 7
+          "people": 5,
+          "treasury": -5,
+          "military": 9,
+          "authority": 8
         },
-        "log": "Gelecek mega projelerin ihale ve garanti şartları kanuni şeffaflık standartlarına bağlandı."
+        "log": "Köprü ayakları ve şantiye sahası provokasyonlara karşı emniyete alındı."
+      },
+      {
+        "label": "Kritik mega altyapı güzergahlarındaki imar rantını yüzde 90 vergilendiren 'İmar Rantı Vergilendirme Kanunu' çıkar.",
+        "preview": "Adalet +6, Halk +4, Hazine +5, Otorite +6",
+        "effects": {
+          "justice": 6,
+          "people": 4,
+          "treasury": 5,
+          "military": 0,
+          "authority": 6
+        },
+        "log": "Arsa rantı kamulaştırıldı; spekülatörlerin haksız kazanç kapısı kanunla kapatıldı."
       }
     ]
   },
@@ -35424,68 +35424,68 @@ const EVENT_DECK_MODERN = [
       }
     ],
     "source": "Ulaştırma Bakanlığı",
-    "title": "Çamlıca Televizyon Kulesi ve Anten Kirliliğinin Sonu",
-    "desc": "İstanbul Boğazı tepelerindeki onlarca paslı verici sökülerek tek bir kulede toplandı.",
+    "title": "Çamlıca Tepesindeki Vericilerin Dinleme/Sinyal Casusluğu Zafiyeti",
+    "desc": "İstanbul'un silüetini bozan Çamlıca Tepesi'ndeki onlarca demir anten kulesinin yabancı istihbarat servislerince sinyal istihbaratı (SIGINT) ve yasadışı dinleme amacıyla kullanıldığı istihbarat raporlarına yansıdı. Dağınık vericilerin tek bir fütüristik kulede toplanması ve askeri frekans güvenliğine alınması planlanıyor.",
     "options": [
       {
-        "label": "Ulaşım ve altyapı projelerinin ihale, kamulaştırma ve sözleşme süreçlerini şeffaf adli denetime tabi tut.",
-        "preview": "Adalet +9, Halk +8, Otorite +3 | Hazine -2",
+        "label": "BTK ve yargı müfettişlerini görevlendir; izinsiz frekans yayan tüm korsan vericileri mühürleyip sorumluları yargıya sevk et.",
+        "preview": "Adalet +8, Halk +4, Güvenlik +4, Otorite +5 | Hazine -2",
         "effects": {
-          "justice": 9,
+          "justice": 8,
+          "people": 4,
+          "treasury": -2,
+          "military": 4,
+          "authority": 5
+        },
+        "log": "Korsan frekanslar temizlendi; elektromanyetik kirlilik ve yasadışı dinleme hatları kesildi."
+      },
+      {
+        "label": "Yayıncı kuruluşlar ve radyo televizyon dernekleriyle istişare et; ortak yayın altyapısına geçiş maliyetlerini sübvanse et.",
+        "preview": "Adalet +2, Halk +8, Otorite +5 | Hazine -2",
+        "effects": {
+          "justice": 2,
           "people": 8,
           "treasury": -2,
           "military": 0,
-          "authority": 3
-        },
-        "log": "Altyapı yatırımlarında hukuki şeffaflık sağlandı; kamulaştırma bedelleri hak sahiplerine ödendi."
-      },
-      {
-        "label": "Mega projelerin hizmete girmesiyle birlikte vatandaşın erişimini kolaylaştıracak uygun tarife ve indirimleri uygula.",
-        "preview": "Adalet +2, Halk +9, Hazine +4, Güvenlik +2, Otorite +5",
-        "effects": {
-          "justice": 2,
-          "people": 9,
-          "treasury": 4,
-          "military": 2,
           "authority": 5
         },
-        "log": "Vatandaş memnuniyeti sağlandı; modern ulaşım imkanları halkın refahına sunuldu."
+        "log": "Medya sektörüyle mutabakat sağlandı; 100 radyo aynı anda tek kuleden yayına başladı."
       },
       {
-        "label": "Proje finansmanında Hazine dengelerini koru; gelir getirici ticari alanlarla kamu bütçesine katkı sağla.",
-        "preview": "Hazine +8, Otorite +4 | Halk -5",
+        "label": "369 metrelik Küçük Çamlıca Televizyon Kulesi'ni inşa et; seyir terası ve restoran gelirleriyle projeyi kendi kendini finanse eder kıl.",
+        "preview": "Adalet +2, Halk +8, Güvenlik +2, Otorite +4 | Hazine -6",
         "effects": {
-          "justice": 0,
-          "people": -5,
-          "treasury": 8,
-          "military": 0,
+          "justice": 2,
+          "people": 8,
+          "treasury": -6,
+          "military": 2,
           "authority": 4
         },
-        "log": "Altyapı yatırımları bütçeyi sarsmadan finanse edildi; kamu maliyesi korundu."
+        "log": "Çamlıca Kulesi İstanbul'un yeni simgesi oldu; Hazineye yıllık milyonlarca lira turizm geliri aktı."
       },
       {
-        "label": "Stratejik liman, tünel ve köprü altyapısını terör ve siber sabotajlara karşı kolluk teyakkuzuna al.",
-        "preview": "Adalet +5, Halk +5, Güvenlik +9, Otorite +8 | Hazine -5",
+        "label": "Kulenin en üst katına MİT ve TSK'nın gizli elektronik harp ve sinyal gözetleme dinleme merkezini konuşlandır.",
+        "preview": "Adalet +3, Güvenlik +4, Otorite +7 | Halk -2, Hazine -3",
+        "effects": {
+          "justice": 3,
+          "people": -2,
+          "treasury": -3,
+          "military": 4,
+          "authority": 7
+        },
+        "log": "İstanbul Boğazı ve Marmara hava sahası elektromanyetik kalkan altına alındı; yabancı sinyal casusluğu engellendi."
+      },
+      {
+        "label": "Haberleşme kulelerini milli stratejik güvenlik alanı ilan eden 'Ulusal Yayın ve Frekans Güvenliği Kanunu' çıkar.",
+        "preview": "Adalet +5, Halk +3, Güvenlik +7, Otorite +7 | Hazine -4",
         "effects": {
           "justice": 5,
-          "people": 5,
-          "treasury": -5,
-          "military": 9,
-          "authority": 8
-        },
-        "log": "Kritik ulaşım koridorları korundu; devletin lojistik güvenliği sağlandı."
-      },
-      {
-        "label": "Türkiye'nin ulaştırma ve lojistik master planını yasal güvenceye bağlayan 'Milli Altyapı ve Ulaştırma Kanunu' çıkar.",
-        "preview": "Adalet +8, Halk +8, Güvenlik +1, Otorite +6 | Hazine -4",
-        "effects": {
-          "justice": 8,
-          "people": 8,
+          "people": 3,
           "treasury": -4,
-          "military": 1,
-          "authority": 6
+          "military": 7,
+          "authority": 7
         },
-        "log": "Ulaştırma politikası kanunlaştı; Türkiye küresel ticaretin vazgeçilmez köprüsü haline geldi."
+        "log": "Tüm radyo ve TV vericileri tek merkezden kontrol edilen milli güvenlik protokolüne bağlandı."
       }
     ]
   },
@@ -35502,35 +35502,35 @@ const EVENT_DECK_MODERN = [
       }
     ],
     "source": "Ulaştırma Bakanlığı",
-    "title": "Galataport İstanbul Kruvaziyer Limanı ve Sahil Erişimi",
-    "desc": "200 yıldır kapalı olan Karaköy sahili dünyanın ilk yer altı kruvaziyer terminaliyle halka açıldı.",
+    "title": "Galataport İhalesinde Tarihi Kıyı Şeridi ve Yabancı Yatırımcı Güvenliği İkilemi",
+    "desc": "200 yıldır halka kapalı olan tarihi Karaköy sahil şeridinde dünyanın ilk yer altı kruvaziyer terminali (Galataport) projesi hazırlandı. Ancak projenin tarihi binaları yok edeceği iddiaları ve yabancı kruvaziyer gemilerine karşı terör ve sabotaj tehditleri gündemde.",
     "options": [
       {
-        "label": "Ulaşım ve altyapı projelerinin ihale, kamulaştırma ve sözleşme süreçlerini şeffaf adli denetime tabi tut.",
-        "preview": "Adalet +9, Halk +8, Otorite +3 | Hazine -2",
+        "label": "Kültür Varlıklarını Koruma Kurulu denetiminde tarihi paket postanesi ve rıhtım binalarını aslına sadık restore ettir.",
+        "preview": "Adalet +8, Halk +4, Güvenlik +4, Otorite +5 | Hazine -2",
         "effects": {
-          "justice": 9,
-          "people": 8,
+          "justice": 8,
+          "people": 4,
           "treasury": -2,
-          "military": 0,
-          "authority": 3
-        },
-        "log": "Altyapı yatırımlarında hukuki şeffaflık sağlandı; kamulaştırma bedelleri hak sahiplerine ödendi."
-      },
-      {
-        "label": "Mega projelerin hizmete girmesiyle birlikte vatandaşın erişimini kolaylaştıracak uygun tarife ve indirimleri uygula.",
-        "preview": "Adalet +2, Halk +9, Hazine +4, Güvenlik +2, Otorite +5",
-        "effects": {
-          "justice": 2,
-          "people": 9,
-          "treasury": 4,
-          "military": 2,
+          "military": 4,
           "authority": 5
         },
-        "log": "Vatandaş memnuniyeti sağlandı; modern ulaşım imkanları halkın refahına sunuldu."
+        "log": "Tarihi miras korundu; sahil şeridi ilk kez İstanbulluların yürüyüşüne ve kültürüne açıldı."
       },
       {
-        "label": "Proje finansmanında Hazine dengelerini koru; gelir getirici ticari alanlarla kamu bütçesine katkı sağla.",
+        "label": "Karaköy esnafı, sanatçılar ve sivil toplumla görüş; sahil bandına halkın ücretsiz erişimini garanti altına al.",
+        "preview": "Adalet +3, Halk +9, Otorite +6 | Hazine -4",
+        "effects": {
+          "justice": 3,
+          "people": 9,
+          "treasury": -4,
+          "military": 0,
+          "authority": 6
+        },
+        "log": "Halkın sahil hakkı korundu; kruvaziyer yolcularıyla şehir halkı aynı meydanda buluştu."
+      },
+      {
+        "label": "Doğuş-Bilgili konsorsiyumuyla YİD ihalesini tamamla; devlete 702 milyon dolar peşin gelir ve yıllık milyonlarca turist girdisi sağla.",
         "preview": "Hazine +8, Otorite +4 | Halk -5",
         "effects": {
           "justice": 0,
@@ -35539,10 +35539,10 @@ const EVENT_DECK_MODERN = [
           "military": 0,
           "authority": 4
         },
-        "log": "Altyapı yatırımları bütçeyi sarsmadan finanse edildi; kamu maliyesi korundu."
+        "log": "Dünyanın en modern kruvaziyer limanı açıldı; İstanbul küresel deniz turizminin başkenti oldu."
       },
       {
-        "label": "Stratejik liman, tünel ve köprü altyapısını terör ve siber sabotajlara karşı kolluk teyakkuzuna al.",
+        "label": "Yeraltı terminaline gizli deniz altı ve balıkadam güvenlik bariyerleri kurarak limanı sabotaja karşı koru.",
         "preview": "Adalet +5, Halk +5, Güvenlik +9, Otorite +8 | Hazine -5",
         "effects": {
           "justice": 5,
@@ -35551,19 +35551,19 @@ const EVENT_DECK_MODERN = [
           "military": 9,
           "authority": 8
         },
-        "log": "Kritik ulaşım koridorları korundu; devletin lojistik güvenliği sağlandı."
+        "log": "Kruvaziyer limanı en üst seviye ISPS uluslararası liman güvenlik sertifikasıyla korundu."
       },
       {
-        "label": "Türkiye'nin ulaştırma ve lojistik master planını yasal güvenceye bağlayan 'Milli Altyapı ve Ulaştırma Kanunu' çıkar.",
-        "preview": "Adalet +8, Halk +8, Güvenlik +1, Otorite +6 | Hazine -4",
+        "label": "Tarihi kıyı dolgularını ve limanları ranta karşı koruyan 'Kıyı Şeridi ve Liman Reform Kanunu' çıkar.",
+        "preview": "Adalet +5, Halk +3, Güvenlik +7, Otorite +7 | Hazine -4",
         "effects": {
-          "justice": 8,
-          "people": 8,
+          "justice": 5,
+          "people": 3,
           "treasury": -4,
-          "military": 1,
-          "authority": 6
+          "military": 7,
+          "authority": 7
         },
-        "log": "Ulaştırma politikası kanunlaştı; Türkiye küresel ticaretin vazgeçilmez köprüsü haline geldi."
+        "log": "Tarihi limanlar yasal korumaya bağlandı; Galataport küresel bir başarı hikayesine dönüştü."
       }
     ]
   },
@@ -35580,11 +35580,11 @@ const EVENT_DECK_MODERN = [
       }
     ],
     "source": "Ulaştırma Bakanlığı",
-    "title": "Haliç Tersanesi Restorasyonu ve Sanat Üssü",
-    "desc": "Fatih Sultan Mehmet'in kurduğu 600 yıllık tersane müzeler ve sanat galerileriyle ihya edildi.",
+    "title": "600 Yıllık Haliç Askeri Tersanesi ve Denizcilik Mirasının Geleceği",
+    "desc": "Fatih Sultan Mehmet'in kurduğu Haliç Tersaneleri (Tersane-i Amire) atıl duruma düştü; özel şirketler arazinin marina ve rezidans yapılmasını istiyor. Denizcilik camiası tarihi kuru havuzların ve gemi üretim kabiliyetinin korunmasını talep ederken tersane arazisi üzerinde büyük rant savaşı yaşanıyor.",
     "options": [
       {
-        "label": "Ulaşım ve altyapı projelerinin ihale, kamulaştırma ve sözleşme süreçlerini şeffaf adli denetime tabi tut.",
+        "label": "Kültür Bakanlığı ve deniz tarihçilerine tam yetki ver; tarihi kuru havuzları sanayi mirası müzesi ve aktif vapur tamirhanesi olarak koru.",
         "preview": "Adalet +9, Halk +8, Otorite +3 | Hazine -2",
         "effects": {
           "justice": 9,
@@ -35593,10 +35593,10 @@ const EVENT_DECK_MODERN = [
           "military": 0,
           "authority": 3
         },
-        "log": "Altyapı yatırımlarında hukuki şeffaflık sağlandı; kamulaştırma bedelleri hak sahiplerine ödendi."
+        "log": "Dünyanın yaşayan en eski tersanesi kurtarıldı; Şehir Hatları vapurları kendi tarihi tersanesinde onarılmaya devam etti."
       },
       {
-        "label": "Mega projelerin hizmete girmesiyle birlikte vatandaşın erişimini kolaylaştıracak uygun tarife ve indirimleri uygula.",
+        "label": "Kasımpaşa halkı ve tersane işçileri sendikalarıyla istişare et; istihdamı koruyarak tersaneyi denizcilik meslek lisesiyle birleştir.",
         "preview": "Adalet +3, Halk +9, Otorite +6 | Hazine -4",
         "effects": {
           "justice": 3,
@@ -35605,10 +35605,10 @@ const EVENT_DECK_MODERN = [
           "military": 0,
           "authority": 6
         },
-        "log": "Vatandaş memnuniyeti sağlandı; modern ulaşım imkanları halkın refahına sunuldu."
+        "log": "İşçi hakları korundu; tarihi tersane denizcilik ustaları yetiştiren milli akademiye dönüştü."
       },
       {
-        "label": "Proje finansmanında Hazine dengelerini koru; gelir getirici ticari alanlarla kamu bütçesine katkı sağla.",
+        "label": "Tersane İstanbul projesiyle atıl binaları kültür ve turizm merkezine dönüştür; Hazineye yüksek kira geliri kazandır.",
         "preview": "Hazine +8, Otorite +4 | Halk -5",
         "effects": {
           "justice": 0,
@@ -35617,31 +35617,31 @@ const EVENT_DECK_MODERN = [
           "military": 0,
           "authority": 4
         },
-        "log": "Altyapı yatırımları bütçeyi sarsmadan finanse edildi; kamu maliyesi korundu."
+        "log": "Haliç sahilinde müzeler ve oteller açıldı; bütçeye kaynak aktarılırken tarihi doku restore edildi."
       },
       {
-        "label": "Stratejik liman, tünel ve köprü altyapısını terör ve siber sabotajlara karşı kolluk teyakkuzuna al.",
-        "preview": "Adalet +5, Halk +5, Güvenlik +9, Otorite +8 | Hazine -5",
+        "label": "Tersane arazisine yönelik kundaklama ve şüpheli yangın girişimlerine karşı deniz polisiyle 24 saat nöbet tut.",
+        "preview": "Adalet +2, Halk +8, Güvenlik +6, Otorite +6 | Hazine -4",
         "effects": {
-          "justice": 5,
-          "people": 5,
-          "treasury": -5,
-          "military": 9,
-          "authority": 8
-        },
-        "log": "Kritik ulaşım koridorları korundu; devletin lojistik güvenliği sağlandı."
-      },
-      {
-        "label": "Türkiye'nin ulaştırma ve lojistik master planını yasal güvenceye bağlayan 'Milli Altyapı ve Ulaştırma Kanunu' çıkar.",
-        "preview": "Adalet +8, Halk +8, Güvenlik +1, Otorite +6 | Hazine -4",
-        "effects": {
-          "justice": 8,
+          "justice": 2,
           "people": 8,
           "treasury": -4,
-          "military": 1,
+          "military": 6,
           "authority": 6
         },
-        "log": "Ulaştırma politikası kanunlaştı; Türkiye küresel ticaretin vazgeçilmez köprüsü haline geldi."
+        "log": "Tarihi ahşap ambarlar ve vinçler yangın sabotajı tehditlerine karşı güvenceye alındı."
+      },
+      {
+        "label": "Osmanlı'dan kalan askeri sanayi tesislerinin imara açılmasını ebediyen yasaklayan kanun çıkar.",
+        "preview": "Adalet +5, Halk +3, Güvenlik +7, Otorite +7 | Hazine -4",
+        "effects": {
+          "justice": 5,
+          "people": 3,
+          "treasury": -4,
+          "military": 7,
+          "authority": 7
+        },
+        "log": "Haliç Tersanesi tarihi tescile kavuştu; Türk denizciliğinin beşiği geleceğe taşındı."
       }
     ]
   },
@@ -35658,11 +35658,11 @@ const EVENT_DECK_MODERN = [
       }
     ],
     "source": "Ulaştırma Bakanlığı",
-    "title": "Haydarpaşa Garı Yangını ve Tarihi Restorasyon",
-    "desc": "Çatısında çıkan yangın sonrası gar binası ve çevresindeki antik Khalkedon kalıntıları müzeye bağlandı.",
+    "title": "Haydarpaşa Garı Yangını: Kundaklama/Sabotaj İddiaları ve Garın Statüsü",
+    "desc": "Tarihi Haydarpaşa Garı'nın çatısında çıkan büyük yangın başkenti ayağa kaldırdı. Yangının gar sahasını otel ve AVM yapmak isteyen rant odaklarınca çıkarıldığı iddia edilirken; ray altındaki arkeolojik kazılar ve tren seferlerinin gara dönüp dönmeyeceği büyük bir siyasi gerilime dönüştü.",
     "options": [
       {
-        "label": "Ulaşım ve altyapı projelerinin ihale, kamulaştırma ve sözleşme süreçlerini şeffaf adli denetime tabi tut.",
+        "label": "Yangının çıkış nedenini bağımsız kriminal bilirkişilere incelet; sorumluları ağır cezada yargılatıp çatıyı aslına sadık restore et.",
         "preview": "Adalet +9, Halk +8, Otorite +3 | Hazine -2",
         "effects": {
           "justice": 9,
@@ -35671,10 +35671,10 @@ const EVENT_DECK_MODERN = [
           "military": 0,
           "authority": 3
         },
-        "log": "Altyapı yatırımlarında hukuki şeffaflık sağlandı; kamulaştırma bedelleri hak sahiplerine ödendi."
+        "log": "Yangın şüphelileri yargılandı; tarihi garın çatısı orijinal vitrayları ve taşlarıyla yeniden ihya edildi."
       },
       {
-        "label": "Mega projelerin hizmete girmesiyle birlikte vatandaşın erişimini kolaylaştıracak uygun tarife ve indirimleri uygula.",
+        "label": "Demiryolu sendikaları, Kadıköy sakinleri ve koruma kurullarıyla meşveret et; garın sadece demiryolu amacıyla kullanılacağını ilan et.",
         "preview": "Adalet +3, Halk +9, Otorite +6 | Hazine -4",
         "effects": {
           "justice": 3,
@@ -35683,10 +35683,10 @@ const EVENT_DECK_MODERN = [
           "military": 0,
           "authority": 6
         },
-        "log": "Vatandaş memnuniyeti sağlandı; modern ulaşım imkanları halkın refahına sunuldu."
+        "log": "Halkın güveni tazelendi; garın otel yapılacağı dedikoduları resmi açıklamayla son buldu."
       },
       {
-        "label": "Proje finansmanında Hazine dengelerini koru; gelir getirici ticari alanlarla kamu bütçesine katkı sağla.",
+        "label": "Gar sahasında çıkan Helenistik ve Roma dönemi Khalkedon limanı buluntularını Arkeopark olarak turizme aç.",
         "preview": "Hazine +8, Otorite +4 | Halk -5",
         "effects": {
           "justice": 0,
@@ -35695,10 +35695,10 @@ const EVENT_DECK_MODERN = [
           "military": 0,
           "authority": 4
         },
-        "log": "Altyapı yatırımları bütçeyi sarsmadan finanse edildi; kamu maliyesi korundu."
+        "log": "Haydarpaşa Arkeopark ve Gar kompleksi olarak tescillendi; kültür turizmi canlandı."
       },
       {
-        "label": "Stratejik liman, tünel ve köprü altyapısını terör ve siber sabotajlara karşı kolluk teyakkuzuna al.",
+        "label": "Tarihi tren garı ve liman sahasına yönelik sabotaj ve yangın riskine karşı özel itfaiye ve emniyet birimi konuşlandır.",
         "preview": "Adalet +5, Halk +5, Güvenlik +9, Otorite +8 | Hazine -5",
         "effects": {
           "justice": 5,
@@ -35707,10 +35707,10 @@ const EVENT_DECK_MODERN = [
           "military": 9,
           "authority": 8
         },
-        "log": "Kritik ulaşım koridorları korundu; devletin lojistik güvenliği sağlandı."
+        "log": "Tarihi gar binası 24 saat termal kamera ve otomatik yangın söndürme sistemleriyle korundu."
       },
       {
-        "label": "Türkiye'nin ulaştırma ve lojistik master planını yasal güvenceye bağlayan 'Milli Altyapı ve Ulaştırma Kanunu' çıkar.",
+        "label": "Tarihi tren garlarının ve demiryolu mülklerinin özelleştirilmesini yasaklayan 'Tarihi Garlar Kanunu' çıkar.",
         "preview": "Adalet +8, Halk +8, Güvenlik +1, Otorite +6 | Hazine -4",
         "effects": {
           "justice": 8,
@@ -35719,7 +35719,7 @@ const EVENT_DECK_MODERN = [
           "military": 1,
           "authority": 6
         },
-        "log": "Ulaştırma politikası kanunlaştı; Türkiye küresel ticaretin vazgeçilmez köprüsü haline geldi."
+        "log": "Haydarpaşa Garı'nın demiryolu kimliği kanunla ebedileşti; trenler tarihi garına geri döndü."
       }
     ]
   },
@@ -35736,68 +35736,68 @@ const EVENT_DECK_MODERN = [
       }
     ],
     "source": "Ulaştırma Bakanlığı",
-    "title": "Rize-Artvin Havalimanı: Deniz Dolgusu Üzerine 2. Meydan",
-    "desc": "Karadeniz dalgaları arasına milyonlarca ton taş dökülerek çay bardağı kulesiyle açıldı.",
+    "title": "Doğu Karadeniz Dağlık Arazisinde Havaalanı Yokluğu ve Rize-Artvin Deniz Dolgusu",
+    "desc": "Sarp Kaçkar Dağları ve dar vadiler sebebiyle Rize ve Artvin'de havalimanı yapacak tek bir düz arazi yok; acil hastalar ve yayla turizmi saatlerce Trabzon'a gitmek zorunda kalıyor. Karadeniz'in hırçın dalgaları arasına 100 milyon ton taş dökerek deniz dolgusu havalimanı yapma projesi hazırlandı.",
     "options": [
       {
-        "label": "Ulaşım ve altyapı projelerinin ihale, kamulaştırma ve sözleşme süreçlerini şeffaf adli denetime tabi tut.",
-        "preview": "Adalet +9, Halk +8, Otorite +3 | Hazine -2",
+        "label": "Karadeniz kıyı hidrolojisini ve dalga mekaniğini en üst uluslararası mühendislik standartlarında inceleterek inşaatı başlat.",
+        "preview": "Adalet +8, Halk +5, Hazine +2, Otorite +6",
         "effects": {
-          "justice": 9,
+          "justice": 8,
+          "people": 5,
+          "treasury": 2,
+          "military": 0,
+          "authority": 6
+        },
+        "log": "Rize-Artvin Havalimanı deniz dolgusu üzerinde çay bardağı kulesiyle yükseldi; dünyada 5. deniz havalimanı oldu."
+      },
+      {
+        "label": "Bölge balıkçıları ve sahil sakinleriyle görüş; taş ocaklarının vadilere zarar vermesini engelleyecek çevre protokolü uygula.",
+        "preview": "Adalet +2, Halk +8, Otorite +5 | Hazine -2",
+        "effects": {
+          "justice": 2,
           "people": 8,
           "treasury": -2,
           "military": 0,
-          "authority": 3
-        },
-        "log": "Altyapı yatırımlarında hukuki şeffaflık sağlandı; kamulaştırma bedelleri hak sahiplerine ödendi."
-      },
-      {
-        "label": "Mega projelerin hizmete girmesiyle birlikte vatandaşın erişimini kolaylaştıracak uygun tarife ve indirimleri uygula.",
-        "preview": "Adalet +2, Halk +9, Hazine +4, Güvenlik +2, Otorite +5",
-        "effects": {
-          "justice": 2,
-          "people": 9,
-          "treasury": 4,
-          "military": 2,
           "authority": 5
         },
-        "log": "Vatandaş memnuniyeti sağlandı; modern ulaşım imkanları halkın refahına sunuldu."
+        "log": "Taş alımı kontrollü yapıldı; vadilerin doğası korunurken deniz dolgusu tamamlandı."
       },
       {
-        "label": "Proje finansmanında Hazine dengelerini koru; gelir getirici ticari alanlarla kamu bütçesine katkı sağla.",
-        "preview": "Hazine +8, Otorite +4 | Halk -5",
+        "label": "Hazine bütçesiyle projeyi tamamla; Doğu Karadeniz yaylalarını dünya turizmine açarak yıllık yüz milyonlarca dolar gelir sağla.",
+        "preview": "Adalet +1, Halk +4, Hazine +8, Otorite +5",
         "effects": {
-          "justice": 0,
-          "people": -5,
+          "justice": 1,
+          "people": 4,
           "treasury": 8,
           "military": 0,
-          "authority": 4
+          "authority": 5
         },
-        "log": "Altyapı yatırımları bütçeyi sarsmadan finanse edildi; kamu maliyesi korundu."
+        "log": "Rize ve Artvin turizmi şahlandı; Gürcistan ve Kafkasya'dan gelen yolcularla havalimanı doldu taştı."
       },
       {
-        "label": "Stratejik liman, tünel ve köprü altyapısını terör ve siber sabotajlara karşı kolluk teyakkuzuna al.",
-        "preview": "Adalet +5, Halk +5, Güvenlik +9, Otorite +8 | Hazine -5",
+        "label": "Havalimanının deniz cephesine güçlü mendirekler ve olası askeri çıkarma/operasyonlar için helikopter pistleri konuşlandır.",
+        "preview": "Adalet +2, Halk +8, Güvenlik +6, Otorite +6 | Hazine -4",
         "effects": {
-          "justice": 5,
-          "people": 5,
-          "treasury": -5,
-          "military": 9,
-          "authority": 8
-        },
-        "log": "Kritik ulaşım koridorları korundu; devletin lojistik güvenliği sağlandı."
-      },
-      {
-        "label": "Türkiye'nin ulaştırma ve lojistik master planını yasal güvenceye bağlayan 'Milli Altyapı ve Ulaştırma Kanunu' çıkar.",
-        "preview": "Adalet +8, Halk +8, Güvenlik +1, Otorite +6 | Hazine -4",
-        "effects": {
-          "justice": 8,
+          "justice": 2,
           "people": 8,
           "treasury": -4,
-          "military": 1,
+          "military": 6,
           "authority": 6
         },
-        "log": "Ulaştırma politikası kanunlaştı; Türkiye küresel ticaretin vazgeçilmez köprüsü haline geldi."
+        "log": "Deniz havalimanı Karadeniz fırtınalarına ve bölgesel askeri acil durumlara karşı tam korumalı inşa edildi."
+      },
+      {
+        "label": "Coğrafi zorluğu olan sınır illerinde altyapıyı sübvanse eden 'Kalkınmada Öncelikli Sınır İlleri Kanunu' çıkar.",
+        "preview": "Adalet +7, Halk +5, Otorite +6 | Hazine -4",
+        "effects": {
+          "justice": 7,
+          "people": 5,
+          "treasury": -4,
+          "military": 0,
+          "authority": 6
+        },
+        "log": "Rize-Artvin Havalimanı sınır güvenliği ve kalkınmanın stratejik kalesi olarak tescillendi."
       }
     ]
   },
@@ -35814,23 +35814,23 @@ const EVENT_DECK_MODERN = [
       }
     ],
     "source": "Ulaştırma Bakanlığı",
-    "title": "Ordu-Giresun Havalimanı (OR-Gİ): Avrupa'nın İlk Deniz Havalimanı",
-    "desc": "Deniz üzerine inşa edilen Türkiye'nin ilk ada havalimanı iki Karadeniz ilini birleştirdi.",
+    "title": "Ordu ve Giresun Arasında Arazi İmkansızlığı ve Açık Deniz Havalimanı Kararı",
+    "desc": "Fındık üreticisi Ordu ve Giresun halkı dik yamaçlar sebebiyle başkente ve metropollere ulaşmakta büyük çile çekiyor; arazi olmadığı için iki şehir ortak deniz havalimanı talep ediyor. Türkiye ve Avrupa'da ilk kez açık denize milyonlarca ton taş dökülerek havalimanı yapımı kararı masada.",
     "options": [
       {
-        "label": "Ulaşım ve altyapı projelerinin ihale, kamulaştırma ve sözleşme süreçlerini şeffaf adli denetime tabi tut.",
-        "preview": "Adalet +9, Halk +8, Otorite +3 | Hazine -2",
+        "label": "Karadeniz dalga şiddetine dayanıklı özel mendirek teknolojisiyle Avrupa'nın ilk deniz dolgu havalimanını (OR-Gİ) inşa et.",
+        "preview": "Adalet +8, Halk +6, Otorite +2 | Hazine -2",
         "effects": {
-          "justice": 9,
-          "people": 8,
+          "justice": 8,
+          "people": 6,
           "treasury": -2,
           "military": 0,
-          "authority": 3
+          "authority": 2
         },
-        "log": "Altyapı yatırımlarında hukuki şeffaflık sağlandı; kamulaştırma bedelleri hak sahiplerine ödendi."
+        "log": "Ordu-Giresun Havalimanı denizin ortasında inşa edildi; Türk mühendisliği dünya literatürüne girdi."
       },
       {
-        "label": "Mega projelerin hizmete girmesiyle birlikte vatandaşın erişimini kolaylaştıracak uygun tarife ve indirimleri uygula.",
+        "label": "Ordu ve Giresun halkı arasında isim ve yer rekabetini önlemek için her iki şehrin adını taşıyan ortak kardeşlik protokolü yap.",
         "preview": "Adalet +2, Halk +9, Hazine +4, Güvenlik +2, Otorite +5",
         "effects": {
           "justice": 2,
@@ -35839,10 +35839,10 @@ const EVENT_DECK_MODERN = [
           "military": 2,
           "authority": 5
         },
-        "log": "Vatandaş memnuniyeti sağlandı; modern ulaşım imkanları halkın refahına sunuldu."
+        "log": "İki komşu şehir tek yürek oldu; havalimanı bölgesel barış ve dayanışmanın simgesi haline geldi."
       },
       {
-        "label": "Proje finansmanında Hazine dengelerini koru; gelir getirici ticari alanlarla kamu bütçesine katkı sağla.",
+        "label": "Hazine kaynaklarıyla projeyi tamamla; fındık tüccarlarının ve gurbetçilerin hızlı ulaşımıyla bölgeye büyük sermaye akışı sağla.",
         "preview": "Hazine +8, Otorite +4 | Halk -5",
         "effects": {
           "justice": 0,
@@ -35851,31 +35851,31 @@ const EVENT_DECK_MODERN = [
           "military": 0,
           "authority": 4
         },
-        "log": "Altyapı yatırımları bütçeyi sarsmadan finanse edildi; kamu maliyesi korundu."
+        "log": "Gurbetçiler memleketine kavuştu; fındık ticareti ve yayla turizmi Karadeniz'e milyarlarca lira kazandırdı."
       },
       {
-        "label": "Stratejik liman, tünel ve köprü altyapısını terör ve siber sabotajlara karşı kolluk teyakkuzuna al.",
-        "preview": "Adalet +5, Halk +5, Güvenlik +9, Otorite +8 | Hazine -5",
+        "label": "Deniz pistinin güvenliği için Sahil Güvenlik hücum botları ve radar gözetleme istasyonu kur.",
+        "preview": "Adalet +2, Halk +8, Güvenlik +6, Otorite +6 | Hazine -4",
         "effects": {
-          "justice": 5,
-          "people": 5,
-          "treasury": -5,
-          "military": 9,
-          "authority": 8
-        },
-        "log": "Kritik ulaşım koridorları korundu; devletin lojistik güvenliği sağlandı."
-      },
-      {
-        "label": "Türkiye'nin ulaştırma ve lojistik master planını yasal güvenceye bağlayan 'Milli Altyapı ve Ulaştırma Kanunu' çıkar.",
-        "preview": "Adalet +8, Halk +8, Güvenlik +1, Otorite +6 | Hazine -4",
-        "effects": {
-          "justice": 8,
+          "justice": 2,
           "people": 8,
           "treasury": -4,
-          "military": 1,
+          "military": 6,
           "authority": 6
         },
-        "log": "Ulaştırma politikası kanunlaştı; Türkiye küresel ticaretin vazgeçilmez köprüsü haline geldi."
+        "log": "Deniz dolgusu havalimanı Karadeniz'deki olası deniz kazaları ve arama-kurtarma operasyonlarının üssü oldu."
+      },
+      {
+        "label": "Deniz dolgusuyla kazanılan kamu arazilerinin özel sektöre devrini yasaklayan kanun çıkar.",
+        "preview": "Adalet +7, Halk +5, Otorite +6 | Hazine -4",
+        "effects": {
+          "justice": 7,
+          "people": 5,
+          "treasury": -4,
+          "military": 0,
+          "authority": 6
+        },
+        "log": "Havalimanı ve kıyı şeridi kamunun ebedi mülkü olarak tescillendi."
       }
     ]
   },
@@ -35892,23 +35892,23 @@ const EVENT_DECK_MODERN = [
       }
     ],
     "source": "Savunma Sanayii Başkanlığı",
-    "title": "Milli Muharip Uçak KAAN'ın İlk Uçuşu (21 Şubat 2024)",
-    "desc": "5. nesil hayalet savaş uçağı KAAN Mürted meydanından havalanarak Türkiye'yi dünya ligine soktu.",
+    "title": "Milli Muharip Uçak KAAN Motor Ambargosu ve Aviyonik Casusluk Tehdidi",
+    "desc": "F-35 programından çıkarılan Türkiye, 5. nesil savaş uçağı KAAN için prototip motorlarda ve aviyonik yazılımlarda Batılı müttefiklerin örtülü ambargosuyla karşılaştı. MİT, TUSAŞ tesislerine yönelik yabancı siber casusluk girişimlerini raporlarken; uçağın ilk uçuş takvimi ve yerli motor TRMotor geliştirme süreci kritik eşikte.",
     "options": [
       {
-        "label": "5. nesil stealth aviyonik ve yerli motor patentlerini Savunma Sanayii Başkanlığı adına uluslararası fikri mülkiyette tescil ettir.",
-        "preview": "Adalet +8, Halk +5, Hazine +2, Otorite +6",
+        "label": "TUSAŞ ve Savunma Sanayii Başkanlığı'na bağımsız adli/teknik soruşturma yetkisi ver; siber sızıntıyı yapan ajanları Ağır Ceza'ya sevk et.",
+        "preview": "Adalet +8, Halk +4, Güvenlik +4, Otorite +5 | Hazine -2",
         "effects": {
           "justice": 8,
-          "people": 5,
-          "treasury": 2,
-          "military": 0,
-          "authority": 6
+          "people": 4,
+          "treasury": -2,
+          "military": 4,
+          "authority": 5
         },
-        "log": "KAAN'ın tüm milli hakları tescillendi; yabancı ambargo ve patent kısıtlamaları bertaraf edildi."
+        "log": "Havacılık casusluk hücresi çökertildi; KAAN'ın kritik yazılımları milli kriptolu korumaya alındı."
       },
       {
-        "label": "Mühendis ordusunu ve TUSAŞ çalışanlarını Cumhurbaşkanlığı Külliyesi'nde ödüllendir; ilk uçuşu milletle bayram havasında kutla.",
+        "label": "İngiltere ve müttefik hükümetlerle örtülü istihbarat ve savunma diplomasisi masası kur; motor lisansını ortak üretimle aş.",
         "preview": "Adalet +2, Halk +8, Otorite +5 | Hazine -2",
         "effects": {
           "justice": 2,
@@ -35917,10 +35917,10 @@ const EVENT_DECK_MODERN = [
           "military": 0,
           "authority": 5
         },
-        "log": "Milli gurur şahlandı; Türk mühendislerinin gökyüzüne yazdığı zafer gençliğe ilham kaynağı oldu."
+        "log": "Geçici motor tedariki sağlandı; KAAN ilk uçuşunu göklerde başarıyla tamamladı."
       },
       {
-        "label": "Seri üretim takvimini finanse etmek için Savunma Sanayii Destekleme Fonu'na doğrudan Hazine bütçesinden 5 milyar dolar kaynak aktar.",
+        "label": "Milli bütçeden TRMotor ve TEI yerli motor projelerine 3 milyar dolarlık acil Hazine kaynağı aktar; dışa bağımlılığı sıfırla.",
         "preview": "Adalet +1, Halk +4, Hazine +8, Otorite +5",
         "effects": {
           "justice": 1,
@@ -35929,31 +35929,31 @@ const EVENT_DECK_MODERN = [
           "military": 0,
           "authority": 5
         },
-        "log": "Hava Kuvvetleri'nin modernizasyonu Hazinece garantiye alındı; seri üretim hatları kuruldu."
+        "log": "Yerli motor geliştirme süreci hızlandı; Türkiye kendi jet motorunu tasarlayan 5 ülkeden biri oldu."
       },
       {
-        "label": "Mürted ve Eskişehir hava üslerinde KAAN için özel stealth hangar ve radar test tesislerini 24 saat teyakkuzla koru.",
-        "preview": "Adalet +3, Güvenlik +4, Otorite +7 | Halk -2, Hazine -3",
+        "label": "MİT Karşı-İstihbarat Dairesi ve TSK siber komutanlığıyla TUSAŞ Akıncı tesislerini 'kırmızı hat' askeri koruma bölgesine al.",
+        "preview": "Adalet +5, Halk +5, Güvenlik +9, Otorite +8 | Hazine -5",
         "effects": {
-          "justice": 3,
-          "people": -2,
-          "treasury": -3,
-          "military": 4,
+          "justice": 5,
+          "people": 5,
+          "treasury": -5,
+          "military": 9,
+          "authority": 8
+        },
+        "log": "Uçak montaj hatları elektromanyetik kalkanla mühürlendi; yabancı uyduların görüntü alması engellendi."
+      },
+      {
+        "label": "Savunma sanayiinde yerli tasarım hırsızlığına ve teknoloji casusluğuna vatan hainliği cezası getiren kanun çıkar.",
+        "preview": "Adalet +5, Halk +3, Güvenlik +7, Otorite +7 | Hazine -4",
+        "effects": {
+          "justice": 5,
+          "people": 3,
+          "treasury": -4,
+          "military": 7,
           "authority": 7
         },
-        "log": "Havacılık casusluğuna karşı çelik kalkan kuruldu; Türk semaları KAAN ile zırha büründü."
-      },
-      {
-        "label": "Dost ve müttefik ülkelere (Azerbaycan, Pakistan, Körfez) ortak üretim ve ihracat imkanı tanıyan 'Milli Muharip Havacılık Kanunu' çıkar.",
-        "preview": "Adalet +6, Halk +4, Hazine +5, Otorite +6",
-        "effects": {
-          "justice": 6,
-          "people": 4,
-          "treasury": 5,
-          "military": 0,
-          "authority": 6
-        },
-        "log": "Milli savaş uçağı programı küresel ortaklıklarla kanunlaştı; Türkiye 5. nesil uçak üreten 4 ülkeden biri oldu."
+        "log": "Milli Teknoloji Koruma Kanunu yürürlüğe girdi; mühendislerin gizlilik protokolleri kanunlaştı."
       }
     ]
   },
@@ -35970,11 +35970,11 @@ const EVENT_DECK_MODERN = [
       }
     ],
     "source": "Savunma Sanayii Başkanlığı",
-    "title": "Bayraktar TB2 SİHA'nın TSK Envanterine Girişi",
-    "desc": "Terörle mücadelede ezber bozan yerli SİHA, mağara ve kampları nokta atışıyla imha etti.",
+    "title": "Bayraktar TB2 SİHA Kanada Elektro-Optik (WESCAM) Ambargosu Krizi",
+    "desc": "Karabağ ve terörle mücadele harekatlarında tarihi başarı gösteren Bayraktar TB2 SİHA'lara Kanada hükümeti kamera ve lazer işaretleme sistemi (WESCAM) ambargosu koydu. SİHA üretim hatlarının durma tehlikesi karşısında yerli ASELSAN CATS kameralarının acil devreye alınması gerekiyor.",
     "options": [
       {
-        "label": "İHA ve SİHA ihraç sözleşmelerine 'Türkiye aleyhine ve gayriahlaki kullanılamaz' şartını bağlayan bağlayıcı adli maddeler koy.",
+        "label": "Kanada'nın ambargo kararını uluslararası ticaret hukuku ve NATO yükümlülükleri çerçevesinde adli tahkime taşı.",
         "preview": "Adalet +9, Halk +8, Otorite +3 | Hazine -2",
         "effects": {
           "justice": 9,
@@ -35983,46 +35983,46 @@ const EVENT_DECK_MODERN = [
           "military": 0,
           "authority": 3
         },
-        "log": "Milli savunma ihracatına ahlaki ve hukuki çerçeve getirildi; küresel pazarda Türkiye'nin itibarı yükseldi."
+        "log": "Çifte standart belgelendi; ancak müttefiklerin siyasi ambargosu hukuki süreçle hemen kalkmadı."
       },
       {
-        "label": "35 ülkeye ihraç edilen SİHA zaferini TEKNOFEST meydanlarında gençlerle buluştur; yerli yazılım seferberliği başlat.",
-        "preview": "Adalet +2, Halk +8, Otorite +5 | Hazine -2",
+        "label": "Kanada ve NATO muhataplarıyla istihbarat kanalı üzerinden görüş; SİHA'ların sivil güvenliği koruduğunu anlatıp ambargoyu yumuşat.",
+        "preview": "Adalet +3, Halk +6, Hazine +3, Otorite +7",
         "effects": {
-          "justice": 2,
-          "people": 8,
-          "treasury": -2,
+          "justice": 3,
+          "people": 6,
+          "treasury": 3,
           "military": 0,
-          "authority": 5
+          "authority": 7
         },
-        "log": "Teknoloji hamlesi halk hareketi haline geldi; milyonlarca genç havacılık ve yazılıma yöneldi."
+        "log": "Diplomatik baskı sürdü; fakat dışa bağımlılığın milli beka için risk taşıdığı tescillendi."
       },
       {
-        "label": "SİHA ihracatından elde edilen milyarlarca dolarlık döviz gelirini doğrudan yerli mikroçip ve motor projelerine kanalize et.",
-        "preview": "Adalet +1, Halk +4, Hazine +8, Otorite +5",
+        "label": "ASELSAN'a elektro-optik kamera ve lazer işaretleyici seri üretimi için acil Hazine teşvik fonu tahsis et.",
+        "preview": "Hazine +8, Otorite +4 | Halk -5",
         "effects": {
-          "justice": 1,
-          "people": 4,
+          "justice": 0,
+          "people": -5,
           "treasury": 8,
           "military": 0,
-          "authority": 5
+          "authority": 4
         },
-        "log": "Savunma sanayiinde ihracat rekoru kırıldı; Hazineye net döviz girdisi sağlanarak cari açık azaltıldı."
+        "log": "Milli CATS ve ASELFLIR kameraları geliştirildi; Bayraktar TB2 tamamen yerli gözle hedefleri vurmaya başladı."
       },
       {
-        "label": "Kızılelma İnsansız Savaş Uçağı'nı TCG Anadolu amfibi gemisine entegre ederek dünya harp tarihinin ilk SİHA filosunu kur.",
-        "preview": "Adalet +2, Halk +8, Güvenlik +6, Otorite +6 | Hazine -4",
+        "label": "Ambargolu kamera parçalarını üçüncü ülkeler üzerinden tedarik etmeye çalışan paravan şebekeleri MİT ile denetle ve millileştir.",
+        "preview": "Adalet +3, Güvenlik +4, Otorite +7 | Halk -2, Hazine -3",
         "effects": {
-          "justice": 2,
-          "people": 8,
-          "treasury": -4,
-          "military": 6,
-          "authority": 6
+          "justice": 3,
+          "people": -2,
+          "treasury": -3,
+          "military": 4,
+          "authority": 7
         },
-        "log": "Harp doktrini baştan yazıldı; deniz aşırı görevlerde Türk SİHA'ları küresel dengeleri değiştirdi."
+        "log": "Kritik parçaların kaçak karaborsaya düşmesi engellendi; tedarik zinciri milli fabrikalara bağlandı."
       },
       {
-        "label": "İnsansız hava araçlarının sivil ve askeri hava sahasındaki uçuş kurallarını tanzim eden 'İnsansız Havacılık Reform Kanunu' çıkar.",
+        "label": "Kritik askeri platformlarda alt bileşenlerde yüzde 85 yerlilik şartı getiren 'Savunma Sanayii Bağımsızlık Kanunu' çıkar.",
         "preview": "Adalet +5, Halk +3, Güvenlik +7, Otorite +7 | Hazine -4",
         "effects": {
           "justice": 5,
@@ -36031,7 +36031,7 @@ const EVENT_DECK_MODERN = [
           "military": 7,
           "authority": 7
         },
-        "log": "İHA teknolojisinin hukuki altyapısı tamamlandı; Türkiye dünyanın 1 numaralı SİHA gücü olarak tescillendi."
+        "log": "Ambargolar Türkiye'yi üretici yaptı; Bayraktar TB2 30'dan fazla ülkeye ihraç edilerek küresel marka oldu."
       }
     ]
   },
@@ -36048,11 +36048,11 @@ const EVENT_DECK_MODERN = [
       }
     ],
     "source": "Savunma Sanayii Başkanlığı",
-    "title": "Bayraktar Akıncı TİHA: 40 Bin Feet İrtifada Uçan Kale",
-    "desc": "Çift türbin motorlu Akıncı seyir füzeleri ve hassas mühimmat atarak rekorlar kırdı.",
+    "title": "Bayraktar Akıncı TİHA Ukrayna Motor Tedarikinde Savaş Krizi ve Rus İstihbaratı",
+    "desc": "40 bin fitte 24 saat uçabilen ve seyir füzeleri taşıyan Akıncı TİHA'nın turboprop motorları Ukrayna Motor Sich fabrikasından tedarik ediliyor. Rusya-Ukrayna savaşı patlak verince motor fabrikası bombalandı; Rus istihbaratı Türkiye'nin motor tedarikini kesmek için baskı uyguluyor.",
     "options": [
       {
-        "label": "İHA ve SİHA ihraç sözleşmelerine 'Türkiye aleyhine ve gayriahlaki kullanılamaz' şartını bağlayan bağlayıcı adli maddeler koy.",
+        "label": "Ukrayna ve BM ile uluslararası insani ve ticari sözleşmelere dayalı resmi motor teslimat protokolünü işlet.",
         "preview": "Adalet +9, Halk +8, Otorite +3 | Hazine -2",
         "effects": {
           "justice": 9,
@@ -36061,34 +36061,34 @@ const EVENT_DECK_MODERN = [
           "military": 0,
           "authority": 3
         },
-        "log": "Milli savunma ihracatına ahlaki ve hukuki çerçeve getirildi; küresel pazarda Türkiye'nin itibarı yükseldi."
+        "log": "Yasal haklar korundu; fakat savaş bölgesinden sevkiyatlar ağır risk altına girdi."
       },
       {
-        "label": "35 ülkeye ihraç edilen SİHA zaferini TEKNOFEST meydanlarında gençlerle buluştur; yerli yazılım seferberliği başlat.",
-        "preview": "Adalet +2, Halk +8, Otorite +5 | Hazine -2",
+        "label": "Moskova ve Kiev ile dengeli istihbarat diplomasisi yürüt; Tahıl Koridoru arabuluculuğu kozuyla motor sevkiyatına koridor aç.",
+        "preview": "Adalet +3, Halk +6, Hazine +3, Otorite +7",
         "effects": {
-          "justice": 2,
-          "people": 8,
-          "treasury": -2,
+          "justice": 3,
+          "people": 6,
+          "treasury": 3,
           "military": 0,
-          "authority": 5
+          "authority": 7
         },
-        "log": "Teknoloji hamlesi halk hareketi haline geldi; milyonlarca genç havacılık ve yazılıma yöneldi."
+        "log": "Türk diplomasisi devredeydi; Akıncı motorları savaş bölgesinden güvenle Türkiye'ye tahliye edildi."
       },
       {
-        "label": "SİHA ihracatından elde edilen milyarlarca dolarlık döviz gelirini doğrudan yerli mikroçip ve motor projelerine kanalize et.",
-        "preview": "Adalet +1, Halk +4, Hazine +8, Otorite +5",
+        "label": "TEI yerli turboprop motorunun geliştirilmesi için bütçeden acil 500 milyon dolar ilave AR-GE fonu aktar.",
+        "preview": "Hazine +8, Otorite +4 | Halk -5",
         "effects": {
-          "justice": 1,
-          "people": 4,
+          "justice": 0,
+          "people": -5,
           "treasury": 8,
           "military": 0,
-          "authority": 5
+          "authority": 4
         },
-        "log": "Savunma sanayiinde ihracat rekoru kırıldı; Hazineye net döviz girdisi sağlanarak cari açık azaltıldı."
+        "log": "Yerli motor üretim takvimi 2 yıl öne çekildi; Akıncı milli güç ünitesine kavuştu."
       },
       {
-        "label": "Kızılelma İnsansız Savaş Uçağı'nı TCG Anadolu amfibi gemisine entegre ederek dünya harp tarihinin ilk SİHA filosunu kur.",
+        "label": "MİT özel operasyon timleriyle motorların Polonya sınırından Türkiye'ye gizli lojistik intikalini bizzat sağla.",
         "preview": "Adalet +2, Halk +8, Güvenlik +6, Otorite +6 | Hazine -4",
         "effects": {
           "justice": 2,
@@ -36097,10 +36097,10 @@ const EVENT_DECK_MODERN = [
           "military": 6,
           "authority": 6
         },
-        "log": "Harp doktrini baştan yazıldı; deniz aşırı görevlerde Türk SİHA'ları küresel dengeleri değiştirdi."
+        "log": "MİT lojistiğiyle yüzlerce motor fabrikaya indirildi; Akıncı seri üretim bandı hiç durmadı."
       },
       {
-        "label": "İnsansız hava araçlarının sivil ve askeri hava sahasındaki uçuş kurallarını tanzim eden 'İnsansız Havacılık Reform Kanunu' çıkar.",
+        "label": "Stratejik askeri hava platformlarında kritik parça stokunu en az 3 yıllık zorunlu kılan 'Savunma Stok Kanunu' çıkar.",
         "preview": "Adalet +5, Halk +3, Güvenlik +7, Otorite +7 | Hazine -4",
         "effects": {
           "justice": 5,
@@ -36109,7 +36109,7 @@ const EVENT_DECK_MODERN = [
           "military": 7,
           "authority": 7
         },
-        "log": "İHA teknolojisinin hukuki altyapısı tamamlandı; Türkiye dünyanın 1 numaralı SİHA gücü olarak tescillendi."
+        "log": "TİHA üretimi savaş ve ambargo risklerine karşı çelik zırha kavuşturuldu."
       }
     ]
   },
@@ -36126,23 +36126,23 @@ const EVENT_DECK_MODERN = [
       }
     ],
     "source": "Savunma Sanayii Başkanlığı",
-    "title": "Bayraktar Kızılelma İnsansız Savaş Uçağının İlk Uçuşu",
-    "desc": "Jet motorlu insansız savaş uçağı pistten kalkıp ilk manevralarını başarıyla tamamladı.",
+    "title": "Bayraktar Kızılelma İnsansız Savaş Uçağı Yapay Zekasına Yabancı Siber Taarruz",
+    "desc": "Ses hızına yaklaşan, radara görünmez tasarımıyla hava-hava muharebesi yapacak Kızılelma'nın ilk uçuşu öncesinde otonom filo uçuş yazılımlarına yabancı askeri istihbarat kaynaklı gelişmiş siber sızma girişimi tespit edildi. Sisteme arka kapı (backdoor) yerleştirilerek test uçuşunda düşürülmesi hedefleniyor.",
     "options": [
       {
-        "label": "İHA ve SİHA ihraç sözleşmelerine 'Türkiye aleyhine ve gayriahlaki kullanılamaz' şartını bağlayan bağlayıcı adli maddeler koy.",
-        "preview": "Adalet +9, Halk +8, Otorite +3 | Hazine -2",
+        "label": "Siber saldırı kodlarını adli bilişim laboratuvarlarında analiz ettir; kaynağı uluslararası adli makamlara ifşa et.",
+        "preview": "Adalet +8, Halk +5, Hazine +2, Otorite +6",
         "effects": {
-          "justice": 9,
-          "people": 8,
-          "treasury": -2,
+          "justice": 8,
+          "people": 5,
+          "treasury": 2,
           "military": 0,
-          "authority": 3
+          "authority": 6
         },
-        "log": "Milli savunma ihracatına ahlaki ve hukuki çerçeve getirildi; küresel pazarda Türkiye'nin itibarı yükseldi."
+        "log": "Siber casusluk belgelendi; ancak yabancı servisler eylemi inkar ederek örtbas etti."
       },
       {
-        "label": "35 ülkeye ihraç edilen SİHA zaferini TEKNOFEST meydanlarında gençlerle buluştur; yerli yazılım seferberliği başlat.",
+        "label": "TÜBİTAK BİLGEM ve Baykar yazılım ekibiyle ortak kriz masası kur; tüm kod tabanını sıfırdan yeniden derle.",
         "preview": "Adalet +2, Halk +8, Otorite +5 | Hazine -2",
         "effects": {
           "justice": 2,
@@ -36151,34 +36151,34 @@ const EVENT_DECK_MODERN = [
           "military": 0,
           "authority": 5
         },
-        "log": "Teknoloji hamlesi halk hareketi haline geldi; milyonlarca genç havacılık ve yazılıma yöneldi."
+        "log": "Milli yazılım temizlendi; Kızılelma'nın otonom algoritmaları bağımsız ağda izole edildi."
       },
       {
-        "label": "SİHA ihracatından elde edilen milyarlarca dolarlık döviz gelirini doğrudan yerli mikroçip ve motor projelerine kanalize et.",
-        "preview": "Adalet +1, Halk +4, Hazine +8, Otorite +5",
+        "label": "Milli otonom aviyonik ve yapay zeka yazılımcılarına teşvik paketi ver; yazılım güvenliğini yerli mühendislerle tahkim et.",
+        "preview": "Hazine +8, Otorite +4 | Halk -5",
         "effects": {
-          "justice": 1,
-          "people": 4,
+          "justice": 0,
+          "people": -5,
           "treasury": 8,
           "military": 0,
-          "authority": 5
+          "authority": 4
         },
-        "log": "Savunma sanayiinde ihracat rekoru kırıldı; Hazineye net döviz girdisi sağlanarak cari açık azaltıldı."
+        "log": "Genç Türk yazılımcıları sisteme koruma duvarları ördü; siber savunma kapasitesi güçlendi."
       },
       {
-        "label": "Kızılelma İnsansız Savaş Uçağı'nı TCG Anadolu amfibi gemisine entegre ederek dünya harp tarihinin ilk SİHA filosunu kur.",
-        "preview": "Adalet +2, Halk +8, Güvenlik +6, Otorite +6 | Hazine -4",
+        "label": "USOM ve MİT Siber Daire ile karşı siber operasyon yap; saldırıyı yöneten yabancı sunucu merkezlerini felç et.",
+        "preview": "Adalet +3, Güvenlik +4, Otorite +7 | Halk -2, Hazine -3",
         "effects": {
-          "justice": 2,
-          "people": 8,
-          "treasury": -4,
-          "military": 6,
-          "authority": 6
+          "justice": 3,
+          "people": -2,
+          "treasury": -3,
+          "military": 4,
+          "authority": 7
         },
-        "log": "Harp doktrini baştan yazıldı; deniz aşırı görevlerde Türk SİHA'ları küresel dengeleri değiştirdi."
+        "log": "Siber casusluk şebekesi kaynağında vuruldu; Kızılelma ilk uçuşunu başarıyla gökyüzünde gerçekleştirdi."
       },
       {
-        "label": "İnsansız hava araçlarının sivil ve askeri hava sahasındaki uçuş kurallarını tanzim eden 'İnsansız Havacılık Reform Kanunu' çıkar.",
+        "label": "Otonom silah sistemlerinin kaynak kodlarını devlet sırrı ve milli kripto statüsüne alan kanun çıkar.",
         "preview": "Adalet +5, Halk +3, Güvenlik +7, Otorite +7 | Hazine -4",
         "effects": {
           "justice": 5,
@@ -36187,7 +36187,7 @@ const EVENT_DECK_MODERN = [
           "military": 7,
           "authority": 7
         },
-        "log": "İHA teknolojisinin hukuki altyapısı tamamlandı; Türkiye dünyanın 1 numaralı SİHA gücü olarak tescillendi."
+        "log": "Kızılelma'nın yapay zekası en üst düzey askeri gizlilik korumasına bağlandı."
       }
     ]
   },
@@ -36204,59 +36204,59 @@ const EVENT_DECK_MODERN = [
       }
     ],
     "source": "Savunma Sanayii Başkanlığı",
-    "title": "TUSAŞ ANKA ve ANKA-3 Uçan Kanat Hayalet SİHA",
-    "desc": "Radara yakalanmayan V formundaki hayalet insansız uçak ilk uçuşunu gerçekleştirdi.",
+    "title": "TUSAŞ ANKA-3 Uçan Kanat Hayalet SİHA Tasarımında Radar Casusluğu",
+    "desc": "Radarda görünmeyen dikey kuyruksuz uçan kanat geometrisine sahip ANKA-3 projesinde, gövde kompozit malzemesi ve radar soğurucu boya formüllerinin yabancı bir havacılık ataşesi tarafından rüşvetle çalınmaya çalışıldığı MİT tarafından tespit edildi.",
     "options": [
       {
-        "label": "İHA ve SİHA ihraç sözleşmelerine 'Türkiye aleyhine ve gayriahlaki kullanılamaz' şartını bağlayan bağlayıcı adli maddeler koy.",
-        "preview": "Adalet +9, Halk +8, Otorite +3 | Hazine -2",
+        "label": "Rüşvet teklif edilen mühendisi adli kontrollü ifadeye al; yabancı ataşeyi 'persona non grata' ilan ederek sınır dışı et.",
+        "preview": "Adalet +9, Halk +7, Hazine +5, Otorite +3",
         "effects": {
           "justice": 9,
-          "people": 8,
-          "treasury": -2,
+          "people": 7,
+          "treasury": 5,
           "military": 0,
           "authority": 3
         },
-        "log": "Milli savunma ihracatına ahlaki ve hukuki çerçeve getirildi; küresel pazarda Türkiye'nin itibarı yükseldi."
+        "log": "Diplomatik casusluk deşifre edildi; ANKA-3'ün hayalet gövde formülleri korunarak casuslar sınır dışı edildi."
       },
       {
-        "label": "35 ülkeye ihraç edilen SİHA zaferini TEKNOFEST meydanlarında gençlerle buluştur; yerli yazılım seferberliği başlat.",
-        "preview": "Adalet +2, Halk +8, Otorite +5 | Hazine -2",
+        "label": "Havacılık firmaları ve savunma bürokrasisiyle gizli istişare toplantısı yap; yabancı ataşelere şeffaf bilgilendirme verip krizi yatıştır.",
+        "preview": "Adalet +3, Halk +6, Hazine +3, Otorite +7",
+        "effects": {
+          "justice": 3,
+          "people": 6,
+          "treasury": 3,
+          "military": 0,
+          "authority": 7
+        },
+        "log": "Diplomatik gerilim dindirildi; ancak savunma tesislerindeki gizlilik seviyesi zayıfladı."
+      },
+      {
+        "label": "TUSAŞ kompozit üretim tesislerine Hazine bütçesinden 200 milyon dolar yatırım yaparak gizli kapalı üretim kampüsü kur.",
+        "preview": "Adalet +2, Halk +8, Otorite +4 | Hazine -6",
         "effects": {
           "justice": 2,
           "people": 8,
-          "treasury": -2,
+          "treasury": -6,
           "military": 0,
-          "authority": 5
+          "authority": 4
         },
-        "log": "Teknoloji hamlesi halk hareketi haline geldi; milyonlarca genç havacılık ve yazılıma yöneldi."
+        "log": "Dünyanın en modern kompozit tesislerinden biri kuruldu; radar soğurucu kaplamalar milli ortamda üretildi."
       },
       {
-        "label": "SİHA ihracatından elde edilen milyarlarca dolarlık döviz gelirini doğrudan yerli mikroçip ve motor projelerine kanalize et.",
-        "preview": "Adalet +1, Halk +4, Hazine +8, Otorite +5",
+        "label": "MİT Karşı-İstihbarat timleriyle casusluk şebekesine sahte plan ve yanıltıcı radar verileri sızdırarak yabancı servisi dezenforme et.",
+        "preview": "Adalet +3, Güvenlik +4, Otorite +7 | Halk -2, Hazine -3",
         "effects": {
-          "justice": 1,
-          "people": 4,
-          "treasury": 8,
-          "military": 0,
-          "authority": 5
+          "justice": 3,
+          "people": -2,
+          "treasury": -3,
+          "military": 4,
+          "authority": 7
         },
-        "log": "Savunma sanayiinde ihracat rekoru kırıldı; Hazineye net döviz girdisi sağlanarak cari açık azaltıldı."
+        "log": "Kusursuz karşı-istihbarat oyunu oynandı; yabancı servisler sahte verilerle yanıltılırken ANKA-3 ilk uçuşunu yaptı."
       },
       {
-        "label": "Kızılelma İnsansız Savaş Uçağı'nı TCG Anadolu amfibi gemisine entegre ederek dünya harp tarihinin ilk SİHA filosunu kur.",
-        "preview": "Adalet +2, Halk +8, Güvenlik +6, Otorite +6 | Hazine -4",
-        "effects": {
-          "justice": 2,
-          "people": 8,
-          "treasury": -4,
-          "military": 6,
-          "authority": 6
-        },
-        "log": "Harp doktrini baştan yazıldı; deniz aşırı görevlerde Türk SİHA'ları küresel dengeleri değiştirdi."
-      },
-      {
-        "label": "İnsansız hava araçlarının sivil ve askeri hava sahasındaki uçuş kurallarını tanzim eden 'İnsansız Havacılık Reform Kanunu' çıkar.",
+        "label": "Stratejik savunma sanayii tesislerinde görevli mühendislere ömür boyu yurtdışı bilgi kısıtı ve yüksek tazminat getiren kanun çıkar.",
         "preview": "Adalet +5, Halk +3, Güvenlik +7, Otorite +7 | Hazine -4",
         "effects": {
           "justice": 5,
@@ -36265,7 +36265,7 @@ const EVENT_DECK_MODERN = [
           "military": 7,
           "authority": 7
         },
-        "log": "İHA teknolojisinin hukuki altyapısı tamamlandı; Türkiye dünyanın 1 numaralı SİHA gücü olarak tescillendi."
+        "log": "Beyin gücü ve gizli teknolojiler yasal koruma kalkanına alındı."
       }
     ]
   },
@@ -36282,23 +36282,23 @@ const EVENT_DECK_MODERN = [
       }
     ],
     "source": "Savunma Sanayii Başkanlığı",
-    "title": "HÜRJET Süpersonik İleri Eğitim ve Taarruz Uçağı",
-    "desc": "Ses hızını aşan ilk yerli jet eğitim uçağı test uçuşlarında Mach 1.4 hızına ulaştı.",
+    "title": "HÜRJET Süpersonik Uçak İhracatında ABD F404 Motor İzni Blokajı",
+    "desc": "Ses üstü hızda uçan yerli eğitim ve hafif taarruz uçağı HÜRJET, İspanya ve Malezya ihalelerinde finale kaldı. Ancak uçakta kullanılan Amerikan General Electric F404 motorunun üçüncü ülkelere satışı için ABD Kongresi izin vermiyor ve Türkiye'nin milyarlarca dolarlık ihracatını engelliyor.",
     "options": [
       {
-        "label": "Savunma sanayii projelerinin fikri mülkiyet ve patent haklarını devlet adına güvenceye alan yasal tescilleri yap.",
-        "preview": "Adalet +8, Halk +4, Güvenlik +4, Otorite +5 | Hazine -2",
+        "label": "ABD ile imzalanan askeri savunma ticaret anlaşması hükümlerini işlet; haksız blokajı uluslararası tahkime bildir.",
+        "preview": "Adalet +8, Halk +5, Hazine +2, Otorite +6",
         "effects": {
           "justice": 8,
-          "people": 4,
-          "treasury": -2,
-          "military": 4,
-          "authority": 5
+          "people": 5,
+          "treasury": 2,
+          "military": 0,
+          "authority": 6
         },
-        "log": "Teknolojik mülkiyet korundu; milli projelerin yabancı şirketler tarafından taklit edilmesi önlendi."
+        "log": "Kongre vetosu devam etti; diplomasi kanalı tıkandı."
       },
       {
-        "label": "Yerli mühendis ordusu, üniversiteler ve KOBİ'lerle teknoloji şurası toplayarak savunma ekosistemini tabana yay.",
+        "label": "Pentagon ve ABD Dışişleri ile perde arkasında müzakere yap; F-16 modernizasyon paketi karşılığında HÜRJET motor iznini kopar.",
         "preview": "Adalet +3, Halk +9, Otorite +6 | Hazine -4",
         "effects": {
           "justice": 3,
@@ -36307,10 +36307,10 @@ const EVENT_DECK_MODERN = [
           "military": 0,
           "authority": 6
         },
-        "log": "Toplumsal ve sektörel uzlaşı sağlandı; binlerce yan sanayi firması milli savunma üretimine dahil oldu."
+        "log": "Zorlu diplomasi sonuç verdi; motor lisansına kısmi onay alınarak HÜRJET ihracatının önü açıldı."
       },
       {
-        "label": "Stratejik savunma sanayii Ar-Ge projeleri için Savunma Destekleme Fonu'ndan Hazine destekli teşvik sağla.",
+        "label": "İhracat gelirlerinin riske girmemesi için TEI ve Ukrayna/İngiltere ortaklığıyla alternatif süpersonik motor geliştirme fonu kur.",
         "preview": "Hazine +8, Otorite +4 | Halk -5",
         "effects": {
           "justice": 0,
@@ -36319,31 +36319,31 @@ const EVENT_DECK_MODERN = [
           "military": 0,
           "authority": 4
         },
-        "log": "Milli savunma yatırımları finanse edildi; dışa bağımlılık azaltılarak ihracat potansiyeli artırıldı."
+        "log": "Alternatif motor programı başlatıldı; Hazine ihracat pazarını kaybetmemek için riski dağıttı."
       },
       {
-        "label": "Kritik savunma tesisleri ve Ar-Ge merkezlerinde casusluk ve sabotaja karşı askeri güvenlik kordonunu tahkim et.",
-        "preview": "Adalet +5, Halk +5, Güvenlik +9, Otorite +8 | Hazine -5",
+        "label": "İspanya ve Malezya hükümetleriyle istihbarat ve askeri mutabakat imzala; uçakları motorsuz teslim edip montajı yerinde yap.",
+        "preview": "Adalet +2, Halk +8, Güvenlik +6, Otorite +6 | Hazine -4",
         "effects": {
-          "justice": 5,
-          "people": 5,
-          "treasury": -5,
-          "military": 9,
-          "authority": 8
-        },
-        "log": "Stratejik sırlar korundu; milli teknolojilere yönelik yabancı istihbarat operasyonları engellendi."
-      },
-      {
-        "label": "Savunma sanayiinde yerlilik oranını %85'e çıkaran 'Stratejik Savunma Sanayii ve İleri Teknoloji Kanunu' çıkar.",
-        "preview": "Adalet +5, Halk +3, Güvenlik +7, Otorite +7 | Hazine -4",
-        "effects": {
-          "justice": 5,
-          "people": 3,
+          "justice": 2,
+          "people": 8,
           "treasury": -4,
-          "military": 7,
-          "authority": 7
+          "military": 6,
+          "authority": 6
         },
-        "log": "Savunma bağımsızlığı kanunlaştı; Türkiye kendi silahını üreten küresel aktör oldu."
+        "log": "Zekice bir ihracat formülü bulundu; ABD vetosu üçüncü ülkelerin egemenlik haklarıyla aşıldı."
+      },
+      {
+        "label": "Milli savunma sanayiinde motor ve aktarma organlarında yabancı lisans kullanımını kısıtlayan kanun çıkar.",
+        "preview": "Adalet +6, Halk +4, Hazine +5, Otorite +6",
+        "effects": {
+          "justice": 6,
+          "people": 4,
+          "treasury": 5,
+          "military": 0,
+          "authority": 6
+        },
+        "log": "Tam bağımsızlık hedefi kanunlaştı; HÜRJET Türk Yıldızları akrotiminin yeni uçağı oldu."
       }
     ]
   },
@@ -36360,11 +36360,11 @@ const EVENT_DECK_MODERN = [
       }
     ],
     "source": "Savunma Sanayii Başkanlığı",
-    "title": "HÜRKUŞ Temel Eğitim Uçağının EASA Uluslararası Sertifikasyonu",
-    "desc": "Avrupa Havacılık Emniyeti Ajansı'ndan tip sertifikası alan ilk yerli sivil uçak oldu.",
+    "title": "HÜRKUŞ Temel Eğitim Uçağında EASA Sertifikasyon Blokajı",
+    "desc": "TUSAŞ tarafından geliştirilen temel eğitim ve yakın hava destek uçağı HÜRKUŞ, Avrupa Havacılık Emniyeti Ajansı (EASA) sivil sertifikasyonu için başvurdu. Ancak Avrupa ülkelerinin siyasi gerekçelerle denetim süreçlerini yıllarca uzatarak uçağın uluslararası uçuşunu engellediği belirlendi.",
     "options": [
       {
-        "label": "Savunma sanayii projelerinin fikri mülkiyet ve patent haklarını devlet adına güvenceye alan yasal tescilleri yap.",
+        "label": "EASA'nın gecikmelerine karşı Avrupa Adalet Divanı'na ayrımcılık davası aç ve teknik şartların tamamlandığını belgele.",
         "preview": "Adalet +8, Halk +5, Hazine +2, Otorite +6",
         "effects": {
           "justice": 8,
@@ -36373,10 +36373,10 @@ const EVENT_DECK_MODERN = [
           "military": 0,
           "authority": 6
         },
-        "log": "Teknolojik mülkiyet korundu; milli projelerin yabancı şirketler tarafından taklit edilmesi önlendi."
+        "log": "Hukuki baskı kuruldu; EASA teknik raporları onaylayarak HÜRKUŞ'a ilk uluslararası tip sertifikasını verdi."
       },
       {
-        "label": "Yerli mühendis ordusu, üniversiteler ve KOBİ'lerle teknoloji şurası toplayarak savunma ekosistemini tabana yay.",
+        "label": "Avrupa sivil havacılık otoriteleriyle Brüksel'de teknik meşveret masası kur; şart koşulan ek aviyonik testleri tamamla.",
         "preview": "Adalet +3, Halk +9, Otorite +6 | Hazine -4",
         "effects": {
           "justice": 3,
@@ -36385,10 +36385,10 @@ const EVENT_DECK_MODERN = [
           "military": 0,
           "authority": 6
         },
-        "log": "Toplumsal ve sektörel uzlaşı sağlandı; binlerce yan sanayi firması milli savunma üretimine dahil oldu."
+        "log": "Uzlaşı sağlandı; HÜRKUŞ Avrupa göklerinde uçuş vizesi aldı."
       },
       {
-        "label": "Stratejik savunma sanayii Ar-Ge projeleri için Savunma Destekleme Fonu'ndan Hazine destekli teşvik sağla.",
+        "label": "Afrika ve Orta Asya ülkelerine HÜRKUŞ-C silahlı varyantını ihraç ederek Avrupa pazarının kaybını peşin dövizle kapat.",
         "preview": "Hazine +8, Otorite +4 | Halk -5",
         "effects": {
           "justice": 0,
@@ -36397,31 +36397,31 @@ const EVENT_DECK_MODERN = [
           "military": 0,
           "authority": 4
         },
-        "log": "Milli savunma yatırımları finanse edildi; dışa bağımlılık azaltılarak ihracat potansiyeli artırıldı."
+        "log": "Çad, Nijer ve Azerbaycan'a dev ihracat yapıldı; Hazineye milyonlarca dolar silah satış geliri girdi."
       },
       {
-        "label": "Kritik savunma tesisleri ve Ar-Ge merkezlerinde casusluk ve sabotaja karşı askeri güvenlik kordonunu tahkim et.",
-        "preview": "Adalet +5, Halk +5, Güvenlik +9, Otorite +8 | Hazine -5",
+        "label": "HÜRKUŞ test uçuşlarına yabancı istihbaratın telemetri dinlemesi yapmasını engellemek için askeri kriptolu frekans tahsis et.",
+        "preview": "Adalet +3, Güvenlik +4, Otorite +7 | Halk -2, Hazine -3",
         "effects": {
-          "justice": 5,
-          "people": 5,
-          "treasury": -5,
-          "military": 9,
-          "authority": 8
-        },
-        "log": "Stratejik sırlar korundu; milli teknolojilere yönelik yabancı istihbarat operasyonları engellendi."
-      },
-      {
-        "label": "Savunma sanayiinde yerlilik oranını %85'e çıkaran 'Stratejik Savunma Sanayii ve İleri Teknoloji Kanunu' çıkar.",
-        "preview": "Adalet +5, Halk +3, Güvenlik +7, Otorite +7 | Hazine -4",
-        "effects": {
-          "justice": 5,
-          "people": 3,
-          "treasury": -4,
-          "military": 7,
+          "justice": 3,
+          "people": -2,
+          "treasury": -3,
+          "military": 4,
           "authority": 7
         },
-        "log": "Savunma bağımsızlığı kanunlaştı; Türkiye kendi silahını üreten küresel aktör oldu."
+        "log": "Test verileri yabancı askeri ataşelerden gizlendi; milli aviyonik sistemler korundu."
+      },
+      {
+        "label": "Sivil Havacılık Genel Müdürlüğü'nü uluslararası sertifikasyon vermeye yetkili kılan 'Milli Havacılık Sertifikasyon Kanunu' çıkar.",
+        "preview": "Adalet +7, Halk +8, Otorite +5 | Hazine -4",
+        "effects": {
+          "justice": 7,
+          "people": 8,
+          "treasury": -4,
+          "military": 0,
+          "authority": 5
+        },
+        "log": "Avrupa'nın sertifika tekeli kırıldı; yerli uçaklar Türkiye'nin kendi kurumunun onayıyla uçtu."
       }
     ]
   },
@@ -36438,35 +36438,35 @@ const EVENT_DECK_MODERN = [
       }
     ],
     "source": "Savunma Sanayii Başkanlığı",
-    "title": "TCG Anadolu Çok Maksatlı Amfibi Hücum Gemisi (LHD)",
-    "desc": "Dünyanın ilk SİHA gemisi konseptiyle üretilen donanmanın amiral gemisi hizmete girdi.",
+    "title": "TCG Anadolu ve F-35B Ambargosuna Karşı Dünyada İlk SİHA Gemisi Doktrini",
+    "desc": "Donanmanın amiral gemisi olarak inşa edilen 231 metrelik TCG Anadolu çok maksatlı amfibi hücum gemisinin güvertesine konulacak F-35B dikine inişli uçakları ABD ambargoladı. Geminin güvertesiz atıl kalması tehlikesine karşı, dünyada ilk kez SİHA (Bayraktar TB3) gemisine dönüştürme kararı masada.",
     "options": [
       {
-        "label": "Donanmanın amiral gemisinin yapımında emeği geçen tüm tersane mühendisleri ve işçilerinin haklarını yasal tescile bağla.",
-        "preview": "Adalet +8, Halk +6, Otorite +2 | Hazine -2",
+        "label": "ABD'nin F-35 program ortaklığı ihlali sebebiyle ödenen 1.4 milyar doların iadesi için uluslararası tahkim sürecini başlat.",
+        "preview": "Adalet +8, Halk +5, Hazine +7, Otorite +6",
         "effects": {
           "justice": 8,
-          "people": 6,
-          "treasury": -2,
+          "people": 5,
+          "treasury": 7,
           "military": 0,
-          "authority": 2
+          "authority": 6
         },
-        "log": "Milli gemi inşası hukuki ve teknik olarak tescillendi; Türk denizcilik endüstrisinin gururu oldu."
+        "log": "Türkiye'nin hakları resmi tescile bağlandı; ABD'nin sözleşme ihlali dünya kamuoyuna duyuruldu."
       },
       {
-        "label": "TCG Anadolu'yu Sarayburnu ve İzmir limanlarında halkın ziyaretine aç; yüz binlerce vatandaşın gemiyi gezmesini sağla.",
-        "preview": "Adalet +2, Halk +9, Hazine +4, Güvenlik +2, Otorite +5",
+        "label": "Deniz Kuvvetleri kurmayları ve Savunma Sanayii Başkanlığı'yla acil harp meclisi topla; geminin doktrinini SİHA konseptine çevir.",
+        "preview": "Adalet +2, Halk +8, Otorite +5 | Hazine -2",
         "effects": {
           "justice": 2,
-          "people": 9,
-          "treasury": 4,
-          "military": 2,
+          "people": 8,
+          "treasury": -2,
+          "military": 0,
           "authority": 5
         },
-        "log": "Millet kendi ordusuyla kucaklaştı; kilometrelerce kuyruk oluşturan vatandaşlar Mavi Vatan'a sahip çıktı."
+        "log": "Dünya deniz harp tarihine geçildi; TCG Anadolu dünyanın ilk SİHA ve çıkarma gemisi olarak ilan edildi."
       },
       {
-        "label": "MİLGEM korvetleri ve havadan bağımsız Reis sınıfı denizaltı projeleri için Savunma Fonu'ndan Hazine garantisi ver.",
+        "label": "Bayraktar TB3 ve Kızılelma'nın gemi iniş-kalkış testleri için Hazine acil bütçesinden özel AR-GE finansmanı ayır.",
         "preview": "Hazine +8, Otorite +4 | Halk -5",
         "effects": {
           "justice": 0,
@@ -36475,10 +36475,10 @@ const EVENT_DECK_MODERN = [
           "military": 0,
           "authority": 4
         },
-        "log": "Tersane yatırımları aralıksız sürdürüldü; Hazine kaynaklarıyla fırkateyn ve denizaltı filosu büyütüldü."
+        "log": "Katlanır kanatlı Bayraktar TB3 gemiden havalandı; Türk donanması okyanus aşırı hava gücü kazandı."
       },
       {
-        "label": "TCG Anadolu'yu Ege, Doğu Akdeniz ve Karadeniz'de sancak göstererek Mavi Vatan'ın en güçlü caydırıcı gücü haline getir.",
+        "label": "TCG Anadolu'nun Doğu Akdeniz görevlerinde yabancı denizaltıların yaklaşmasını önlemek için denizaltısavar sonar kalkanı kur.",
         "preview": "Adalet +3, Güvenlik +4, Otorite +7 | Halk -2, Hazine -3",
         "effects": {
           "justice": 3,
@@ -36487,10 +36487,10 @@ const EVENT_DECK_MODERN = [
           "military": 4,
           "authority": 7
         },
-        "log": "Denizlerdeki caydırıcılık zirveye çıktı; Türkiye açık denizlerde çıkarma ve hava harekatı gücünü ispatladı."
+        "log": "Amiral gemisi Mavi Vatan'da bayrak gösterdi; yabancı fırkateynler ve denizaltılar bölgeden uzaklaştırıldı."
       },
       {
-        "label": "Milli tersaneler ve askeri gemi sanayiini stratejik koruma altına alan 'Milli Askeri Denizcilik Kanunu' çıkar.",
+        "label": "Açık deniz görev grupları ve amfibi harekat yetkisini güçlendiren 'Deniz Görev Grubu Teşkilat Kanunu' çıkar.",
         "preview": "Adalet +5, Halk +3, Güvenlik +7, Otorite +7 | Hazine -4",
         "effects": {
           "justice": 5,
@@ -36499,7 +36499,7 @@ const EVENT_DECK_MODERN = [
           "military": 7,
           "authority": 7
         },
-        "log": "Donanmanın milli üretim oranı %80'in üzerine çıkarıldı; dışa bağımlılık tarihe gömüldü."
+        "log": "TCG Anadolu donanmanın amiral gemisi olarak hizmete girdi; Türkiye küresel güç projeksiyonuna kavuştu."
       }
     ]
   },
@@ -36516,11 +36516,11 @@ const EVENT_DECK_MODERN = [
       }
     ],
     "source": "Savunma Sanayii Başkanlığı",
-    "title": "MİLGEM ADA Sınıfı Korvetler (Heybeliada, Büyükada, Burgazada, Kınalıada)",
-    "desc": "Milli Gemi Projesi kapsamında yerli imkanlarla üretilen 4 korvet denizlerde göreve başladı.",
+    "title": "MİLGEM ADA Sınıfı Korvetlerde Yabancı Sensör ve Silah Blokajı İkilemi",
+    "desc": "Milli Gemi (MİLGEM) projesi kapsamında Heybeliada ve Büyükada korvetleri inşa edilirken, Batılı müttefikler sonarları, torpido kovanlarını ve savaş yönetim yazılımlarını satmaktan vazgeçti. Tersanelerin gemileri yarım bırakma riski karşısında kritik karar gerekiyor.",
     "options": [
       {
-        "label": "Donanmanın amiral gemisinin yapımında emeği geçen tüm tersane mühendisleri ve işçilerinin haklarını yasal tescile bağla.",
+        "label": "Alman ve Fransız tedarikçilere karşı sözleşme feshi ve teminat mektuplarına el koyma adli sürecini işlet.",
         "preview": "Adalet +8, Halk +6, Otorite +2 | Hazine -2",
         "effects": {
           "justice": 8,
@@ -36529,22 +36529,22 @@ const EVENT_DECK_MODERN = [
           "military": 0,
           "authority": 2
         },
-        "log": "Milli gemi inşası hukuki ve teknik olarak tescillendi; Türk denizcilik endüstrisinin gururu oldu."
+        "log": "Hazine zararı teminatlardan tahsil edildi; yabancı tekellerin ambargo oyunu bozuldu."
       },
       {
-        "label": "TCG Anadolu'yu Sarayburnu ve İzmir limanlarında halkın ziyaretine aç; yüz binlerce vatandaşın gemiyi gezmesini sağla.",
-        "preview": "Adalet +2, Halk +9, Hazine +4, Güvenlik +2, Otorite +5",
+        "label": "Deniz Kuvvetleri Araştırma Merkezi (ARMERKOM) mühendislerine tam yetki ver; GENESİS milli savaş yönetim sistemini gemiye yükle.",
+        "preview": "Adalet +2, Halk +8, Otorite +5 | Hazine -2",
         "effects": {
           "justice": 2,
-          "people": 9,
-          "treasury": 4,
-          "military": 2,
+          "people": 8,
+          "treasury": -2,
+          "military": 0,
           "authority": 5
         },
-        "log": "Millet kendi ordusuyla kucaklaştı; kilometrelerce kuyruk oluşturan vatandaşlar Mavi Vatan'a sahip çıktı."
+        "log": "Tarihi milli atılım gerçekleşti; GENESİS ve HAVELSAN sistemleri MİLGEM'in milli beyni oldu."
       },
       {
-        "label": "MİLGEM korvetleri ve havadan bağımsız Reis sınıfı denizaltı projeleri için Savunma Fonu'ndan Hazine garantisi ver.",
+        "label": "Yerli torpido AKYA ve sonar sistemleri için ASELSAN ve Roketsan'a doğrudan Hazine finansman desteği sağla.",
         "preview": "Hazine +8, Otorite +4 | Halk -5",
         "effects": {
           "justice": 0,
@@ -36553,22 +36553,22 @@ const EVENT_DECK_MODERN = [
           "military": 0,
           "authority": 4
         },
-        "log": "Tersane yatırımları aralıksız sürdürüldü; Hazine kaynaklarıyla fırkateyn ve denizaltı filosu büyütüldü."
+        "log": "Milli torpido ve sonarlar hazırlandı; MİLGEM yüzde 75 yerlilik oranıyla denize indirildi."
       },
       {
-        "label": "TCG Anadolu'yu Ege, Doğu Akdeniz ve Karadeniz'de sancak göstererek Mavi Vatan'ın en güçlü caydırıcı gücü haline getir.",
-        "preview": "Adalet +3, Güvenlik +4, Otorite +7 | Halk -2, Hazine -3",
+        "label": "İstanbul Tersanesi Komutanlığı sahasına yönelik yabancı casusluk ve fotoğraf çekme girişimlerine karşı askeri istihbarat kalkanı kur.",
+        "preview": "Adalet +5, Halk +5, Güvenlik +9, Otorite +8 | Hazine -5",
         "effects": {
-          "justice": 3,
-          "people": -2,
-          "treasury": -3,
-          "military": 4,
-          "authority": 7
+          "justice": 5,
+          "people": 5,
+          "treasury": -5,
+          "military": 9,
+          "authority": 8
         },
-        "log": "Denizlerdeki caydırıcılık zirveye çıktı; Türkiye açık denizlerde çıkarma ve hava harekatı gücünü ispatladı."
+        "log": "Gemi inşa sırları korundu; MİLGEM korvetleri gizlilik içinde tamamlanarak Mavi Vatan'a açıldı."
       },
       {
-        "label": "Milli tersaneler ve askeri gemi sanayiini stratejik koruma altına alan 'Milli Askeri Denizcilik Kanunu' çıkar.",
+        "label": "Askeri tersaneleri ve milli gemi inşa sanayiini stratejik milli korumaya alan 'Milli Gemi İnşa Kanunu' çıkar.",
         "preview": "Adalet +5, Halk +3, Güvenlik +7, Otorite +7 | Hazine -4",
         "effects": {
           "justice": 5,
@@ -36577,7 +36577,7 @@ const EVENT_DECK_MODERN = [
           "military": 7,
           "authority": 7
         },
-        "log": "Donanmanın milli üretim oranı %80'in üzerine çıkarıldı; dışa bağımlılık tarihe gömüldü."
+        "log": "MİLGEM projesi Pakistan ve Ukrayna'ya ihraç edilen dev bir küresel başarıya dönüştü."
       }
     ]
   },
@@ -36594,35 +36594,35 @@ const EVENT_DECK_MODERN = [
       }
     ],
     "source": "Savunma Sanayii Başkanlığı",
-    "title": "TCG İstanbul İstif Sınıfı İlk Milli Fırkateyn",
-    "desc": "Yerli dikey atım sistemi MİDLAS ve Atmaca füzeleriyle donatılan milli fırkateyn teslim edildi.",
+    "title": "TCG İstanbul Fırkateyninde ABD Mk 41 Dikey Atım Sistemi (VLS) Ambargosu",
+    "desc": "Türkiye'nin ilk yerli fırkateyni TCG İstanbul'un gövdesi bitti; ancak hava savunma füzelerini ateşleyen Amerikan Mk 41 dikey atım sistemi satışı ABD Kongresi tarafından bloke edildi. Geminin silahsız kalmaması için yerli MİDLAS dikey atım sisteminin acilen denenmesi gerekiyor.",
     "options": [
       {
-        "label": "Savunma sanayii projelerinin fikri mülkiyet ve patent haklarını devlet adına güvenceye alan yasal tescilleri yap.",
-        "preview": "Adalet +8, Halk +4, Güvenlik +4, Otorite +5 | Hazine -2",
+        "label": "ABD Kongresi'nin silah ambargosunu NATO müttefikliği ruhuna aykırılık gerekçesiyle uluslararası alanda teşhir et.",
+        "preview": "Adalet +8, Halk +5, Hazine +2, Otorite +6",
         "effects": {
           "justice": 8,
-          "people": 4,
-          "treasury": -2,
-          "military": 4,
-          "authority": 5
-        },
-        "log": "Teknolojik mülkiyet korundu; milli projelerin yabancı şirketler tarafından taklit edilmesi önlendi."
-      },
-      {
-        "label": "Yerli mühendis ordusu, üniversiteler ve KOBİ'lerle teknoloji şurası toplayarak savunma ekosistemini tabana yay.",
-        "preview": "Adalet +3, Halk +9, Otorite +6 | Hazine -4",
-        "effects": {
-          "justice": 3,
-          "people": 9,
-          "treasury": -4,
+          "people": 5,
+          "treasury": 2,
           "military": 0,
           "authority": 6
         },
-        "log": "Toplumsal ve sektörel uzlaşı sağlandı; binlerce yan sanayi firması milli savunma üretimine dahil oldu."
+        "log": "Müttefiklerin riyakarlığı kayda geçti; ancak fiili füze ihtiyacı milli çözümü zorunlu kıldı."
       },
       {
-        "label": "Stratejik savunma sanayii Ar-Ge projeleri için Savunma Destekleme Fonu'ndan Hazine destekli teşvik sağla.",
+        "label": "Roketsan ve Deniz Kuvvetleri komutanlarıyla acil teknik toplantı yap; yerli MİDLAS dikey atım sistemini gemiye entegre et.",
+        "preview": "Adalet +2, Halk +8, Otorite +5 | Hazine -2",
+        "effects": {
+          "justice": 2,
+          "people": 8,
+          "treasury": -2,
+          "military": 0,
+          "authority": 5
+        },
+        "log": "Türk mühendisleri imkansızı başardı; milli MİDLAS lançerinden HİSAR füzeleri ilk kez başarıyla ateşlendi."
+      },
+      {
+        "label": "Gemiye entegre edilecek yerli Atmaca gemisavar ve HİSAR füzelerinin seri üretimi için Hazine savunma fonunu aç.",
         "preview": "Hazine +8, Otorite +4 | Halk -5",
         "effects": {
           "justice": 0,
@@ -36631,31 +36631,31 @@ const EVENT_DECK_MODERN = [
           "military": 0,
           "authority": 4
         },
-        "log": "Milli savunma yatırımları finanse edildi; dışa bağımlılık azaltılarak ihracat potansiyeli artırıldı."
+        "log": "Milli silah kalkanı kuruldu; yabancı füze ve fırlatıcı ihtiyacı ebediyen sona erdi."
       },
       {
-        "label": "Kritik savunma tesisleri ve Ar-Ge merkezlerinde casusluk ve sabotaja karşı askeri güvenlik kordonunu tahkim et.",
-        "preview": "Adalet +5, Halk +5, Güvenlik +9, Otorite +8 | Hazine -5",
+        "label": "Karadeniz ve Ege'de ilk füze atış testleri sırasında Rus ve Yunan keşif uçaklarının telemetri sinyallerini karıştırıcılarla körelt.",
+        "preview": "Adalet +3, Güvenlik +4, Otorite +7 | Halk -2, Hazine -3",
         "effects": {
-          "justice": 5,
-          "people": 5,
-          "treasury": -5,
-          "military": 9,
-          "authority": 8
-        },
-        "log": "Stratejik sırlar korundu; milli teknolojilere yönelik yabancı istihbarat operasyonları engellendi."
-      },
-      {
-        "label": "Savunma sanayiinde yerlilik oranını %85'e çıkaran 'Stratejik Savunma Sanayii ve İleri Teknoloji Kanunu' çıkar.",
-        "preview": "Adalet +5, Halk +3, Güvenlik +7, Otorite +7 | Hazine -4",
-        "effects": {
-          "justice": 5,
-          "people": 3,
-          "treasury": -4,
-          "military": 7,
+          "justice": 3,
+          "people": -2,
+          "treasury": -3,
+          "military": 4,
           "authority": 7
         },
-        "log": "Savunma bağımsızlığı kanunlaştı; Türkiye kendi silahını üreten küresel aktör oldu."
+        "log": "Milli füze frekansları yabancı servislerden gizlendi; MİDLAS atış sırları korundu."
+      },
+      {
+        "label": "Deniz harp platformlarının tüm silah ve fırlatıcılarının milli olmasını zorunlu kılan 'Deniz Savunma Kanunu' çıkar.",
+        "preview": "Adalet +7, Halk +5, Otorite +6 | Hazine -4",
+        "effects": {
+          "justice": 7,
+          "people": 5,
+          "treasury": -4,
+          "military": 0,
+          "authority": 6
+        },
+        "log": "TCG İstanbul donanmaya katıldı; Türkiye kendi fırkateynini ve füze lançerini yapan 10 ülkeden biri oldu."
       }
     ]
   },
@@ -36672,68 +36672,68 @@ const EVENT_DECK_MODERN = [
       }
     ],
     "source": "Savunma Sanayii Başkanlığı",
-    "title": "Reis Sınıfı Denizaltılar: TCG Piri Reis ve Havadan Bağımsız Tahrik",
-    "desc": "Haftalarca su yüzüne çıkmadan operasyon yapabilen milli denizaltı suya indirildi.",
+    "title": "Reis Sınıfı Denizaltılarda Alman ThyssenKrupp Gizli Kod ve Akustik Sızıntı Tehdidi",
+    "desc": "Havadan bağımsız tahrik sistemiyle (AIP) haftalarca su altında kalabilen TCG Piri Reis ve Reis sınıfı denizaltılar Gölcük'te inşa edilirken; Alman üretici firmanın yazılım kodlarında arka kapı bıraktığı ve akustik izlerin yabancı servislere sızabileceği istihbaratı masaya geldi.",
     "options": [
       {
-        "label": "Donanmanın amiral gemisinin yapımında emeği geçen tüm tersane mühendisleri ve işçilerinin haklarını yasal tescile bağla.",
-        "preview": "Adalet +8, Halk +6, Otorite +2 | Hazine -2",
+        "label": "Gölcük Askeri Savcılığı'nı ve siber adli bilirkişileri görevlendir; tüm yabancı yazılımları satır satır denetle.",
+        "preview": "Adalet +8, Halk +4, Güvenlik +4, Otorite +5 | Hazine -2",
         "effects": {
           "justice": 8,
-          "people": 6,
+          "people": 4,
           "treasury": -2,
-          "military": 0,
-          "authority": 2
-        },
-        "log": "Milli gemi inşası hukuki ve teknik olarak tescillendi; Türk denizcilik endüstrisinin gururu oldu."
-      },
-      {
-        "label": "TCG Anadolu'yu Sarayburnu ve İzmir limanlarında halkın ziyaretine aç; yüz binlerce vatandaşın gemiyi gezmesini sağla.",
-        "preview": "Adalet +2, Halk +9, Hazine +4, Güvenlik +2, Otorite +5",
-        "effects": {
-          "justice": 2,
-          "people": 9,
-          "treasury": 4,
-          "military": 2,
+          "military": 4,
           "authority": 5
         },
-        "log": "Millet kendi ordusuyla kucaklaştı; kilometrelerce kuyruk oluşturan vatandaşlar Mavi Vatan'a sahip çıktı."
+        "log": "Şüpheli yazılım kodları ayıklandı; yabancı servislerin akustik iz toplama planı çökertildi."
       },
       {
-        "label": "MİLGEM korvetleri ve havadan bağımsız Reis sınıfı denizaltı projeleri için Savunma Fonu'ndan Hazine garantisi ver.",
-        "preview": "Hazine +8, Otorite +4 | Halk -5",
+        "label": "Almanya Savunma Bakanlığı ve ThyssenKrupp yetkilileriyle gizli diplomasi yürüt; kaynak kodların tam teslimini şart koş.",
+        "preview": "Adalet +2, Halk +8, Otorite +5 | Hazine -2",
         "effects": {
-          "justice": 0,
-          "people": -5,
-          "treasury": 8,
+          "justice": 2,
+          "people": 8,
+          "treasury": -2,
+          "military": 0,
+          "authority": 5
+        },
+        "log": "Alman firması geri adım attı; denizaltı kontrol yazılımlarının kaynak kodları Türk tarafına devredildi."
+      },
+      {
+        "label": "HAVELSAN MÜREN milli savaş yönetim sistemi için acil 150 milyon dolar ek finansman sağla; Alman sistemini yerliyle değiştir.",
+        "preview": "Adalet +2, Halk +8, Otorite +4 | Hazine -6",
+        "effects": {
+          "justice": 2,
+          "people": 8,
+          "treasury": -6,
           "military": 0,
           "authority": 4
         },
-        "log": "Tersane yatırımları aralıksız sürdürüldü; Hazine kaynaklarıyla fırkateyn ve denizaltı filosu büyütüldü."
+        "log": "Milli denizaltı beyni kuruldu; Piri Reis tamamen yerli MÜREN sistemiyle sessiz derinliklere daldı."
       },
       {
-        "label": "TCG Anadolu'yu Ege, Doğu Akdeniz ve Karadeniz'de sancak göstererek Mavi Vatan'ın en güçlü caydırıcı gücü haline getir.",
-        "preview": "Adalet +3, Güvenlik +4, Otorite +7 | Halk -2, Hazine -3",
-        "effects": {
-          "justice": 3,
-          "people": -2,
-          "treasury": -3,
-          "military": 4,
-          "authority": 7
-        },
-        "log": "Denizlerdeki caydırıcılık zirveye çıktı; Türkiye açık denizlerde çıkarma ve hava harekatı gücünü ispatladı."
-      },
-      {
-        "label": "Milli tersaneler ve askeri gemi sanayiini stratejik koruma altına alan 'Milli Askeri Denizcilik Kanunu' çıkar.",
-        "preview": "Adalet +5, Halk +3, Güvenlik +7, Otorite +7 | Hazine -4",
+        "label": "Gölcük Tersanesi çevresinde yabancı ataşelerin gizli dinleme cihazlarını MİT karşı-teknik arama timleriyle temizle.",
+        "preview": "Adalet +5, Halk +5, Güvenlik +9, Otorite +8 | Hazine -5",
         "effects": {
           "justice": 5,
-          "people": 3,
-          "treasury": -4,
-          "military": 7,
-          "authority": 7
+          "people": 5,
+          "treasury": -5,
+          "military": 9,
+          "authority": 8
         },
-        "log": "Donanmanın milli üretim oranı %80'in üzerine çıkarıldı; dışa bağımlılık tarihe gömüldü."
+        "log": "Tersane sahası sinyal kalkanıyla mühürlendi; denizaltının gövde akustik sırları korundu."
+      },
+      {
+        "label": "Milli denizaltı inşa ve hidroakustik verilerini en yüksek devlet sırrı kapsamına alan 'Denizaltı Güvenlik Kanunu' çıkar.",
+        "preview": "Adalet +7, Halk +5, Otorite +6 | Hazine -4",
+        "effects": {
+          "justice": 7,
+          "people": 5,
+          "treasury": -4,
+          "military": 0,
+          "authority": 6
+        },
+        "log": "Piri Reis denizaltısı donanmaya katıldı; Mavi Vatan'ın sessiz koruyucusu derinliklerde nöbete başladı."
       }
     ]
   },
@@ -36750,35 +36750,35 @@ const EVENT_DECK_MODERN = [
       }
     ],
     "source": "Savunma Sanayii Başkanlığı",
-    "title": "Altay Ana Muharebe Tankı Projesi ve Seri Üretim",
-    "desc": "Kore güç grubu entegrasyonuyla testleri tamamlanan Altay tankı TSK'ya teslim edilmeye başlandı.",
+    "title": "Altay Tankında Alman MTU Motor ve Renk Transmisyon Ambargosuna Karşı Kore İttifakı",
+    "desc": "Altay Ana Muharebe Tankı'nın gövde ve atış kontrol testleri tamamlandı; ancak Almanya hükümeti Suriye harekatlarını gerekçe göstererek MTU motor ve Renk şanzıman satışını süresiz dondurdu. Yüzlerce tankın seri üretime girmesi için güç grubu krizi acil çözüm bekliyor.",
     "options": [
       {
-        "label": "Savunma sanayii projelerinin fikri mülkiyet ve patent haklarını devlet adına güvenceye alan yasal tescilleri yap.",
-        "preview": "Adalet +8, Halk +4, Güvenlik +4, Otorite +5 | Hazine -2",
+        "label": "Almanya'nın silah ambargosunu NATO İttifak Antlaşması'nın 5. ve 3. maddelerine aykırılık gerekçesiyle NATO Konseyi'ne taşı.",
+        "preview": "Adalet +9, Halk +8, Otorite +3 | Hazine -2",
         "effects": {
-          "justice": 8,
-          "people": 4,
+          "justice": 9,
+          "people": 8,
           "treasury": -2,
-          "military": 4,
+          "military": 0,
+          "authority": 3
+        },
+        "log": "Diplomatik baskı kuruldu; fakat Almanya'nın iç siyasi blokajı aşılamadı."
+      },
+      {
+        "label": "Güney Kore hükümeti ve Hyundai Doosan ile stratejik teknoloji transferi masası kur; Kore güç grubunu Altay'a entegre et.",
+        "preview": "Adalet +2, Halk +8, Otorite +5 | Hazine -2",
+        "effects": {
+          "justice": 2,
+          "people": 8,
+          "treasury": -2,
+          "military": 0,
           "authority": 5
         },
-        "log": "Teknolojik mülkiyet korundu; milli projelerin yabancı şirketler tarafından taklit edilmesi önlendi."
+        "log": "Stratejik ittifak kuruldu; Kore motor ve transmisyonuyla Altay tankı seri üretime geçti."
       },
       {
-        "label": "Yerli mühendis ordusu, üniversiteler ve KOBİ'lerle teknoloji şurası toplayarak savunma ekosistemini tabana yay.",
-        "preview": "Adalet +3, Halk +9, Otorite +6 | Hazine -4",
-        "effects": {
-          "justice": 3,
-          "people": 9,
-          "treasury": -4,
-          "military": 0,
-          "authority": 6
-        },
-        "log": "Toplumsal ve sektörel uzlaşı sağlandı; binlerce yan sanayi firması milli savunma üretimine dahil oldu."
-      },
-      {
-        "label": "Stratejik savunma sanayii Ar-Ge projeleri için Savunma Destekleme Fonu'ndan Hazine destekli teşvik sağla.",
+        "label": "BMC Power yerli BATU 1500 beygirlik tank motoru geliştirme projesine Hazine'den 500 milyon dolar teşvik ver.",
         "preview": "Hazine +8, Otorite +4 | Halk -5",
         "effects": {
           "justice": 0,
@@ -36787,10 +36787,10 @@ const EVENT_DECK_MODERN = [
           "military": 0,
           "authority": 4
         },
-        "log": "Milli savunma yatırımları finanse edildi; dışa bağımlılık azaltılarak ihracat potansiyeli artırıldı."
+        "log": "Milli tank motoru BATU ateşlendi; Türkiye kendi ağır zırhlı motorunu üretecek kapasiteye ulaştı."
       },
       {
-        "label": "Kritik savunma tesisleri ve Ar-Ge merkezlerinde casusluk ve sabotaja karşı askeri güvenlik kordonunu tahkim et.",
+        "label": "Altay tankının kompozit ve reaktif zırh (AKKOR) teknolojilerini çalmaya çalışan yabancı ajanlara MİT ile baskın yap.",
         "preview": "Adalet +5, Halk +5, Güvenlik +9, Otorite +8 | Hazine -5",
         "effects": {
           "justice": 5,
@@ -36799,10 +36799,10 @@ const EVENT_DECK_MODERN = [
           "military": 9,
           "authority": 8
         },
-        "log": "Stratejik sırlar korundu; milli teknolojilere yönelik yabancı istihbarat operasyonları engellendi."
+        "log": "Zırh teknolojisi casusluğu engellendi; Altay'ın tanksavar füzelerini havada imha eden AKKOR sistemi korundu."
       },
       {
-        "label": "Savunma sanayiinde yerlilik oranını %85'e çıkaran 'Stratejik Savunma Sanayii ve İleri Teknoloji Kanunu' çıkar.",
+        "label": "Kara muharebe araçlarında yerli güç grubu kullanımını zorunlu kılan 'Kara Savunma Sanayii Kanunu' çıkar.",
         "preview": "Adalet +5, Halk +3, Güvenlik +7, Otorite +7 | Hazine -4",
         "effects": {
           "justice": 5,
@@ -36811,7 +36811,7 @@ const EVENT_DECK_MODERN = [
           "military": 7,
           "authority": 7
         },
-        "log": "Savunma bağımsızlığı kanunlaştı; Türkiye kendi silahını üreten küresel aktör oldu."
+        "log": "Altay tankı TSK envanterine girdi; Türk Silahlı Kuvvetleri bölgenin en güçlü zırhlı yumruğuna kavuştu."
       }
     ]
   },
@@ -36828,35 +36828,35 @@ const EVENT_DECK_MODERN = [
       }
     ],
     "source": "Savunma Sanayii Başkanlığı",
-    "title": "Roketsan TAYFUN Kısa Menzilli Balistik Füzesi",
-    "desc": "Rize'den Sinop açıklarına yapılan test atışıyla 561 kilometre menzile ulaşarak caydırıcılık sağladı.",
+    "title": "Roketsan TAYFUN Balistik Füze Testi Sonrası Atina ve NATO Alarmı",
+    "desc": "Rize Artvin Havalimanı sahasından Sinop açıklarına ateşlenen TAYFUN kısa menzilli balistik füzesi 561 kilometreyi başarıyla vurdu. Testin ardından Yunanistan ve bazı NATO ülkeleri Türkiye'nin bölgesel dengeyi bozduğunu iddia ederek füze teknolojisi transferlerine ambargo tehdidi savurdu.",
     "options": [
       {
-        "label": "Savunma sanayii projelerinin fikri mülkiyet ve patent haklarını devlet adına güvenceye alan yasal tescilleri yap.",
-        "preview": "Adalet +8, Halk +4, Güvenlik +4, Otorite +5 | Hazine -2",
+        "label": "Füze menzilinin ve test parametrelerinin uluslararası Füze Teknolojisi Kontrol Rejimi'ne (MTCR) tam uygun olduğunu deklare et.",
+        "preview": "Adalet +9, Halk +8, Otorite +3 | Hazine -2",
         "effects": {
-          "justice": 8,
-          "people": 4,
+          "justice": 9,
+          "people": 8,
           "treasury": -2,
-          "military": 4,
-          "authority": 5
+          "military": 0,
+          "authority": 3
         },
-        "log": "Teknolojik mülkiyet korundu; milli projelerin yabancı şirketler tarafından taklit edilmesi önlendi."
+        "log": "Uluslararası hukuk savunuldu; Türkiye'nin füze geliştirme hakkı meşru zeminde tescillendi."
       },
       {
-        "label": "Yerli mühendis ordusu, üniversiteler ve KOBİ'lerle teknoloji şurası toplayarak savunma ekosistemini tabana yay.",
-        "preview": "Adalet +3, Halk +9, Otorite +6 | Hazine -4",
+        "label": "Komşu ülkeler ve müttefiklerle diplomatik temas kur; füzenin yalnızca caydırıcılık ve savunma amaçlı olduğunu belirtip tansiyonu düşür.",
+        "preview": "Adalet +3, Halk +6, Hazine +3, Otorite +7",
         "effects": {
           "justice": 3,
-          "people": 9,
-          "treasury": -4,
+          "people": 6,
+          "treasury": 3,
           "military": 0,
-          "authority": 6
+          "authority": 7
         },
-        "log": "Toplumsal ve sektörel uzlaşı sağlandı; binlerce yan sanayi firması milli savunma üretimine dahil oldu."
+        "log": "Ege ve Akdeniz'deki diplomatik kriz yumuşatıldı; fakat caydırıcılık mesajı adrese ulaştı."
       },
       {
-        "label": "Stratejik savunma sanayii Ar-Ge projeleri için Savunma Destekleme Fonu'ndan Hazine destekli teşvik sağla.",
+        "label": "TAYFUN, CENK ve GEZGİN füze ailelerinin menzilini 1000 kilometreye çıkaracak yeni motor ve yakıt AR-GE'sine bütçe ayır.",
         "preview": "Hazine +8, Otorite +4 | Halk -5",
         "effects": {
           "justice": 0,
@@ -36865,22 +36865,22 @@ const EVENT_DECK_MODERN = [
           "military": 0,
           "authority": 4
         },
-        "log": "Milli savunma yatırımları finanse edildi; dışa bağımlılık azaltılarak ihracat potansiyeli artırıldı."
+        "log": "Milli roket sanayisi dev adımlar attı; Türkiye balistik füze liginde küresel caydırıcı güce ulaştı."
       },
       {
-        "label": "Kritik savunma tesisleri ve Ar-Ge merkezlerinde casusluk ve sabotaja karşı askeri güvenlik kordonunu tahkim et.",
-        "preview": "Adalet +5, Halk +5, Güvenlik +9, Otorite +8 | Hazine -5",
+        "label": "Füze fırlatma bataryalarının konuşlandığı gizli üslerin koordinatlarını sızdırmaya çalışan yabancı uydulara karşı GPS köreltme uygula.",
+        "preview": "Adalet +2, Halk +8, Güvenlik +6, Otorite +6 | Hazine -4",
         "effects": {
-          "justice": 5,
-          "people": 5,
-          "treasury": -5,
-          "military": 9,
-          "authority": 8
+          "justice": 2,
+          "people": 8,
+          "treasury": -4,
+          "military": 6,
+          "authority": 6
         },
-        "log": "Stratejik sırlar korundu; milli teknolojilere yönelik yabancı istihbarat operasyonları engellendi."
+        "log": "Füze bataryaları gizlendi; uydu istihbarat servislerinin hedef belirlemesi engellendi."
       },
       {
-        "label": "Savunma sanayiinde yerlilik oranını %85'e çıkaran 'Stratejik Savunma Sanayii ve İleri Teknoloji Kanunu' çıkar.",
+        "label": "Milli stratejik füze sistemlerinin geliştirilmesini ve konuşlanmasını devlet korumasına alan 'Milli Caydırıcılık Kanunu' çıkar.",
         "preview": "Adalet +5, Halk +3, Güvenlik +7, Otorite +7 | Hazine -4",
         "effects": {
           "justice": 5,
@@ -36889,7 +36889,7 @@ const EVENT_DECK_MODERN = [
           "military": 7,
           "authority": 7
         },
-        "log": "Savunma bağımsızlığı kanunlaştı; Türkiye kendi silahını üreten küresel aktör oldu."
+        "log": "TAYFUN füzesi seri üretime girdi; Türkiye'nin savunma derinliği yüzlerce kilometre öteye taşındı."
       }
     ]
   },
@@ -36906,35 +36906,35 @@ const EVENT_DECK_MODERN = [
       }
     ],
     "source": "Savunma Sanayii Başkanlığı",
-    "title": "Roketsan ATMACA Gemisavar Füzesi",
-    "desc": "Amerikan Harpoon füzelerinin yerini alan yerli seyir füzesi hedef gemiyi tam isabetle batırdı.",
+    "title": "Amerikan Harpoon Ambargosuna Karşı Yerli ATMACA Gemisavarı Konuşlanması",
+    "desc": "Donanmanın belkemiği olan Amerikan Harpoon gemisavar füzelerine yedek parça ve yeni tedarik ambargosu konuldu. Mavi Vatan'daki gemilerin silahsız kalması tehlikesine karşı 220 km menzilli yerli ATMACA füzesinin test atışları tamamlandı; ancak füzeyi güdümleyen radar alt sistemlerinde dış sabotaj kuşkusu var.",
     "options": [
       {
-        "label": "Savunma sanayii projelerinin fikri mülkiyet ve patent haklarını devlet adına güvenceye alan yasal tescilleri yap.",
-        "preview": "Adalet +8, Halk +4, Güvenlik +4, Otorite +5 | Hazine -2",
+        "label": "Harpoon sözleşmelerindeki teslimat aksamalarını adli olarak tespit ettir ve kamu zararını yabancı firmaya fatura et.",
+        "preview": "Adalet +8, Halk +5, Hazine +2, Otorite +6",
         "effects": {
           "justice": 8,
-          "people": 4,
-          "treasury": -2,
-          "military": 4,
-          "authority": 5
-        },
-        "log": "Teknolojik mülkiyet korundu; milli projelerin yabancı şirketler tarafından taklit edilmesi önlendi."
-      },
-      {
-        "label": "Yerli mühendis ordusu, üniversiteler ve KOBİ'lerle teknoloji şurası toplayarak savunma ekosistemini tabana yay.",
-        "preview": "Adalet +3, Halk +9, Otorite +6 | Hazine -4",
-        "effects": {
-          "justice": 3,
-          "people": 9,
-          "treasury": -4,
+          "people": 5,
+          "treasury": 2,
           "military": 0,
           "authority": 6
         },
-        "log": "Toplumsal ve sektörel uzlaşı sağlandı; binlerce yan sanayi firması milli savunma üretimine dahil oldu."
+        "log": "Hukuki süreç işletildi; Türkiye haklılığını uluslararası platformda kanıtladı."
       },
       {
-        "label": "Stratejik savunma sanayii Ar-Ge projeleri için Savunma Destekleme Fonu'ndan Hazine destekli teşvik sağla.",
+        "label": "Roketsan ve Kale ARGE mühendisleriyle bir araya gel; yerli KTJ-3200 turbojet motorunu ATMACA'ya entegre et.",
+        "preview": "Adalet +2, Halk +8, Otorite +5 | Hazine -2",
+        "effects": {
+          "justice": 2,
+          "people": 8,
+          "treasury": -2,
+          "military": 0,
+          "authority": 5
+        },
+        "log": "Yerli motor ateşlendi; ATMACA tamamen milli parçalarla denizin üzerinde süzülerek hedef gemiyi ortadan ikiye yardı."
+      },
+      {
+        "label": "Tüm fırkateyn ve korvetlerdeki Harpoon bataryalarını söküp yerlerine ATMACA takmak için donanmaya acil dönüşüm bütçesi tahsis et.",
         "preview": "Hazine +8, Otorite +4 | Halk -5",
         "effects": {
           "justice": 0,
@@ -36943,31 +36943,31 @@ const EVENT_DECK_MODERN = [
           "military": 0,
           "authority": 4
         },
-        "log": "Milli savunma yatırımları finanse edildi; dışa bağımlılık azaltılarak ihracat potansiyeli artırıldı."
+        "log": "Donanmanın vuruş gücü yerlileşti; Harpoon'a ödenen yüz milyonlarca dolar milli savunma sanayiinde kaldı."
       },
       {
-        "label": "Kritik savunma tesisleri ve Ar-Ge merkezlerinde casusluk ve sabotaja karşı askeri güvenlik kordonunu tahkim et.",
-        "preview": "Adalet +5, Halk +5, Güvenlik +9, Otorite +8 | Hazine -5",
+        "label": "ATMACA'nın RF arayıcı başlık frekanslarını yabancı istihbaratın dinlemesini önlemek için elektronik kripto koruması sağla.",
+        "preview": "Adalet +3, Güvenlik +4, Otorite +7 | Halk -2, Hazine -3",
         "effects": {
-          "justice": 5,
-          "people": 5,
-          "treasury": -5,
-          "military": 9,
-          "authority": 8
-        },
-        "log": "Stratejik sırlar korundu; milli teknolojilere yönelik yabancı istihbarat operasyonları engellendi."
-      },
-      {
-        "label": "Savunma sanayiinde yerlilik oranını %85'e çıkaran 'Stratejik Savunma Sanayii ve İleri Teknoloji Kanunu' çıkar.",
-        "preview": "Adalet +5, Halk +3, Güvenlik +7, Otorite +7 | Hazine -4",
-        "effects": {
-          "justice": 5,
-          "people": 3,
-          "treasury": -4,
-          "military": 7,
+          "justice": 3,
+          "people": -2,
+          "treasury": -3,
+          "military": 4,
           "authority": 7
         },
-        "log": "Savunma bağımsızlığı kanunlaştı; Türkiye kendi silahını üreten küresel aktör oldu."
+        "log": "Füzenin güdüm sırları korundu; ATMACA radarlara yakalanmayan 'deniz üstü uçan hançer' oldu."
+      },
+      {
+        "label": "Karasularında ve Mavi Vatan'da kullanılan gemisavar füzelerinin milli üretimini zorunlu kılan kanun çıkar.",
+        "preview": "Adalet +7, Halk +5, Otorite +6 | Hazine -4",
+        "effects": {
+          "justice": 7,
+          "people": 5,
+          "treasury": -4,
+          "military": 0,
+          "authority": 6
+        },
+        "log": "ATMACA seri üretime girdi; Türk donanması Ege ve Akdeniz'de yabancı ambargoları tarihe gömdü."
       }
     ]
   },
@@ -36984,11 +36984,11 @@ const EVENT_DECK_MODERN = [
       }
     ],
     "source": "Savunma Sanayii Başkanlığı",
-    "title": "Roketsan ÇAKIR Minyatür Seyir Füzesi",
-    "desc": "Akıncı TİHA'dan atılan Çakır füzesi hedefini metre hassasiyetiyle imha etti.",
+    "title": "SİPER Uzun Menzilli Bölge Hava Savunma Sistemi ve Eurosam Ambargosu",
+    "desc": "Türkiye'nin hava sahasını balistik füze ve savaş uçaklarına karşı koruyacak uzun menzilli füze kalkanı yok; Fransa ve İtalya (Eurosam SAMP-T) ortak füze üretimini siyasi şartlara bağlayarak oyalıyor. ASELSAN, Roketsan ve TÜBİTAK SAGE ortaklığıyla 100+ km menzilli SİPER sisteminin acil konuşlanması gerekiyor.",
     "options": [
       {
-        "label": "Savunma sanayii projelerinin fikri mülkiyet ve patent haklarını devlet adına güvenceye alan yasal tescilleri yap.",
+        "label": "Eurosam ile yapılan niyet mektubunu tek taraflı feshet; Türkiye'yi oyalayan Avrupa şirketlerine cezai şart davası aç.",
         "preview": "Adalet +8, Halk +4, Güvenlik +4, Otorite +5 | Hazine -2",
         "effects": {
           "justice": 8,
@@ -36997,46 +36997,46 @@ const EVENT_DECK_MODERN = [
           "military": 4,
           "authority": 5
         },
-        "log": "Teknolojik mülkiyet korundu; milli projelerin yabancı şirketler tarafından taklit edilmesi önlendi."
+        "log": "Avrupa'nın oyalama taktiği bozuldu; Türkiye rotasını tamamen milli hava savunmasına çevirdi."
       },
       {
-        "label": "Yerli mühendis ordusu, üniversiteler ve KOBİ'lerle teknoloji şurası toplayarak savunma ekosistemini tabana yay.",
-        "preview": "Adalet +3, Halk +9, Otorite +6 | Hazine -4",
+        "label": "İtalya ve Fransa ile diplomatik temasları sürdür; SAMP-T bataryalarından acil ihtiyaç için hazır alım protokolü ara.",
+        "preview": "Adalet +3, Halk +6, Hazine +3, Otorite +7",
         "effects": {
           "justice": 3,
-          "people": 9,
-          "treasury": -4,
+          "people": 6,
+          "treasury": 3,
           "military": 0,
-          "authority": 6
+          "authority": 7
         },
-        "log": "Toplumsal ve sektörel uzlaşı sağlandı; binlerce yan sanayi firması milli savunma üretimine dahil oldu."
+        "log": "Diplomatik müzakereler sürdü; ancak teknoloji transferi verilmediği görüldü."
       },
       {
-        "label": "Stratejik savunma sanayii Ar-Ge projeleri için Savunma Destekleme Fonu'ndan Hazine destekli teşvik sağla.",
-        "preview": "Hazine +8, Otorite +4 | Halk -5",
+        "label": "SİPER Ürün-1 ve Ürün-2 bataryalarının seri üretimi için Savunma Sanayii Destekleme Fonu'ndan 1 milyar dolar nakit tahsis et.",
+        "preview": "Adalet +1, Halk +4, Hazine +8, Otorite +5",
         "effects": {
-          "justice": 0,
-          "people": -5,
+          "justice": 1,
+          "people": 4,
           "treasury": 8,
           "military": 0,
-          "authority": 4
+          "authority": 5
         },
-        "log": "Milli savunma yatırımları finanse edildi; dışa bağımlılık azaltılarak ihracat potansiyeli artırıldı."
+        "log": "SİPER füzeleri hedefleri başarıyla imha etti; Türkiye hava savunmasında çelik kubbeye kavuştu."
       },
       {
-        "label": "Kritik savunma tesisleri ve Ar-Ge merkezlerinde casusluk ve sabotaja karşı askeri güvenlik kordonunu tahkim et.",
-        "preview": "Adalet +5, Halk +5, Güvenlik +9, Otorite +8 | Hazine -5",
+        "label": "SİPER erken uyarı radarının (TEİRS) yayın yaptığı frekansları yabancı sinyal istihbaratından korumak için jamming kalkanı kur.",
+        "preview": "Adalet +3, Güvenlik +4, Otorite +7 | Halk -2, Hazine -3",
         "effects": {
-          "justice": 5,
-          "people": 5,
-          "treasury": -5,
-          "military": 9,
-          "authority": 8
+          "justice": 3,
+          "people": -2,
+          "treasury": -3,
+          "military": 4,
+          "authority": 7
         },
-        "log": "Stratejik sırlar korundu; milli teknolojilere yönelik yabancı istihbarat operasyonları engellendi."
+        "log": "Radar istasyonları elektronik taarruza karşı korundu; hava sahası 600 kilometreden taranmaya başlandı."
       },
       {
-        "label": "Savunma sanayiinde yerlilik oranını %85'e çıkaran 'Stratejik Savunma Sanayii ve İleri Teknoloji Kanunu' çıkar.",
+        "label": "Türkiye'nin katmanlı hava savunma mimarisini kanunlaştıran 'Milli Çelik Kubbe Hava Savunma Kanunu' çıkar.",
         "preview": "Adalet +5, Halk +3, Güvenlik +7, Otorite +7 | Hazine -4",
         "effects": {
           "justice": 5,
@@ -37045,7 +37045,7 @@ const EVENT_DECK_MODERN = [
           "military": 7,
           "authority": 7
         },
-        "log": "Savunma bağımsızlığı kanunlaştı; Türkiye kendi silahını üreten küresel aktör oldu."
+        "log": "KORKUT, HİSAR ve SİPER tek bir akıllı yazılımla birleşti; Türkiye hava sahasını milli kalkanla örttü."
       }
     ]
   },
@@ -37062,35 +37062,35 @@ const EVENT_DECK_MODERN = [
       }
     ],
     "source": "Savunma Sanayii Başkanlığı",
-    "title": "TÜBİTAK SAGE SOM Havadan Atılan Seyir Füzesi Ailesi",
-    "desc": "250 km menzilli sığınak delici milli mühimmat F-16'ların ve SİHA'ların ana vurucu gücü oldu.",
+    "title": "T129 ATAK Helikopteri Pakistan İhracatında ABD LHTEC Motor Engeli",
+    "desc": "Türkiye, Pakistan'a 30 adet T129 ATAK helikopteri satışı için 1.5 milyar dolarlık Cumhuriyet tarihinin en büyük savunma ihracatı sözleşmesini imzaladı. Ancak helikopterde kullanılan CTS800 motorunun üreticisi ABD, ihracat izni vermeyerek anlaşmayı 3 yıl kilitledi ve ihalenin Çin'e kayma tehlikesi doğdu.",
     "options": [
       {
-        "label": "Savunma sanayii projelerinin fikri mülkiyet ve patent haklarını devlet adına güvenceye alan yasal tescilleri yap.",
-        "preview": "Adalet +8, Halk +4, Güvenlik +4, Otorite +5 | Hazine -2",
+        "label": "ABD'nin haksız rekabet ve sözleşme ihlali gerekçesiyle uluslararası ticari tahkim mahkemelerine dava aç.",
+        "preview": "Adalet +9, Halk +8, Otorite +3 | Hazine -2",
         "effects": {
-          "justice": 8,
-          "people": 4,
+          "justice": 9,
+          "people": 8,
           "treasury": -2,
-          "military": 4,
-          "authority": 5
+          "military": 0,
+          "authority": 3
         },
-        "log": "Teknolojik mülkiyet korundu; milli projelerin yabancı şirketler tarafından taklit edilmesi önlendi."
+        "log": "Hukuki baskı kuruldu; ancak Kongre'nin siyasi vetosu aşılamadı."
       },
       {
-        "label": "Yerli mühendis ordusu, üniversiteler ve KOBİ'lerle teknoloji şurası toplayarak savunma ekosistemini tabana yay.",
-        "preview": "Adalet +3, Halk +9, Otorite +6 | Hazine -4",
+        "label": "Pakistan hükümetiyle diplomatik müzakere yürüt; süreyi uzatarak yerli motor TEI TS1400 hazır olana kadar ihaleyi koru.",
+        "preview": "Adalet +3, Halk +6, Hazine +3, Otorite +7",
         "effects": {
           "justice": 3,
-          "people": 9,
-          "treasury": -4,
+          "people": 6,
+          "treasury": 3,
           "military": 0,
-          "authority": 6
+          "authority": 7
         },
-        "log": "Toplumsal ve sektörel uzlaşı sağlandı; binlerce yan sanayi firması milli savunma üretimine dahil oldu."
+        "log": "Kardeş Pakistan ile diyalog sürdü; ancak teslimat gecikmesi sebebiyle Pakistan kısmi iptale gitti."
       },
       {
-        "label": "Stratejik savunma sanayii Ar-Ge projeleri için Savunma Destekleme Fonu'ndan Hazine destekli teşvik sağla.",
+        "label": "Filipinler ve Nijerya pazarlarına yönel; motor izni gerektirmeyen veya izin çıkan alternatif ülkelere ATAK ihraç et.",
         "preview": "Hazine +8, Otorite +4 | Halk -5",
         "effects": {
           "justice": 0,
@@ -37099,31 +37099,31 @@ const EVENT_DECK_MODERN = [
           "military": 0,
           "authority": 4
         },
-        "log": "Milli savunma yatırımları finanse edildi; dışa bağımlılık azaltılarak ihracat potansiyeli artırıldı."
+        "log": "Filipinler ve Nijerya'ya dev teslimatlar yapıldı; Hazine yüz milyonlarca dolar döviz kazandı."
       },
       {
-        "label": "Kritik savunma tesisleri ve Ar-Ge merkezlerinde casusluk ve sabotaja karşı askeri güvenlik kordonunu tahkim et.",
-        "preview": "Adalet +5, Halk +5, Güvenlik +9, Otorite +8 | Hazine -5",
+        "label": "TEI Eskişehir tesislerinde yerli TS1400 turboşaft motorunun geliştirilmesi için MİT koruması ve gizli test protokolü uygula.",
+        "preview": "Adalet +3, Güvenlik +4, Otorite +7 | Halk -2, Hazine -3",
         "effects": {
-          "justice": 5,
-          "people": 5,
-          "treasury": -5,
-          "military": 9,
-          "authority": 8
-        },
-        "log": "Stratejik sırlar korundu; milli teknolojilere yönelik yabancı istihbarat operasyonları engellendi."
-      },
-      {
-        "label": "Savunma sanayiinde yerlilik oranını %85'e çıkaran 'Stratejik Savunma Sanayii ve İleri Teknoloji Kanunu' çıkar.",
-        "preview": "Adalet +5, Halk +3, Güvenlik +7, Otorite +7 | Hazine -4",
-        "effects": {
-          "justice": 5,
-          "people": 3,
-          "treasury": -4,
-          "military": 7,
+          "justice": 3,
+          "people": -2,
+          "treasury": -3,
+          "military": 4,
           "authority": 7
         },
-        "log": "Savunma bağımsızlığı kanunlaştı; Türkiye kendi silahını üreten küresel aktör oldu."
+        "log": "Milli helikopter motoru TS1400 tamamlandı; yabancı motor vetosu yerli mühendislikle yırtıldı."
+      },
+      {
+        "label": "Milli savunma ihracatında devletten devlete (G2G) güvence mekanizması getiren 'Savunma İhracatı Düzenleme Kanunu' çıkar.",
+        "preview": "Adalet +6, Halk +4, Hazine +5, Otorite +6",
+        "effects": {
+          "justice": 6,
+          "people": 4,
+          "treasury": 5,
+          "military": 0,
+          "authority": 6
+        },
+        "log": "Savunma ihracatı hukuki teminata bağlandı; Türk helikopterleri Asya ve Afrika semalarında uçtu."
       }
     ]
   },
@@ -37140,59 +37140,59 @@ const EVENT_DECK_MODERN = [
       }
     ],
     "source": "Savunma Sanayii Başkanlığı",
-    "title": "ASELSAN KORAL Mobil Elektronik Harp Sistemi",
-    "desc": "Sınır ötesindeki düşman radarlarını ve füze sistemlerini kör eden elektronik harp kalkanı sahada parladı.",
+    "title": "İMECE Askeri İstihbarat Uydusu Fırlatma Rampası Ambargosu ve Siber Sızma",
+    "desc": "TÜBİTAK UZAY tarafından tamamen yerli üretilen ve metre altı çözünürlükle tüm dünyadan askeri istihbarat toplayacak İMECE uydusu hazırlandı. Fırlatma öncesinde yabancı servislerin uydu şifreleme anahtarlarını çalmak için TÜBİTAK sunucularına siber taarruz yaptığı ve fırlatıcı roket sağlayıcıların siyasi oyalama uyguladığı belirlendi.",
     "options": [
       {
-        "label": "Savunma sanayii projelerinin fikri mülkiyet ve patent haklarını devlet adına güvenceye alan yasal tescilleri yap.",
-        "preview": "Adalet +8, Halk +4, Güvenlik +4, Otorite +5 | Hazine -2",
+        "label": "Siber saldırı girişimini yapan yabancı IP'leri kriminal olarak delillendir ve adli soruşturma aç.",
+        "preview": "Adalet +9, Halk +8, Otorite +3 | Hazine -2",
         "effects": {
-          "justice": 8,
-          "people": 4,
+          "justice": 9,
+          "people": 8,
           "treasury": -2,
-          "military": 4,
-          "authority": 5
+          "military": 0,
+          "authority": 3
         },
-        "log": "Teknolojik mülkiyet korundu; milli projelerin yabancı şirketler tarafından taklit edilmesi önlendi."
+        "log": "Siber casuslar deşifre edildi; uydu telemetri yazılımları bağımsız milli ağa taşındı."
       },
       {
-        "label": "Yerli mühendis ordusu, üniversiteler ve KOBİ'lerle teknoloji şurası toplayarak savunma ekosistemini tabana yay.",
-        "preview": "Adalet +3, Halk +9, Otorite +6 | Hazine -4",
+        "label": "SpaceX ve uluslararası uzay ajanslarıyla fırlatma sözleşmesini garantiye alan diplomatik protokol imzala.",
+        "preview": "Adalet +3, Halk +6, Hazine +3, Otorite +7",
         "effects": {
           "justice": 3,
-          "people": 9,
-          "treasury": -4,
+          "people": 6,
+          "treasury": 3,
           "military": 0,
-          "authority": 6
+          "authority": 7
         },
-        "log": "Toplumsal ve sektörel uzlaşı sağlandı; binlerce yan sanayi firması milli savunma üretimine dahil oldu."
+        "log": "İMECE uydusu Falcon 9 roketiyle uzaya fırlatıldı; yörüngesine başarıyla yerleşti."
       },
       {
-        "label": "Stratejik savunma sanayii Ar-Ge projeleri için Savunma Destekleme Fonu'ndan Hazine destekli teşvik sağla.",
-        "preview": "Hazine +8, Otorite +4 | Halk -5",
+        "label": "Yerli mikro uydu fırlatma sistemi (MUFS) ve ROKETSAN Uzay Sistemleri Merkezi'ne Hazine'den 300 milyon dolar acil kaynak aktar.",
+        "preview": "Adalet +2, Halk +8, Güvenlik +2, Otorite +4 | Hazine -6",
         "effects": {
-          "justice": 0,
-          "people": -5,
-          "treasury": 8,
-          "military": 0,
+          "justice": 2,
+          "people": 8,
+          "treasury": -6,
+          "military": 2,
           "authority": 4
         },
-        "log": "Milli savunma yatırımları finanse edildi; dışa bağımlılık azaltılarak ihracat potansiyeli artırıldı."
+        "log": "Türkiye kendi uydusunu kendi fırlatacak roket üssü inşasına başladı."
       },
       {
-        "label": "Kritik savunma tesisleri ve Ar-Ge merkezlerinde casusluk ve sabotaja karşı askeri güvenlik kordonunu tahkim et.",
-        "preview": "Adalet +5, Halk +5, Güvenlik +9, Otorite +8 | Hazine -5",
+        "label": "İMECE'nin çektiği hassas askeri görüntülerin kriptolanması için TÜBİTAK BİLGEM donanımsal milli şifreleme cihazı kur.",
+        "preview": "Adalet +3, Güvenlik +4, Otorite +7 | Halk -2, Hazine -3",
         "effects": {
-          "justice": 5,
-          "people": 5,
-          "treasury": -5,
-          "military": 9,
-          "authority": 8
+          "justice": 3,
+          "people": -2,
+          "treasury": -3,
+          "military": 4,
+          "authority": 7
         },
-        "log": "Stratejik sırlar korundu; milli teknolojilere yönelik yabancı istihbarat operasyonları engellendi."
+        "log": "Uydu görüntüleri uzaydan yere kırılmaz şifrelerle indi; yabancı servislerin uyduya sızması engellendi."
       },
       {
-        "label": "Savunma sanayiinde yerlilik oranını %85'e çıkaran 'Stratejik Savunma Sanayii ve İleri Teknoloji Kanunu' çıkar.",
+        "label": "Milli uzay varlıklarını ve askeri uyduları koruma altına alan 'Uzay Güvenliği ve Uydu İstihbaratı Kanunu' çıkar.",
         "preview": "Adalet +5, Halk +3, Güvenlik +7, Otorite +7 | Hazine -4",
         "effects": {
           "justice": 5,
@@ -37201,7 +37201,7 @@ const EVENT_DECK_MODERN = [
           "military": 7,
           "authority": 7
         },
-        "log": "Savunma bağımsızlığı kanunlaştı; Türkiye kendi silahını üreten küresel aktör oldu."
+        "log": "İMECE TSK'nın uzaydaki gözü oldu; Türkiye tüm dünyayı kendi uydusuyla izleme gücüne kavuştu."
       }
     ]
   },
@@ -37218,35 +37218,35 @@ const EVENT_DECK_MODERN = [
       }
     ],
     "source": "Savunma Sanayii Başkanlığı",
-    "title": "ASELSAN SİPER Uzun Menzilli Bölge Hava Savunma Sistemi",
-    "desc": "100+ km menzilde yüksek irtifa hedeflerini vuran yerli hava savunma sistemi testleri geçti.",
+    "title": "Milli Uzay Programı ve Uydu İstihbaratına Yönelik Yabancı Siber Casusluk",
+    "desc": "İlk Türk astronotunun Uluslararası Uzay İstasyonu'nda (ISS) 13 kritik askeri ve biyoteknolojik deney yapacağı açıklandı. Deney protokolleri ve genetik araştırma verilerinin yabancı biyoteknoloji istihbaratı tarafından laboratuvarlardan kopyalanmaya çalışıldığı MİT tarafından raporlandı.",
     "options": [
       {
-        "label": "Savunma sanayii projelerinin fikri mülkiyet ve patent haklarını devlet adına güvenceye alan yasal tescilleri yap.",
-        "preview": "Adalet +8, Halk +4, Güvenlik +4, Otorite +5 | Hazine -2",
+        "label": "TÜBİTAK MAM ve üniversite laboratuvarlarındaki sızıntı şüphelilerini adli savcılığa sevk et; casusluk davası aç.",
+        "preview": "Adalet +8, Halk +5, Hazine +2, Otorite +6",
         "effects": {
           "justice": 8,
-          "people": 4,
-          "treasury": -2,
-          "military": 4,
-          "authority": 5
-        },
-        "log": "Teknolojik mülkiyet korundu; milli projelerin yabancı şirketler tarafından taklit edilmesi önlendi."
-      },
-      {
-        "label": "Yerli mühendis ordusu, üniversiteler ve KOBİ'lerle teknoloji şurası toplayarak savunma ekosistemini tabana yay.",
-        "preview": "Adalet +3, Halk +9, Otorite +6 | Hazine -4",
-        "effects": {
-          "justice": 3,
-          "people": 9,
-          "treasury": -4,
+          "people": 5,
+          "treasury": 2,
           "military": 0,
           "authority": 6
         },
-        "log": "Toplumsal ve sektörel uzlaşı sağlandı; binlerce yan sanayi firması milli savunma üretimine dahil oldu."
+        "log": "Biyoteknoloji casusluğu durduruldu; deney verileri adli korumaya alındı."
       },
       {
-        "label": "Stratejik savunma sanayii Ar-Ge projeleri için Savunma Destekleme Fonu'ndan Hazine destekli teşvik sağla.",
+        "label": "Axiom Space ve NASA ile ortak bilimsel veri gizliliği anlaşması imzala; deney sonuçlarının sadece Türkiye'ye ait olduğunu tescil et.",
+        "preview": "Adalet +3, Halk +6, Hazine +3, Otorite +7",
+        "effects": {
+          "justice": 3,
+          "people": 6,
+          "treasury": 3,
+          "military": 0,
+          "authority": 7
+        },
+        "log": "Telif ve mülkiyet hakları güvenceye alındı; 13 bilimsel deney Türk bilim insanlarının mülkiyetinde kaldı."
+      },
+      {
+        "label": "Uzay araştırmaları ve astronot eğitimleri için Türkiye Uzay Ajansı'na (TUA) bütçeden ek ödenek tahsis et.",
         "preview": "Hazine +8, Otorite +4 | Halk -5",
         "effects": {
           "justice": 0,
@@ -37255,22 +37255,22 @@ const EVENT_DECK_MODERN = [
           "military": 0,
           "authority": 4
         },
-        "log": "Milli savunma yatırımları finanse edildi; dışa bağımlılık azaltılarak ihracat potansiyeli artırıldı."
+        "log": "Milli uzay vizyonu finanse edildi; gençlerin bilim ve teknolojiye ilgisi rekor kırdı."
       },
       {
-        "label": "Kritik savunma tesisleri ve Ar-Ge merkezlerinde casusluk ve sabotaja karşı askeri güvenlik kordonunu tahkim et.",
-        "preview": "Adalet +5, Halk +5, Güvenlik +9, Otorite +8 | Hazine -5",
+        "label": "ISS ile Türkiye arasındaki canlı telemetri bağlantısına askeri kripto kalkanı kur; yabancı dinlemeleri engelle.",
+        "preview": "Adalet +2, Halk +8, Güvenlik +6, Otorite +6 | Hazine -4",
         "effects": {
-          "justice": 5,
-          "people": 5,
-          "treasury": -5,
-          "military": 9,
-          "authority": 8
+          "justice": 2,
+          "people": 8,
+          "treasury": -4,
+          "military": 6,
+          "authority": 6
         },
-        "log": "Stratejik sırlar korundu; milli teknolojilere yönelik yabancı istihbarat operasyonları engellendi."
+        "log": "Uzay iletişim hattı siber saldırılara karşı korundu; uzaydaki ilk Türk vatandaşı görevini başarıyla tamamladı."
       },
       {
-        "label": "Savunma sanayiinde yerlilik oranını %85'e çıkaran 'Stratejik Savunma Sanayii ve İleri Teknoloji Kanunu' çıkar.",
+        "label": "Türkiye Uzay Ajansı'nın yetkilerini ve uzay sanayii teşviklerini düzenleyen 'Milli Uzay Kanunu' çıkar.",
         "preview": "Adalet +5, Halk +3, Güvenlik +7, Otorite +7 | Hazine -4",
         "effects": {
           "justice": 5,
@@ -37279,7 +37279,7 @@ const EVENT_DECK_MODERN = [
           "military": 7,
           "authority": 7
         },
-        "log": "Savunma bağımsızlığı kanunlaştı; Türkiye kendi silahını üreten küresel aktör oldu."
+        "log": "Türkiye uzay ligine adım attı; uydu ve roket teknolojilerinde milli vizyon yasalaştı."
       }
     ]
   },
@@ -37833,77 +37833,77 @@ const EVENT_DECK_MODERN = [
     "id": "tr_vaka_486",
     "characters": [
       {
-        "id": "char_savunma_sanayii_baskani",
-        "name": "Savunma Sanayii Başkanı"
+        "id": "char_mit_mustesari",
+        "name": "MİT Müsteşarı / Başkanı"
       },
       {
-        "id": "char_savunma_bakani",
-        "name": "Milli Savunma Bakanı"
+        "id": "char_savunma_sanayii_baskani",
+        "name": "Savunma Sanayii Başkanı"
       }
     ],
     "source": "Savunma Sanayii Başkanlığı",
-    "title": "İMECE Yüksek Çözünürlüklü Yer Gözlem Uydusu",
-    "desc": "Metre altı çözünürlükle tüm dünyadan askeri istihbarat görüntüsü alan yerli gözlem uydusu fırlatıldı.",
+    "title": "İMECE Askeri İstihbarat Uydusu ve Yabancı Fırlatma Üssünde Sabotaj Tehdidi",
+    "desc": "Metre altı çözünürlükle dünyadan istihbarat alacak yerli İMECE uydusunun ABD'deki fırlatma rampasına nakli sırasında, yabancı istihbarat servislerinin yazılıma sızma ve sensörleri bozma girişimi MİT tarafından saptandı.",
     "options": [
       {
-        "label": "Savunma sanayii projelerinin fikri mülkiyet ve patent haklarını devlet adına güvenceye alan yasal tescilleri yap.",
-        "preview": "Adalet +8, Halk +4, Güvenlik +4, Otorite +5 | Hazine -2",
-        "effects": {
-          "justice": 8,
-          "people": 4,
-          "treasury": -2,
-          "military": 4,
-          "authority": 5
-        },
-        "log": "Teknolojik mülkiyet korundu; milli projelerin yabancı şirketler tarafından taklit edilmesi önlendi."
-      },
-      {
-        "label": "Yerli mühendis ordusu, üniversiteler ve KOBİ'lerle teknoloji şurası toplayarak savunma ekosistemini tabana yay.",
-        "preview": "Adalet +3, Halk +9, Otorite +6 | Hazine -4",
-        "effects": {
-          "justice": 3,
-          "people": 9,
-          "treasury": -4,
-          "military": 0,
-          "authority": 6
-        },
-        "log": "Toplumsal ve sektörel uzlaşı sağlandı; binlerce yan sanayi firması milli savunma üretimine dahil oldu."
-      },
-      {
-        "label": "Stratejik savunma sanayii Ar-Ge projeleri için Savunma Destekleme Fonu'ndan Hazine destekli teşvik sağla.",
-        "preview": "Hazine +8, Otorite +4 | Halk -5",
-        "effects": {
-          "justice": 0,
-          "people": -5,
-          "treasury": 8,
-          "military": 0,
-          "authority": 4
-        },
-        "log": "Milli savunma yatırımları finanse edildi; dışa bağımlılık azaltılarak ihracat potansiyeli artırıldı."
-      },
-      {
-        "label": "Kritik savunma tesisleri ve Ar-Ge merkezlerinde casusluk ve sabotaja karşı askeri güvenlik kordonunu tahkim et.",
-        "preview": "Adalet +5, Halk +5, Güvenlik +9, Otorite +8 | Hazine -5",
-        "effects": {
-          "justice": 5,
-          "people": 5,
-          "treasury": -5,
-          "military": 9,
-          "authority": 8
-        },
-        "log": "Stratejik sırlar korundu; milli teknolojilere yönelik yabancı istihbarat operasyonları engellendi."
-      },
-      {
-        "label": "Savunma sanayiinde yerlilik oranını %85'e çıkaran 'Stratejik Savunma Sanayii ve İleri Teknoloji Kanunu' çıkar.",
-        "preview": "Adalet +5, Halk +3, Güvenlik +7, Otorite +7 | Hazine -4",
+        "label": "Fırlatma üssüne giden Türk mühendis ve siber güvenlik timine tam diplomatik koruma ve bağımsız izole kripto denetimi uygulat.",
+        "preview": "Adalet +5, Halk +3, Güvenlik +8, Otorite +8 | Hazine -3",
         "effects": {
           "justice": 5,
           "people": 3,
-          "treasury": -4,
+          "treasury": -3,
+          "military": 8,
+          "authority": 8
+        },
+        "log": "Yabancı istihbaratın uydu yazılımına arka kapı yerleştirme kumpası önlendi; uydu yörüngesine başarıyla fırlatıldı."
+      },
+      {
+        "label": "Yabancı rampalara bağımlılığı tamamen bitirmek için Somali veya yerli sahillerde bağımsız Türk Uzay Fırlatma Üssü inşasını derhal başlat.",
+        "preview": "Adalet +6, Halk +7, Güvenlik +9, Otorite +9 | Hazine -9",
+        "effects": {
+          "justice": 6,
+          "people": 7,
+          "treasury": -9,
+          "military": 9,
+          "authority": 9
+        },
+        "log": "Türkiye kendi roketini kendi topraklarından uzaya fırlatma bağımsızlığına adım attı."
+      },
+      {
+        "label": "İMECE'nin optik ve haberleşme sistemlerini milli kriptolu yazılımla acil şifreleyerek veri güvenliğini garantiye al.",
+        "preview": "Adalet +5, Halk +2, Güvenlik +7, Otorite +7 | Hazine -2",
+        "effects": {
+          "justice": 5,
+          "people": 2,
+          "treasury": -2,
           "military": 7,
           "authority": 7
         },
-        "log": "Savunma bağımsızlığı kanunlaştı; Türkiye kendi silahını üreten küresel aktör oldu."
+        "log": "Uydunun çektiği kritik askeri istihbarat görüntüleri küresel dinleme ağlarından tamamen izole edildi."
+      },
+      {
+        "label": "Sabotaj girişimine adı karışan yabancı danışmanlık firmasının Türkiye'deki tüm savunma ihalelerindeki akreditasyonunu feshet.",
+        "preview": "Adalet +8, Halk +4, Hazine +1, Güvenlik +5, Otorite +7",
+        "effects": {
+          "justice": 8,
+          "people": 4,
+          "treasury": 1,
+          "military": 5,
+          "authority": 7
+        },
+        "log": "Casusluk şebekesinin savunma sanayiindeki uzantıları temizlendi."
+      },
+      {
+        "label": "İMECE'den elde edilecek görüntüleri sadece TSK ile değil, deprem, sel ve tarım rekolte tespiti için sivil bakanlıklarla anlık paylaş.",
+        "preview": "Adalet +7, Halk +8, Hazine +3, Güvenlik +4, Otorite +6",
+        "effects": {
+          "justice": 7,
+          "people": 8,
+          "treasury": 3,
+          "military": 4,
+          "authority": 6
+        },
+        "log": "Uydu istihbaratı hem milli savunmaya hem de afet yönetimi ve tarımsal berekete hizmet etti."
       }
     ]
   },
@@ -38232,35 +38232,35 @@ const EVENT_DECK_MODERN = [
       }
     ],
     "source": "Enerji ve Tabii Kaynaklar Bakanlığı",
-    "title": "Fatih Sondaj Gemisinin Tuna-1 Kuyusunda Doğalgaz Keşfi",
-    "desc": "Türkiye'nin ilk yerli sondaj gemisi Karadeniz'de 320 milyar metreküplük tarihi doğalgaz rezervi keşfetti.",
+    "title": "Karadeniz Sakarya Gaz Sahasında Yabancı Keşif Tacizi ve Derin Deniz Sabotajı",
+    "desc": "Fatih sondaj gemisi Tuna-1 kuyusunda 710 milyar metreküplük devasa doğalgaz rezervi keşfetti. Keşfin ardından yabancı denizaltıların sondaj sahasına tehlikeli şekilde yaklaştığı ve derin deniz boru hattı inşaatına yönelik sabotaj planlandığı MİT ve Deniz Kuvvetleri tarafından raporlandı.",
     "options": [
       {
-        "label": "Karadeniz'deki 710 milyar metreküplük doğalgaz sahasının kıta sahanlığı ve münhasır ekonomik bölge haklarını BM'ye tescille.",
-        "preview": "Adalet +8, Halk +5, Hazine +2, Otorite +6",
+        "label": "Deniz Kuvvetleri kurmaylarıyla Sakarya Gaz Sahası çevresinde 'Özel Güvenlik ve Deniz Yetki Alanı' ilan et.",
+        "preview": "Adalet +8, Halk +5, Hazine +4, Otorite +4",
         "effects": {
           "justice": 8,
           "people": 5,
-          "treasury": 2,
-          "military": 0,
-          "authority": 6
-        },
-        "log": "Karadeniz hidrokarbon egemenliğimiz tescillendi; yabancı iddiaların önü uluslararası hukukla kesildi."
-      },
-      {
-        "label": "Karadeniz gazının karaya ulaştığı gün tüm konutlarda 1 ay ücretsiz doğalgaz ve 1 yıl mutfak gazı desteği sağla.",
-        "preview": "Adalet +2, Halk +7, Hazine +4, Otorite +6",
-        "effects": {
-          "justice": 2,
-          "people": 7,
           "treasury": 4,
           "military": 0,
-          "authority": 6
+          "authority": 4
         },
-        "log": "Vatandaşın hanesine bayram havası girdi; yerli gazın bereketi doğrudan halkın cebine yansıtıldı."
+        "log": "Fatih, Yavuz ve Kanuni sondaj gemileri fırkateynler ve İHA'lar eşliğinde çelik korumaya alındı."
       },
       {
-        "label": "Karadeniz gazı ile yıllık 15 milyar dolarlık enerji ithalat faturasını düşürerek Hazine cari dengesini artıya geçir.",
+        "label": "Karadeniz'e kıyıdaş ülkelerle acil enerji güvenliği ve deniz seyrüsefer istişare masası kur; sabotaj riskini diplomatik yolla engelle.",
+        "preview": "Adalet +3, Halk +6, Hazine +3, Otorite +7",
+        "effects": {
+          "justice": 3,
+          "people": 6,
+          "treasury": 3,
+          "military": 0,
+          "authority": 7
+        },
+        "log": "Bölgesel tansiyon düşürüldü; keşfedilen gazın bölge barışına hizmet edeceği açıklandı."
+      },
+      {
+        "label": "Deniz tabanından Filyos Limanı'na 170 kilometrelik derin deniz boru hattını döşemek için Hazine'den acil 10 milyar dolar fon ayır.",
         "preview": "Adalet +1, Halk +4, Hazine +8, Otorite +5",
         "effects": {
           "justice": 1,
@@ -38269,22 +38269,22 @@ const EVENT_DECK_MODERN = [
           "military": 0,
           "authority": 5
         },
-        "log": "Milli ekonomi nefes aldı; enerjide dışa bağımlılık kırılarak Merkez Bankası rezervleri korundu."
+        "log": "Dünya rekoru sürede derin deniz gaz boru hattı döşendi; Karadeniz gazı karaya ulaştı."
       },
       {
-        "label": "Filyos Doğalgaz İşleme Tesisi ve Fatih, Yavuz, Kanuni filolarını denizaltı ve hava savunma radarlarıyla 24 saat koru.",
-        "preview": "Adalet +3, Güvenlik +4, Otorite +7 | Halk -2, Hazine -3",
+        "label": "Sualtı Savunma (SAS) komandoları ve insansız sualtı robotlarıyla (ROV) gaz boru hattı boyunca 24 saat anti-sabotaj nöbeti başlat.",
+        "preview": "Adalet +5, Halk +5, Güvenlik +9, Otorite +8 | Hazine -5",
         "effects": {
-          "justice": 3,
-          "people": -2,
-          "treasury": -3,
-          "military": 4,
-          "authority": 7
+          "justice": 5,
+          "people": 5,
+          "treasury": -5,
+          "military": 9,
+          "authority": 8
         },
-        "log": "Mavi Vatan'ın enerji üsleri korundu; sondaj gemilerimize yönelik olası sabotajlar engellendi."
+        "log": "Derin deniz boruları mayın ve akustik tuzaklara karşı korundu; sabotajcıların planları boşa çıkarıldı."
       },
       {
-        "label": "Türkiye'yi Doğu Avrupa ve Akdeniz'in gaz dağıtım merkezi yapan 'Milli Doğalgaz Piyasası ve Transit Ticaret Kanunu' çıkar.",
+        "label": "Milli enerji ve doğalgaz rezervlerini stratejik dokunulmazlık kapsamına alan 'Milli Hidrokarbon Koruma Kanunu' çıkar.",
         "preview": "Adalet +6, Halk +4, Hazine +5, Otorite +6",
         "effects": {
           "justice": 6,
@@ -38293,7 +38293,7 @@ const EVENT_DECK_MODERN = [
           "military": 0,
           "authority": 6
         },
-        "log": "Enerji borsası ve hub merkezi kuruldu; Türkiye küresel doğalgaz ticaretinin karar vericisi oldu."
+        "log": "Karadeniz gazı milli şebekeye bağlandı; Türkiye yıllık milyarlarca dolarlık döviz faturasından kurtuldu."
       }
     ]
   },
@@ -38700,11 +38700,11 @@ const EVENT_DECK_MODERN = [
       }
     ],
     "source": "Enerji ve Tabii Kaynaklar Bakanlığı",
-    "title": "Akkuyu Nükleer Güç Santrali İnşaatı (4 Reaktör, 4800 MW)",
-    "desc": "Türkiye'nin ilk nükleer enerji santralinde reaktör binaları hızla yükseldi.",
+    "title": "Akkuyu Nükleer Sahasında Alman Siemens Türbin Ambargosu ve Siber Güvenlik",
+    "desc": "Mersin Akkuyu'da 4800 megavatlık Türkiye'nin ilk nükleer güç santrali inşa ediliyor. Ancak Almanya hükümeti Siemens üretimi kritik türbin ve elektrik aktarım parçalarının teslimatını siyasi gerekçelerle durdurdu. MİT, santralin reaktör kontrol yazılımlarına yabancı servislerin sızma riskini bildirdi.",
     "options": [
       {
-        "label": "Uluslararası Atom Enerjisi Ajansı (UAEA) ve Nükleer Düzenleme Kurumu (NDK) ile en katı sismik ve güvenlik teftişlerini uygula.",
+        "label": "Siemens firmasına karşı uluslararası tahkimde yüz milyonlarca dolarlık sözleşme ihlali tazminat davası aç.",
         "preview": "Adalet +8, Halk +5, Hazine +2, Otorite +6",
         "effects": {
           "justice": 8,
@@ -38713,46 +38713,46 @@ const EVENT_DECK_MODERN = [
           "military": 0,
           "authority": 6
         },
-        "log": "Nükleer güvenlik tescillendi; Akkuyu NGS uluslararası en üst seviye 3+ nesil VVER-1200 güvenlik zırhına kavuştu."
+        "log": "Hukuki süreç başlatıldı; firmanın haksız siyasi ambargosu uluslararası kayıt altına alındı."
       },
       {
-        "label": "Mersin halkı, ziraat odaları ve çevrecilerle düzenli bilgilendirme masası topla; deniz suyu sıcaklığı ve tarım endişelerini gider.",
-        "preview": "Adalet +2, Halk +8, Otorite +5 | Hazine -2",
+        "label": "Rusya ve Çin ile diplomatik temas kur; ambargolu türbin parçalarının Çinli üreticilerden acil tedarikini sağla.",
+        "preview": "Adalet +3, Halk +6, Hazine +3, Otorite +7",
         "effects": {
-          "justice": 2,
-          "people": 8,
-          "treasury": -2,
+          "justice": 3,
+          "people": 6,
+          "treasury": 3,
           "military": 0,
-          "authority": 5
+          "authority": 7
         },
-        "log": "Toplumsal endişeler giderildi; radyasyon ölçüm istasyonları canlı olarak halkın erişimine açıldı."
+        "log": "Alternatif tedarik hattı devreye girdi; santral inşaatının durması engellendi."
       },
       {
-        "label": "İlk taze nükleer yakıtın santrale gelmesiyle Türkiye'yi resmen nükleer kulübe sok; yıllık 35 milyar kWh baz yük elektriği finanse et.",
-        "preview": "Adalet +2, Halk +8, Otorite +4 | Hazine -6",
+        "label": "Nükleer Düzenleme Kurumu (NDK) bütçesini artır; reaktör inşaatının her aşamasında Türk mühendislerin denetim yetkisini iki katına çıkar.",
+        "preview": "Hazine +8, Otorite +4 | Halk -5",
         "effects": {
-          "justice": 2,
-          "people": 8,
-          "treasury": -6,
+          "justice": 0,
+          "people": -5,
+          "treasury": 8,
           "military": 0,
           "authority": 4
         },
-        "log": "Türkiye nükleer güç statüsü kazandı; 4 reaktörün devreye girmesiyle elektriğin %10'u sıfır karbonla üretilmeye başlandı."
+        "log": "Nükleer güvenlik bağımsız milli denetime alındı; bütçe kaynakları emniyet standartlarına ayrıldı."
       },
       {
-        "label": "Santral çevresinde hava savunma füzeleri, radar sistemleri ve denizaltısavar kalkanıyla askeri düzeyde koruma çemberi kur.",
-        "preview": "Adalet +5, Halk +5, Güvenlik +9, Otorite +8 | Hazine -5",
+        "label": "MİT ve TSK nükleer siber güvenlik uzmanlarıyla reaktör kontrol yazılımlarını yabancı ağlardan tamamen izole et.",
+        "preview": "Adalet +3, Güvenlik +4, Otorite +7 | Halk -2, Hazine -3",
         "effects": {
-          "justice": 5,
-          "people": 5,
-          "treasury": -5,
-          "military": 9,
-          "authority": 8
+          "justice": 3,
+          "people": -2,
+          "treasury": -3,
+          "military": 4,
+          "authority": 7
         },
-        "log": "Stratejik nükleer tesis koruma kalkanına alındı; hava ve deniz sahası tam kontrole bağlandı."
+        "log": "Stuxnet benzeri bir siber nükleer sabotaj girişimi önlendi; santralin SCADA sistemleri tam korumaya alındı."
       },
       {
-        "label": "Türkiye'nin nükleer yakıt, atık yönetimi ve reaktör işletimini tanzim eden 'Nükleer Enerji ve Radyasyon Güvenliği Kanunu' çıkar.",
+        "label": "Nükleer enerji üretimini ve radyoaktif atık yönetimini en katı standartlara bağlayan 'Milli Nükleer Güvenlik Kanunu' çıkar.",
         "preview": "Adalet +7, Halk +5, Otorite +6 | Hazine -4",
         "effects": {
           "justice": 7,
@@ -38761,7 +38761,7 @@ const EVENT_DECK_MODERN = [
           "military": 0,
           "authority": 6
         },
-        "log": "Nükleer enerji hukuku inşa edildi; Sinop ve Trakya'daki yeni santral projelerine yasal zemin açıldı."
+        "log": "Akkuyu Nükleer Santrali milli kanunla korundu; Türkiye nükleer enerji üreten ülkeler ligine girdi."
       }
     ]
   },
@@ -38778,11 +38778,11 @@ const EVENT_DECK_MODERN = [
       }
     ],
     "source": "Enerji ve Tabii Kaynaklar Bakanlığı",
-    "title": "Akkuyu Sahasına İlk Nükleer Yakıtın Getirilmesi ve Tören",
-    "desc": "Uluslararası Atom Enerjisi Kurumu onayıyla yakıtın tesise girmesiyle Akkuyu 'nükleer tesis' statüsü kazandı.",
+    "title": "Akkuyu Sahasına İlk Nükleer Yakıt Sevkiyatı ve Provokasyon İstihbaratı",
+    "desc": "Uluslararası Atom Enerjisi Kurumu (UAEA) denetiminde ilk taze nükleer yakıt çubukları Mersin'e getirilecek ve tesis 'nükleer tesis' statüsü kazanacak. MİT, sevkiyat konvoyuna ve deniz yolu rotasına yönelik yabancı istihbarat destekli radikal çevre/terör sabotajı yapılacağı uyarısında bulundu.",
     "options": [
       {
-        "label": "Uluslararası Atom Enerjisi Ajansı (UAEA) ve Nükleer Düzenleme Kurumu (NDK) ile en katı sismik ve güvenlik teftişlerini uygula.",
+        "label": "Uluslararası Atom Enerjisi Kurumu müfettişlerini konvoya eşlik ettirerek yakıt girişini dünya kamuoyuna canlı yayınla belgele.",
         "preview": "Adalet +8, Halk +5, Hazine +2, Otorite +6",
         "effects": {
           "justice": 8,
@@ -38791,10 +38791,10 @@ const EVENT_DECK_MODERN = [
           "military": 0,
           "authority": 6
         },
-        "log": "Nükleer güvenlik tescillendi; Akkuyu NGS uluslararası en üst seviye 3+ nesil VVER-1200 güvenlik zırhına kavuştu."
+        "log": "Şeffaf diplomasi işletildi; nükleer yakıtın barışçıl amaçlı olduğu dünyaya kanıtlandı."
       },
       {
-        "label": "Mersin halkı, ziraat odaları ve çevrecilerle düzenli bilgilendirme masası topla; deniz suyu sıcaklığı ve tarım endişelerini gider.",
+        "label": "Bölge halkı ve Mersin sivil toplumuyla bilgilendirme toplantıları yap; radyasyon güvenliği ve acil durum tahliye planlarını paylaş.",
         "preview": "Adalet +3, Halk +6, Hazine +3, Otorite +7",
         "effects": {
           "justice": 3,
@@ -38803,43 +38803,43 @@ const EVENT_DECK_MODERN = [
           "military": 0,
           "authority": 7
         },
-        "log": "Toplumsal endişeler giderildi; radyasyon ölçüm istasyonları canlı olarak halkın erişimine açıldı."
+        "log": "Halkın nükleer endişesi giderildi; provokatörlerin toplumsal panik çıkarma girişimi boşa çıkarıldı."
       },
       {
-        "label": "İlk taze nükleer yakıtın santrale gelmesiyle Türkiye'yi resmen nükleer kulübe sok; yıllık 35 milyar kWh baz yük elektriği finanse et.",
-        "preview": "Adalet +2, Halk +8, Otorite +4 | Hazine -6",
+        "label": "Nükleer kazalara karşı uluslararası nükleer sigorta havuzuna katılım payını Hazine bütçesinden ödeyerek mali güvence sağla.",
+        "preview": "Hazine +8, Otorite +4 | Halk -5",
         "effects": {
-          "justice": 2,
-          "people": 8,
-          "treasury": -6,
+          "justice": 0,
+          "people": -5,
+          "treasury": 8,
           "military": 0,
           "authority": 4
         },
-        "log": "Türkiye nükleer güç statüsü kazandı; 4 reaktörün devreye girmesiyle elektriğin %10'u sıfır karbonla üretilmeye başlandı."
+        "log": "Mali riskler sigortalandı; olası felaket senaryoları uluslararası güvenceye bağlandı."
       },
       {
-        "label": "Santral çevresinde hava savunma füzeleri, radar sistemleri ve denizaltısavar kalkanıyla askeri düzeyde koruma çemberi kur.",
-        "preview": "Adalet +5, Halk +5, Güvenlik +9, Otorite +8 | Hazine -5",
+        "label": "Yakıt sevkiyatı boyunca Akdeniz'de fırkateynler ve havada savaş uçaklarıyla olağanüstü askeri güvenlik kordonu kur.",
+        "preview": "Adalet +3, Güvenlik +4, Otorite +7 | Halk -2, Hazine -3",
+        "effects": {
+          "justice": 3,
+          "people": -2,
+          "treasury": -3,
+          "military": 4,
+          "authority": 7
+        },
+        "log": "Nükleer yakıt en ufak sızıntı ve saldırı olmadan reaktör havuzuna indirildi; sabotaj planları çöktü."
+      },
+      {
+        "label": "Nükleer tesislere yönelik her türlü saldırı ve sabotajı doğrudan vatana ihanet kapsamına alan 'Nükleer Ceza Kanunu' çıkar.",
+        "preview": "Adalet +5, Halk +3, Güvenlik +7, Otorite +7 | Hazine -4",
         "effects": {
           "justice": 5,
-          "people": 5,
-          "treasury": -5,
-          "military": 9,
-          "authority": 8
-        },
-        "log": "Stratejik nükleer tesis koruma kalkanına alındı; hava ve deniz sahası tam kontrole bağlandı."
-      },
-      {
-        "label": "Türkiye'nin nükleer yakıt, atık yönetimi ve reaktör işletimini tanzim eden 'Nükleer Enerji ve Radyasyon Güvenliği Kanunu' çıkar.",
-        "preview": "Adalet +7, Halk +5, Otorite +6 | Hazine -4",
-        "effects": {
-          "justice": 7,
-          "people": 5,
+          "people": 3,
           "treasury": -4,
-          "military": 0,
-          "authority": 6
+          "military": 7,
+          "authority": 7
         },
-        "log": "Nükleer enerji hukuku inşa edildi; Sinop ve Trakya'daki yeni santral projelerine yasal zemin açıldı."
+        "log": "Nükleer yakıt sahası en üst seviye askeri yasak bölge statüsüyle korundu."
       }
     ]
   },
@@ -38934,11 +38934,11 @@ const EVENT_DECK_MODERN = [
       }
     ],
     "source": "Enerji ve Tabii Kaynaklar Bakanlığı",
-    "title": "TANAP (Trans Anadolu Doğalgaz Boru Hattı) Projesi",
-    "desc": "Azerbaycan Şahdeniz gazını Türkiye üzerinden Avrupa sınırına taşıyan dev boru hattı hizmete girdi.",
+    "title": "TANAP Doğalgaz Boru Hattına Yönelik Balkan Terör ve Siber Sabotaj Tehditleri",
+    "desc": "Azerbaycan Şahdeniz gazını Türkiye üzerinden Avrupa'ya taşıyan 1850 kilometrelik Trans Anadolu Doğalgaz Boru Hattı (TANAP) devreye girdi. Ancak Avrupa enerji krizini derinleştirmek isteyen yabancı aktörlerin boru hattı kompresör istasyonlarına fiziki ve siber sabotaj hazırlığında olduğu istihbaratı masada.",
     "options": [
       {
-        "label": "Enerji projelerinde çevre mevzuatı, kamulaştırma ve lisanslama süreçlerini şeffaf adli denetime tabi tut.",
+        "label": "Azerbaycan ve Avrupa Birliği paydaşlarıyla ortak hukuki güvenlik komisyonu kurarak enerji hatları denetimini sıkılaştır.",
         "preview": "Adalet +9, Halk +8, Otorite +3 | Hazine -2",
         "effects": {
           "justice": 9,
@@ -38947,10 +38947,10 @@ const EVENT_DECK_MODERN = [
           "military": 0,
           "authority": 3
         },
-        "log": "Enerji yatırımlarında hukuki intizam sağlandı; kamu menfaati ve çevre dengesi korundu."
+        "log": "Uluslararası enerji hukuku tahkim edildi; sabotaj iddiaları çok taraflı mekanizmayla takibe alındı."
       },
       {
-        "label": "Yenilenebilir ve yerli enerji yatırımlarında yerel halk ve sanayicilerle istişare ederek enerji verimliliği seferberliği başlat.",
+        "label": "Boru hattının geçtiği 20 ildeki köylüler ve yerel yönetimlerle istişare toplantıları yaparak hat güvenliğinde halk desteği sağla.",
         "preview": "Adalet +2, Halk +9, Hazine +4, Güvenlik +2, Otorite +5",
         "effects": {
           "justice": 2,
@@ -38959,22 +38959,22 @@ const EVENT_DECK_MODERN = [
           "military": 2,
           "authority": 5
         },
-        "log": "Halkın desteği sağlandı; enerji tasarrufu ve verimliliği tabana yayıldı."
+        "log": "Sosyal mutabakat sağlandı; köylüler boru hattı çevresinde şüpheli hareketleri anında jandarmaya bildirdi."
       },
       {
-        "label": "Yerli ve yenilenebilir enerji kaynaklarını sübvanse ederek Hazine'nin döviz bazlı enerji faturasını hafiflet.",
-        "preview": "Adalet +2, Halk +8, Güvenlik +2, Otorite +4 | Hazine -6",
+        "label": "Boru hattı üzerinden taşınan gazdan Hazineye transit geçiş gelirlerini tahsil et; yıllık 16 milyar metreküp akışı koru.",
+        "preview": "Hazine +8, Otorite +4 | Halk -5",
         "effects": {
-          "justice": 2,
-          "people": 8,
-          "treasury": -6,
-          "military": 2,
+          "justice": 0,
+          "people": -5,
+          "treasury": 8,
+          "military": 0,
           "authority": 4
         },
-        "log": "Milli bütçe korundu; yerli kömür, hidroelektrik ve güneşle ithal gaz bağımlılığı azaltıldı."
+        "log": "Türkiye enerji ticaret merkezi haline geldi; Hazineye devasa transit döviz girdisi sağlandı."
       },
       {
-        "label": "Stratejik barajlar, boru hatları ve trafo merkezlerinde sabotajlara karşı kolluk devriyelerini artır.",
+        "label": "Boru hattı boyunca optik fiber algılama sistemleri, İHA devriyeleri ve jandarma komando koruma timleri konuşlandır.",
         "preview": "Adalet +5, Halk +5, Güvenlik +9, Otorite +8 | Hazine -5",
         "effects": {
           "justice": 5,
@@ -38983,19 +38983,19 @@ const EVENT_DECK_MODERN = [
           "military": 9,
           "authority": 8
         },
-        "log": "Enerji iletim hatları korundu; şebekenin kesintisiz elektrik vermesi güvenceye alındı."
+        "log": "TANAP boru hattı terör ve sabotaj tehditlerine karşı 24 saat çelik zırhla korundu."
       },
       {
-        "label": "Türkiye'nin 2053 net sıfır emisyon hedefini destekleyen 'Yenilenebilir Enerji ve Tabii Kaynaklar Reform Kanunu' çıkar.",
-        "preview": "Adalet +8, Halk +8, Güvenlik +1, Otorite +6 | Hazine -4",
+        "label": "Uluslararası enerji boru hatlarını stratejik dokunulmazlık kapsamına alan 'Enerji Altyapı Güvenliği Kanunu' çıkar.",
+        "preview": "Adalet +5, Halk +3, Güvenlik +7, Otorite +7 | Hazine -4",
         "effects": {
-          "justice": 8,
-          "people": 8,
+          "justice": 5,
+          "people": 3,
           "treasury": -4,
-          "military": 1,
-          "authority": 6
+          "military": 7,
+          "authority": 7
         },
-        "log": "Temiz enerji mevzuatı kabul edildi; rüzgar ve güneş kurulu gücünde Türkiye Avrupa liderliğine yükseldi."
+        "log": "Boru hattı güvenliği milli kanunla teminat altına alındı; Avrupa'nın gaz arzı güvenceye bağlandı."
       }
     ]
   },
@@ -39792,59 +39792,59 @@ const EVENT_DECK_MODERN = [
       }
     ],
     "source": "Enerji ve Tabii Kaynaklar Bakanlığı",
-    "title": "Eskişehir Beylikova Nadir Toprak Elementleri Sahası",
-    "desc": "Dünyanın en büyük 2. nadir element rezervi keşfedilerek çip ve mıknatıs üretimi için adım atıldı.",
+    "title": "Eskişehir Beylikova Nadir Toprak Elementleri Sahasında Küresel İstihbarat Savaşı",
+    "desc": "Eskişehir Beylikova'da elektrikli araç bataryaları, lazerler ve füze güdüm sistemleri için hayati önem taşıyan 694 milyon tonluk dünyanın ikinci en büyük Nadir Toprak Elementi (NTE) sahası keşfedildi. Çin, ABD ve AB merkezli maden kartellerinin sahayı kapatmak için baskı yaptığı istihbaratı masada.",
     "options": [
       {
-        "label": "Enerji projelerinde çevre mevzuatı, kamulaştırma ve lisanslama süreçlerini şeffaf adli denetime tabi tut.",
-        "preview": "Adalet +8, Halk +5, Hazine +4, Otorite +4",
+        "label": "Maden sahasının işletme imtiyazlarını tamamen kamu kurumu Eti Maden'e ver; yabancı ortaklıkları bağımsız yargı denetimine bağla.",
+        "preview": "Adalet +9, Halk +8, Otorite +3 | Hazine -2",
         "effects": {
-          "justice": 8,
-          "people": 5,
-          "treasury": 4,
+          "justice": 9,
+          "people": 8,
+          "treasury": -2,
           "military": 0,
-          "authority": 4
+          "authority": 3
         },
-        "log": "Enerji yatırımlarında hukuki intizam sağlandı; kamu menfaati ve çevre dengesi korundu."
+        "log": "Stratejik madenler devlet tekelinde korundu; yabancı kartellerin rezervleri kapatması engellendi."
       },
       {
-        "label": "Yenilenebilir ve yerli enerji yatırımlarında yerel halk ve sanayicilerle istişare ederek enerji verimliliği seferberliği başlat.",
-        "preview": "Adalet +2, Halk +7, Hazine +4, Otorite +6",
+        "label": "Uluslararası teknoloji üreticileriyle stratejik ortaklık masası kur; madenleri ham olarak değil işlenmiş yüksek teknoloji olarak sat.",
+        "preview": "Adalet +3, Halk +6, Hazine +3, Otorite +7",
         "effects": {
-          "justice": 2,
-          "people": 7,
-          "treasury": 4,
+          "justice": 3,
+          "people": 6,
+          "treasury": 3,
           "military": 0,
-          "authority": 6
+          "authority": 7
         },
-        "log": "Halkın desteği sağlandı; enerji tasarrufu ve verimliliği tabana yayıldı."
+        "log": "Katma değerli ihracat politikası benimsendi; hammadde sömürüsü önlendi."
       },
       {
-        "label": "Yerli ve yenilenebilir enerji kaynaklarını sübvanse ederek Hazine'nin döviz bazlı enerji faturasını hafiflet.",
-        "preview": "Adalet +2, Halk +8, Otorite +4 | Hazine -6",
+        "label": "Beylikova'da pilot cevher zenginleştirme ve işleme tesisinin kurulması için Hazine bütçesinden 250 milyon dolar kaynak aktar.",
+        "preview": "Adalet +2, Halk +8, Güvenlik +2, Otorite +4 | Hazine -6",
         "effects": {
           "justice": 2,
           "people": 8,
           "treasury": -6,
-          "military": 0,
+          "military": 2,
           "authority": 4
         },
-        "log": "Milli bütçe korundu; yerli kömür, hidroelektrik ve güneşle ithal gaz bağımlılığı azaltıldı."
+        "log": "Milli cevher işleme tesisi kuruldu; Türkiye kritik elementleri kendi işleyen sayılı ülkeden biri oldu."
       },
       {
-        "label": "Stratejik barajlar, boru hatları ve trafo merkezlerinde sabotajlara karşı kolluk devriyelerini artır.",
-        "preview": "Adalet +5, Halk +5, Güvenlik +9, Otorite +8 | Hazine -5",
+        "label": "Maden sahasında yabancı casusluk ve gizli numune kaçırma girişimlerine karşı MİT ve jandarma özel koruma timleri konuşlandır.",
+        "preview": "Adalet +2, Halk +8, Güvenlik +6, Otorite +6 | Hazine -4",
         "effects": {
-          "justice": 5,
-          "people": 5,
-          "treasury": -5,
-          "military": 9,
-          "authority": 8
+          "justice": 2,
+          "people": 8,
+          "treasury": -4,
+          "military": 6,
+          "authority": 6
         },
-        "log": "Enerji iletim hatları korundu; şebekenin kesintisiz elektrik vermesi güvenceye alındı."
+        "log": "Maden sahasından gizlice numune kaçırmaya çalışan yabancı teknisyenler yakalandı."
       },
       {
-        "label": "Türkiye'nin 2053 net sıfır emisyon hedefini destekleyen 'Yenilenebilir Enerji ve Tabii Kaynaklar Reform Kanunu' çıkar.",
+        "label": "Nadir toprak elementlerinin ham olarak yurtdışına ihracatını yasaklayan 'Stratejik Kritik Madenler Kanunu' çıkar.",
         "preview": "Adalet +6, Halk +4, Hazine +5, Otorite +6",
         "effects": {
           "justice": 6,
@@ -39853,7 +39853,7 @@ const EVENT_DECK_MODERN = [
           "military": 0,
           "authority": 6
         },
-        "log": "Temiz enerji mevzuatı kabul edildi; rüzgar ve güneş kurulu gücünde Türkiye Avrupa liderliğine yükseldi."
+        "log": "Milli madenler kanuni kalkan altına alındı; Türkiye'nin yeşil enerji ve savunma gücü tahkim edildi."
       }
     ]
   },
@@ -40416,68 +40416,68 @@ const EVENT_DECK_MODERN = [
       }
     ],
     "source": "Enerji ve Tabii Kaynaklar Bakanlığı",
-    "title": "Libya ile İmzalanan Ortak Hidrokarbon Arama Mutabakatı",
-    "desc": "Trablus hükümetiyle Türkiye'nin ortak petrol ve gaz arama protokolü imzalandı.",
+    "title": "Libya Deniz Yetki Alanı Mutabakatı ve Doğu Akdeniz'de Savaş Gemileri Karşılaşması",
+    "desc": "Türkiye ile Libya Milli Mutabakat Hükümeti arasında imzalanan deniz yetki alanları anlaşmasıyla Yunanistan-Mısır hattı kesildi ve Mavi Vatan sınırları tescillendi. Ancak Yunanistan, Fransa ve Hafter güçlerinin Oruç Reis ve Türk fırkateynlerine karşı bölgeye savaş gemileri göndermesiyle çatışma riski tırmandı.",
     "options": [
       {
-        "label": "Enerji projelerinde çevre mevzuatı, kamulaştırma ve lisanslama süreçlerini şeffaf adli denetime tabi tut.",
-        "preview": "Adalet +8, Halk +6, Otorite +2 | Hazine -2",
+        "label": "Libya mutabakat metnini derhal Birleşmiş Milletler'e (BM) tescil ettir; uluslararası deniz hukuku önünde meşruiyet sağla.",
+        "preview": "Adalet +8, Halk +5, Hazine +2, Otorite +6",
         "effects": {
           "justice": 8,
-          "people": 6,
-          "treasury": -2,
-          "military": 0,
-          "authority": 2
-        },
-        "log": "Enerji yatırımlarında hukuki intizam sağlandı; kamu menfaati ve çevre dengesi korundu."
-      },
-      {
-        "label": "Yenilenebilir ve yerli enerji yatırımlarında yerel halk ve sanayicilerle istişare ederek enerji verimliliği seferberliği başlat.",
-        "preview": "Adalet +2, Halk +8, Otorite +5 | Hazine -2",
-        "effects": {
-          "justice": 2,
-          "people": 8,
-          "treasury": -2,
-          "military": 0,
-          "authority": 5
-        },
-        "log": "Halkın desteği sağlandı; enerji tasarrufu ve verimliliği tabana yayıldı."
-      },
-      {
-        "label": "Yerli ve yenilenebilir enerji kaynaklarını sübvanse ederek Hazine'nin döviz bazlı enerji faturasını hafiflet.",
-        "preview": "Adalet +2, Halk +8, Otorite +4 | Hazine -6",
-        "effects": {
-          "justice": 2,
-          "people": 8,
-          "treasury": -6,
-          "military": 0,
-          "authority": 4
-        },
-        "log": "Milli bütçe korundu; yerli kömür, hidroelektrik ve güneşle ithal gaz bağımlılığı azaltıldı."
-      },
-      {
-        "label": "Stratejik barajlar, boru hatları ve trafo merkezlerinde sabotajlara karşı kolluk devriyelerini artır.",
-        "preview": "Adalet +5, Halk +5, Güvenlik +9, Otorite +8 | Hazine -5",
-        "effects": {
-          "justice": 5,
           "people": 5,
-          "treasury": -5,
-          "military": 9,
-          "authority": 8
-        },
-        "log": "Enerji iletim hatları korundu; şebekenin kesintisiz elektrik vermesi güvenceye alındı."
-      },
-      {
-        "label": "Türkiye'nin 2053 net sıfır emisyon hedefini destekleyen 'Yenilenebilir Enerji ve Tabii Kaynaklar Reform Kanunu' çıkar.",
-        "preview": "Adalet +7, Halk +5, Otorite +6 | Hazine -4",
-        "effects": {
-          "justice": 7,
-          "people": 5,
-          "treasury": -4,
+          "treasury": 2,
           "military": 0,
           "authority": 6
         },
-        "log": "Temiz enerji mevzuatı kabul edildi; rüzgar ve güneş kurulu gücünde Türkiye Avrupa liderliğine yükseldi."
+        "log": "BM anlaşmayı resmen tescil etti; Türkiye'nin Akdeniz kıta sahanlığı uluslararası hukukun parçası oldu."
+      },
+      {
+        "label": "Avrupa Birliği ve NATO arabuluculuğunda Yunanistan ile istişare kanallarını açık tut; çatışmasızlık protokolü imzala.",
+        "preview": "Adalet +3, Halk +6, Hazine +3, Otorite +7",
+        "effects": {
+          "justice": 3,
+          "people": 6,
+          "treasury": 3,
+          "military": 0,
+          "authority": 7
+        },
+        "log": "Ege ve Akdeniz'de sıcak çatışma önlendi; tansiyon diplomasiyle yönetildi."
+      },
+      {
+        "label": "Doğu Akdeniz hidrokarbon sondajları için TPAO'ya Hazine fonu tahsis et; Libya açıklarında ortak petrol arama ruhsatları al.",
+        "preview": "Hazine +8, Otorite +4 | Halk -5",
+        "effects": {
+          "justice": 0,
+          "people": -5,
+          "treasury": 8,
+          "military": 0,
+          "authority": 4
+        },
+        "log": "Stratejik enerji adımı atıldı; Türkiye Akdeniz'deki enerji haklarını fiili adımlarla pekiştirdi."
+      },
+      {
+        "label": "Deniz Kuvvetleri fırkateynleri, denizaltıları ve SİHA'larıyla Oruç Reis gemisine 'dokunulmazlık' koruma kordonu kur.",
+        "preview": "Adalet +3, Güvenlik +4, Otorite +7 | Halk -2, Hazine -3",
+        "effects": {
+          "justice": 3,
+          "people": -2,
+          "treasury": -3,
+          "military": 4,
+          "authority": 7
+        },
+        "log": "Türk donanması Akdeniz'de çelik kalkan oldu; Yunan fırkateyninin taciz girişimi püskürtüldü."
+      },
+      {
+        "label": "Mavi Vatan deniz yetki alanlarını milli harita ve anayasal güvenceye bağlayan 'Milli Deniz Güvenlik Kanunu' çıkar.",
+        "preview": "Adalet +5, Halk +3, Güvenlik +7, Otorite +7 | Hazine -4",
+        "effects": {
+          "justice": 5,
+          "people": 3,
+          "treasury": -4,
+          "military": 7,
+          "authority": 7
+        },
+        "log": "Türkiye'nin Akdeniz'deki sınırları kanunlaştı; Sevr benzeri Sevilla Haritası tarihin çöplüğüne atıldı."
       }
     ]
   },
@@ -41659,73 +41659,73 @@ const EVENT_DECK_MODERN = [
         "name": "Hazine ve Maliye Bakanı"
       },
       {
-        "id": "char_merkez_bankasi_baskani",
-        "name": "Merkez Bankası Başkanı"
+        "id": "char_sanayi_bakani",
+        "name": "Sanayi ve Teknoloji Bakanı"
       }
     ],
     "source": "Hazine ve Maliye Bakanlığı & TCMB",
-    "title": "Şirket Bilançolarında Enflasyon Düzeltmesi (Muhasebesi)",
-    "desc": "Yüksek enflasyon sebebiyle reel olmayan karların vergilendirilmesini önleyen muhasebe sistemi açıldı.",
+    "title": "Enflasyon Düzeltmesi (Muhasebesi) ve Reel Kazanç-Vergi Adaleti Krizi",
+    "desc": "Yüksek enflasyon ortamında sanayici ve KOBİ'lerin henüz realize olmamış kârları üzerinden fahiş vergi ödemek zorunda kalması üretimi durma noktasına getirirken, Maliye bütçe gelirlerinin erimesinden endişe ediyor.",
     "options": [
       {
-        "label": "Ekonomik kararlarda hukuki öngörülebilirlik, rekabet kuralları ve mülkiyet hakkını tavizsiz gözet.",
-        "preview": "Adalet +8, Halk +5, Hazine +4, Otorite +4",
+        "label": "Enflasyon düzeltmesini küçük esnaf ve KOBİ'ler için vergisel yük getirmeyecek şekilde muaf tut; sadece dev holdinglere uygula.",
+        "preview": "Adalet +8, Halk +8, Otorite +6 | Hazine -4",
         "effects": {
           "justice": 8,
-          "people": 5,
-          "treasury": 4,
-          "military": 0,
-          "authority": 4
-        },
-        "log": "Hukuki güvence piyasaya hakim kılındı; yatırımcı güveni ve tüketici hakları korundu."
-      },
-      {
-        "label": "İş dünyası, esnaf ve tüketici dernekleriyle istişare kurulları toplayarak piyasada fiyat istikrarı uzlaşısı sağla.",
-        "preview": "Adalet +3, Halk +9, Otorite +6 | Hazine -4",
-        "effects": {
-          "justice": 3,
-          "people": 9,
+          "people": 8,
           "treasury": -4,
           "military": 0,
           "authority": 6
         },
-        "log": "Sosyal diyalog işletildi; piyasadaki panik ve fiyatlama davranışlarındaki bozulma yatıştırıldı."
+        "log": "Milyonlarca küçük üretici fahiş fiktif vergiden korundu; holdinglerden adil pay alındı."
       },
       {
-        "label": "Hazine kasasını korumak ve enflasyonu düşürmek için kamu harcamalarında sıkı tasarruf tedbirlerini tavizsiz uygula.",
-        "preview": "Adalet +1, Halk +4, Hazine +8, Otorite +5",
+        "label": "Bütçe açığını kapatmak için enflasyon düzeltmesini istisnasız tüm bilanço sahibi şirketlere tavizsiz uygula.",
+        "preview": "Adalet +4, Hazine +9, Otorite +6 | Halk -6",
         "effects": {
-          "justice": 1,
-          "people": 4,
-          "treasury": 8,
-          "military": 0,
-          "authority": 5
-        },
-        "log": "Mali disiplin tesis edildi; kamu bütçesi açık vermeden dengelendi."
-      },
-      {
-        "label": "Stokçuluk, fahiş fiyat ve karaborsa fırsatçılarına karşı ticaret müfettişlerini ve zabıtayı sahaya dök.",
-        "preview": "Adalet +3, Güvenlik +4, Otorite +7 | Halk -2, Hazine -3",
-        "effects": {
-          "justice": 3,
-          "people": -2,
-          "treasury": -3,
-          "military": 4,
-          "authority": 7
-        },
-        "log": "Piyasada fırsatçılara göz açtırılmadı; fahiş fiyat koyan zincirlere caydırıcı cezalar kesildi."
-      },
-      {
-        "label": "Türkiye ekonomisinin yapısal reformlarını hayata geçiren 'Mali İstikrar ve Fiyat İstikrarı Reform Kanunu' çıkar.",
-        "preview": "Adalet +6, Halk +4, Hazine +5, Otorite +6",
-        "effects": {
-          "justice": 6,
-          "people": 4,
-          "treasury": 5,
+          "justice": 4,
+          "people": -6,
+          "treasury": 9,
           "military": 0,
           "authority": 6
         },
-        "log": "Yapısal reformlar yasalaştı; Türkiye sürdürülebilir büyüme ve dezenflasyon rotasına oturdu."
+        "log": "Hazine kasasına kısa vadeli devasa vergi girişi sağlandı; ancak reel sektörde iflaslar tetiklendi."
+      },
+      {
+        "label": "Şirketlerin fiktif kârları yerine sadece net nakit akışını ve yatırıma yönelen sermayeyi vergiden düşen 'Üretim Reformu' yap.",
+        "preview": "Adalet +8, Halk +7, Otorite +7 | Hazine -5",
+        "effects": {
+          "justice": 8,
+          "people": 7,
+          "treasury": -5,
+          "military": 0,
+          "authority": 7
+        },
+        "log": "Üretim ve Ar-Ge yatırımları teşvik edildi; fabrikaların kapısına kilit vurulması önlendi."
+      },
+      {
+        "label": "Vergi müfettişlerini stokçuluk ve çifte defter tutan kayıt dışı zenginlere yönlendirerek vergi tabanını genişlet.",
+        "preview": "Adalet +9, Halk +6, Hazine +7, Otorite +8",
+        "effects": {
+          "justice": 9,
+          "people": 6,
+          "treasury": 7,
+          "military": 0,
+          "authority": 8
+        },
+        "log": "Dürüst mükellef korunurken kayıt dışı rant ekonomisine ağır denetim getirildi."
+      },
+      {
+        "label": "Vergi uyuşmazlıklarında mükelleflere dava açmak yerine faizsiz 24 ay taksitlendirme ve uzlaşma komisyonu hakkı tanı.",
+        "preview": "Adalet +6, Halk +7, Hazine +4, Otorite +5",
+        "effects": {
+          "justice": 6,
+          "people": 7,
+          "treasury": 4,
+          "military": 0,
+          "authority": 5
+        },
+        "log": "Vergi mahkemelerindeki tıkanıklık aşıldı, Hazineye düzenli nakit akışı bağlandı."
       }
     ]
   },
@@ -43692,68 +43692,68 @@ const EVENT_DECK_MODERN = [
       }
     ],
     "source": "BTK & MASAK & Emniyet Siber",
-    "title": "Instagram Platformuna Katalog Suçlar Gerekçesiyle Erişim Engeli",
-    "desc": "BTK kararıyla günlerce kapatılan Instagram yapılan müzakereler ve taahhütler sonrası açıldı.",
+    "title": "Instagram Platformunun Katalog Suçlar ve Dijital Egemenlik Ambargosu",
+    "desc": "Küresel sosyal medya tekelinin Türk mahkemelerinin çocuk istismarı, uyuşturucu ve terör içerikli kaldırma kararlarını kasten yok sayması ve milli hassasiyetlere sansür uygulaması dijital egemenlik krizi başlattı.",
     "options": [
       {
-        "label": "Katalog suçlar (çocuk istismarı, terör, intihara yönlendirme) sebebiyle platformun Türkiye temsilcilik açmasını şart koş.",
-        "preview": "Adalet +9, Halk +8, Otorite +3 | Hazine -2",
+        "label": "Platforma Türkiye'de yasal temsilci atama, katalog suçları 24 saatte silme ve verileri Türkiye'de tutma şartı kabul edilene kadar bant genişliğini daralt.",
+        "preview": "Adalet +7, Hazine +2, Güvenlik +4, Otorite +9 | Halk -2",
         "effects": {
-          "justice": 9,
+          "justice": 7,
+          "people": -2,
+          "treasury": 2,
+          "military": 4,
+          "authority": 9
+        },
+        "log": "Küresel tekel devletin egemenlik şartlarını kabul etmek zorunda kaldı; Türk mahkeme kararları bağlayıcı kılındı."
+      },
+      {
+        "label": "E-ticaret ve küçük esnafın mağduriyetini önlemek için platforma ağır para cezası kesip erişim engelini derhal kaldır.",
+        "preview": "Adalet +5, Halk +8, Hazine +5, Otorite +4",
+        "effects": {
+          "justice": 5,
           "people": 8,
-          "treasury": -2,
-          "military": 0,
-          "authority": 3
-        },
-        "log": "Egemenlik hakları korundu; küresel platformlar Türk kanunlarına uymayı ve temsilci atamayı kabul etti."
-      },
-      {
-        "label": "Dijital içerik üreticileri ve e-ticaret esnafıyla görüşerek platform engellerinin ekonomik zararlarını asgaride tut.",
-        "preview": "Adalet +3, Halk +9, Otorite +6 | Hazine -4",
-        "effects": {
-          "justice": 3,
-          "people": 9,
-          "treasury": -4,
-          "military": 0,
-          "authority": 6
-        },
-        "log": "Esnafın mağduriyeti dinlendi; şirketle yapılan müzakerelerin ardından platformlar kurallara uyarak açıldı."
-      },
-      {
-        "label": "Türkiye'de milyarlarca dolar reklam geliri elde edip vergi kaçıran küresel teknoloji devlerine %7.5 Dijital Hizmet Vergisi koy.",
-        "preview": "Hazine +8, Otorite +4 | Halk -5",
-        "effects": {
-          "justice": 0,
-          "people": -5,
-          "treasury": 8,
+          "treasury": 5,
           "military": 0,
           "authority": 4
         },
-        "log": "Dijital devler vergi mükellefi yapıldı; Hazineye yıllık milyarlarca liralık vergi geliri girdi."
+        "log": "Esnafın dijital satışı kesilmedi; ancak küresel şirketin kurallara uyumu gevşek kaldı."
       },
       {
-        "label": "BTK ve Siber Suçlarla Mücadele Dairesi'ne siber zorbalık ve pedofili ağlarına karşı anında IP erişim engeli yetkisi ver.",
-        "preview": "Adalet +3, Güvenlik +4, Otorite +7 | Halk -2, Hazine -3",
+        "label": "Milli mesajlaşma ve yerli sosyal medya platformlarının geliştirilmesine devasa vergi teşviki ve Ar-Ge fonu ver.",
+        "preview": "Adalet +6, Halk +5, Güvenlik +5, Otorite +7 | Hazine -6",
         "effects": {
-          "justice": 3,
-          "people": -2,
-          "treasury": -3,
-          "military": 4,
+          "justice": 6,
+          "people": 5,
+          "treasury": -6,
+          "military": 5,
           "authority": 7
         },
-        "log": "Çocuklar ve gençler dijital bataklıktan korundu; sapkın şantaj çetelerinin sunucuları çökertildi."
+        "log": "Dijital bağımsızlık yolunda yerli platformların temeli güçlendirildi."
       },
       {
-        "label": "Sosyal medya platformlarının Türkçe içerik denetimi ve mahkeme kararlarına uymasını zorunlu kılan 'Sosyal Medya Kanunu' çıkar.",
-        "preview": "Adalet +7, Halk +5, Otorite +6 | Hazine -4",
+        "label": "Çocukları ve gençleri siber zorbalıktan koruyan bağımsız bir 'Dijital Haklar ve Çocuk Güvenliği Komisyonu' kur.",
+        "preview": "Adalet +8, Halk +8, Otorite +6 | Hazine -2",
         "effects": {
-          "justice": 7,
-          "people": 5,
-          "treasury": -4,
+          "justice": 8,
+          "people": 8,
+          "treasury": -2,
           "military": 0,
           "authority": 6
         },
-        "log": "Siber vatanda egemenlik tescillendi; platformların keyfi sansür ve kural tanımazlığı kanunla durduruldu."
+        "log": "Aileler ve sivil toplum dijital tehditlere karşı koruma altına alındı."
+      },
+      {
+        "label": "Sosyal medya gelirlerinden kesilen dijital hizmet vergisini iki katına çıkarıp gelirini gençlik eğitimine aktar.",
+        "preview": "Adalet +7, Halk +6, Hazine +7, Otorite +6",
+        "effects": {
+          "justice": 7,
+          "people": 6,
+          "treasury": 7,
+          "military": 0,
+          "authority": 6
+        },
+        "log": "Küresel platformların Türkiye'den kazandığı kâr kamu yararına dönüştürüldü."
       }
     ]
   },
@@ -43995,77 +43995,77 @@ const EVENT_DECK_MODERN = [
     "id": "tr_vaka_565",
     "characters": [
       {
-        "id": "char_adalet_bakani",
-        "name": "Adalet Bakanı"
+        "id": "char_anayasa_mahkemesi_baskani",
+        "name": "Anayasa Mahkemesi Başkanı"
       },
       {
-        "id": "char_sanayi_bakani",
-        "name": "Sanayi ve Teknoloji Bakanı"
+        "id": "char_adalet_bakani",
+        "name": "Adalet Bakanı"
       }
     ],
     "source": "BTK & MASAK & Emniyet Siber",
-    "title": "Wikipedia'nın (Vikipedi) 2.5 Yıllık Erişim Engelinin AYM ile Kalkması",
-    "desc": "Anayasa Mahkemesi'nin ifade özgürlüğü ihlali kararı sonrası ansiklopedi sitesi yeniden açıldı.",
+    "title": "Wikipedia'da Dezenformasyon ve Bilgi Güvenliği İkilemi",
+    "desc": "Küresel internet ansiklopedisinde Türkiye'yi terör örgütleriyle işbirliği içinde gösteren manipülatif maddelerin yabancı editörlerce korunması üzerine mahkemelerin erişim engeli kararı AYM'nin ifade özgürlüğü kararıyla çatıştı.",
     "options": [
       {
-        "label": "Dijital suçlar, internet dolandırıcılığı ve yasadışı bahis faaliyetlerine karşı adli soruşturmaları tavizsiz yürüt.",
-        "preview": "Adalet +8, Halk +6, Otorite +2 | Hazine -2",
+        "label": "AYM'nin ifade hürriyeti kararına uyarak siteyi aç; ancak üniversiteler ve Türk editörler ağı kurarak tahrif edilmiş maddeleri bilimsel kaynaklarla düzelt.",
+        "preview": "Adalet +9, Halk +8, Otorite +5",
         "effects": {
-          "justice": 8,
-          "people": 6,
-          "treasury": -2,
+          "justice": 9,
+          "people": 8,
+          "treasury": 0,
           "military": 0,
-          "authority": 2
-        },
-        "log": "Siber suçlular adalet önüne çıkarıldı; vatandaşların dijital ortamdaki hak ve güvenliği korundu."
-      },
-      {
-        "label": "Bilişim sektörü, yazılımcılar ve sivil toplumla istişare ederek milli yazılım ve yapay zeka ekosistemini destekle.",
-        "preview": "Adalet +2, Halk +9, Hazine +4, Güvenlik +2, Otorite +5",
-        "effects": {
-          "justice": 2,
-          "people": 9,
-          "treasury": 4,
-          "military": 2,
           "authority": 5
         },
-        "log": "Sektörel uzlaşı sağlandı; yerli teknoloji girişimlerinin önü açıldı."
+        "log": "Hukukun üstünlüğü korundu; dezenformasyon yasakla değil güçlü bilgi karşı-atağıyla çürütüldü."
       },
       {
-        "label": "Siber güvenlik ve dijitalleşme altyapısı yatırımları için Hazine fonlarından teknolojik Ar-Ge desteği tahsis et.",
-        "preview": "Hazine +8, Otorite +4 | Halk -5",
-        "effects": {
-          "justice": 0,
-          "people": -5,
-          "treasury": 8,
-          "military": 0,
-          "authority": 4
-        },
-        "log": "Dijital dönüşüm Hazine kaynaklarıyla hızlandırıldı; kamu veri güvenliği tahkim edildi."
-      },
-      {
-        "label": "Siber suç şebekelerine ve korsan çağrı merkezlerine karşı emniyet siber timlerini eşzamanlı operasyona sür.",
-        "preview": "Adalet +3, Güvenlik +4, Otorite +7 | Halk -2, Hazine -3",
-        "effects": {
-          "justice": 3,
-          "people": -2,
-          "treasury": -3,
-          "military": 4,
-          "authority": 7
-        },
-        "log": "Siber çeteler çökertildi; vatandaşları dolandıran sahte çağrı merkezleri mühürlendi."
-      },
-      {
-        "label": "Dijital veri güvenliği ve yapay zeka etiğini düzenleyen 'Milli Dijitalleşme ve Bilişim Kanunu' çıkar.",
-        "preview": "Adalet +7, Halk +5, Otorite +6 | Hazine -4",
+        "label": "Terör propagandasını kaldırmayı reddeden küresel vakfa karşı uluslararası mahkemelerde tazminat ve hakaret davaları aç.",
+        "preview": "Adalet +7, Halk +5, Güvenlik +2, Otorite +7 | Hazine -2",
         "effects": {
           "justice": 7,
           "people": 5,
-          "treasury": -4,
+          "treasury": -2,
+          "military": 2,
+          "authority": 7
+        },
+        "log": "Uluslararası hukuk zemininde Türkiye'nin onuru savunuldu."
+      },
+      {
+        "label": "TÜBİTAK ve Türk Dil Kurumu öncülüğünde tüm maddeleri doğrulanmış yerli ve milli dijital ansiklopedi kur.",
+        "preview": "Adalet +5, Halk +6, Otorite +6 | Hazine -5",
+        "effects": {
+          "justice": 5,
+          "people": 6,
+          "treasury": -5,
           "military": 0,
           "authority": 6
         },
-        "log": "Bilişim mevzuatı çağın gereksinimlerine göre yenilendi; kurumsal siber güvenlik sağlandı."
+        "log": "Kendi kültürel hafızasını koruyan bağımsız bir Türkçe bilgi arşivi oluşturuldu."
+      },
+      {
+        "label": "Erişim engelini terör bağlantılı spesifik URL adresleriyle sınırlandırıp sitenin geri kalanını eğitime aç.",
+        "preview": "Adalet +8, Halk +7, Güvenlik +2, Otorite +6",
+        "effects": {
+          "justice": 8,
+          "people": 7,
+          "treasury": 0,
+          "military": 2,
+          "authority": 6
+        },
+        "log": "Ölçülülük ilkesi sağlandı; öğrencilerin bilgiye erişimi kısıtlanmadan milli güvenlik korundu."
+      },
+      {
+        "label": "Küresel bilgi tekellerinin etki ajanlığı operasyonlarına karşı siber istihbarat ve iletişim başkanlığı takip mekanizması kur.",
+        "preview": "Adalet +6, Halk +4, Güvenlik +4, Otorite +8 | Hazine -3",
+        "effects": {
+          "justice": 6,
+          "people": 4,
+          "treasury": -3,
+          "military": 4,
+          "authority": 8
+        },
+        "log": "Devletin stratejik iletişim ve algı yönetimi savunma kapasitesi tahkim edildi."
       }
     ]
   },
@@ -47739,77 +47739,77 @@ const EVENT_DECK_MODERN = [
     "id": "tr_vaka_613",
     "characters": [
       {
-        "id": "char_adalet_bakani",
-        "name": "Adalet Bakanı"
+        "id": "char_milli_egitim_bakani",
+        "name": "Milli Eğitim Bakanı"
       },
       {
-        "id": "char_basbakan",
-        "name": "Başbakan"
+        "id": "char_sanayi_bakani",
+        "name": "Sanayi ve Teknoloji Bakanı"
       }
     ],
     "source": "Milli Eğitim Bakanlığı & YÖK",
-    "title": "Katsayı Engelinin YÖK Tarafından 2009-2011'de Kaldırılması",
-    "desc": "Tarihi kararla meslek lisesi ve imam hatip mezunlarının alan dışı tercih yapma hakkı teslim edildi.",
+    "title": "28 Şubat Mirası Katsayı Engeli ve Sanayide Nitelikli Çırak Krizi",
+    "desc": "Meslek lisesi ve imam hatip mezunlarının üniversiteye girişini engelleyen katsayı sistemi sanayide teknik eleman krizine yol açarken, vesayetçi bürokrasi Danıştay üzerinden engeli sürdürmek için hükümete direniyor.",
     "options": [
       {
-        "label": "Üniversitelerde ve kamuda kılık-kıyafet yasağı ve katsayı adaletsizliğini anayasal eşitlik ilkesiyle tamamen bitir.",
-        "preview": "Adalet +9, Halk +8, Otorite +3 | Hazine -2",
+        "label": "Katsayı adaletsizliğini YÖK ve TBMM kanun değişikliğiyle tamamen tarihe göm; her gence eşit puan hakkı ver.",
+        "preview": "Adalet +9, Halk +9, Otorite +8",
         "effects": {
           "justice": 9,
-          "people": 8,
-          "treasury": -2,
-          "military": 0,
-          "authority": 3
-        },
-        "log": "Tarihi zulüm son buldu; başörtülü kızlar ikna odalarından kurtularak tıp, hukuk ve mühendislik fakültelerini birincilikle bitirdi."
-      },
-      {
-        "label": "Öğrenci kulüpleri, akademisyenler ve sivil toplumla görüşerek kampüslerde barış ve özgürlük iklimini kurumsallaştır.",
-        "preview": "Adalet +3, Halk +9, Otorite +6 | Hazine -4",
-        "effects": {
-          "justice": 3,
           "people": 9,
-          "treasury": -4,
+          "treasury": 0,
           "military": 0,
-          "authority": 6
+          "authority": 8
         },
-        "log": "Üniversitelerde kucaklaşma sağlandı; ideolojik kutuplaşmanın yerini bilimsel çalışma aldı."
+        "log": "Eğitimde 28 Şubat vesayeti parçalandı; milyonlarca gencin üniversite yolu eşitlendi."
       },
       {
-        "label": "Meslek liseleri ve İmam Hatiplerin laboratuvar ve atölye altyapısını güçlendirmek için Hazine destekli teşvikler sağla.",
-        "preview": "Hazine +8, Otorite +4 | Halk -5",
-        "effects": {
-          "justice": 0,
-          "people": -5,
-          "treasury": 8,
-          "military": 0,
-          "authority": 4
-        },
-        "log": "Mesleki eğitim ihya edildi; sanayinin nitelikli eleman ihtiyacı giderildi."
-      },
-      {
-        "label": "Yasağın kaldırılmasına karşı kampüslerde provokasyon ve baskı yapmaya kalkan kliklere karşı üniversite güvenliğini koru.",
-        "preview": "Adalet +2, Halk +8, Güvenlik +6, Otorite +6 | Hazine -4",
-        "effects": {
-          "justice": 2,
-          "people": 8,
-          "treasury": -4,
-          "military": 6,
-          "authority": 6
-        },
-        "log": "Öğrencilerin eğitim hakkı korundu; hiç kimsenin kılık-kıyafetinden dolayı engellenmesine izin verilmedi."
-      },
-      {
-        "label": "Kamuda ve üniversitelerde temel hak ve hürriyetleri teminat altına alan 'Eğitimde Fırsat Eşitliği Kanunu' çıkar.",
-        "preview": "Adalet +7, Halk +8, Otorite +5 | Hazine -4",
+        "label": "Meslek liselerini doğrudan organize sanayi bölgeleriyle (OSB) entegre edip mezunlara istihdam ve yüksek maaş garantisi getir.",
+        "preview": "Adalet +7, Halk +8, Otorite +7 | Hazine -5",
         "effects": {
           "justice": 7,
           "people": 8,
+          "treasury": -5,
+          "military": 0,
+          "authority": 7
+        },
+        "log": "Sanayinin 'ara eleman değil aranan eleman' ihtiyacı çözüldü; üretim hamlesi hızlandı."
+      },
+      {
+        "label": "Yargı vesayetinin engelleme kararlarına karşı Anayasa Mahkemesi ve idari reformlarla direnci kır.",
+        "preview": "Adalet +8, Halk +7, Otorite +8",
+        "effects": {
+          "justice": 8,
+          "people": 7,
+          "treasury": 0,
+          "military": 0,
+          "authority": 8
+        },
+        "log": "Hukuksuz bürokratik engeller aşıldı; devlet idaresinde seçilmiş irade pekiştirildi."
+      },
+      {
+        "label": "Meslek lisesi mezunlarına kendi alanlarında mühendislik okumaları için özel ek puan ve burs kontenjanı tahsis et.",
+        "preview": "Adalet +8, Halk +8, Otorite +6 | Hazine -4",
+        "effects": {
+          "justice": 8,
+          "people": 8,
           "treasury": -4,
+          "military": 0,
+          "authority": 6
+        },
+        "log": "Teknik liselerden yetişen genç mühendisler yerli savunma ve otomotiv sektörünün omurgası oldu."
+      },
+      {
+        "label": "Tüm liselerde müfredatı sadeleştirip temel bilimler ve kodlama eğitimini zorunlu hale getir.",
+        "preview": "Adalet +6, Halk +7, Otorite +5 | Hazine -3",
+        "effects": {
+          "justice": 6,
+          "people": 7,
+          "treasury": -3,
           "military": 0,
           "authority": 5
         },
-        "log": "Katsayı ve başörtüsü engelleri tarihe gömüldü; tüm evlatlarımız anayasal eşitliğe kavuştu."
+        "log": "Gençliğin küresel teknoloji rekabetine hazırlanması için modern müfredat devreye girdi."
       }
     ]
   },
@@ -48675,77 +48675,77 @@ const EVENT_DECK_MODERN = [
     "id": "tr_vaka_625",
     "characters": [
       {
-        "id": "char_adalet_bakani",
-        "name": "Adalet Bakanı"
+        "id": "char_milli_egitim_bakani",
+        "name": "Milli Eğitim Bakanı"
       },
       {
-        "id": "char_basbakan",
-        "name": "Başbakan"
+        "id": "char_hazine_bakani",
+        "name": "Hazine ve Maliye Bakanı"
       }
     ],
     "source": "Milli Eğitim Bakanlığı & YÖK",
-    "title": "81 İle Üniversite Hamlesi: Her İlde En Az Bir Devlet Üniversitesi",
-    "desc": "Hakkari'den Şırnak'a, Iğdır'dan Ardahan'a kadar tüm illerde devlet üniversiteleri açıldı.",
+    "title": "81 İle Üniversite Hamlesinde Akademik Kadrolaşma ve Nitelik Tartışması",
+    "desc": "Her ilde üniversite açılarak yükseköğretim tabana yayılırken, taşra üniversitelerinde akraba kadrolaşması, atıf çeteleri ve diploması olan yüz binlerce işsiz mezun sosyal patlama riski doğurdu.",
     "options": [
       {
-        "label": "Eğitimde liyakat, fırsat eşitliği ve öğretmenlik meslek standartlarını anayasal kurallarla koru.",
-        "preview": "Adalet +8, Halk +6, Otorite +2 | Hazine -2",
+        "label": "Taşradaki tüm akademik kadro ilanlarında merkezi YÖK sınavı ve kör hakem şartı koyarak akraba kayırmacılığını derhal bitir.",
+        "preview": "Adalet +9, Halk +8, Otorite +7 | Hazine -2",
         "effects": {
-          "justice": 8,
-          "people": 6,
+          "justice": 9,
+          "people": 8,
           "treasury": -2,
           "military": 0,
-          "authority": 2
+          "authority": 7
         },
-        "log": "Eğitimde fırsat eşitliği gözetildi; tüm öğrencilerin eğitime erişim hakkı korundu."
+        "log": "Taşra üniversitelerindeki nepotizm temizlendi; liyakatli genç akademisyenlerin önü açıldı."
       },
       {
-        "label": "Öğretmen sendikaları, veliler ve eğitim bilimcilerle ortak milli eğitim şurası toplayarak müfredat uzlaşısı sağla.",
-        "preview": "Adalet +3, Halk +9, Otorite +6 | Hazine -4",
+        "label": "İstihdam karşılığı olmayan teorik bölümlerin kontenjanlarını yüzde 50 düşürüp teknik ve yapay zeka bölümlerine dönüştür.",
+        "preview": "Adalet +7, Halk +6, Hazine +4, Otorite +7",
         "effects": {
-          "justice": 3,
-          "people": 9,
-          "treasury": -4,
+          "justice": 7,
+          "people": 6,
+          "treasury": 4,
+          "military": 0,
+          "authority": 7
+        },
+        "log": "Üniversiteli işsizler ordusu frenlendi; sanayinin ihtiyaç duyduğu uzmanlar yetiştirilmeye başlandı."
+      },
+      {
+        "label": "Taşra üniversitelerini bulundukları ilin tarım, maden veya sınır ticaretinde ihtisaslaşmış AR-GE merkezlerine çevir.",
+        "preview": "Adalet +6, Halk +8, Otorite +6 | Hazine -5",
+        "effects": {
+          "justice": 6,
+          "people": 8,
+          "treasury": -5,
           "military": 0,
           "authority": 6
         },
-        "log": "Eğitim camiası ile diyalog kuruldu; okullarda huzur ve motivasyon sağlandı."
+        "log": "Her il kendi üniversitesiyle yerel kalkınma ve inovasyon hamlesi başlattı."
       },
       {
-        "label": "Okulların teknolojik altyapısı, akıllı tahta ve ücretsiz yemek dağıtımı için Hazine bütçesinden kaynak ayır.",
-        "preview": "Hazine +8, Otorite +4 | Halk -5",
+        "label": "Dünya sıralamasında ilk 500'e giren üniversitelerin bütçesini 3 katına çıkararak küresel beyin göçünü tersine çevir.",
+        "preview": "Adalet +6, Halk +7, Otorite +6 | Hazine -6",
         "effects": {
-          "justice": 0,
-          "people": -5,
-          "treasury": 8,
+          "justice": 6,
+          "people": 7,
+          "treasury": -6,
           "military": 0,
-          "authority": 4
+          "authority": 6
         },
-        "log": "Okulların fiziki imkanları güçlendirildi; eğitim yatırımları bütçeden karşılandı."
+        "log": "Milli üniversiteler dünya liginde yükseldi; Türk bilim insanları ülkeye dönmeye başladı."
       },
       {
-        "label": "Okul çevrelerinde uyuşturucu tacirleri ve çetelere karşı 'Güvenli Okul' polis devriyelerini görevlendir.",
-        "preview": "Adalet +5, Halk +5, Güvenlik +9, Otorite +8 | Hazine -5",
+        "label": "Üniversite öğrencilerine faizsiz iş kurma kredisi ve girişimcilik fonu açarak mezunların kendi işini kurmasını sağla.",
+        "preview": "Adalet +6, Halk +8, Otorite +5 | Hazine -5",
         "effects": {
-          "justice": 5,
-          "people": 5,
-          "treasury": -5,
-          "military": 9,
-          "authority": 8
-        },
-        "log": "Okul kapılarında tam güvenlik sağlandı; çocuklarımız zararlı alışkanlıklardan korundu."
-      },
-      {
-        "label": "Türkiye Yüzyılı maarif vizyonunu hayata geçiren 'Milli Eğitim ve Öğretmenlik Reform Kanunu' çıkar.",
-        "preview": "Adalet +7, Halk +8, Otorite +5 | Hazine -4",
-        "effects": {
-          "justice": 7,
+          "justice": 6,
           "people": 8,
-          "treasury": -4,
+          "treasury": -5,
           "military": 0,
           "authority": 5
         },
-        "log": "Eğitim sistemi çağdaş standartlarla yenilendi; nesillerin geleceği teminat altına alındı."
+        "log": "Genç girişimciler ekonomiye can suyu oldu; istihdam tabana yayıldı."
       }
     ]
   },
@@ -49455,77 +49455,77 @@ const EVENT_DECK_MODERN = [
     "id": "tr_vaka_635",
     "characters": [
       {
-        "id": "char_esnaf_odasi_baskani",
-        "name": "Esnaf Odaları Başkanı"
+        "id": "char_calisma_bakani",
+        "name": "Çalışma ve Sosyal Güvenlik Bakanı"
       },
       {
-        "id": "char_sanayi_bakani",
-        "name": "Sanayi ve Teknoloji Bakanı"
+        "id": "char_adalet_bakani",
+        "name": "Adalet Bakanı"
       }
     ],
     "source": "Milli Eğitim Bakanlığı & YÖK",
-    "title": "Mesleki Eğitim Merkezleri (MESEM) Hamlesi ve Çıraklık Teşvikleri",
-    "desc": "Haftada 1 gün okul, 4 gün işyeri modeliyle sanayiye yüz binlerce çırak kazandırıldı.",
+    "title": "MESEM Çıraklık Programında İş Kazaları ve Devlet Teşviki Suiistimali",
+    "desc": "Sanayiye çırak yetiştiren MESEM programında bazı sahte şirketlerin işe gelmeyen çocukları kayıtlı gösterip devlet teşvikini hortumladığı ve inşaatlarda ölen çocuk çırakların kamuoyunu infiale sürüklediği rapor edildi.",
     "options": [
       {
-        "label": "Eğitimde liyakat, fırsat eşitliği ve öğretmenlik meslek standartlarını anayasal kurallarla koru.",
-        "preview": "Adalet +8, Halk +6, Otorite +2 | Hazine -2",
+        "label": "Ağır ve tehlikeli iş kollarında çocuk çırak çalıştırmayı derhal yasakla; iş kazası ihmalinde işverene hapis cezası uygula.",
+        "preview": "Adalet +9, Halk +8, Otorite +8 | Hazine -2",
         "effects": {
-          "justice": 8,
-          "people": 6,
+          "justice": 9,
+          "people": 8,
           "treasury": -2,
           "military": 0,
-          "authority": 2
+          "authority": 8
         },
-        "log": "Eğitimde fırsat eşitliği gözetildi; tüm öğrencilerin eğitime erişim hakkı korundu."
+        "log": "Çocukların can güvenliği korundu; vicdanları yaralayan ölümcül ihmallere ağır yaptırım geldi."
       },
       {
-        "label": "Öğretmen sendikaları, veliler ve eğitim bilimcilerle ortak milli eğitim şurası toplayarak müfredat uzlaşısı sağla.",
-        "preview": "Adalet +3, Halk +9, Otorite +6 | Hazine -4",
+        "label": "Sahte çırak kaydıyla devlet primini hortumlayan şirketleri MASAK ve müfettişlerle basıp tüm teşvikleri faiziyle geri al.",
+        "preview": "Adalet +8, Halk +7, Hazine +8, Otorite +8",
         "effects": {
-          "justice": 3,
-          "people": 9,
+          "justice": 8,
+          "people": 7,
+          "treasury": 8,
+          "military": 0,
+          "authority": 8
+        },
+        "log": "Hazineyi soyan sahte patronlar adalete teslim edildi; teşvik vurgunu önlendi."
+      },
+      {
+        "label": "Çırakların haftalık çalışma süresini kısıtlayıp genel kültür ve yabancı dil eğitimini zorunlu hale getir.",
+        "preview": "Adalet +7, Halk +8, Otorite +5 | Hazine -3",
+        "effects": {
+          "justice": 7,
+          "people": 8,
+          "treasury": -3,
+          "military": 0,
+          "authority": 5
+        },
+        "log": "Çırakların sömürülmesi engellendi, geleceğin donanımlı ustaları yetiştirildi."
+      },
+      {
+        "label": "İş sağlığı ve güvenliği denetimlerini bağımsız dijital kamera ve sensörlerle 24 saat fabrikalarda takip et.",
+        "preview": "Adalet +7, Halk +6, Otorite +6 | Hazine -4",
+        "effects": {
+          "justice": 7,
+          "people": 6,
           "treasury": -4,
           "military": 0,
           "authority": 6
         },
-        "log": "Eğitim camiası ile diyalog kuruldu; okullarda huzur ve motivasyon sağlandı."
+        "log": "Fabrikalarda iş kazaları modernize edilen denetim ağıyla minimize edildi."
       },
       {
-        "label": "Okulların teknolojik altyapısı, akıllı tahta ve ücretsiz yemek dağıtımı için Hazine bütçesinden kaynak ayır.",
-        "preview": "Hazine +8, Otorite +4 | Halk -5",
+        "label": "Dürüst üretim yapan ve çıraklarına yüksek burs veren sanayicilere vergi indirimi ve ihracat kolaylığı sağla.",
+        "preview": "Adalet +6, Halk +7, Otorite +6 | Hazine -4",
         "effects": {
-          "justice": 0,
-          "people": -5,
-          "treasury": 8,
-          "military": 0,
-          "authority": 4
-        },
-        "log": "Okulların fiziki imkanları güçlendirildi; eğitim yatırımları bütçeden karşılandı."
-      },
-      {
-        "label": "Okul çevrelerinde uyuşturucu tacirleri ve çetelere karşı 'Güvenli Okul' polis devriyelerini görevlendir.",
-        "preview": "Adalet +5, Halk +5, Güvenlik +9, Otorite +8 | Hazine -5",
-        "effects": {
-          "justice": 5,
-          "people": 5,
-          "treasury": -5,
-          "military": 9,
-          "authority": 8
-        },
-        "log": "Okul kapılarında tam güvenlik sağlandı; çocuklarımız zararlı alışkanlıklardan korundu."
-      },
-      {
-        "label": "Türkiye Yüzyılı maarif vizyonunu hayata geçiren 'Milli Eğitim ve Öğretmenlik Reform Kanunu' çıkar.",
-        "preview": "Adalet +7, Halk +8, Otorite +5 | Hazine -4",
-        "effects": {
-          "justice": 7,
-          "people": 8,
+          "justice": 6,
+          "people": 7,
           "treasury": -4,
           "military": 0,
-          "authority": 5
+          "authority": 6
         },
-        "log": "Eğitim sistemi çağdaş standartlarla yenilendi; nesillerin geleceği teminat altına alındı."
+        "log": "Sorumlu sanayiciler ödüllendirildi; mesleki eğitim ahlaklı bir zemine oturtuldu."
       }
     ]
   },
@@ -50473,73 +50473,73 @@ const EVENT_DECK_MODERN = [
         "name": "Sağlık Bakanı"
       },
       {
-        "id": "char_sehir_plancisi",
-        "name": "Mimarlar ve Şehir Plancıları Temsilcisi"
+        "id": "char_hazine_bakani",
+        "name": "Hazine ve Maliye Bakanı"
       }
     ],
     "source": "Sağlık Bakanlığı & Bilim Kurulu",
-    "title": "Kamu-Özel İşbirliği (KÖİ) Şehir Hastaneleri Hamlesi",
-    "desc": "Yozgat, Adana, Mersin, Isparta ve Kayseri'den başlayarak dev şehir hastaneleri zinciri açıldı.",
+    "title": "KÖİ Şehir Hastanelerinde Hazine Yükü ve Köklü Hastanelerin Kapanması Krizi",
+    "desc": "Devasa şehir hastaneleri hizmete girerken, şehir merkezlerindeki asırlık devlet hastanelerinin kapatılması halkın tepkisini çekti; müteahhit firmalara döviz endeksli kira ve doluluk garantileri Hazine bütçesini kilitledi.",
     "options": [
       {
-        "label": "Şehir hastanelerinin Kamu-Özel İşbirliği (KÖİ) kira ve hizmet sözleşmelerini Sayıştay ve bağımsız denetime aç.",
-        "preview": "Adalet +8, Halk +6, Otorite +2 | Hazine -2",
+        "label": "Kapatılan tarihi şehir içi hastanelerini restore edip acil poliklinik ve butik ihtisas hastaneleri olarak derhal yeniden aç.",
+        "preview": "Adalet +8, Halk +9, Otorite +7 | Hazine -5",
         "effects": {
           "justice": 8,
-          "people": 6,
-          "treasury": -2,
-          "military": 0,
-          "authority": 2
-        },
-        "log": "Sözleşmeler şeffaflıkla denetlendi; kamu kaynaklarının kullanımında hesap verilebilirlik sağlandı."
-      },
-      {
-        "label": "Günde 50 bin hastaya bakan dev kampüslerde hasta ve yaşlıların transferini kolaylaştıracak ücretsiz ring seferleri kur.",
-        "preview": "Adalet +3, Halk +9, Otorite +6 | Hazine -4",
-        "effects": {
-          "justice": 3,
           "people": 9,
-          "treasury": -4,
+          "treasury": -5,
           "military": 0,
-          "authority": 6
-        },
-        "log": "Vatandaş memnuniyeti zirve yaptı; 5 yıldızlı otel konforundaki hastaneler halkın hizmetine sunuldu."
-      },
-      {
-        "label": "Hastanelerin medikal ve laboratuvar işletme bedellerini yerli firmalara açarak Hazine kira yükümlülüklerini azalt.",
-        "preview": "Hazine +8, Otorite +4 | Halk -5",
-        "effects": {
-          "justice": 0,
-          "people": -5,
-          "treasury": 8,
-          "military": 0,
-          "authority": 4
-        },
-        "log": "Hazine borç yükü hafifletildi; kamu hastaneleri yüksek teknolojik donanıma kavuştu."
-      },
-      {
-        "label": "Hastanelerin nükleer tıp, radyasyon ve yoğun bakım binalarında siber ve fiziki güvenliği en üst düzeye çıkar.",
-        "preview": "Adalet +3, Güvenlik +4, Otorite +7 | Halk -2, Hazine -3",
-        "effects": {
-          "justice": 3,
-          "people": -2,
-          "treasury": -3,
-          "military": 4,
           "authority": 7
         },
-        "log": "Stratejik sağlık merkezleri korundu; hasta veri tabanlarının siber saldırıya uğraması engellendi."
+        "log": "Halkın mahallelerindeki sağlık merkezleri korundu; yaşlı ve dar gelirli vatandaş rahat nefes aldı."
       },
       {
-        "label": "Türkiye'yi sağlık turizminin küresel başkenti yapan 'Uluslararası Sağlık Hizmetleri Kanunu' çıkar.",
-        "preview": "Adalet +6, Halk +4, Hazine +5, Otorite +6",
+        "label": "Şehir hastaneleri sözleşmelerindeki döviz bazlı kira ve hizmet garantilerini Türk Lirası'na çevirerek Hazineyi rahatlat.",
+        "preview": "Adalet +7, Halk +6, Hazine +8, Otorite +7",
         "effects": {
-          "justice": 6,
-          "people": 4,
-          "treasury": 5,
+          "justice": 7,
+          "people": 6,
+          "treasury": 8,
+          "military": 0,
+          "authority": 7
+        },
+        "log": "Hazineye binen kur farkı yükü dizginlendi; kamu maliyesi korundu."
+      },
+      {
+        "label": "Şehir hastanelerini son teknoloji onkoloji ve robotik cerrahi merkezleriyle donatarak Türkiye'yi bölgenin sağlık turizmi üssü yap.",
+        "preview": "Adalet +5, Halk +7, Hazine +7, Otorite +6",
+        "effects": {
+          "justice": 5,
+          "people": 7,
+          "treasury": 7,
           "military": 0,
           "authority": 6
         },
-        "log": "Türkiye yılda 2 milyon yabancı hastaya bakan küresel sağlık üssü oldu; milyarlarca dolar döviz girdisi sağlandı."
+        "log": "Yabancı hastalardan elde edilen döviz geliriyle sağlık sisteminin finansmanı güçlendirildi."
+      },
+      {
+        "label": "Hastanelerde hekimlerin ve sağlık personelinin nöbet ücretlerini ve maaşlarını iki katına çıkararak beyin göçünü durdur.",
+        "preview": "Adalet +8, Halk +8, Otorite +6 | Hazine -7",
+        "effects": {
+          "justice": 8,
+          "people": 8,
+          "treasury": -7,
+          "military": 0,
+          "authority": 6
+        },
+        "log": "Doktorların yurt dışına gidişi önlendi; randevu kuyrukları ve hekim açığı hafifletildi."
+      },
+      {
+        "label": "KÖİ sözleşmelerini bağımsız Sayıştay denetimine açarak tüm harcama kalemlerini şeffaf biçimde Meclis'e sun.",
+        "preview": "Adalet +9, Halk +7, Hazine +1, Otorite +6",
+        "effects": {
+          "justice": 9,
+          "people": 7,
+          "treasury": 1,
+          "military": 0,
+          "authority": 6
+        },
+        "log": "Şeffaflık sağlandı; kamu-özel ortaklığı projelerinde yolsuzluk şaibeleri bertaraf edildi."
       }
     ]
   },
@@ -52272,35 +52272,35 @@ const EVENT_DECK_MODERN = [
       }
     ],
     "source": "Gençlik ve Spor Bakanlığı & TFF",
-    "title": "17 Mayıs 2000: Galatasaray'ın UEFA Kupasını Kazanması",
-    "desc": "Kopenhag'da Arsenal'i penaltılarla 4-1 mağlup eden Galatasaray Türk futbol tarihinin ilk Avrupa kupasını kaldırdı.",
+    "title": "UEFA Kupası Yarı Finali Öncesi Taksim'de İngiliz Holigan Çatışması ve Diplomatik Kriz",
+    "desc": "Leeds United maçı öncesi Taksim Meydanı'nda alkollü İngiliz holiganların Türk bayrağını yakıp esnafa saldırması üzerine çıkan kavgada 2 İngiliz taraftar hayatını kaybetti. İngiltere hükümeti ve UEFA Türkiye'yi barbarlıkla suçlayarak tüm Türk takımlarını Avrupa'dan men etme tehdidi savuruyor.",
     "options": [
       {
-        "label": "Kopenhag ve Monako zaferlerini Türk futbolunun uluslararası marka değeri ve adil oyun (Fair-Play) ilkesiyle taçlandır.",
-        "preview": "Adalet +8, Halk +5, Hazine +2, Otorite +6",
+        "label": "İstanbul Cumhuriyet Başsavcılığı'na tam yetki ver; kavgaya karışan tüm şüphelileri tarafsız adli soruşturmayla yargıya sevk et.",
+        "preview": "Adalet +9, Halk +7, Hazine +5, Otorite +3",
         "effects": {
-          "justice": 8,
-          "people": 5,
-          "treasury": 2,
+          "justice": 9,
+          "people": 7,
+          "treasury": 5,
+          "military": 0,
+          "authority": 3
+        },
+        "log": "Hukuk devleti tavizsiz işletildi; cinayet zanlıları tutuklanarak adli süreç İngiliz elçiliğine şeffaf aktarıldı."
+      },
+      {
+        "label": "İngiltere Dışişleri ve UEFA Başkanı ile acil diplomatik kriz masası kur; Türk takımlarının men edilmesini diplomatik yolla engelle.",
+        "preview": "Adalet +3, Halk +9, Otorite +6 | Hazine -4",
+        "effects": {
+          "justice": 3,
+          "people": 9,
+          "treasury": -4,
           "military": 0,
           "authority": 6
         },
-        "log": "Tarihi kupa zaferi dünyaya ilan edildi; Türk futbolunun Avrupa'daki saygınlığı zirveye çıktı."
+        "log": "Diplomatik kriz yönetildi; Galatasaray'ın Kopenhag'daki tarihi final maçı güvenceye alındı."
       },
       {
-        "label": "Taksim Meydanı'nda toplanan milyonlarca taraftarla milli bayram coşkusunu kutla; tüm kulüpleri tek yürek yap.",
-        "preview": "Adalet +2, Halk +8, Otorite +5 | Hazine -2",
-        "effects": {
-          "justice": 2,
-          "people": 8,
-          "treasury": -2,
-          "military": 0,
-          "authority": 5
-        },
-        "log": "Türkiye sokaklara döküldü; 17 Mayıs gecesi Türk spor tarihinin altın sayfası olarak milletçe kutlandı."
-      },
-      {
-        "label": "Avrupa şampiyonu kulübe ve futbolculara devlet üstün hizmet madalyası ve Hazine prim desteği ver.",
+        "label": "Kopenhag finaline gidecek Türk taraftarların güvenliği ve seyahat masrafları için Hazine destek fonu ayır.",
         "preview": "Hazine +8, Otorite +4 | Halk -5",
         "effects": {
           "justice": 0,
@@ -52309,10 +52309,10 @@ const EVENT_DECK_MODERN = [
           "military": 0,
           "authority": 4
         },
-        "log": "Başarı devletçe ödüllendirildi; Türk futbolunun UEFA katsayısı ve yayın geliri tavan yaptı."
+        "log": "Taraftar dayanışması sağlandı; Danimarka'ya binlerce Türk vatandaşı bayraklarla intikal etti."
       },
       {
-        "label": "Şampiyonluk kutlamalarında taşkınlık, havaya ateş açma ve holiganizm eylemlerine karşı polis devriyelerini artır.",
+        "label": "Kopenhag sokaklarında İngiliz holiganların intikam saldırısı planlarına karşı MİT ve Danimarka polisine istihbarat kalkanı kurdur.",
         "preview": "Güvenlik +5, Otorite +8 | Adalet -4, Halk -7, Hazine -2",
         "effects": {
           "justice": -4,
@@ -52321,19 +52321,19 @@ const EVENT_DECK_MODERN = [
           "military": 5,
           "authority": 8
         },
-        "log": "Kutlamalar güven içinde tamamlandı; provokasyon ve yaralanmaların önüne geçildi."
+        "log": "MİT uyarısıyla Kopenhag'da pusu kuran holigan çeteleri tutuklandı; taraftarların can güvenliği korundu."
       },
       {
-        "label": "Spor kulüplerinin borç batağına düşmesini engelleyen ve mali şeffaflık getiren 'Spor Kulüpleri ve Federasyonları Kanunu' çıkar.",
-        "preview": "Adalet +7, Halk +5, Otorite +6 | Hazine -4",
+        "label": "Sporda şiddet ve holiganizmi terör suçu kapsamında cezalandıran 'Milli Sporda Şiddeti Önleme Kanunu' çıkar.",
+        "preview": "Adalet +5, Halk +3, Güvenlik +7, Otorite +7 | Hazine -4",
         "effects": {
-          "justice": 7,
-          "people": 5,
+          "justice": 5,
+          "people": 3,
           "treasury": -4,
-          "military": 0,
-          "authority": 6
+          "military": 7,
+          "authority": 7
         },
-        "log": "Dernekler Kanunu'ndan çıkarılan kulüpler anonim şirket yapısına kavuşturuldu; batık borçlara fren vuruldu."
+        "log": "Stadyumlarda holiganizm kanunla yasaklandı; Türk sporu Avrupa'nın en büyük kupasını alarak tarihe geçti."
       }
     ]
   },
@@ -52341,8 +52341,8 @@ const EVENT_DECK_MODERN = [
     "id": "tr_vaka_672",
     "characters": [
       {
-        "id": "char_cumhurbaskani",
-        "name": "Cumhurbaşkanı"
+        "id": "char_mit_mustesari",
+        "name": "MİT Müsteşarı / Başkanı"
       },
       {
         "id": "char_icisleri_bakani",
@@ -52350,68 +52350,68 @@ const EVENT_DECK_MODERN = [
       }
     ],
     "source": "Gençlik ve Spor Bakanlığı & TFF",
-    "title": "25 Ağustos 2000: Galatasaray'ın UEFA Süper Kupa Şampiyonluğu",
-    "desc": "Monako'da Real Madrid'i Jardel'in altın golüyle 2-1 deviren sarı-kırmızılılar Süper Kupa'yı Türkiye'ye getirdi.",
+    "title": "Monako UEFA Süper Kupa Finali & Uluslararası Bahis Şebekesi Şantajı",
+    "desc": "Galatasaray'ın Real Madrid ile oynayacağı Süper Kupa finali öncesinde, Balkan ve Akdeniz merkezli yasadışı bahis mafyasının Türk futbolculara şantaj yapma ve kampa sızma girişimi MİT tarafından tespit edildi.",
     "options": [
       {
-        "label": "Kopenhag ve Monako zaferlerini Türk futbolunun uluslararası marka değeri ve adil oyun (Fair-Play) ilkesiyle taçlandır.",
-        "preview": "Adalet +8, Halk +5, Hazine +2, Otorite +6",
+        "label": "Kamp oteli ve stadyum çevresinde MİT ve Monaco Prensliği emniyetiyle tam tecrit uygulayarak sabotajı engelle ve takımı sahaya çıkar.",
+        "preview": "Adalet +6, Halk +8, Güvenlik +5, Otorite +8 | Hazine -2",
+        "effects": {
+          "justice": 6,
+          "people": 8,
+          "treasury": -2,
+          "military": 5,
+          "authority": 8
+        },
+        "log": "Şantaj şebekesi engellendi; sarı-kırmızılılar huzurla sahaya çıkıp tarihi kupayı Türkiye'ye getirdi."
+      },
+      {
+        "label": "Şantajcı şebekenin para transferlerini MASAK ve Interpol kanalıyla dondurup lider kadroyu maç öncesi tutuklat.",
+        "preview": "Adalet +9, Halk +7, Hazine +4, Güvenlik +3, Otorite +8",
+        "effects": {
+          "justice": 9,
+          "people": 7,
+          "treasury": 4,
+          "military": 3,
+          "authority": 8
+        },
+        "log": "Yasadışı bahis baronu Monako ve Nice'te kıskıvrak yakalandı; sporda temizlik sağlandı."
+      },
+      {
+        "label": "Bahis mafyasıyla teması olan yabancı menajerleri sınır dışı et ve kulübe bağımsız mali denetim ata.",
+        "preview": "Adalet +8, Halk +5, Hazine +2, Otorite +7",
         "effects": {
           "justice": 8,
           "people": 5,
           "treasury": 2,
           "military": 0,
-          "authority": 6
+          "authority": 7
         },
-        "log": "Tarihi kupa zaferi dünyaya ilan edildi; Türk futbolunun Avrupa'daki saygınlığı zirveye çıktı."
+        "log": "Türk futbolunu sülük gibi emen şaibeli menajer ağı çökertildi."
       },
       {
-        "label": "Taksim Meydanı'nda toplanan milyonlarca taraftarla milli bayram coşkusunu kutla; tüm kulüpleri tek yürek yap.",
-        "preview": "Adalet +2, Halk +8, Otorite +5 | Hazine -2",
-        "effects": {
-          "justice": 2,
-          "people": 8,
-          "treasury": -2,
-          "military": 0,
-          "authority": 5
-        },
-        "log": "Türkiye sokaklara döküldü; 17 Mayıs gecesi Türk spor tarihinin altın sayfası olarak milletçe kutlandı."
-      },
-      {
-        "label": "Avrupa şampiyonu kulübe ve futbolculara devlet üstün hizmet madalyası ve Hazine prim desteği ver.",
-        "preview": "Hazine +8, Otorite +4 | Halk -5",
-        "effects": {
-          "justice": 0,
-          "people": -5,
-          "treasury": 8,
-          "military": 0,
-          "authority": 4
-        },
-        "log": "Başarı devletçe ödüllendirildi; Türk futbolunun UEFA katsayısı ve yayın geliri tavan yaptı."
-      },
-      {
-        "label": "Şampiyonluk kutlamalarında taşkınlık, havaya ateş açma ve holiganizm eylemlerine karşı polis devriyelerini artır.",
-        "preview": "Güvenlik +5, Otorite +8 | Adalet -4, Halk -7, Hazine -2",
-        "effects": {
-          "justice": -4,
-          "people": -7,
-          "treasury": -2,
-          "military": 5,
-          "authority": 8
-        },
-        "log": "Kutlamalar güven içinde tamamlandı; provokasyon ve yaralanmaların önüne geçildi."
-      },
-      {
-        "label": "Spor kulüplerinin borç batağına düşmesini engelleyen ve mali şeffaflık getiren 'Spor Kulüpleri ve Federasyonları Kanunu' çıkar.",
-        "preview": "Adalet +7, Halk +5, Otorite +6 | Hazine -4",
+        "label": "Olayı uluslararası medyaya sızdırarak UEFA'yı şike ve şantaj şebekelerine karşı acil teyakkuza zorla.",
+        "preview": "Adalet +7, Halk +6, Güvenlik +2, Otorite +6",
         "effects": {
           "justice": 7,
-          "people": 5,
-          "treasury": -4,
-          "military": 0,
+          "people": 6,
+          "treasury": 0,
+          "military": 2,
           "authority": 6
         },
-        "log": "Dernekler Kanunu'ndan çıkarılan kulüpler anonim şirket yapısına kavuşturuldu; batık borçlara fren vuruldu."
+        "log": "UEFA şike şebekesine karşı teyakkuza geçti; Türk takımının hakları güvenceye alındı."
+      },
+      {
+        "label": "Futbol federasyonuna özel spor istihbarat ve güvenlik protokolü yayımlatarak gelecekteki tüm finalleri korumaya al.",
+        "preview": "Adalet +7, Halk +6, Güvenlik +4, Otorite +7 | Hazine -2",
+        "effects": {
+          "justice": 7,
+          "people": 6,
+          "treasury": -2,
+          "military": 4,
+          "authority": 7
+        },
+        "log": "Milli takımlar ve kulüpler için daimi spor güvenliği kalkanı oluşturuldu."
       }
     ]
   },
@@ -52428,35 +52428,35 @@ const EVENT_DECK_MODERN = [
       }
     ],
     "source": "Gençlik ve Spor Bakanlığı & TFF",
-    "title": "2002 FIFA Dünya Kupası: A Milli Takımın Dünya Üçüncülüğü",
-    "desc": "Şenol Güneş yönetimindeki Milliler Güney Kore'yi yenerek bronz madalya kazandı; tüm ülke sokaklara taştı.",
+    "title": "Uluslararası Karşılaşmalarda Yasadışı Bahis, Şike ve Balkan Mafyası Şantajı",
+    "desc": "MASAK ve MİT Organize Suçlar Dairesi, Türkiye ligi ve uluslararası maçları hedef alan Balkan ve Asya merkezli 5 milyar dolarlık devasa bir yasadışı bahis ve şike ağını deşifre etti. Bazı kulüp yöneticilerinin ve hakemlerin şantaja bağlandığı belirlendi.",
     "options": [
       {
-        "label": "Spor müsabakalarında Fair-Play, spor ahlakı ve federasyon kurallarını tavizsiz uygula.",
-        "preview": "Adalet +8, Halk +6, Otorite +2 | Hazine -2",
+        "label": "MASAK raporlarını Özel Yetkili Ağır Ceza Mahkemesi'ne sevk et; şikeye ve yasadışı bahse bulaşan tüm yöneticileri tutuklat.",
+        "preview": "Adalet +9, Halk +7, Hazine +5, Otorite +3",
         "effects": {
-          "justice": 8,
+          "justice": 9,
+          "people": 7,
+          "treasury": 5,
+          "military": 0,
+          "authority": 3
+        },
+        "log": "Büyük adli operasyon yapıldı; kulüp yöneticileri ve hakemler hapis cezası aldı, spor temizlendi."
+      },
+      {
+        "label": "Türkiye Futbol Federasyonu ve Kulüpler Birliği ile acil meşveret masası kur; küme düşme cezalarını erteleyip uzlaş.",
+        "preview": "Adalet +3, Halk +6, Hazine +3, Otorite +7",
+        "effects": {
+          "justice": 3,
           "people": 6,
-          "treasury": -2,
+          "treasury": 3,
           "military": 0,
-          "authority": 2
+          "authority": 7
         },
-        "log": "Sporda dürüstlük ve kurallar korundu; haksız rekabet ve kural ihlalleri cezalandırıldı."
+        "log": "Kulüplerin batması engellendi; ancak adaletin ertelenmesi kamu vicdanında derin tartışma yarattı."
       },
       {
-        "label": "Kulüpler Birliği, sporcular ve taraftar dernekleriyle diyalog kurarak tribünlerde dostluk iklimi sağla.",
-        "preview": "Adalet +2, Halk +8, Otorite +5 | Hazine -2",
-        "effects": {
-          "justice": 2,
-          "people": 8,
-          "treasury": -2,
-          "military": 0,
-          "authority": 5
-        },
-        "log": "Tribün gerilimi düşürüldü; sporun birleştirici ve kardeşlik ruhu öne çıkarıldı."
-      },
-      {
-        "label": "Amatör spor kulüpleri ve olimpiyat hazırlık merkezleri için Hazine destekli sporcu bursu tahsis et.",
+        "label": "Yasadışı bahis sitelerinin milyarlarca liralık hesaplarına ve lüks mal varlıklarına el koyarak Hazineye doğrudan aktar.",
         "preview": "Hazine +8, Otorite +4 | Halk -5",
         "effects": {
           "justice": 0,
@@ -52465,31 +52465,31 @@ const EVENT_DECK_MODERN = [
           "military": 0,
           "authority": 4
         },
-        "log": "Altyapıya kaynak sağlandı; binlerce genç yetenek Türk sporuna kazandırıldı."
+        "log": "Devlete devasa kaynak sağlandı; kara para aklama şebekesinin finansal damarları kesildi."
       },
       {
-        "label": "Derbi maçları ve deplasman yasaklarında stadyum çevrelerinde polis asayiş çemberini sıkı tut.",
-        "preview": "Güvenlik +5, Otorite +8 | Adalet -4, Halk -7, Hazine -2",
+        "label": "İnterpol ve Balkan ülkeleri istihbaratıyla ortak operasyon düzenle; şike baronu yabancı çete liderlerini sınır ötesinden paketle.",
+        "preview": "Adalet +5, Halk +5, Güvenlik +9, Otorite +8 | Hazine -5",
         "effects": {
-          "justice": -4,
-          "people": -7,
-          "treasury": -2,
-          "military": 5,
+          "justice": 5,
+          "people": 5,
+          "treasury": -5,
+          "military": 9,
           "authority": 8
         },
-        "log": "Maç günleri asayiş sağlandı; holigan grupların sokak çatışması çıkarması önlendi."
+        "log": "Balkan mafyası inlerinde basıldı; Türk futboluna şantaj yapan uluslararası baronlar Türkiye'ye getirildi."
       },
       {
-        "label": "Milli spor teşkilatını profesyonel standartlara kavuşturan 'Beden Eğitimi ve Spor Federasyonları Kanunu' çıkar.",
-        "preview": "Adalet +7, Halk +8, Otorite +5 | Hazine -4",
+        "label": "Sporda yasadışı bahis ve şike gelirlerini terörün finansmanı kapsamına alan kanun çıkar.",
+        "preview": "Adalet +5, Halk +3, Güvenlik +7, Otorite +7 | Hazine -4",
         "effects": {
-          "justice": 7,
-          "people": 8,
+          "justice": 5,
+          "people": 3,
           "treasury": -4,
-          "military": 0,
-          "authority": 5
+          "military": 7,
+          "authority": 7
         },
-        "log": "Spor yönetimi modernleştirildi; federasyonların özerkliği ve denetimi kanunla sağlandı."
+        "log": "Yasal çerçeve sertleştirildi; Türk sporunun uluslararası itibarı mafyadan temizlendi."
       }
     ]
   },
@@ -52584,11 +52584,11 @@ const EVENT_DECK_MODERN = [
       }
     ],
     "source": "Gençlik ve Spor Bakanlığı & TFF",
-    "title": "Sertab Erener'in 'Everyway That I Can' ile Eurovision Zaferi (2003)",
-    "desc": "Riga'da düzenlenen 48. Eurovision Şarkı Yarışması'nda Türkiye ilk ve tek birinciliğini elde etti.",
+    "title": "Eurovision ve Uluslararası Yarışmalarda Siyasi Blokaj ve Kültürel Şantaj",
+    "desc": "Türkiye'nin uluslararası yarışmalarda kazandığı zaferlerin ardından, yarışma organizatörlerinin LGBT propagandası dayatması, siyasi oylama blokajları ve Türkiye aleyhine puanlama kumpasları kurduğu tespit edildi. Türkiye'nin yarışmadan çekilmesi veya milli kültürel alternatif kurması tartışılıyor.",
     "options": [
       {
-        "label": "Spor müsabakalarında Fair-Play, spor ahlakı ve federasyon kurallarını tavizsiz uygula.",
+        "label": "Avrupa Yayın Birliği (EBU) sözleşmesini ve şaibeli jüri puanlama sistemini uluslararası denetçilere inceletip hukuki itiraz yap.",
         "preview": "Adalet +8, Halk +5, Hazine +2, Otorite +6",
         "effects": {
           "justice": 8,
@@ -52597,22 +52597,22 @@ const EVENT_DECK_MODERN = [
           "military": 0,
           "authority": 6
         },
-        "log": "Sporda dürüstlük ve kurallar korundu; haksız rekabet ve kural ihlalleri cezalandırıldı."
+        "log": "Puanlama adaletsizliği kayıtlara geçirildi; Türkiye'nin haklılığı belgelendi."
       },
       {
-        "label": "Kulüpler Birliği, sporcular ve taraftar dernekleriyle diyalog kurarak tribünlerde dostluk iklimi sağla.",
-        "preview": "Adalet +3, Halk +6, Hazine +3, Otorite +7",
+        "label": "EBU yetkilileriyle Brüksel'de diplomatik uzlaşma toplantısı yap; kültürel değerlere saygı şartıyla yarışmada kal.",
+        "preview": "Adalet +3, Halk +9, Otorite +6 | Hazine -4",
         "effects": {
           "justice": 3,
-          "people": 6,
-          "treasury": 3,
+          "people": 9,
+          "treasury": -4,
           "military": 0,
-          "authority": 7
+          "authority": 6
         },
-        "log": "Tribün gerilimi düşürüldü; sporun birleştirici ve kardeşlik ruhu öne çıkarıldı."
+        "log": "Müzakereler sürdü; ancak organizatörlerin ideolojik dayatmalarından geri adım atmadığı görüldü."
       },
       {
-        "label": "Amatör spor kulüpleri ve olimpiyat hazırlık merkezleri için Hazine destekli sporcu bursu tahsis et.",
+        "label": "Eurovision lisans ücreti olarak her yıl Avrupa'ya ödenen milyonlarca avroyu keserek TRT milli bütçesine aktar.",
         "preview": "Hazine +8, Otorite +4 | Halk -5",
         "effects": {
           "justice": 0,
@@ -52621,31 +52621,31 @@ const EVENT_DECK_MODERN = [
           "military": 0,
           "authority": 4
         },
-        "log": "Altyapıya kaynak sağlandı; binlerce genç yetenek Türk sporuna kazandırıldı."
+        "log": "Hazineye tasarruf sağlandı; gereksiz dış yayın harcaması milli projelere yönlendirildi."
       },
       {
-        "label": "Derbi maçları ve deplasman yasaklarında stadyum çevrelerinde polis asayiş çemberini sıkı tut.",
-        "preview": "Güvenlik +5, Otorite +8 | Adalet -4, Halk -7, Hazine -2",
+        "label": "Yarışma üzerinden Türk gençliğine yönelik yürütülen kültürel dejenerasyon ve etki ajanlığı faaliyetlerini MİT ile deşifre et.",
+        "preview": "Adalet +3, Güvenlik +4, Otorite +7 | Halk -2, Hazine -3",
         "effects": {
-          "justice": -4,
-          "people": -7,
-          "treasury": -2,
-          "military": 5,
-          "authority": 8
+          "justice": 3,
+          "people": -2,
+          "treasury": -3,
+          "military": 4,
+          "authority": 7
         },
-        "log": "Maç günleri asayiş sağlandı; holigan grupların sokak çatışması çıkarması önlendi."
+        "log": "Örtülü kültürel operasyonlar deşifre edildi; Türkiye yarışmadan resmen çekilerek bağımsız duruş sergiledi."
       },
       {
-        "label": "Milli spor teşkilatını profesyonel standartlara kavuşturan 'Beden Eğitimi ve Spor Federasyonları Kanunu' çıkar.",
-        "preview": "Adalet +7, Halk +8, Otorite +5 | Hazine -4",
+        "label": "Türk dünyası ve Avrasya ülkelerini kapsayan 'Türkvizyon Milli Şarkı Yarışması ve Kültür Birliği Kanunu' çıkar.",
+        "preview": "Adalet +8, Halk +8, Güvenlik +1, Otorite +6 | Hazine -4",
         "effects": {
-          "justice": 7,
+          "justice": 8,
           "people": 8,
           "treasury": -4,
-          "military": 0,
-          "authority": 5
+          "military": 1,
+          "authority": 6
         },
-        "log": "Spor yönetimi modernleştirildi; federasyonların özerkliği ve denetimi kanunla sağlandı."
+        "log": "300 milyonluk Türk dünyasında alternatif festival kuruldu; milli kültür küresel sahnede yükseldi."
       }
     ]
   },
@@ -52653,8 +52653,8 @@ const EVENT_DECK_MODERN = [
     "id": "tr_vaka_676",
     "characters": [
       {
-        "id": "char_cumhurbaskani",
-        "name": "Cumhurbaşkanı"
+        "id": "char_disisleri_bakani",
+        "name": "Dışişleri Bakanı"
       },
       {
         "id": "char_icisleri_bakani",
@@ -52662,68 +52662,68 @@ const EVENT_DECK_MODERN = [
       }
     ],
     "source": "Gençlik ve Spor Bakanlığı & TFF",
-    "title": "Euro 2008 Futbol Şampiyonası Yarı Final Mucizesi",
-    "desc": "İsviçre, Çekya ve Hırvatistan maçlarındaki son saniye geri dönüşleriyle Fatih Terim'in ekibi yarı finale çıktı.",
+    "title": "Euro 2008 Viyana-Basel Yarı Finali: Aşırı Sağcı Holiganlar ve Provokasyon İstihbaratı",
+    "desc": "Türkiye'nin mucizevi geri dönüşlerle yarı finale yükselmesi üzerine Avusturya ve İsviçre'deki ırkçı holigan grupların gurbetçi mahallelerine ve milli takım kafilesine saldırma hazırlığında olduğu istihbaratı alındı.",
     "options": [
       {
-        "label": "Spor müsabakalarında Fair-Play, spor ahlakı ve federasyon kurallarını tavizsiz uygula.",
-        "preview": "Adalet +8, Halk +6, Otorite +2 | Hazine -2",
+        "label": "İsviçre ve Avusturya emniyet teşkilatına Türk irtibat polisleri ve koruma ekipleri göndererek gurbetçi güvenliğini sağla.",
+        "preview": "Adalet +6, Halk +9, Güvenlik +5, Otorite +8 | Hazine -3",
         "effects": {
-          "justice": 8,
-          "people": 6,
-          "treasury": -2,
-          "military": 0,
-          "authority": 2
-        },
-        "log": "Sporda dürüstlük ve kurallar korundu; haksız rekabet ve kural ihlalleri cezalandırıldı."
-      },
-      {
-        "label": "Kulüpler Birliği, sporcular ve taraftar dernekleriyle diyalog kurarak tribünlerde dostluk iklimi sağla.",
-        "preview": "Adalet +2, Halk +8, Otorite +5 | Hazine -2",
-        "effects": {
-          "justice": 2,
-          "people": 8,
-          "treasury": -2,
-          "military": 0,
-          "authority": 5
-        },
-        "log": "Tribün gerilimi düşürüldü; sporun birleştirici ve kardeşlik ruhu öne çıkarıldı."
-      },
-      {
-        "label": "Amatör spor kulüpleri ve olimpiyat hazırlık merkezleri için Hazine destekli sporcu bursu tahsis et.",
-        "preview": "Hazine +8, Otorite +4 | Halk -5",
-        "effects": {
-          "justice": 0,
-          "people": -5,
-          "treasury": 8,
-          "military": 0,
-          "authority": 4
-        },
-        "log": "Altyapıya kaynak sağlandı; binlerce genç yetenek Türk sporuna kazandırıldı."
-      },
-      {
-        "label": "Derbi maçları ve deplasman yasaklarında stadyum çevrelerinde polis asayiş çemberini sıkı tut.",
-        "preview": "Güvenlik +5, Otorite +8 | Adalet -4, Halk -7, Hazine -2",
-        "effects": {
-          "justice": -4,
-          "people": -7,
-          "treasury": -2,
+          "justice": 6,
+          "people": 9,
+          "treasury": -3,
           "military": 5,
           "authority": 8
         },
-        "log": "Maç günleri asayiş sağlandı; holigan grupların sokak çatışması çıkarması önlendi."
+        "log": "Avrupa sokaklarındaki yüz binlerce Türk vatandaşının can güvenliği sağlandı; provokasyonlar bastırıldı."
       },
       {
-        "label": "Milli spor teşkilatını profesyonel standartlara kavuşturan 'Beden Eğitimi ve Spor Federasyonları Kanunu' çıkar.",
-        "preview": "Adalet +7, Halk +8, Otorite +5 | Hazine -4",
+        "label": "Avrupa çapındaki Türk dernekleri ve konsolosluklar aracılığıyla taşkınlık ve provokasyona karşı sağduyu seferberliği başlat.",
+        "preview": "Adalet +7, Halk +8, Otorite +6 | Hazine -1",
         "effects": {
           "justice": 7,
           "people": 8,
-          "treasury": -4,
+          "treasury": -1,
           "military": 0,
-          "authority": 5
+          "authority": 6
         },
-        "log": "Spor yönetimi modernleştirildi; federasyonların özerkliği ve denetimi kanunla sağlandı."
+        "log": "Gurbetçilerimiz vakarla ve coşkuyla bayram havası yaşadı; ırkçıların sokak çatışması tuzağı bozuldu."
+      },
+      {
+        "label": "Milli maçın dev ekranlarda elçilik ve konsolosluk bahçelerinde izlenmesini sağlayarak toplu güvenli toplanma alanları oluştur.",
+        "preview": "Adalet +6, Halk +8, Güvenlik +2, Otorite +6 | Hazine -2",
+        "effects": {
+          "justice": 6,
+          "people": 8,
+          "treasury": -2,
+          "military": 2,
+          "authority": 6
+        },
+        "log": "Taraftarlar güvenli alanlarda tek yürek oldu, asayiş sorunsuz korundu."
+      },
+      {
+        "label": "Irkçı örgütlerin sosyal medya provokasyonlarını siber istihbaratla deşifre edip Avrupa makamlarına resmi nota ile ilet.",
+        "preview": "Adalet +8, Halk +6, Güvenlik +3, Otorite +7",
+        "effects": {
+          "justice": 8,
+          "people": 6,
+          "treasury": 0,
+          "military": 3,
+          "authority": 7
+        },
+        "log": "Avusturya ve İsviçre polisi ırkçı elebaşlarını maçtan önce gözaltına almak zorunda kaldı."
+      },
+      {
+        "label": "Turnuva sonrasında Avrupa'daki gurbetçilerin haklarını koruyacak daimi 'Yurt Dışı Vatandaşlar Kriz Masası' kur.",
+        "preview": "Adalet +7, Halk +8, Otorite +7 | Hazine -3",
+        "effects": {
+          "justice": 7,
+          "people": 8,
+          "treasury": -3,
+          "military": 0,
+          "authority": 7
+        },
+        "log": "Avrupa Türk toplumunun kurumsal temsili ve hukuki güvenliği güçlendirildi."
       }
     ]
   },
@@ -53052,23 +53052,23 @@ const EVENT_DECK_MODERN = [
       }
     ],
     "source": "Gençlik ve Spor Bakanlığı & TFF",
-    "title": "A Milli Kadın Voleybol Takımı (Filenin Sultanları) Avrupa Şampiyonu",
-    "desc": "Brüksel'de Sırbistan'ı 3-2 yenen Filenin Sultanları 2023 CEV Avrupa Şampiyonu ve VNL şampiyonu oldu.",
+    "title": "Uluslararası Voleybol Şampiyonası Öncesi Brüksel'de Aşırı Sağcı Provokasyon Tehdidi",
+    "desc": "A Milli Kadın Voleybol Takımı Avrupa Şampiyonası finali için Brüksel'e giderken; yabancı istihbarat destekli ırkçı ve İslamofobik grupların salonda Türk bayrağına ve milli marşa saldırı planladığı MİT Dış Operasyonlar Başkanlığı tarafından tespit edildi.",
     "options": [
       {
-        "label": "Olimpiyat ve Avrupa şampiyonu sporcularımızın dünya rekorlarını ve başarılarını uluslararası tescile bağla.",
-        "preview": "Adalet +8, Halk +5, Hazine +2, Otorite +6",
+        "label": "Belçika İçişleri Bakanlığı ve Avrupa Voleybol Konfederasyonu'na (CEV) resmi diplomatik nota vererek salon güvenliğini şart koş.",
+        "preview": "Adalet +9, Halk +8, Otorite +3 | Hazine -2",
         "effects": {
-          "justice": 8,
-          "people": 5,
-          "treasury": 2,
+          "justice": 9,
+          "people": 8,
+          "treasury": -2,
           "military": 0,
-          "authority": 6
+          "authority": 3
         },
-        "log": "Milli sporcuların zaferi tüm dünyada alkışlandı; Türk kadınının ve Türk gençliğinin gücü dünyaya kanıtlandı."
+        "log": "Uluslararası sorumluluk hatırlatıldı; Belçika polisi salonda olağanüstü güvenlik tedbiri aldı."
       },
       {
-        "label": "Brüksel'deki final maçını 81 ilin meydanlarına kurulan dev ekranlarda yüz binlerce vatandaşla birlikte izlet.",
+        "label": "Avrupa'daki Türk sivil toplum örgütleri ve taraftar dernekleriyle toplantı yap; salonda barışçıl ve sağduyulu bir atmosfer sağla.",
         "preview": "Adalet +3, Halk +9, Otorite +6 | Hazine -4",
         "effects": {
           "justice": 3,
@@ -53077,10 +53077,10 @@ const EVENT_DECK_MODERN = [
           "military": 0,
           "authority": 6
         },
-        "log": "Millet ekran başına kilitlendi; Vargas, Eda Erdem ve kızlarımızın zaferi 85 milyonun ortak sevinci oldu."
+        "log": "Türk gurbetçiler salonu kırmızı-beyaza boyadı; provokasyon hevesleri halkın asil duruşuyla boğuldu."
       },
       {
-        "label": "Milli sporculara ömür boyu sporcu şeref aylığı bağla; Anadolu'daki 10 bin köy okuluna voleybol ve okçuluk sahaları aç.",
+        "label": "Şampiyon olan voleybolcularımıza ve genç sporcu altyapısına Hazine bütçesinden Cumhuriyet tarihinin en büyük ödülünü tahsis et.",
         "preview": "Hazine +8, Otorite +4 | Halk -5",
         "effects": {
           "justice": 0,
@@ -53089,31 +53089,31 @@ const EVENT_DECK_MODERN = [
           "military": 0,
           "authority": 4
         },
-        "log": "Geleceğin şampiyonları için altyapı fonu ayrıldı; Hazine kaynakları gençliğin sporla buluşmasına tahsis edildi."
+        "log": "Filenin Sultanları ödüllendirildi; Türkiye'nin kız çocuklarına devasa bir ilham ve spor hamlesi başlatıldı."
       },
       {
-        "label": "Uluslararası turnuvalarda sporcularımıza yönelik siber linç ve provokasyonlara karşı siber polis kalkanı kur.",
-        "preview": "Adalet +3, Güvenlik +4, Otorite +7 | Halk -2, Hazine -3",
+        "label": "Milli sporcuların otelini ve salon girişini korumak için Özel Harekat ve MİT yakın koruma timlerini gizlice Brüksel'e gönder.",
+        "preview": "Adalet +2, Halk +8, Güvenlik +6, Otorite +6 | Hazine -4",
         "effects": {
-          "justice": 3,
-          "people": -2,
-          "treasury": -3,
-          "military": 4,
-          "authority": 7
-        },
-        "log": "Milli sporcuların itibarı korundu; sosyal medyadaki organize saldırılar savcılıkça soruşturuldu."
-      },
-      {
-        "label": "Olimpik branşlarda madalya alan sporculara kalıcı kariyer ve üniversite öğretim üyeliği hakkı tanıyan 'Milli Sporcu Kanunu' çıkar.",
-        "preview": "Adalet +7, Halk +8, Otorite +5 | Hazine -4",
-        "effects": {
-          "justice": 7,
+          "justice": 2,
           "people": 8,
           "treasury": -4,
-          "military": 0,
-          "authority": 5
+          "military": 6,
+          "authority": 6
         },
-        "log": "Olimpiyat şampiyonlarına devlet güvencesi getirildi; Türkiye spor ülkesine dönüştü."
+        "log": "Sporcuların can güvenliği garantiye alındı; hiçbir provokasyona izin verilmeden kupa kaldırıldı."
+      },
+      {
+        "label": "Milli sporcuların uluslararası müsabakalarda diplomatik pasaport ve devlet korumasına alınmasını sağlayan kanun çıkar.",
+        "preview": "Adalet +8, Halk +8, Güvenlik +1, Otorite +6 | Hazine -4",
+        "effects": {
+          "justice": 8,
+          "people": 8,
+          "treasury": -4,
+          "military": 1,
+          "authority": 6
+        },
+        "log": "Milli sporcular devlet himayesine alındı; Türkiye Avrupa'nın zirvesine gururla oturdu."
       }
     ]
   },
@@ -53208,11 +53208,11 @@ const EVENT_DECK_MODERN = [
       }
     ],
     "source": "Gençlik ve Spor Bakanlığı & TFF",
-    "title": "Mete Gazoz'un Tokyo 2020 Olimpiyat Şampiyonluğu",
-    "desc": "Klasik yay okçulukta altın madalya kazanan Mete Gazoz ardından 2023'te Dünya Şampiyonu oldu.",
+    "title": "Tokyo Olimpiyatları Öncesi Gizli Doping Kumpası ve WADA Siyasi Şantajı",
+    "desc": "Dünya okçuluk şampiyonu Mete Gazoz ve milli güreşçilerin şampiyonluğu öncesinde, Dünya Anti-Doping Ajansı (WADA) içerisindeki yabancı kliklerin Türk sporcularının numunelerine gizlice yasaklı madde bulaştırma girişimi MİT tarafından deşifre edildi.",
     "options": [
       {
-        "label": "Olimpiyat ve Avrupa şampiyonu sporcularımızın dünya rekorlarını ve başarılarını uluslararası tescile bağla.",
+        "label": "Uluslararası Spor Tahkim Mahkemesi'ne (CAS) ve Uluslararası Olimpiyat Komitesi'ne (IOC) kriminal delillerle acil başvuru yap.",
         "preview": "Adalet +8, Halk +5, Hazine +2, Otorite +6",
         "effects": {
           "justice": 8,
@@ -53221,34 +53221,34 @@ const EVENT_DECK_MODERN = [
           "military": 0,
           "authority": 6
         },
-        "log": "Milli sporcuların zaferi tüm dünyada alkışlandı; Türk kadınının ve Türk gençliğinin gücü dünyaya kanıtlandı."
+        "log": "Kumpas uluslararası mahkemede belgelendi; Türk kafilesine yönelik komplo çökertildi."
       },
       {
-        "label": "Brüksel'deki final maçını 81 ilin meydanlarına kurulan dev ekranlarda yüz binlerce vatandaşla birlikte izlet.",
-        "preview": "Adalet +2, Halk +9, Hazine +4, Güvenlik +2, Otorite +5",
+        "label": "WADA Başkanı ve bağımsız tıp kurullarıyla Tokyo'da istişare heyeti topla; numune testlerinin çift kör hakemlerle yapılmasını sağla.",
+        "preview": "Adalet +2, Halk +8, Otorite +5 | Hazine -2",
         "effects": {
           "justice": 2,
-          "people": 9,
-          "treasury": 4,
-          "military": 2,
+          "people": 8,
+          "treasury": -2,
+          "military": 0,
           "authority": 5
         },
-        "log": "Millet ekran başına kilitlendi; Vargas, Eda Erdem ve kızlarımızın zaferi 85 milyonun ortak sevinci oldu."
+        "log": "Tarafsız testler kabul edildi; sporcularımızın alın teri ve temizliği tüm dünyaya kanıtlandı."
       },
       {
-        "label": "Milli sporculara ömür boyu sporcu şeref aylığı bağla; Anadolu'daki 10 bin köy okuluna voleybol ve okçuluk sahaları aç.",
-        "preview": "Hazine +8, Otorite +4 | Halk -5",
+        "label": "Milli Sporcu Gelişim ve Tıbbi İzleme Merkezi'ni kurarak Hazine'den modern bağımsız biyokimya laboratuvarı finanse et.",
+        "preview": "Adalet +2, Halk +8, Otorite +4 | Hazine -6",
         "effects": {
-          "justice": 0,
-          "people": -5,
-          "treasury": 8,
+          "justice": 2,
+          "people": 8,
+          "treasury": -6,
           "military": 0,
           "authority": 4
         },
-        "log": "Geleceğin şampiyonları için altyapı fonu ayrıldı; Hazine kaynakları gençliğin sporla buluşmasına tahsis edildi."
+        "log": "Doping şantajına milli bilim kalkanı kuruldu; yabancı laboratuvarlara bağımlılık bitti."
       },
       {
-        "label": "Uluslararası turnuvalarda sporcularımıza yönelik siber linç ve provokasyonlara karşı siber polis kalkanı kur.",
+        "label": "Milli kafileye tahsis edilen gıda ve takviye depolarına yabancı ajanların yaklaşmasını önlemek için özel güvenlik timi koy.",
         "preview": "Adalet +3, Güvenlik +4, Otorite +7 | Halk -2, Hazine -3",
         "effects": {
           "justice": 3,
@@ -53257,19 +53257,19 @@ const EVENT_DECK_MODERN = [
           "military": 4,
           "authority": 7
         },
-        "log": "Milli sporcuların itibarı korundu; sosyal medyadaki organize saldırılar savcılıkça soruşturuldu."
+        "log": "Gıda ve içecek sabotajı engellendi; Mete Gazoz altın madalyayı boynuna takarak tarihe geçti."
       },
       {
-        "label": "Olimpik branşlarda madalya alan sporculara kalıcı kariyer ve üniversite öğretim üyeliği hakkı tanıyan 'Milli Sporcu Kanunu' çıkar.",
-        "preview": "Adalet +7, Halk +8, Otorite +5 | Hazine -4",
+        "label": "Milli sporculara komplo kuran kişi ve yabancı ajanlara karşı Türkiye'de ağır ceza öngören 'Spor Güvenliği Kanunu' çıkar.",
+        "preview": "Adalet +7, Halk +5, Otorite +6 | Hazine -4",
         "effects": {
           "justice": 7,
-          "people": 8,
+          "people": 5,
           "treasury": -4,
           "military": 0,
-          "authority": 5
+          "authority": 6
         },
-        "log": "Olimpiyat şampiyonlarına devlet güvencesi getirildi; Türkiye spor ülkesine dönüştü."
+        "log": "Milli sporcular hukuki güvenceye kavuştu; olimpiyatlarda peş peşe rekorlar kırıldı."
       }
     ]
   },
@@ -53364,68 +53364,68 @@ const EVENT_DECK_MODERN = [
       }
     ],
     "source": "Gençlik ve Spor Bakanlığı & TFF",
-    "title": "Naim Süleymanoğlu'nun Atlanta 1996'da 3. Olimpiyat Altını",
-    "desc": "Cep Herkülü üst üste üçüncü kez olimpiyat şampiyonu olarak dünya spor tarihine adını altın harflerle yazdırdı.",
+    "title": "Naim Süleymanoğlu'nun Bulgaristan'dan Türkiye'ye Kaçırılması: MİT Örtülü Sınır Operasyonu",
+    "desc": "Jivkov diktatörlüğünün Türklere uyguladığı asimilasyon ve zulmü dünyaya duyurmak isteyen dünya rekortmeni halterci Naim Süleymanoğlu'nun Avustralya'dan Türkiye'ye kaçırılması için MİT ve Başbakanlık örtülü ödenekle tarihi bir istihbarat operasyonu başlattı. Bulgar ve Sovyet ajanları peşinde.",
     "options": [
       {
-        "label": "Spor müsabakalarında Fair-Play, spor ahlakı ve federasyon kurallarını tavizsiz uygula.",
-        "preview": "Adalet +8, Halk +6, Otorite +2 | Hazine -2",
+        "label": "Naim'in Türkiye Cumhuriyeti vatandaşlığına kabulünü ve Bulgaristan'ın insan hakları ihlallerini BM Güvenlik Konseyi'ne taşı.",
+        "preview": "Adalet +9, Halk +8, Otorite +3 | Hazine -2",
         "effects": {
-          "justice": 8,
-          "people": 6,
+          "justice": 9,
+          "people": 8,
           "treasury": -2,
           "military": 0,
-          "authority": 2
+          "authority": 3
         },
-        "log": "Sporda dürüstlük ve kurallar korundu; haksız rekabet ve kural ihlalleri cezalandırıldı."
+        "log": "Bulgaristan'ın Türk soydaşlarımıza yaptığı zulüm dünya gündemine oturdu; Türkiye meşru liderliğini gösterdi."
       },
       {
-        "label": "Kulüpler Birliği, sporcular ve taraftar dernekleriyle diyalog kurarak tribünlerde dostluk iklimi sağla.",
-        "preview": "Adalet +2, Halk +8, Otorite +5 | Hazine -2",
+        "label": "Avustralya hükümeti ve İngiltere ile perde arkasında diplomatik uzlaşma sağla; diplomatik kurye statüsüyle Naim'i tahliye et.",
+        "preview": "Adalet +3, Halk +6, Hazine +3, Otorite +7",
+        "effects": {
+          "justice": 3,
+          "people": 6,
+          "treasury": 3,
+          "military": 0,
+          "authority": 7
+        },
+        "log": "Müttefiklerle gizli mutabakat sağlandı; Melbourne'den Londra'ya uzanan rota açıldı."
+      },
+      {
+        "label": "Naim'in olimpiyatlarda Türkiye adına yarışabilmesi için Bulgaristan Halter Federasyonu'na Hazine'den 1 milyon dolar tazminat öde.",
+        "preview": "Adalet +2, Halk +8, Otorite +4 | Hazine -6",
         "effects": {
           "justice": 2,
           "people": 8,
-          "treasury": -2,
-          "military": 0,
-          "authority": 5
-        },
-        "log": "Tribün gerilimi düşürüldü; sporun birleştirici ve kardeşlik ruhu öne çıkarıldı."
-      },
-      {
-        "label": "Amatör spor kulüpleri ve olimpiyat hazırlık merkezleri için Hazine destekli sporcu bursu tahsis et.",
-        "preview": "Hazine +8, Otorite +4 | Halk -5",
-        "effects": {
-          "justice": 0,
-          "people": -5,
-          "treasury": 8,
+          "treasury": -6,
           "military": 0,
           "authority": 4
         },
-        "log": "Altyapıya kaynak sağlandı; binlerce genç yetenek Türk sporuna kazandırıldı."
+        "log": "Uluslararası yarışma hakkı satın alındı; Naim Atlanta ve Seul'de Türkiye için dünya rekorları kırdı."
       },
       {
-        "label": "Derbi maçları ve deplasman yasaklarında stadyum çevrelerinde polis asayiş çemberini sıkı tut.",
-        "preview": "Güvenlik +5, Otorite +8 | Adalet -4, Halk -7, Hazine -2",
+        "label": "MİT özel operasyon timleriyle Naim'i Başbakan Turgut Özal'ın özel uçağı 'DAP' ile Londra'dan gizlice Ankara'ya kaçır.",
+        "preview": "Adalet +3, Güvenlik +4, Otorite +7 | Halk -2, Hazine -3",
         "effects": {
-          "justice": -4,
-          "people": -7,
-          "treasury": -2,
-          "military": 5,
-          "authority": 8
+          "justice": 3,
+          "people": -2,
+          "treasury": -3,
+          "military": 4,
+          "authority": 7
         },
-        "log": "Maç günleri asayiş sağlandı; holigan grupların sokak çatışması çıkarması önlendi."
+        "log": "Dünya istihbarat tarihinin en başarılı tahliyesi yapıldı; Cep Herkülü ana vatanına sağ salim kavuştu."
       },
       {
-        "label": "Milli spor teşkilatını profesyonel standartlara kavuşturan 'Beden Eğitimi ve Spor Federasyonları Kanunu' çıkar.",
-        "preview": "Adalet +7, Halk +8, Otorite +5 | Hazine -4",
+        "label": "Soydaş sporcuların ve sığınmacıların vatandaşlık ve spor hakkını güvenceye alan 'Milli Kahramanlar Koruma Kanunu' çıkar.",
+        "preview": "Adalet +7, Halk +5, Otorite +6 | Hazine -4",
         "effects": {
           "justice": 7,
-          "people": 8,
+          "people": 5,
           "treasury": -4,
           "military": 0,
-          "authority": 5
+          "authority": 6
         },
-        "log": "Spor yönetimi modernleştirildi; federasyonların özerkliği ve denetimi kanunla sağlandı."
+        "log": "Naim Süleymanoğlu üst üste 3 olimpiyat altını alarak Türk milletinin direniş sembolü oldu."
       }
     ]
   },
@@ -53511,77 +53511,77 @@ const EVENT_DECK_MODERN = [
     "id": "tr_vaka_687",
     "characters": [
       {
-        "id": "char_cumhurbaskani",
-        "name": "Cumhurbaşkanı"
+        "id": "char_genclik_spor_bakani",
+        "name": "Gençlik ve Spor Bakanı"
       },
       {
-        "id": "char_icisleri_bakani",
-        "name": "İçişleri Bakanı"
+        "id": "char_disisleri_bakani",
+        "name": "Dışişleri Bakanı"
       }
     ],
     "source": "Gençlik ve Spor Bakanlığı & TFF",
-    "title": "Rıza Kayaalp ve Taha Akgül'ün Güreşte Rekor Şampiyonlukları",
-    "desc": "Grekoromen ve serbest stilde onlarca Avrupa ve Dünya şampiyonluğu kazanan güreşçiler olimpiyat madalyaları aldı.",
+    "title": "Uluslararası Güreş Lobisi ve Türk Sporcularına Hakem Şaibesi Baskısı",
+    "desc": "Olimpiyat ve dünya şampiyonalarında Türk ağır sıklet şampiyonlarının altın madalyalarını engellemek için Doğu Bloku hakem komitelerinin organize kural ihlalleri kurguladığı rapor edildi.",
     "options": [
       {
-        "label": "Spor müsabakalarında Fair-Play, spor ahlakı ve federasyon kurallarını tavizsiz uygula.",
-        "preview": "Adalet +8, Halk +6, Otorite +2 | Hazine -2",
+        "label": "Hakemlerin şaibeli kararlarını saniye saniye analiz eden video-istihbarat dosyasıyla UWW Tahkim Kurulu'na acil itirazda bulun.",
+        "preview": "Adalet +9, Halk +8, Otorite +7 | Hazine -2",
         "effects": {
-          "justice": 8,
-          "people": 6,
-          "treasury": -2,
-          "military": 0,
-          "authority": 2
-        },
-        "log": "Sporda dürüstlük ve kurallar korundu; haksız rekabet ve kural ihlalleri cezalandırıldı."
-      },
-      {
-        "label": "Kulüpler Birliği, sporcular ve taraftar dernekleriyle diyalog kurarak tribünlerde dostluk iklimi sağla.",
-        "preview": "Adalet +2, Halk +8, Otorite +5 | Hazine -2",
-        "effects": {
-          "justice": 2,
+          "justice": 9,
           "people": 8,
           "treasury": -2,
           "military": 0,
-          "authority": 5
+          "authority": 7
         },
-        "log": "Tribün gerilimi düşürüldü; sporun birleştirici ve kardeşlik ruhu öne çıkarıldı."
+        "log": "Şaibeli hakem puanları tahkimde iptal edildi; şampiyonlarımızın hakkı masada yedirilmedi."
       },
       {
-        "label": "Amatör spor kulüpleri ve olimpiyat hazırlık merkezleri için Hazine destekli sporcu bursu tahsis et.",
-        "preview": "Hazine +8, Otorite +4 | Halk -5",
-        "effects": {
-          "justice": 0,
-          "people": -5,
-          "treasury": 8,
-          "military": 0,
-          "authority": 4
-        },
-        "log": "Altyapıya kaynak sağlandı; binlerce genç yetenek Türk sporuna kazandırıldı."
-      },
-      {
-        "label": "Derbi maçları ve deplasman yasaklarında stadyum çevrelerinde polis asayiş çemberini sıkı tut.",
-        "preview": "Güvenlik +5, Otorite +8 | Adalet -4, Halk -7, Hazine -2",
-        "effects": {
-          "justice": -4,
-          "people": -7,
-          "treasury": -2,
-          "military": 5,
-          "authority": 8
-        },
-        "log": "Maç günleri asayiş sağlandı; holigan grupların sokak çatışması çıkarması önlendi."
-      },
-      {
-        "label": "Milli spor teşkilatını profesyonel standartlara kavuşturan 'Beden Eğitimi ve Spor Federasyonları Kanunu' çıkar.",
-        "preview": "Adalet +7, Halk +8, Otorite +5 | Hazine -4",
+        "label": "Türk güreş lobisini uluslararası federasyon karar organlarına yerleştirmek için diplomatik spor ataşeliği hamlesi başlat.",
+        "preview": "Adalet +7, Halk +7, Otorite +7 | Hazine -4",
         "effects": {
           "justice": 7,
-          "people": 8,
+          "people": 7,
           "treasury": -4,
           "military": 0,
-          "authority": 5
+          "authority": 7
         },
-        "log": "Spor yönetimi modernleştirildi; federasyonların özerkliği ve denetimi kanunla sağlandı."
+        "log": "Uluslararası komitelerde söz sahibi olundu; lobi kumpasları içeriden engellendi."
+      },
+      {
+        "label": "Milli güreşçilerimize hakem kararına yer bırakmayacak mutlak tuş ve ezici teknik üstünlük taktikleri aşıla.",
+        "preview": "Adalet +6, Halk +9, Otorite +6 | Hazine -1",
+        "effects": {
+          "justice": 6,
+          "people": 9,
+          "treasury": -1,
+          "military": 0,
+          "authority": 6
+        },
+        "log": "Sporcularımız minderde rakiplerini sürklase etti; altın madalyalar göğsümüzü kabarttı."
+      },
+      {
+        "label": "Skandal hakem kararlarını dünya basınına video kanıtlarla servis ederek taraflı jürinin lisansını iptal ettir.",
+        "preview": "Adalet +8, Halk +7, Otorite +6",
+        "effects": {
+          "justice": 8,
+          "people": 7,
+          "treasury": 0,
+          "military": 0,
+          "authority": 6
+        },
+        "log": "Taraflı hakemlerin lisansları donduruldu, uluslararası güreşte temizlik başladı."
+      },
+      {
+        "label": "Ata sporu güreşte tam bağımsız uluslararası hakem yetiştirme enstitüsü açarak dünya güreşinde tarafsızlığı savun.",
+        "preview": "Adalet +7, Halk +7, Otorite +6 | Hazine -3",
+        "effects": {
+          "justice": 7,
+          "people": 7,
+          "treasury": -3,
+          "military": 0,
+          "authority": 6
+        },
+        "log": "Türkiye güreş dünyasında adaletin ve liyakatin küresel merkezi konumuna yükseldi."
       }
     ]
   },
@@ -53667,77 +53667,77 @@ const EVENT_DECK_MODERN = [
     "id": "tr_vaka_689",
     "characters": [
       {
-        "id": "char_cumhurbaskani",
-        "name": "Cumhurbaşkanı"
+        "id": "char_genclik_spor_bakani",
+        "name": "Gençlik ve Spor Bakanı"
       },
       {
-        "id": "char_icisleri_bakani",
-        "name": "İçişleri Bakanı"
+        "id": "char_adalet_bakani",
+        "name": "Adalet Bakanı"
       }
     ],
     "source": "Gençlik ve Spor Bakanlığı & TFF",
-    "title": "Busenaz Sürmeneli ve Buse Naz Çakıroğlu'nun Boks Zaferleri",
-    "desc": "Tokyo'da olimpiyat şampiyonu olan boksör kadınlarımız Türk sporunda tarihi bir çığır açtı.",
+    "title": "Uluslararası Boks Federasyonunda Rüşvet Skandalı ve Türk Kadın Boksörlerin Hakkı",
+    "desc": "Dünya şampiyonası öncesinde uluslararası boks organizasyonunda dönen rüşvet çarkı sebebiyle Türk sporcuların puanlarının silinmesi ve madalya kumpası istihbarat edildi.",
     "options": [
       {
-        "label": "Spor müsabakalarında Fair-Play, spor ahlakı ve federasyon kurallarını tavizsiz uygula.",
-        "preview": "Adalet +8, Halk +6, Otorite +2 | Hazine -2",
+        "label": "Uluslararası Olimpiyat Komitesi (IOC) nezdinde rüşvet şebekesini belgeleyen gizli mali raporları masaya koyup adaleti sağla.",
+        "preview": "Adalet +9, Halk +8, Otorite +8 | Hazine -1",
+        "effects": {
+          "justice": 9,
+          "people": 8,
+          "treasury": -1,
+          "military": 0,
+          "authority": 8
+        },
+        "log": "Şaibeli federasyon yönetimi görevden el çektirildi; kadın boksörlerimizin altın madalyası teslim edildi."
+      },
+      {
+        "label": "Milli sporcuların haksız puan kaybını önlemek için ringde nakavt odaklı agresif dövüş stratejisine geçiş emri ver.",
+        "preview": "Adalet +6, Halk +9, Otorite +6",
+        "effects": {
+          "justice": 6,
+          "people": 9,
+          "treasury": 0,
+          "military": 0,
+          "authority": 6
+        },
+        "log": "Boksörlerimiz rakiplerini nakavtla devirerek jürinin puan oyunlarına şans tanımadı."
+      },
+      {
+        "label": "Türkiye'nin ev sahipliğinde temiz, bağımsız ve rüşvetsiz uluslararası kadın boks turnuvası organize et.",
+        "preview": "Adalet +7, Halk +8, Otorite +6 | Hazine -5",
+        "effects": {
+          "justice": 7,
+          "people": 8,
+          "treasury": -5,
+          "military": 0,
+          "authority": 6
+        },
+        "log": "İstanbul kadın boksunda dünya zirvesi oldu; küresel spor kamuoyu Türkiye'yi alkışladı."
+      },
+      {
+        "label": "Haksız kararlara imza atan yabancı jüri üyelerinin Türkiye'deki müsabakalara akreditasyonunu süresiz iptal et.",
+        "preview": "Adalet +8, Halk +6, Otorite +7",
+        "effects": {
+          "justice": 8,
+          "people": 6,
+          "treasury": 0,
+          "military": 0,
+          "authority": 7
+        },
+        "log": "Haksızlık yapan jüri üyelerine Türkiye kapıları kapatıldı."
+      },
+      {
+        "label": "Sporda uluslararası adalet için spor hukuku uzmanlarından oluşan özel bir 'Milli Hak Koruma Komisyonu' kur.",
+        "preview": "Adalet +8, Halk +6, Otorite +6 | Hazine -2",
         "effects": {
           "justice": 8,
           "people": 6,
           "treasury": -2,
           "military": 0,
-          "authority": 2
-        },
-        "log": "Sporda dürüstlük ve kurallar korundu; haksız rekabet ve kural ihlalleri cezalandırıldı."
-      },
-      {
-        "label": "Kulüpler Birliği, sporcular ve taraftar dernekleriyle diyalog kurarak tribünlerde dostluk iklimi sağla.",
-        "preview": "Adalet +3, Halk +9, Otorite +6 | Hazine -4",
-        "effects": {
-          "justice": 3,
-          "people": 9,
-          "treasury": -4,
-          "military": 0,
           "authority": 6
         },
-        "log": "Tribün gerilimi düşürüldü; sporun birleştirici ve kardeşlik ruhu öne çıkarıldı."
-      },
-      {
-        "label": "Amatör spor kulüpleri ve olimpiyat hazırlık merkezleri için Hazine destekli sporcu bursu tahsis et.",
-        "preview": "Hazine +8, Otorite +4 | Halk -5",
-        "effects": {
-          "justice": 0,
-          "people": -5,
-          "treasury": 8,
-          "military": 0,
-          "authority": 4
-        },
-        "log": "Altyapıya kaynak sağlandı; binlerce genç yetenek Türk sporuna kazandırıldı."
-      },
-      {
-        "label": "Derbi maçları ve deplasman yasaklarında stadyum çevrelerinde polis asayiş çemberini sıkı tut.",
-        "preview": "Güvenlik +5, Otorite +8 | Adalet -4, Halk -7, Hazine -2",
-        "effects": {
-          "justice": -4,
-          "people": -7,
-          "treasury": -2,
-          "military": 5,
-          "authority": 8
-        },
-        "log": "Maç günleri asayiş sağlandı; holigan grupların sokak çatışması çıkarması önlendi."
-      },
-      {
-        "label": "Milli spor teşkilatını profesyonel standartlara kavuşturan 'Beden Eğitimi ve Spor Federasyonları Kanunu' çıkar.",
-        "preview": "Adalet +7, Halk +8, Otorite +5 | Hazine -4",
-        "effects": {
-          "justice": 7,
-          "people": 8,
-          "treasury": -4,
-          "military": 0,
-          "authority": 5
-        },
-        "log": "Spor yönetimi modernleştirildi; federasyonların özerkliği ve denetimi kanunla sağlandı."
+        "log": "Milli sporcularımızın tüm uluslararası hakları profesyonel avukat ordusunca korunmaya alındı."
       }
     ]
   },
@@ -53745,77 +53745,77 @@ const EVENT_DECK_MODERN = [
     "id": "tr_vaka_690",
     "characters": [
       {
-        "id": "char_cumhurbaskani",
-        "name": "Cumhurbaşkanı"
+        "id": "char_savunma_bakani",
+        "name": "Milli Savunma Bakanı"
       },
       {
-        "id": "char_icisleri_bakani",
-        "name": "İçişleri Bakanı"
+        "id": "char_genclik_spor_bakani",
+        "name": "Gençlik ve Spor Bakanı"
       }
     ],
     "source": "Gençlik ve Spor Bakanlığı & TFF",
-    "title": "Ampute Futbol Milli Takımı'nın 2022 Dünya Şampiyonluğu",
-    "desc": "İstanbul'da Angola'yı yenerek Dünya Kupası'nı kaldıran milli takım azmin ve inancın sembolü oldu.",
+    "title": "Gazilerin Sporda Rehabilitasyonu ve Ampute Futbolun Yumuşak Güç Stratejisi",
+    "desc": "Terörle mücadelede uzuvlarını kaybeden Mehmetçiklerin hayata tutunması için kurulan ampute sporların dünya şampiyonluğu yolunda karşılaştığı tesis yetersizliği ve uluslararası lobi engeli kriz yarattı.",
     "options": [
       {
-        "label": "Spor müsabakalarında Fair-Play, spor ahlakı ve federasyon kurallarını tavizsiz uygula.",
-        "preview": "Adalet +8, Halk +6, Otorite +2 | Hazine -2",
+        "label": "TSK Rehabilitasyon Merkezi ve Gençlik Spor bünyesinde dünya standartlarında ampute spor olimpiyat köyü inşa et.",
+        "preview": "Adalet +8, Halk +9, Güvenlik +5, Otorite +7 | Hazine -6",
         "effects": {
           "justice": 8,
-          "people": 6,
-          "treasury": -2,
-          "military": 0,
-          "authority": 2
-        },
-        "log": "Sporda dürüstlük ve kurallar korundu; haksız rekabet ve kural ihlalleri cezalandırıldı."
-      },
-      {
-        "label": "Kulüpler Birliği, sporcular ve taraftar dernekleriyle diyalog kurarak tribünlerde dostluk iklimi sağla.",
-        "preview": "Adalet +2, Halk +8, Otorite +5 | Hazine -2",
-        "effects": {
-          "justice": 2,
-          "people": 8,
-          "treasury": -2,
-          "military": 0,
-          "authority": 5
-        },
-        "log": "Tribün gerilimi düşürüldü; sporun birleştirici ve kardeşlik ruhu öne çıkarıldı."
-      },
-      {
-        "label": "Amatör spor kulüpleri ve olimpiyat hazırlık merkezleri için Hazine destekli sporcu bursu tahsis et.",
-        "preview": "Hazine +8, Otorite +4 | Halk -5",
-        "effects": {
-          "justice": 0,
-          "people": -5,
-          "treasury": 8,
-          "military": 0,
-          "authority": 4
-        },
-        "log": "Altyapıya kaynak sağlandı; binlerce genç yetenek Türk sporuna kazandırıldı."
-      },
-      {
-        "label": "Derbi maçları ve deplasman yasaklarında stadyum çevrelerinde polis asayiş çemberini sıkı tut.",
-        "preview": "Güvenlik +5, Otorite +8 | Adalet -4, Halk -7, Hazine -2",
-        "effects": {
-          "justice": -4,
-          "people": -7,
-          "treasury": -2,
+          "people": 9,
+          "treasury": -6,
           "military": 5,
-          "authority": 8
+          "authority": 7
         },
-        "log": "Maç günleri asayiş sağlandı; holigan grupların sokak çatışması çıkarması önlendi."
+        "log": "Gazilerimiz için dünyanın en modern spor tesisi kuruldu; ampute futbolcularımız destan yazdı."
       },
       {
-        "label": "Milli spor teşkilatını profesyonel standartlara kavuşturan 'Beden Eğitimi ve Spor Federasyonları Kanunu' çıkar.",
-        "preview": "Adalet +7, Halk +8, Otorite +5 | Hazine -4",
+        "label": "Türkiye'yi engelli ve ampute sporların küresel başkenti ilan ederek Dünya Şampiyonası'na İstanbul'da ev sahipliği yap.",
+        "preview": "Adalet +7, Halk +9, Güvenlik +3, Otorite +8 | Hazine -5",
         "effects": {
           "justice": 7,
-          "people": 8,
-          "treasury": -4,
-          "military": 0,
-          "authority": 5
+          "people": 9,
+          "treasury": -5,
+          "military": 3,
+          "authority": 8
         },
-        "log": "Spor yönetimi modernleştirildi; federasyonların özerkliği ve denetimi kanunla sağlandı."
+        "log": "Dünya Kupası İstanbul'da kaldırıldı; Türkiye engelli sporlarında küresel lider oldu."
+      },
+      {
+        "label": "Gazilerin tüm spor teçhizat ve ileri teknoloji biyonik protez masraflarını Savunma Sanayii Fonu'ndan karşıla.",
+        "preview": "Adalet +8, Halk +9, Güvenlik +6, Otorite +6 | Hazine -5",
+        "effects": {
+          "justice": 8,
+          "people": 9,
+          "treasury": -5,
+          "military": 6,
+          "authority": 6
+        },
+        "log": "Mehmetçiğe vefa borcu ödendi; yerli biyonik protez sanayii büyük ivme kazandı."
+      },
+      {
+        "label": "Ampute milli takımının destansı mücadelesini dünya çapında bir diplomasi ve soft-power belgeseli olarak tüm ülkelere dağıt.",
+        "preview": "Adalet +6, Halk +8, Güvenlik +2, Otorite +7 | Hazine -3",
+        "effects": {
+          "justice": 6,
+          "people": 8,
+          "treasury": -3,
+          "military": 2,
+          "authority": 7
+        },
+        "log": "Türkiye'nin insani ve azimli duruşu dünya kamuoyunda büyük sempati ve saygı kazandı."
+      },
+      {
+        "label": "Özel sektör sponsorluklarını zorunlu sosyal sorumluluk kapsamına alarak gazilerimize ömür boyu sporcu maaşı bağla.",
+        "preview": "Adalet +8, Halk +8, Hazine +1, Güvenlik +4, Otorite +6",
+        "effects": {
+          "justice": 8,
+          "people": 8,
+          "treasury": 1,
+          "military": 4,
+          "authority": 6
+        },
+        "log": "Gazilerimizin ekonomik güvencesi kalıcı kanuni teminata bağlandı."
       }
     ]
   },
@@ -53823,77 +53823,77 @@ const EVENT_DECK_MODERN = [
     "id": "tr_vaka_691",
     "characters": [
       {
-        "id": "char_cumhurbaskani",
-        "name": "Cumhurbaşkanı"
+        "id": "char_disisleri_bakani",
+        "name": "Dışişleri Bakanı"
       },
       {
-        "id": "char_icisleri_bakani",
-        "name": "İçişleri Bakanı"
+        "id": "char_genclik_spor_bakani",
+        "name": "Gençlik ve Spor Bakanı"
       }
     ],
     "source": "Gençlik ve Spor Bakanlığı & TFF",
-    "title": "Anadolu Efes ve Fenerbahçe Beko'nun Basketbol EuroLeague Zaferleri",
-    "desc": "Ergin Ataman ve Zeljko Obradovic yönetiminde Türk takımları Avrupa'nın en büyük basketbol kupasını kazandı.",
+    "title": "EuroLeague Basketbol Maçlarında Türk Bayrağına Saldırılar ve Deplasman Güvenliği",
+    "desc": "Atina ve Tel Aviv deplasmanlarında radikal taraftar gruplarının Türk bayrağı yakma, takıma fiili saldırı ve siyasi provokasyon hazırlığı istihbarat edildi.",
     "options": [
       {
-        "label": "Spor müsabakalarında Fair-Play, spor ahlakı ve federasyon kurallarını tavizsiz uygula.",
-        "preview": "Adalet +8, Halk +6, Otorite +2 | Hazine -2",
-        "effects": {
-          "justice": 8,
-          "people": 6,
-          "treasury": -2,
-          "military": 0,
-          "authority": 2
-        },
-        "log": "Sporda dürüstlük ve kurallar korundu; haksız rekabet ve kural ihlalleri cezalandırıldı."
-      },
-      {
-        "label": "Kulüpler Birliği, sporcular ve taraftar dernekleriyle diyalog kurarak tribünlerde dostluk iklimi sağla.",
-        "preview": "Adalet +2, Halk +8, Otorite +5 | Hazine -2",
-        "effects": {
-          "justice": 2,
-          "people": 8,
-          "treasury": -2,
-          "military": 0,
-          "authority": 5
-        },
-        "log": "Tribün gerilimi düşürüldü; sporun birleştirici ve kardeşlik ruhu öne çıkarıldı."
-      },
-      {
-        "label": "Amatör spor kulüpleri ve olimpiyat hazırlık merkezleri için Hazine destekli sporcu bursu tahsis et.",
-        "preview": "Hazine +8, Otorite +4 | Halk -5",
-        "effects": {
-          "justice": 0,
-          "people": -5,
-          "treasury": 8,
-          "military": 0,
-          "authority": 4
-        },
-        "log": "Altyapıya kaynak sağlandı; binlerce genç yetenek Türk sporuna kazandırıldı."
-      },
-      {
-        "label": "Derbi maçları ve deplasman yasaklarında stadyum çevrelerinde polis asayiş çemberini sıkı tut.",
-        "preview": "Güvenlik +5, Otorite +8 | Adalet -4, Halk -7, Hazine -2",
-        "effects": {
-          "justice": -4,
-          "people": -7,
-          "treasury": -2,
-          "military": 5,
-          "authority": 8
-        },
-        "log": "Maç günleri asayiş sağlandı; holigan grupların sokak çatışması çıkarması önlendi."
-      },
-      {
-        "label": "Milli spor teşkilatını profesyonel standartlara kavuşturan 'Beden Eğitimi ve Spor Federasyonları Kanunu' çıkar.",
-        "preview": "Adalet +7, Halk +8, Otorite +5 | Hazine -4",
+        "label": "Dışişleri ve Interpol kanalıyla ev sahibi ülkeye diplomatik nota verip Türk takımı için zırhlı güvenlik koridoru şartı koş.",
+        "preview": "Adalet +7, Halk +8, Güvenlik +4, Otorite +8 | Hazine -1",
         "effects": {
           "justice": 7,
           "people": 8,
-          "treasury": -4,
-          "military": 0,
-          "authority": 5
+          "treasury": -1,
+          "military": 4,
+          "authority": 8
         },
-        "log": "Spor yönetimi modernleştirildi; federasyonların özerkliği ve denetimi kanunla sağlandı."
+        "log": "Diplomatik baskıyla zırhlı güvenlik sağlandı; provokasyonlar başlamadan bastırıldı."
+      },
+      {
+        "label": "EuroLeague yönetimine taahhütname imzalat; salonda en ufak provokasyonda maçı seyircisiz oynatma veya hükmen galibiyet iste.",
+        "preview": "Adalet +8, Halk +7, Otorite +8",
+        "effects": {
+          "justice": 8,
+          "people": 7,
+          "treasury": 0,
+          "military": 0,
+          "authority": 8
+        },
+        "log": "EuroLeague yönetimi salon provokasyonlarına karşı tavizsiz güvenlik kuralları getirdi."
+      },
+      {
+        "label": "Deplasmana giden taraftarlarımızın güvenliği için özel güvenlik ve konsolosluk refakat timleri görevlendir.",
+        "preview": "Adalet +6, Halk +8, Güvenlik +3, Otorite +6 | Hazine -3",
+        "effects": {
+          "justice": 6,
+          "people": 8,
+          "treasury": -3,
+          "military": 3,
+          "authority": 6
+        },
+        "log": "Vatandaşlarımız deplasman tribününde devletin koruyucu gücünü yanında hissetti."
+      },
+      {
+        "label": "Provokasyon yapan holigan grupların liderlerinin Türkiye'ye girişine ve transit geçişine ömür boyu yasak koy.",
+        "preview": "Adalet +7, Halk +6, Güvenlik +3, Otorite +8",
+        "effects": {
+          "justice": 7,
+          "people": 6,
+          "treasury": 0,
+          "military": 3,
+          "authority": 8
+        },
+        "log": "Radikal holiganlara karşı hukuki ve idari yaptırımlar tavizsiz uygulandı."
+      },
+      {
+        "label": "Türk kulüplerinin Avrupa kupalarındaki hakkını korumak için bağımsız tahkim başvurusunu derhal yürürlüğe koy.",
+        "preview": "Adalet +8, Halk +6, Otorite +6 | Hazine -1",
+        "effects": {
+          "justice": 8,
+          "people": 6,
+          "treasury": -1,
+          "military": 0,
+          "authority": 6
+        },
+        "log": "Spor hukukunun tüm imkanları seferber edildi; takımlarımızın sahadaki hakkı masada yedirilmedi."
       }
     ]
   },
@@ -53901,77 +53901,77 @@ const EVENT_DECK_MODERN = [
     "id": "tr_vaka_692",
     "characters": [
       {
-        "id": "char_cumhurbaskani",
-        "name": "Cumhurbaşkanı"
-      },
-      {
         "id": "char_icisleri_bakani",
         "name": "İçişleri Bakanı"
+      },
+      {
+        "id": "char_genclik_spor_bakani",
+        "name": "Gençlik ve Spor Bakanı"
       }
     ],
     "source": "Gençlik ve Spor Bakanlığı & TFF",
-    "title": "Trabzonspor'un 2021-2022 Sezonunda 38 Yıl Sonra Şampiyonluğu",
-    "desc": "Karadeniz fırtınasının şampiyonluk kutlamaları Yenikapı ve Trabzon meydanlarında görsel şölene dönüştü.",
+    "title": "38 Yıl Sonra Gelen Şampiyonlukta Mega Meydan Güvenliği ve Silahla Kutlama Krizi",
+    "desc": "Yüz binlerce taraftarın sokaklara döküldüğü tarihi şampiyonluk kutlamalarında maganda kurşunları, izdiham ve olası provokatif saldırı istihbaratı valiliği alarma geçirdi.",
     "options": [
       {
-        "label": "Spor müsabakalarında Fair-Play, spor ahlakı ve federasyon kurallarını tavizsiz uygula.",
-        "preview": "Adalet +9, Halk +8, Otorite +3 | Hazine -2",
+        "label": "Kutlama meydanlarında havaya ateş açanlara sıfır toleransla drone denetimi ve anında adli tutuklama uygula.",
+        "preview": "Adalet +9, Halk +7, Hazine +1, Güvenlik +3, Otorite +9",
         "effects": {
           "justice": 9,
-          "people": 8,
-          "treasury": -2,
-          "military": 0,
-          "authority": 3
+          "people": 7,
+          "treasury": 1,
+          "military": 3,
+          "authority": 9
         },
-        "log": "Sporda dürüstlük ve kurallar korundu; haksız rekabet ve kural ihlalleri cezalandırıldı."
+        "log": "Tek bir vatandaşın burnu kanamadan tarihi şampiyonluk coşkuyla ve vakarla kutlandı."
       },
       {
-        "label": "Kulüpler Birliği, sporcular ve taraftar dernekleriyle diyalog kurarak tribünlerde dostluk iklimi sağla.",
-        "preview": "Adalet +2, Halk +9, Hazine +4, Güvenlik +2, Otorite +5",
+        "label": "Kutlamaları organize festival alanlarına toplayıp ışık şovları ve konserlerle sokak taşkınlıklarını dizginle.",
+        "preview": "Adalet +6, Halk +9, Otorite +7 | Hazine -4",
         "effects": {
-          "justice": 2,
+          "justice": 6,
           "people": 9,
-          "treasury": 4,
-          "military": 2,
-          "authority": 5
-        },
-        "log": "Tribün gerilimi düşürüldü; sporun birleştirici ve kardeşlik ruhu öne çıkarıldı."
-      },
-      {
-        "label": "Amatör spor kulüpleri ve olimpiyat hazırlık merkezleri için Hazine destekli sporcu bursu tahsis et.",
-        "preview": "Hazine +8, Otorite +4 | Halk -5",
-        "effects": {
-          "justice": 0,
-          "people": -5,
-          "treasury": 8,
-          "military": 0,
-          "authority": 4
-        },
-        "log": "Altyapıya kaynak sağlandı; binlerce genç yetenek Türk sporuna kazandırıldı."
-      },
-      {
-        "label": "Derbi maçları ve deplasman yasaklarında stadyum çevrelerinde polis asayiş çemberini sıkı tut.",
-        "preview": "Adalet +2, Halk +8, Güvenlik +6, Otorite +6 | Hazine -4",
-        "effects": {
-          "justice": 2,
-          "people": 8,
           "treasury": -4,
-          "military": 6,
+          "military": 0,
+          "authority": 7
+        },
+        "log": "Dünya basınında ışık şovlarıyla manşet olan medeni bir karnaval havası yakalandı."
+      },
+      {
+        "label": "Kulüp yönetimi ve taraftar dernekleriyle ortak bildiri yayımlayarak 'Silaha hayır, horona evet' disiplini sağla.",
+        "preview": "Adalet +7, Halk +8, Otorite +6",
+        "effects": {
+          "justice": 7,
+          "people": 8,
+          "treasury": 0,
+          "military": 0,
           "authority": 6
         },
-        "log": "Maç günleri asayiş sağlandı; holigan grupların sokak çatışması çıkarması önlendi."
+        "log": "Toplumsal uzlaşma ve sağduyu çağrısı karşılık buldu; silahlar sustu horonlar oynandı."
       },
       {
-        "label": "Milli spor teşkilatını profesyonel standartlara kavuşturan 'Beden Eğitimi ve Spor Federasyonları Kanunu' çıkar.",
-        "preview": "Adalet +8, Halk +8, Güvenlik +1, Otorite +6 | Hazine -4",
+        "label": "Şehir merkezinde alkol ve kontrolsüz piroteknik meşale satışını kutlama gecesi boyunca sıkı denetime al.",
+        "preview": "Adalet +7, Halk +5, Güvenlik +2, Otorite +7",
+        "effects": {
+          "justice": 7,
+          "people": 5,
+          "treasury": 0,
+          "military": 2,
+          "authority": 7
+        },
+        "log": "Yangın ve yaralanma riski minimize edildi, asayiş sağlandı."
+      },
+      {
+        "label": "Asayişi tehlikeye atan holigan elebaşlarını kamera kayıtlarından tespit edip stadyumlardan men cezası ver.",
+        "preview": "Adalet +8, Halk +5, Hazine +1, Otorite +8",
         "effects": {
           "justice": 8,
-          "people": 8,
-          "treasury": -4,
-          "military": 1,
-          "authority": 6
+          "people": 5,
+          "treasury": 1,
+          "military": 0,
+          "authority": 8
         },
-        "log": "Spor yönetimi modernleştirildi; federasyonların özerkliği ve denetimi kanunla sağlandı."
+        "log": "Sporda şiddet üreten unsurlara taviz verilmedi; tribün huzuru korundu."
       }
     ]
   },
@@ -53988,35 +53988,35 @@ const EVENT_DECK_MODERN = [
       }
     ],
     "source": "Gençlik ve Spor Bakanlığı & TFF",
-    "title": "Ankaragücü Başkanı Faruk Koca'nın Hakem Meler'e Yumruğu",
-    "desc": "Çaykur Rizespor maçı bitiminde sahaya inip hakem Halil Umut Meler'e yumruk atan başkan tutuklandı.",
+    "title": "Hakem Halil Umut Meler'e Saldırı: Türk Futbolunun Dünyada İtibar Krizi ve Asayiş Tedbirleri",
+    "desc": "Ankaragücü Başkanı'nın sahaya inip FIFA kokartlı hakeme yumruk atması dünya basınında manşet oldu; FIFA ve UEFA tüm Türk kulüplerini uluslararası turnuvalardan men etme ve 2032 Avrupa Şampiyonası ev sahipliğini iptal etme uyarısında bulundu.",
     "options": [
       {
-        "label": "Hakeme yumruk atan kulüp başkanı ve saldırganlar hakkında 6222 sayılı kanun kapsamında derhal tutuklama kararı çıkar.",
-        "preview": "Adalet +8, Halk +5, Hazine +4, Otorite +4",
+        "label": "Saldırgan kulüp başkanını ve azmettiricileri derhal tutuklatıp Ağır Ceza Mahkemesi'nde kamu görevlisini kasten yaralamaktan yargıla.",
+        "preview": "Adalet +8, Halk +5, Hazine +2, Otorite +6",
         "effects": {
           "justice": 8,
           "people": 5,
-          "treasury": 4,
-          "military": 0,
-          "authority": 4
-        },
-        "log": "Hukuk devleti taviz vermedi; hakem Halil Umut Meler'e saldıran başkan hapse atıldı ve futboldan ömür boyu men edildi."
-      },
-      {
-        "label": "Riyad'da Atatürk pankartına izin verilmeyince maça çıkmayıp dönen Fenerbahçe ve Galatasaray kafilelerini havalimanında bayraklarla karşıla.",
-        "preview": "Adalet +2, Halk +7, Hazine +4, Otorite +6",
-        "effects": {
-          "justice": 2,
-          "people": 7,
-          "treasury": 4,
+          "treasury": 2,
           "military": 0,
           "authority": 6
         },
-        "log": "Milli haysiyet tavizsiz korundu; iki ezeli rakip Cumhuriyetin kurucusuna sahip çıkarak tek yumruk oldu."
+        "log": "Adalet gecikmeden tecelli etti; saldırgan başkan tutuklandı, adli kararlılık uluslararası kamuoyunu teskin etti."
       },
       {
-        "label": "Süper Kupa organizatörlerine sözleşmeye aykırılık gerekçesiyle dava açıp tazminatı ve maç gelirlerini Türkiye'ye aktar.",
+        "label": "Tüm kulüp başkanları, hakemler derneği ve TFF ile Çankaya'da acil 'Sporda Barış ve Sağduyu Zirvesi' topla.",
+        "preview": "Adalet +3, Halk +6, Hazine +3, Otorite +7",
+        "effects": {
+          "justice": 3,
+          "people": 6,
+          "treasury": 3,
+          "military": 0,
+          "authority": 7
+        },
+        "log": "Kulüpler ortak sağduyu deklarasyonu yayımladı; futbol ailesinde tansiyon düşürüldü."
+      },
+      {
+        "label": "Kulüplere uygulanan mali disiplin cezalarını sıkılaştır; şiddete karışan kulüplerin Hazine bahis ve yayın gelirlerini dondur.",
         "preview": "Hazine +8, Otorite +4 | Halk -5",
         "effects": {
           "justice": 0,
@@ -54025,31 +54025,31 @@ const EVENT_DECK_MODERN = [
           "military": 0,
           "authority": 4
         },
-        "log": "Hukuki tazminat süreci başlatıldı; milli kulüplerimizin maddi hakları uluslararası sözleşmelerle korundu."
+        "log": "Kulüplere ağır mali fatura çıkarıldı; futbol baronlarının pervasızlığı kesildi."
       },
       {
-        "label": "Stadyumlarda sahaya giren holiganlara ve hakem soyunma odasını basmaya kalkan yöneticilere karşı çevik kuvveti göreve çağır.",
-        "preview": "Adalet +3, Güvenlik +4, Otorite +7 | Halk -2, Hazine -3",
+        "label": "Stadyumlarda holiganizmi kışkırtan mafyatik taraftar liderlerine Emniyet ve jandarmayla şafak operasyonu yap.",
+        "preview": "Adalet +5, Halk +5, Güvenlik +9, Otorite +8 | Hazine -5",
         "effects": {
-          "justice": 3,
-          "people": -2,
-          "treasury": -3,
-          "military": 4,
-          "authority": 7
+          "justice": 5,
+          "people": 5,
+          "treasury": -5,
+          "military": 9,
+          "authority": 8
         },
-        "log": "Stadyumlarda tam asayiş sağlandı; spor sahalarının terörize edilmesine geçit verilmedi."
+        "log": "Tribün çeteleri dağıtıldı; stadyumlara giriş yasakları tavizsiz uygulandı."
       },
       {
-        "label": "Hakemlere karşı saldırıyı kamu görevlisine yapılmış sayan ve stadyum yasaklarını artıran 'Sporda Güvenlik Kanunu' çıkar.",
-        "preview": "Adalet +6, Halk +4, Hazine +5, Otorite +6",
+        "label": "Hakemlere ve spor görevlilerine saldırıya 10 yıla kadar hapis cezası getiren 'Sporda Şiddeti Önleme Reform Kanunu' çıkar.",
+        "preview": "Adalet +7, Halk +5, Otorite +6 | Hazine -4",
         "effects": {
-          "justice": 6,
-          "people": 4,
-          "treasury": 5,
+          "justice": 7,
+          "people": 5,
+          "treasury": -4,
           "military": 0,
           "authority": 6
         },
-        "log": "Hakemlerin can güvenliği kanunla korundu; holiganizme karşı en ağır cezalar yasalaştı."
+        "log": "Caydırıcı yasa çıktı; UEFA ve FIFA Türkiye'ye yönelik men yaptırımlarını rafa kaldırdı."
       }
     ]
   },
@@ -54144,11 +54144,11 @@ const EVENT_DECK_MODERN = [
       }
     ],
     "source": "Gençlik ve Spor Bakanlığı & TFF",
-    "title": "2023 Süper Kupa Suudi Arabistan Riyad Krizi",
-    "desc": "Fenerbahçe ve Galatasaray'ın Atatürk tişörtü ve pankartına izin verilmemesi üzerine sahaya çıkmayıp dönmesi milli gurur oldu.",
+    "title": "Riyad Süper Kupa Krizinde Atatürk Pankartı Yasağı ve Suudi Diplomatik Restleşmesi",
+    "desc": "Cumhuriyetin 100. yılında Suudi Arabistan'da oynanması planlanan Galatasaray-Fenerbahçe Süper Kupa finalinde, Suudi yetkililer Atatürk tişörtlerine, İstiklal Marşı'na ve 'Yurtta Sulh Cihanda Sulh' pankartına yasak koydu. Takımların maça çıkmayı reddetmesiyle kriz patlak verdi.",
     "options": [
       {
-        "label": "Kopenhag ve Monako zaferlerini Türk futbolunun uluslararası marka değeri ve adil oyun (Fair-Play) ilkesiyle taçlandır.",
+        "label": "Suudi Arabistan organizatörlerinin sözleşmeyi ihlal ettiğini tespit ettir; tazminat davası açarak takımların onurlu duruşunu savun.",
         "preview": "Adalet +8, Halk +5, Hazine +2, Otorite +6",
         "effects": {
           "justice": 8,
@@ -54157,22 +54157,22 @@ const EVENT_DECK_MODERN = [
           "military": 0,
           "authority": 6
         },
-        "log": "Tarihi kupa zaferi dünyaya ilan edildi; Türk futbolunun Avrupa'daki saygınlığı zirveye çıktı."
+        "log": "Milli onur hukuki zeminde korundu; Suudi tarafının sözleşme ihlali kayda geçirildi."
       },
       {
-        "label": "Taksim Meydanı'nda toplanan milyonlarca taraftarla milli bayram coşkusunu kutla; tüm kulüpleri tek yürek yap.",
-        "preview": "Adalet +2, Halk +8, Otorite +5 | Hazine -2",
+        "label": "Riyad yönetimi ve Suudi Kraliyet ailesiyle diplomatik temas kur; Türk takımlarının ve taraftarların güvenle yurda dönüşünü sağla.",
+        "preview": "Adalet +3, Halk +6, Hazine +3, Otorite +7",
         "effects": {
-          "justice": 2,
-          "people": 8,
-          "treasury": -2,
+          "justice": 3,
+          "people": 6,
+          "treasury": 3,
           "military": 0,
-          "authority": 5
+          "authority": 7
         },
-        "log": "Türkiye sokaklara döküldü; 17 Mayıs gecesi Türk spor tarihinin altın sayfası olarak milletçe kutlandı."
+        "log": "Diplomatik tahliye başarıyla yönetildi; kafileler gece yarısı kriz büyümeden Ankara ve İstanbul'a döndü."
       },
       {
-        "label": "Avrupa şampiyonu kulübe ve futbolculara devlet üstün hizmet madalyası ve Hazine prim desteği ver.",
+        "label": "Süper Kupa finalini Türkiye'ye, Şanlıurfa 11 Nisan Stadyumu'na taşı; bilet gelirlerini depremzedelere bağışla.",
         "preview": "Hazine +8, Otorite +4 | Halk -5",
         "effects": {
           "justice": 0,
@@ -54181,31 +54181,31 @@ const EVENT_DECK_MODERN = [
           "military": 0,
           "authority": 4
         },
-        "log": "Başarı devletçe ödüllendirildi; Türk futbolunun UEFA katsayısı ve yayın geliri tavan yaptı."
+        "log": "Kriz fırsata çevrildi; Süper Kupa milli birlik şölenine dönüştü, deprem bölgesine dev kaynak aktarıldı."
       },
       {
-        "label": "Şampiyonluk kutlamalarında taşkınlık, havaya ateş açma ve holiganizm eylemlerine karşı polis devriyelerini artır.",
-        "preview": "Güvenlik +5, Otorite +8 | Adalet -4, Halk -7, Hazine -2",
+        "label": "Suudi Arabistan'daki Türk futbolcuların ve gazetecilerin otellerine yönelik Suudi polisinin kuşatmasını MİT diplomasisiyle yar.",
+        "preview": "Adalet +2, Halk +8, Güvenlik +6, Otorite +6 | Hazine -4",
         "effects": {
-          "justice": -4,
-          "people": -7,
-          "treasury": -2,
-          "military": 5,
-          "authority": 8
-        },
-        "log": "Kutlamalar güven içinde tamamlandı; provokasyon ve yaralanmaların önüne geçildi."
-      },
-      {
-        "label": "Spor kulüplerinin borç batağına düşmesini engelleyen ve mali şeffaflık getiren 'Spor Kulüpleri ve Federasyonları Kanunu' çıkar.",
-        "preview": "Adalet +7, Halk +5, Otorite +6 | Hazine -4",
-        "effects": {
-          "justice": 7,
-          "people": 5,
+          "justice": 2,
+          "people": 8,
           "treasury": -4,
-          "military": 0,
+          "military": 6,
           "authority": 6
         },
-        "log": "Dernekler Kanunu'ndan çıkarılan kulüpler anonim şirket yapısına kavuşturuldu; batık borçlara fren vuruldu."
+        "log": "MİT ve Hariciye devreye girdi; hiçbir Türk vatandaşının gözaltına alınmasına izin verilmedi."
+      },
+      {
+        "label": "Milli sembollerin ve Atatürk ilkesinin yurtdışı sportif organizasyonlarda tavizsiz korunmasını emreden kanun çıkar.",
+        "preview": "Adalet +5, Halk +3, Güvenlik +7, Otorite +7 | Hazine -4",
+        "effects": {
+          "justice": 5,
+          "people": 3,
+          "treasury": -4,
+          "military": 7,
+          "authority": 7
+        },
+        "log": "Milli değerler kırmızı çizgi ilan edildi; Türk sporunun Cumhuriyet ilkelerine bağlılığı perçinlendi."
       }
     ]
   },
@@ -54612,23 +54612,23 @@ const EVENT_DECK_MODERN = [
       }
     ],
     "source": "Kültür ve Turizm Bakanlığı",
-    "title": "Ayasofya-i Kebir Cami-i Şerifi'nin İbadete Açılması (2020)",
-    "desc": "Danıştay 10. Dairesi'nin 1934 tarihli müzeye dönüştürme kararını iptaliyle Ayasofya 86 yıl sonra cami oldu.",
+    "title": "Ayasofya-i Kebir Camii'nin Açılması ve Doğu Akdeniz / UNESCO Jeopolitik Tehditleri",
+    "desc": "Danıştay 10. Dairesi'nin 1934 tarihli müzeye dönüştürme kararını iptal etmesiyle Ayasofya'nın yeniden ibadete açılması gündeme geldi. Yunanistan, Rus Ortodoks Kilisesi ve ABD, Türkiye'ye karşı yaptırım ve Doğu Akdeniz'de koalisyon tehdidi savururken; MİT tarihi mabet etrafında provokasyon istihbaratı bildirdi.",
     "options": [
       {
-        "label": "Danıştay 10. Dairesi'nin 1934 tarihli Bakanlar Kurulu kararını iptal eden tarihi hükmünü derhal Resmi Gazete'de yayımla.",
-        "preview": "Adalet +8, Halk +6, Otorite +2 | Hazine -2",
+        "label": "Fatih Sultan Mehmet Han'ın vakfiyesine ve Danıştay kararına sadık kal; Ayasofya'yı Cumhurbaşkanlığı kararnamesiyle cami olarak aç.",
+        "preview": "Adalet +8, Halk +5, Hazine +2, Otorite +6",
         "effects": {
           "justice": 8,
-          "people": 6,
-          "treasury": -2,
+          "people": 5,
+          "treasury": 2,
           "military": 0,
-          "authority": 2
+          "authority": 6
         },
-        "log": "Hukuk zaferi ilan edildi; Fatih Sultan Mehmet Han'ın vakfiyesi gereğince Ayasofya 86 yıl sonra cami statüsüne kavuştu."
+        "log": "86 yıllık hasret bitti; Ayasofya-i Kebir Camii-i Şerifi dualarla ibadete açıldı, Fatih'in emaneti yerine getirildi."
       },
       {
-        "label": "Sultanahmet Meydanı'nı dolduran 350 bin vatandaşla ilk Cuma namazını eda et; UNESCO heyetiyle mozaiklerin korunmasında uzlaş.",
+        "label": "UNESCO ve Hristiyan dünyasıyla diplomatik istişare kanalı aç; tarihi mozaiklerin namaz saatinde lazer perdeyle korunacağını garanti et.",
         "preview": "Adalet +3, Halk +9, Otorite +6 | Hazine -4",
         "effects": {
           "justice": 3,
@@ -54637,10 +54637,10 @@ const EVENT_DECK_MODERN = [
           "military": 0,
           "authority": 6
         },
-        "log": "Tarihi gün milletçe kutlandı; kılıçla hutbe okunurken paha biçilmez Hristiyan mozaikleri perde sistemiyle korundu."
+        "log": "Kültürel miras güvenceye alındı; Batı'nın kara propagandası teknik tedbirlerle etkisiz kılındı."
       },
       {
-        "label": "Ayasofya'nın restorasyonu, minarelerin güçlendirilmesi ve kubbe onarımı için Vakıflar Genel Müdürlüğü'ne rekor bütçe ayır.",
+        "label": "Ayasofya'nın tarihi mermerlerini, kubbesini ve minarelerini depreme karşı korumak için Hazine'den 500 milyon liralık restorasyon fonu aç.",
         "preview": "Hazine +8, Otorite +4 | Halk -5",
         "effects": {
           "justice": 0,
@@ -54649,31 +54649,31 @@ const EVENT_DECK_MODERN = [
           "military": 0,
           "authority": 4
         },
-        "log": "Tarihi mabet depreme karşı çelik gergilerle korundu; Hazine kaynaklarıyla kubbe restorasyonu başlatıldı."
+        "log": "Tarihi mabedin deprem güvenliği sağlandı; kubbe çelik gergilerle tahkim edildi."
       },
       {
-        "label": "Ayasofya ve çevresinde özel güvenlik, turist güzergahı ve polis noktalarıyla 24 saat kesintisiz koruma sağla.",
-        "preview": "Adalet +3, Güvenlik +4, Otorite +7 | Halk -2, Hazine -3",
+        "label": "Açılış günü Sultanahmet Meydanı'nı dolduran 350 bin vatandaşa yönelik canlı bomba ve terör sabotajlarına karşı çelik güvenlik çemberi kur.",
+        "preview": "Adalet +5, Halk +5, Güvenlik +9, Otorite +8 | Hazine -5",
         "effects": {
-          "justice": 3,
-          "people": -2,
-          "treasury": -3,
-          "military": 4,
-          "authority": 7
+          "justice": 5,
+          "people": 5,
+          "treasury": -5,
+          "military": 9,
+          "authority": 8
         },
-        "log": "Tarihi mabedin güvenliği kusursuz sağlandı; provokatif eylemler ve tarihi kapılara zarar verilmesi engellendi."
+        "log": "MİT ve Emniyet kuş uçurtmadı; açılış tek bir burnu kanamadan tarihi bir bayram havasında tamamlandı."
       },
       {
-        "label": "Fatih Sultan Mehmet Vakfı ve vakıf taşınmazlarının korunmasını anayasal güvenceye alan 'Tarihi Vakıflar ve Mabetler Kanunu' çıkar.",
-        "preview": "Adalet +8, Halk +8, Güvenlik +1, Otorite +6 | Hazine -4",
+        "label": "Vakıf mallarının amaç dışı kullanılmasını ebediyen yasaklayan 'Milli Vakıf ve Mabetler Kanunu' çıkar.",
+        "preview": "Adalet +7, Halk +8, Otorite +5 | Hazine -4",
         "effects": {
-          "justice": 8,
+          "justice": 7,
           "people": 8,
           "treasury": -4,
-          "military": 1,
-          "authority": 6
+          "military": 0,
+          "authority": 5
         },
-        "log": "Vakıf hukuku tahkim edildi; ecdat yadigarı eserlerin vakfiye şartlarına aykırı kullanımı ebediyen yasaklandı."
+        "log": "Vakfiye şartı anayasal korumaya alındı; Türkiye'nin egemenlik hakları tüm dünyaya ilan edildi."
       }
     ]
   },
@@ -54759,77 +54759,77 @@ const EVENT_DECK_MODERN = [
     "id": "tr_vaka_703",
     "characters": [
       {
-        "id": "char_cumhurbaskani",
-        "name": "Cumhurbaşkanı"
+        "id": "char_kultur_turizm_bakani",
+        "name": "Kültür ve Turizm Bakanı"
       },
       {
-        "id": "char_sehir_plancisi",
-        "name": "Mimarlar ve Şehir Plancıları Temsilcisi"
+        "id": "char_disisleri_bakani",
+        "name": "Dışişleri Bakanı"
       }
     ],
     "source": "Kültür ve Turizm Bakanlığı",
-    "title": "Kariye Camii'nin Restorasyon Sonrası İbadete Açılması",
-    "desc": "Fatih'teki tarihi mozaikleriyle ünlü Kariye 79 yıllık müze statüsünden çıkarılarak yeniden ibadete açıldı.",
+    "title": "Kariye Camii Kararı Sonrası UNESCO ve Batı Baskısına Karşı Egemenlik Dengesi",
+    "desc": "Kariye'nin yeniden ibadete açılması kararı üzerine Batılı ülkelerin ve UNESCO'nun Bizans mozaikleri gerekçesiyle Türkiye'ye yaptırım tehditleri savurması diplomatik kriz yarattı.",
     "options": [
       {
-        "label": "Tarihi ve kültürel varlıkların korunmasında vakfiye şartları, Anayasa ve evrensel koruma ilkelerini gözet.",
-        "preview": "Adalet +9, Halk +8, Otorite +3 | Hazine -2",
+        "label": "İbadet vakitlerinde elektronik lazer perdeleme ve açılır-kapanır panellerle tarihi mozaikleri sıfır zararla koruyup ibadeti aç.",
+        "preview": "Adalet +7, Halk +8, Otorite +8 | Hazine -3",
         "effects": {
-          "justice": 9,
+          "justice": 7,
           "people": 8,
-          "treasury": -2,
+          "treasury": -3,
           "military": 0,
-          "authority": 3
+          "authority": 8
         },
-        "log": "Kültürel miras korundu; ecdat yadigarı eserlerin restorasyonunda tarihi aslına sadık kalındı."
+        "log": "Tarihi freskler titizlikle korundu; Türkiye'nin egemenlik tasarrufu dünyaya örnek gösterildi."
       },
       {
-        "label": "Sanatçılar, kültür insanları ve sivil toplumla istişare kurulları toplayarak milli kültür politikasını güçlendir.",
-        "preview": "Adalet +3, Halk +9, Otorite +6 | Hazine -4",
+        "label": "Uluslararası uzmanlardan oluşan tarafsız bir kültür heyetini davet edip koruma çalışmalarını canlı yayınla dünyaya göster.",
+        "preview": "Adalet +8, Halk +7, Otorite +6 | Hazine -2",
         "effects": {
-          "justice": 3,
-          "people": 9,
+          "justice": 8,
+          "people": 7,
+          "treasury": -2,
+          "military": 0,
+          "authority": 6
+        },
+        "log": "Batı'nın 'mozaikler yok ediliyor' kara propagandası şeffaf bilimsel heyet raporuyla çürütüldü."
+      },
+      {
+        "label": "Türkiye'nin kendi egemenlik alanındaki tarihi mülkiyet tasarrufuna dış müdahaleleri diplomatik nota ile kesin dille reddet.",
+        "preview": "Adalet +7, Halk +7, Güvenlik +3, Otorite +9",
+        "effects": {
+          "justice": 7,
+          "people": 7,
+          "treasury": 0,
+          "military": 3,
+          "authority": 9
+        },
+        "log": "Milli egemenlikten taviz verilmeyeceği uluslararası diplomasiye ilan edildi."
+      },
+      {
+        "label": "Vakıflar Genel Müdürlüğü bünyesinde Doğu Roma ve Osmanlı mimarisini ortak koruyan yüksek restorasyon enstitüsü kur.",
+        "preview": "Adalet +7, Halk +6, Otorite +6 | Hazine -4",
+        "effects": {
+          "justice": 7,
+          "people": 6,
           "treasury": -4,
           "military": 0,
           "authority": 6
         },
-        "log": "Kültür hayatında toplumsal mutabakat sağlandı; sanatçıların eser üretmesi desteklendi."
+        "log": "Tarihi mirasın korunmasında kurumsal uzmanlık kapasitesi zirveye taşındı."
       },
       {
-        "label": "Müze, kütüphane ve tarihi restorasyon projeleri için Hazine bütçesinden özel ödenekler ayır.",
-        "preview": "Hazine +8, Otorite +4 | Halk -5",
+        "label": "Kariye'yi hem ücretsiz ibadethane hem de namaz vakitleri haricinde müze kalitesinde gezilen kültür köprüsüne dönüştür.",
+        "preview": "Adalet +8, Halk +8, Hazine +2, Otorite +6",
         "effects": {
-          "justice": 0,
-          "people": -5,
-          "treasury": 8,
-          "military": 0,
-          "authority": 4
-        },
-        "log": "Kültür yatırımları finanse edildi; Türkiye'nin tarihi mirası ihya edilerek turizme kazandırıldı."
-      },
-      {
-        "label": "Tarihi eser kaçakçılarına ve sit alanlarını tahrip eden rant odaklarına karşı kolluk devriyelerini artır.",
-        "preview": "Adalet +5, Halk +5, Güvenlik +9, Otorite +8 | Hazine -5",
-        "effects": {
-          "justice": 5,
-          "people": 5,
-          "treasury": -5,
-          "military": 9,
-          "authority": 8
-        },
-        "log": "Sit alanları korundu; tarihi dokuyu bozan kaçak yapılaşmalar dozerlerle yıkıldı."
-      },
-      {
-        "label": "Türkiye'nin kültürel diplomasisini ve tarihi mirasını koruyan 'Milli Kültür ve Sanat Reform Kanunu' çıkar.",
-        "preview": "Adalet +7, Halk +8, Otorite +5 | Hazine -4",
-        "effects": {
-          "justice": 7,
+          "justice": 8,
           "people": 8,
-          "treasury": -4,
+          "treasury": 2,
           "military": 0,
-          "authority": 5
+          "authority": 6
         },
-        "log": "Kültür politikası kanunlaştı; Türkiye'nin tarihi derinliği dünyaya gururla tanıtıldı."
+        "log": "Hem ibadet hakkı hem de dünya mirasının ziyareti mükemmel bir sentezle sağlandı."
       }
     ]
   },
@@ -54846,35 +54846,35 @@ const EVENT_DECK_MODERN = [
       }
     ],
     "source": "Kültür ve Turizm Bakanlığı",
-    "title": "Şanlıurfa Göbeklitepe'nin UNESCO Dünya Mirası Listesine Girmesi",
-    "desc": "Tarihin sıfır noktası olarak kabul edilen 12 bin yıllık tapınak kompleksi tüm dünyada arkeoloji devrimi yaptı.",
+    "title": "Şanlıurfa Göbeklitepe Kazılarına Yabancı Arkeolog Kılığında Sızan Casusluk Tehdidi",
+    "desc": "12 bin yıllık 'tarihin sıfır noktası' Göbeklitepe ve Taş Tepeler kazılarında, bazı yabancı araştırma enstitülerinin ve arkeologların bölgedeki jeolojik ve etnik haritalandırma yaparak istihbarat topladığı, paha biçilmez dikilitaş kabartmalarını gizlice kopyaladığı MİT tarafından raporlandı.",
     "options": [
       {
-        "label": "Kaçırılan Çingene Kızı mozaikleri, lahitler ve heykelleri uluslararası mahkemelerde diplomatik baskıyla Türkiye'ye iade ettir.",
-        "preview": "Adalet +8, Halk +5, Hazine +2, Otorite +6",
+        "label": "Kültür Varlıkları Genel Müdürlüğü müfettişlerini gönder; kazı izinlerini ve yabancı heyetlerin tüm dijital kayıtlarını adli incelemeye al.",
+        "preview": "Adalet +8, Halk +6, Otorite +2 | Hazine -2",
         "effects": {
           "justice": 8,
-          "people": 5,
-          "treasury": 2,
+          "people": 6,
+          "treasury": -2,
           "military": 0,
-          "authority": 6
+          "authority": 2
         },
-        "log": "Kültür diplomasisi zaferle sonuçlandı; ABD ve Avrupa müzelerindeki kaçak eserlerimiz şanlı bayrağımızın altına getirildi."
+        "log": "Yasadışı haritalandırma yapan yabancı araştırmacıların izinleri iptal edildi; deliller adli makamlara sunuldu."
       },
       {
-        "label": "Göbeklitepe'yi UNESCO Dünya Mirası Listesi'ne kaydettir; Şanlıurfa'da 'Tarihin Sıfır Noktası' turizm seferberliği başlat.",
-        "preview": "Adalet +3, Halk +9, Otorite +6 | Hazine -4",
+        "label": "Alman Arkeoloji Enstitüsü ve UNESCO ile resmi protokol masası kur; kazı heyetlerinin başına Türk arkeologların geçmesini zorunlu kıl.",
+        "preview": "Adalet +2, Halk +9, Hazine +4, Güvenlik +2, Otorite +5",
         "effects": {
-          "justice": 3,
+          "justice": 2,
           "people": 9,
-          "treasury": -4,
-          "military": 0,
-          "authority": 6
+          "treasury": 4,
+          "military": 2,
+          "authority": 5
         },
-        "log": "Dünya arkeolojisi Türkiye'ye aktı; 12 bin yıllık tapınaklar milyonlarca turisti bölgeye çekerek esnafı ihya etti."
+        "log": "Kazı liderliği milli ellere geçti; Göbeklitepe bilimsel işbirliğiyle korunarak dünyaya tanıtıldı."
       },
       {
-        "label": "Karahantepe ve Taş Tepeler neolitik kazı alanları için Kültür ve Turizm Bakanlığı'na dev kazı ve koruma bütçesi tahsis et.",
+        "label": "Göbeklitepe ve Karahantepe çevre düzenlemesi ve koruma çatısı için Hazine'den 100 milyon liralık acil ödenek tahsis et.",
         "preview": "Hazine +8, Otorite +4 | Halk -5",
         "effects": {
           "justice": 0,
@@ -54883,10 +54883,10 @@ const EVENT_DECK_MODERN = [
           "military": 0,
           "authority": 4
         },
-        "log": "Arkeolojik kazılar hızlandırıldı; Türkiye dünyanın 1 numaralı açık hava müzesi haline geldi."
+        "log": "Dev koruma çatısı tamamlandı; 12 bin yıllık tapınaklar yağmur ve güneş tahribatından kurtarıldı."
       },
       {
-        "label": "Tarihi ören yerlerinde defineci kaçak kazılarını önlemek için jandarma ve dron devriyeleriyle 24 saat nöbet tut.",
+        "label": "Şanlıurfa platosundaki neolitik kazı alanlarının etrafına gece görüşlü termal kameralar ve jandarma devriyeleri yerleştir.",
         "preview": "Adalet +3, Güvenlik +4, Otorite +7 | Halk -2, Hazine -3",
         "effects": {
           "justice": 3,
@@ -54895,10 +54895,10 @@ const EVENT_DECK_MODERN = [
           "military": 4,
           "authority": 7
         },
-        "log": "Milli miras kaçakçılardan korundu; tarihi höyükleri talan eden define çeteleri suçüstü yakalandı."
+        "log": "Tarihi kazı alanları 24 saat gözetleme altına alındı; kaçak kazı çeteleri inlerinde yakalandı."
       },
       {
-        "label": "Kültür ve tabiat varlıkları kaçakçılığına en ağır hapis cezaları getiren 'Kültür Varlıklarını Koruma Reform Kanunu' çıkar.",
+        "label": "Arkeolojik kazılarda yabancı heyetlerin askeri/stratejik veri toplamasını casusluk sayan 'Arkeolojik İstihbarat Koruma Kanunu' çıkar.",
         "preview": "Adalet +5, Halk +3, Güvenlik +7, Otorite +7 | Hazine -4",
         "effects": {
           "justice": 5,
@@ -54907,7 +54907,7 @@ const EVENT_DECK_MODERN = [
           "military": 7,
           "authority": 7
         },
-        "log": "Tarihi eser kaçakçılığı terör suçu derecesinde cezalandırıldı; Anadolu mirası yasal zırha kavuştu."
+        "log": "Milli tarih korundu; Göbeklitepe Türkiye'nin kültürel diplomasisinin en güçlü kalesi oldu."
       }
     ]
   },
@@ -55002,11 +55002,11 @@ const EVENT_DECK_MODERN = [
       }
     ],
     "source": "Kültür ve Turizm Bakanlığı",
-    "title": "Zeugma 'Çingene Kızı' Mozaiğinin ABD'den İadesi",
-    "desc": "Gaziantep'ten kaçırılan paha biçilmez mozaik parçaları Kültür Bakanlığı'nın diplomatik zaferiyle yurda döndü.",
+    "title": "Zeugma Çingene Kızı Mozaiği ve ABD Müzelerindeki Çalıntı Mirasın İade Operasyonu",
+    "desc": "Gaziantep Nizip'teki Zeugma antik kentinden 1960'larda yağmalanıp ABD Bowling Green Üniversitesi'ne satılan 'Çingene Kızı' mozaiğinin kayıp 12 bordür parçası tespit edildi. ABD'li üniversite parçaları iade etmeyi reddederken MİT ve Kültür Bakanlığı diplomatik ve istihbari baskı başlattı.",
     "options": [
       {
-        "label": "Kaçırılan Çingene Kızı mozaikleri, lahitler ve heykelleri uluslararası mahkemelerde diplomatik baskıyla Türkiye'ye iade ettir.",
+        "label": "ABD federal mahkemelerinde mülkiyet ve tarihi eser kaçakçılığı davası açarak eserlerin Türkiye'ye ait olduğunu kanıtla.",
         "preview": "Adalet +8, Halk +5, Hazine +2, Otorite +6",
         "effects": {
           "justice": 8,
@@ -55015,10 +55015,10 @@ const EVENT_DECK_MODERN = [
           "military": 0,
           "authority": 6
         },
-        "log": "Kültür diplomasisi zaferle sonuçlandı; ABD ve Avrupa müzelerindeki kaçak eserlerimiz şanlı bayrağımızın altına getirildi."
+        "log": "Hukuki zafer kazanıldı; ABD mahkemeleri eserlerin Türkiye'den çalındığını onayladı."
       },
       {
-        "label": "Göbeklitepe'yi UNESCO Dünya Mirası Listesi'ne kaydettir; Şanlıurfa'da 'Tarihin Sıfır Noktası' turizm seferberliği başlat.",
+        "label": "ABD Dışişleri Bakanlığı ve üniversite yönetimiyle istişare heyeti topla; kültürel değişim protokolüyle uzlaşı sağla.",
         "preview": "Adalet +3, Halk +9, Otorite +6 | Hazine -4",
         "effects": {
           "justice": 3,
@@ -55027,10 +55027,10 @@ const EVENT_DECK_MODERN = [
           "military": 0,
           "authority": 6
         },
-        "log": "Dünya arkeolojisi Türkiye'ye aktı; 12 bin yıllık tapınaklar milyonlarca turisti bölgeye çekerek esnafı ihya etti."
+        "log": "Diplomasi sonuç verdi; 12 parça mozaik özel sandıklarla Türkiye'ye iade edildi."
       },
       {
-        "label": "Karahantepe ve Taş Tepeler neolitik kazı alanları için Kültür ve Turizm Bakanlığı'na dev kazı ve koruma bütçesi tahsis et.",
+        "label": "Gaziantep Zeugma Mozaik Müzesi'ne devlete ait fonlardan ek güvenlik ve sergileme bütçesi aktar; müzeyi dünya çapında yap.",
         "preview": "Hazine +8, Otorite +4 | Halk -5",
         "effects": {
           "justice": 0,
@@ -55039,22 +55039,22 @@ const EVENT_DECK_MODERN = [
           "military": 0,
           "authority": 4
         },
-        "log": "Arkeolojik kazılar hızlandırıldı; Türkiye dünyanın 1 numaralı açık hava müzesi haline geldi."
+        "log": "Dünyanın en büyük mozaik müzesi kuruldu; Çingene Kızı kayıp parçalarıyla birleşerek turizm patlaması yaptı."
       },
       {
-        "label": "Tarihi ören yerlerinde defineci kaçak kazılarını önlemek için jandarma ve dron devriyeleriyle 24 saat nöbet tut.",
-        "preview": "Adalet +3, Güvenlik +4, Otorite +7 | Halk -2, Hazine -3",
+        "label": "Tarihi eser kaçakçılığı yapan uluslararası şebekelerin Türkiye'deki işbirlikçilerine MİT ve KOM timleriyle şafak baskını yap.",
+        "preview": "Adalet +5, Halk +5, Güvenlik +9, Otorite +8 | Hazine -5",
         "effects": {
-          "justice": 3,
-          "people": -2,
-          "treasury": -3,
-          "military": 4,
-          "authority": 7
+          "justice": 5,
+          "people": 5,
+          "treasury": -5,
+          "military": 9,
+          "authority": 8
         },
-        "log": "Milli miras kaçakçılardan korundu; tarihi höyükleri talan eden define çeteleri suçüstü yakalandı."
+        "log": "Kaçakçılık ağı çökertildi; yüzlerce lahit, heykel ve sikke yurtdışına çıkarılmadan sınırda yakalandı."
       },
       {
-        "label": "Kültür ve tabiat varlıkları kaçakçılığına en ağır hapis cezaları getiren 'Kültür Varlıklarını Koruma Reform Kanunu' çıkar.",
+        "label": "Yurtdışına kaçırılan tarihi eserlerin iadesinde kırmızı bülten ve sınır ötesi operasyon yetkisi veren kanun çıkar.",
         "preview": "Adalet +5, Halk +3, Güvenlik +7, Otorite +7 | Hazine -4",
         "effects": {
           "justice": 5,
@@ -55063,7 +55063,7 @@ const EVENT_DECK_MODERN = [
           "military": 7,
           "authority": 7
         },
-        "log": "Tarihi eser kaçakçılığı terör suçu derecesinde cezalandırıldı; Anadolu mirası yasal zırha kavuştu."
+        "log": "Kültür varlıkları milli dava haline geldi; binlerce yıllık Anadolu mirası birer birer yurda döndü."
       }
     ]
   },
@@ -55227,77 +55227,77 @@ const EVENT_DECK_MODERN = [
     "id": "tr_vaka_709",
     "characters": [
       {
-        "id": "char_cumhurbaskani",
-        "name": "Cumhurbaşkanı"
+        "id": "char_icisleri_bakani",
+        "name": "İçişleri Bakanı"
       },
       {
-        "id": "char_sehir_plancisi",
-        "name": "Mimarlar ve Şehir Plancıları Temsilcisi"
+        "id": "char_kultur_turizm_bakani",
+        "name": "Kültür ve Turizm Bakanı"
       }
     ],
     "source": "Kültür ve Turizm Bakanlığı",
-    "title": "Atatürk Kültür Merkezi'nin (AKM) Yıkılıp Yeniden İnşası",
-    "desc": "Taksim Meydanı'ndaki eski bina yıkılarak modern opera salonu ve kültür kompleksi olarak 29 Ekim'de açıldı.",
+    "title": "Taksim Meydanı'nda AKM İnşası ve Sosyal Çatışma İstihbaratı",
+    "desc": "Taksim Meydanı'ndaki yıpranmış Atatürk Kültür Merkezi'nin yıkımı sırasında marjinal grupların Gezi benzeri kitlesel sokak çatışması çıkarma hazırlığı istihbarat edildi.",
     "options": [
       {
-        "label": "Devlet televizyonunda TRT Kurdî ile farklı dillerde yayın hakkını anayasal kültürel haklar çerçevesinde güvenceye al.",
-        "preview": "Adalet +8, Halk +4, Güvenlik +4, Otorite +5 | Hazine -2",
+        "label": "Meydan çevresinde yüksek güvenlik kordonu kurup projeyi şeffaf mimari sunumla kamuoyuna anlatarak provokasyonu boşa çıkar.",
+        "preview": "Adalet +7, Halk +7, Güvenlik +3, Otorite +8 | Hazine -3",
         "effects": {
-          "justice": 8,
-          "people": 4,
-          "treasury": -2,
-          "military": 4,
-          "authority": 5
-        },
-        "log": "Tarihi kültürel tabu yıkıldı; TRT Kurdî ile kardeşlik hukuku tahkim edilerek terörün istismar kapısı kapatıldı."
-      },
-      {
-        "label": "Taksim Meydanı'ndaki Atatürk Kültür Merkezi'ni (AKM) opera, bale ve tiyatronun kalbi olarak halka aç.",
-        "preview": "Adalet +3, Halk +9, Otorite +6 | Hazine -4",
-        "effects": {
-          "justice": 3,
-          "people": 9,
-          "treasury": -4,
-          "military": 0,
-          "authority": 6
-        },
-        "log": "Kültür hayatı canlandı; modern opera salonu ve kültür kompleksi İstanbulluların buluşma noktası oldu."
-      },
-      {
-        "label": "150 ülkeye ihraç edilen ve 1 milyar seyirciye ulaşan Türk dizi sektörüne Ticaret Bakanlığı eliyle hizmet ihracatı desteği ver.",
-        "preview": "Adalet +1, Halk +4, Hazine +8, Otorite +5",
-        "effects": {
-          "justice": 1,
-          "people": 4,
-          "treasury": 8,
-          "military": 0,
-          "authority": 5
-        },
-        "log": "Dizi sektörü Türkiye'ye milyarlarca dolar kazandırdı; Latin Amerika'dan Orta Doğu'ya kadar Türk kültürü hayranlığı oluştu."
-      },
-      {
-        "label": "Kültürel etkinliklerde ve film festivallerinde terör propagandası ve milli değerlere hakaret girişimlerini engelle.",
-        "preview": "Adalet +5, Halk +5, Güvenlik +9, Otorite +8 | Hazine -5",
-        "effects": {
-          "justice": 5,
-          "people": 5,
-          "treasury": -5,
-          "military": 9,
+          "justice": 7,
+          "people": 7,
+          "treasury": -3,
+          "military": 3,
           "authority": 8
         },
-        "log": "Kültürel alan provokasyonlardan korundu; sanatın terör propagandasına alet edilmesine izin verilmedi."
+        "log": "Provokasyon hazırlığı boşa çıkarıldı; modern opera ve tiyatro projesi kamuoyuna tanıtıldı."
       },
       {
-        "label": "Sinema, dizi ve müzik sektörlerinde telif haklarını ve yapımcı paylarını güvenceye alan 'Yeni Sinema ve Telif Kanunu' çıkar.",
-        "preview": "Adalet +8, Halk +8, Güvenlik +1, Otorite +6 | Hazine -4",
+        "label": "Cumhuriyet estetiğini birleştiren opera salonu projesine tüm sanatçı sendikalarını ve mimarları paydaş olarak dahil et.",
+        "preview": "Adalet +9, Halk +8, Otorite +6 | Hazine -4",
         "effects": {
-          "justice": 8,
+          "justice": 9,
           "people": 8,
           "treasury": -4,
-          "military": 1,
+          "military": 0,
           "authority": 6
         },
-        "log": "Sanatçıların ve yapımcıların telif gelirleri korundu; Türk sinema endüstrisi küresel rekabete hazırlandı."
+        "log": "Toplumsal uzlaşma sağlandı; sanat camiası projeyi sahiplendi."
+      },
+      {
+        "label": "Yıkım ve inşaat alanına sızmaya çalışan yasadışı eylem hücrelerine önleyici istihbarat operasyonu yap.",
+        "preview": "Adalet +7, Halk +4, Güvenlik +4, Otorite +8",
+        "effects": {
+          "justice": 7,
+          "people": 4,
+          "treasury": 0,
+          "military": 4,
+          "authority": 8
+        },
+        "log": "Sokak kargaşası hedefleyen hücreler eyleme geçmeden yakalandı."
+      },
+      {
+        "label": "Projeyi Taksim yayalaştırmasıyla birleştirip Taksim Meydanı'nı tamamen yayalara açan yeşil aks planını uygula.",
+        "preview": "Adalet +7, Halk +9, Otorite +6 | Hazine -7",
+        "effects": {
+          "justice": 7,
+          "people": 9,
+          "treasury": -7,
+          "military": 0,
+          "authority": 6
+        },
+        "log": "Taksim'e dünya başkentlerine yakışır bir kültür meydanı ve opera salonu kazandırıldı."
+      },
+      {
+        "label": "AKM'nin tamamlanmasını hızlandırmak için 24 saat vardiyalı çalışma düzenine geçip kültür merkezini hızla halka aç.",
+        "preview": "Adalet +6, Halk +8, Otorite +7 | Hazine -5",
+        "effects": {
+          "justice": 6,
+          "people": 8,
+          "treasury": -5,
+          "military": 0,
+          "authority": 7
+        },
+        "log": "İnşaat rekor sürede bitti; AKM uluslararası standartta bir kültür mabedi olarak parladı."
       }
     ]
   },
@@ -55305,77 +55305,77 @@ const EVENT_DECK_MODERN = [
     "id": "tr_vaka_710",
     "characters": [
       {
-        "id": "char_cumhurbaskani",
-        "name": "Cumhurbaşkanı"
-      },
-      {
         "id": "char_sehir_plancisi",
         "name": "Mimarlar ve Şehir Plancıları Temsilcisi"
+      },
+      {
+        "id": "char_savunma_bakani",
+        "name": "Milli Savunma Bakanı"
       }
     ],
     "source": "Kültür ve Turizm Bakanlığı",
-    "title": "Büyük Çamlıca Camii'nin İstanbul Boğazı Tepesinde Açılışı",
-    "desc": "63 bin kişilik kapasitesi ve 6 minaresiyle Cumhuriyet tarihinin en büyük camisi ibadete açıldı.",
+    "title": "Çamlıca Camii ve Boğaz Silüeti: Deprem Sığınağı ve Stratejik Haberleşme Krizi",
+    "desc": "Çamlıca Tepesi'ne devasa mabet inşası tartışılırken, kriz masası yapının altında 50 bin kişilik nükleer/kimyasal sığınak ve Boğaz'ı izleyen stratejik haberleşme üssü kurulmasını önerdi.",
     "options": [
       {
-        "label": "Tarihi ve kültürel varlıkların korunmasında vakfiye şartları, Anayasa ve evrensel koruma ilkelerini gözet.",
-        "preview": "Adalet +9, Halk +8, Otorite +3 | Hazine -2",
+        "label": "Caminin alt katlarını mega afet lojistik merkezi, acil sahra hastanesi ve kesintisiz haberleşme üssü olarak donat.",
+        "preview": "Adalet +6, Halk +8, Güvenlik +6, Otorite +7 | Hazine -7",
         "effects": {
-          "justice": 9,
+          "justice": 6,
           "people": 8,
-          "treasury": -2,
-          "military": 0,
-          "authority": 3
+          "treasury": -7,
+          "military": 6,
+          "authority": 7
         },
-        "log": "Kültürel miras korundu; ecdat yadigarı eserlerin restorasyonunda tarihi aslına sadık kalındı."
+        "log": "Olası Marmara depreminde şehrin kilitlenmesini önleyecek hayati bir stratejik sığınak kazanıldı."
       },
       {
-        "label": "Sanatçılar, kültür insanları ve sivil toplumla istişare kurulları toplayarak milli kültür politikasını güçlendir.",
-        "preview": "Adalet +3, Halk +9, Otorite +6 | Hazine -4",
+        "label": "Projeyi inşa ederken çevresindeki görüntü kirliliği oluşturan paslı verici direklerini tek bir fütüristik kulede birleştirip temizle.",
+        "preview": "Adalet +7, Halk +9, Otorite +7 | Hazine -6",
         "effects": {
-          "justice": 3,
+          "justice": 7,
           "people": 9,
-          "treasury": -4,
+          "treasury": -6,
+          "military": 0,
+          "authority": 7
+        },
+        "log": "Çamlıca Tepesi anten çöplüğünden kurtuldu; şehrin silüetine estetik bir vizyon kazandırıldı."
+      },
+      {
+        "label": "İnşaatın kamu bütçesine yükünü sınırlamak için masrafları vakıf bağışları ve özel fonlarla karşıla.",
+        "preview": "Adalet +7, Halk +7, Hazine +4, Otorite +6",
+        "effects": {
+          "justice": 7,
+          "people": 7,
+          "treasury": 4,
           "military": 0,
           "authority": 6
         },
-        "log": "Kültür hayatında toplumsal mutabakat sağlandı; sanatçıların eser üretmesi desteklendi."
+        "log": "Hazine kaynakları korunurken büyük proje hayırseverler ve vakıf geleneğiyle tamamlandı."
       },
       {
-        "label": "Müze, kütüphane ve tarihi restorasyon projeleri için Hazine bütçesinden özel ödenekler ayır.",
-        "preview": "Hazine +8, Otorite +4 | Halk -5",
+        "label": "Boğaz silüetine aykırı olduğu yönündeki mimari itirazları dikkate alarak yeşil alan ve koruma oranını iki katına çıkar.",
+        "preview": "Adalet +8, Halk +8, Otorite +6 | Hazine -3",
         "effects": {
-          "justice": 0,
-          "people": -5,
-          "treasury": 8,
+          "justice": 8,
+          "people": 8,
+          "treasury": -3,
           "military": 0,
-          "authority": 4
+          "authority": 6
         },
-        "log": "Kültür yatırımları finanse edildi; Türkiye'nin tarihi mirası ihya edilerek turizme kazandırıldı."
+        "log": "Tepedeki ağaç dokusu korundu; çevre örgütleriyle yaşanan gerilim dindirildi."
       },
       {
-        "label": "Tarihi eser kaçakçılarına ve sit alanlarını tahrip eden rant odaklarına karşı kolluk devriyelerini artır.",
-        "preview": "Adalet +5, Halk +5, Güvenlik +9, Otorite +8 | Hazine -5",
-        "effects": {
-          "justice": 5,
-          "people": 5,
-          "treasury": -5,
-          "military": 9,
-          "authority": 8
-        },
-        "log": "Sit alanları korundu; tarihi dokuyu bozan kaçak yapılaşmalar dozerlerle yıkıldı."
-      },
-      {
-        "label": "Türkiye'nin kültürel diplomasisini ve tarihi mirasını koruyan 'Milli Kültür ve Sanat Reform Kanunu' çıkar.",
-        "preview": "Adalet +7, Halk +8, Otorite +5 | Hazine -4",
+        "label": "Projeyi İslam Sanatları Müzesi ve devasa kütüphane kompleksiyle birleştirerek küresel bir kültür merkezine dönüştür.",
+        "preview": "Adalet +7, Halk +8, Otorite +7 | Hazine -4",
         "effects": {
           "justice": 7,
           "people": 8,
           "treasury": -4,
           "military": 0,
-          "authority": 5
+          "authority": 7
         },
-        "log": "Kültür politikası kanunlaştı; Türkiye'nin tarihi derinliği dünyaya gururla tanıtıldı."
+        "log": "Sadece ibadethane değil, gençlerin 24 saat ders çalıştığı devasa bir kültür vadisi kuruldu."
       }
     ]
   },
@@ -55392,23 +55392,23 @@ const EVENT_DECK_MODERN = [
       }
     ],
     "source": "Kültür ve Turizm Bakanlığı",
-    "title": "Nuri Bilge Ceylan'ın 'Kış Uykusu' ile Cannes Altın Palmiye Zaferi",
-    "desc": "Kapadokya'da geçen filmle yönetmen Türk sinemasına Yılmaz Güney'den sonra ikinci Altın Palmiye'yi kazandırdı.",
+    "title": "Kültür Diplomasisinde Kara Propaganda ve Yabancı Fonlu Festivallerin Etki Ajanlığı",
+    "desc": "Cannes, Berlin ve Venedik film festivallerinde fonlanan bazı yapımların, Türkiye'yi terör destekçisi ve baskıcı gibi gösteren senaryolarla ödüllendirildiği tespit edildi. MİT ve Kültür Bakanlığı, yabancı istihbarat servislerinin sinema ve sanat vakıfları üzerinden Türkiye aleyhine örtülü psikolojik harp yürüttüğünü raporladı.",
     "options": [
       {
-        "label": "Tarihi ve kültürel varlıkların korunmasında vakfiye şartları, Anayasa ve evrensel koruma ilkelerini gözet.",
-        "preview": "Adalet +9, Halk +8, Otorite +3 | Hazine -2",
+        "label": "Yabancı fon alan STK ve vakıfların mali kaynaklarını MASAK ve adli teftişe tabi tut; kara para ve etki ajanlığı bağlarını soruştur.",
+        "preview": "Adalet +9, Halk +7, Hazine +5, Otorite +3",
         "effects": {
           "justice": 9,
-          "people": 8,
-          "treasury": -2,
+          "people": 7,
+          "treasury": 5,
           "military": 0,
           "authority": 3
         },
-        "log": "Kültürel miras korundu; ecdat yadigarı eserlerin restorasyonunda tarihi aslına sadık kalındı."
+        "log": "Karanlık fon hareketleri mercek altına alındı; yabancı servislerin kültürel finansman ağları deşifre edildi."
       },
       {
-        "label": "Sanatçılar, kültür insanları ve sivil toplumla istişare kurulları toplayarak milli kültür politikasını güçlendir.",
+        "label": "Türk sinemacılar, yönetmenler ve yazarlarla kültür kurultayı topla; yerli ve milli hikayelerin dünyaya anlatılmasını teşvik et.",
         "preview": "Adalet +3, Halk +9, Otorite +6 | Hazine -4",
         "effects": {
           "justice": 3,
@@ -55417,10 +55417,10 @@ const EVENT_DECK_MODERN = [
           "military": 0,
           "authority": 6
         },
-        "log": "Kültür hayatında toplumsal mutabakat sağlandı; sanatçıların eser üretmesi desteklendi."
+        "log": "Sanat dünyasıyla diyalog kuruldu; Türk sinemasının kendi öz değerleriyle evrensel ödüller alması desteklendi."
       },
       {
-        "label": "Müze, kütüphane ve tarihi restorasyon projeleri için Hazine bütçesinden özel ödenekler ayır.",
+        "label": "TRT Sinema ve Kültür Bakanlığı Sinema Destekleme Fonu'na Hazine'den 500 milyon liralık dev bütçe aktar.",
         "preview": "Hazine +8, Otorite +4 | Halk -5",
         "effects": {
           "justice": 0,
@@ -55429,10 +55429,10 @@ const EVENT_DECK_MODERN = [
           "military": 0,
           "authority": 4
         },
-        "log": "Kültür yatırımları finanse edildi; Türkiye'nin tarihi mirası ihya edilerek turizme kazandırıldı."
+        "log": "Milli sinema şahlandı; bağımsız Türk filmleri yabancı fonlara muhtaç kalmadan dünya festivallerinde yarıştı."
       },
       {
-        "label": "Tarihi eser kaçakçılarına ve sit alanlarını tahrip eden rant odaklarına karşı kolluk devriyelerini artır.",
+        "label": "Festivallerde Türkiye aleyhine terör örgütü propagandası yapan paravan odakların kültürel sabotajlarını MİT ile engelle.",
         "preview": "Adalet +5, Halk +5, Güvenlik +9, Otorite +8 | Hazine -5",
         "effects": {
           "justice": 5,
@@ -55441,19 +55441,19 @@ const EVENT_DECK_MODERN = [
           "military": 9,
           "authority": 8
         },
-        "log": "Sit alanları korundu; tarihi dokuyu bozan kaçak yapılaşmalar dozerlerle yıkıldı."
+        "log": "Uluslararası festivallerde Türkiye'nin tezleri savunuldu; kara propaganda filmleri diplomatik girişimlerle boşa çıkarıldı."
       },
       {
-        "label": "Türkiye'nin kültürel diplomasisini ve tarihi mirasını koruyan 'Milli Kültür ve Sanat Reform Kanunu' çıkar.",
-        "preview": "Adalet +7, Halk +8, Otorite +5 | Hazine -4",
+        "label": "Kültürel etki ajanlığı ve yabancı devlet fonlu dezenformasyon faaliyetlerini suç sayan 'Kültür Güvenliği Kanunu' çıkar.",
+        "preview": "Adalet +5, Halk +3, Güvenlik +7, Otorite +7 | Hazine -4",
         "effects": {
-          "justice": 7,
-          "people": 8,
+          "justice": 5,
+          "people": 3,
           "treasury": -4,
-          "military": 0,
-          "authority": 5
+          "military": 7,
+          "authority": 7
         },
-        "log": "Kültür politikası kanunlaştı; Türkiye'nin tarihi derinliği dünyaya gururla tanıtıldı."
+        "log": "Kültürel bağımsızlık kanunlaştı; Türkiye'nin tarihi derinliği ve vicdani sesi dünyaya gururla tanıtıldı."
       }
     ]
   },
@@ -55461,77 +55461,77 @@ const EVENT_DECK_MODERN = [
     "id": "tr_vaka_712",
     "characters": [
       {
-        "id": "char_cumhurbaskani",
-        "name": "Cumhurbaşkanı"
+        "id": "char_kultur_turizm_bakani",
+        "name": "Kültür ve Turizm Bakanı"
       },
       {
-        "id": "char_sehir_plancisi",
-        "name": "Mimarlar ve Şehir Plancıları Temsilcisi"
+        "id": "char_mit_mustesari",
+        "name": "MİT Müsteşarı / Başkanı"
       }
     ],
     "source": "Kültür ve Turizm Bakanlığı",
-    "title": "Fatih Akın'ın 'Duvara Karşı' ile Berlin Altın Ayı Ödülü",
-    "desc": "Almanya ve Türkiye arasındaki göçmen kimliğini anlatan film Berlin Film Festivali'nin en büyük ödülünü aldı.",
+    "title": "Yabancı Fonlu Sinema Festivalleri ve Türkiye Aleyhtarı Film Propagandası",
+    "desc": "Avrupa festivallerinde fonlanan bazı yapımların Türkiye'yi geri kalmış, yozlaşmış ve terörle ilişkili gösterme şartıyla finanse edildiği MİT kültür raporunda belgelendi.",
     "options": [
       {
-        "label": "Tarihi ve kültürel varlıkların korunmasında vakfiye şartları, Anayasa ve evrensel koruma ilkelerini gözet.",
-        "preview": "Adalet +9, Halk +8, Otorite +3 | Hazine -2",
+        "label": "Kültür Bakanlığı bünyesinde güçlü 'Milli Sinema Fonu' kurarak Türk sinemacıların yabancı siyasi fonlara muhtaçlığını bitir.",
+        "preview": "Adalet +8, Halk +8, Otorite +7 | Hazine -5",
         "effects": {
-          "justice": 9,
+          "justice": 8,
           "people": 8,
-          "treasury": -2,
-          "military": 0,
-          "authority": 3
-        },
-        "log": "Kültürel miras korundu; ecdat yadigarı eserlerin restorasyonunda tarihi aslına sadık kalındı."
-      },
-      {
-        "label": "Sanatçılar, kültür insanları ve sivil toplumla istişare kurulları toplayarak milli kültür politikasını güçlendir.",
-        "preview": "Adalet +3, Halk +9, Otorite +6 | Hazine -4",
-        "effects": {
-          "justice": 3,
-          "people": 9,
-          "treasury": -4,
-          "military": 0,
-          "authority": 6
-        },
-        "log": "Kültür hayatında toplumsal mutabakat sağlandı; sanatçıların eser üretmesi desteklendi."
-      },
-      {
-        "label": "Müze, kütüphane ve tarihi restorasyon projeleri için Hazine bütçesinden özel ödenekler ayır.",
-        "preview": "Hazine +8, Otorite +4 | Halk -5",
-        "effects": {
-          "justice": 0,
-          "people": -5,
-          "treasury": 8,
-          "military": 0,
-          "authority": 4
-        },
-        "log": "Kültür yatırımları finanse edildi; Türkiye'nin tarihi mirası ihya edilerek turizme kazandırıldı."
-      },
-      {
-        "label": "Tarihi eser kaçakçılarına ve sit alanlarını tahrip eden rant odaklarına karşı kolluk devriyelerini artır.",
-        "preview": "Adalet +5, Halk +5, Güvenlik +9, Otorite +8 | Hazine -5",
-        "effects": {
-          "justice": 5,
-          "people": 5,
           "treasury": -5,
-          "military": 9,
+          "military": 0,
+          "authority": 7
+        },
+        "log": "Bağımsız Türk sinemacıları siyasi şantajdan kurtarıldı; milli hikayeler dünya standartlarında fonlandı."
+      },
+      {
+        "label": "Uluslararası festivallerde Türkiye'yi karalayan yalan prodüksiyonlara karşı gerçek arşiv belgeleriyle karşı belgeseller fonla.",
+        "preview": "Adalet +7, Halk +7, Güvenlik +2, Otorite +7 | Hazine -4",
+        "effects": {
+          "justice": 7,
+          "people": 7,
+          "treasury": -4,
+          "military": 2,
+          "authority": 7
+        },
+        "log": "Avrupa kamuoyundaki dezenformasyon dalgası yüksek kaliteli karşı yapımlarla püskürtüldü."
+      },
+      {
+        "label": "Yabancı misyon ve enstitülerin Türkiye içindeki gizli senaryo yarışmaları ve fon dağıtımlarını MASAK incelemesine al.",
+        "preview": "Adalet +7, Halk +5, Hazine +1, Güvenlik +4, Otorite +8",
+        "effects": {
+          "justice": 7,
+          "people": 5,
+          "treasury": 1,
+          "military": 4,
           "authority": 8
         },
-        "log": "Sit alanları korundu; tarihi dokuyu bozan kaçak yapılaşmalar dozerlerle yıkıldı."
+        "log": "Kültürel alandaki yabancı etki ajanlığı ve gizli fon akışı deşifre edildi."
       },
       {
-        "label": "Türkiye'nin kültürel diplomasisini ve tarihi mirasını koruyan 'Milli Kültür ve Sanat Reform Kanunu' çıkar.",
-        "preview": "Adalet +7, Halk +8, Otorite +5 | Hazine -4",
+        "label": "Antalya Altın Portakal ve İstanbul Film Festivali'ni dünya çapında prestijli alternatif kültür merkezleri haline getir.",
+        "preview": "Adalet +7, Halk +8, Otorite +6 | Hazine -4",
         "effects": {
           "justice": 7,
           "people": 8,
           "treasury": -4,
           "military": 0,
-          "authority": 5
+          "authority": 6
         },
-        "log": "Kültür politikası kanunlaştı; Türkiye'nin tarihi derinliği dünyaya gururla tanıtıldı."
+        "log": "Türk festivalleri Asya ve Akdeniz'in en saygın bağımsız sinema arenası oldu."
+      },
+      {
+        "label": "Sanat özgürlüğü ilkesine sadık kalarak sansür yerine yüksek nitelikli bağımsız Türk yapımlarına vergi muafiyeti sağla.",
+        "preview": "Adalet +8, Halk +8, Otorite +6 | Hazine -3",
+        "effects": {
+          "justice": 8,
+          "people": 8,
+          "treasury": -3,
+          "military": 0,
+          "authority": 6
+        },
+        "log": "Sanatsal yaratıcılık teşvik edildi, sansür tartışmaları yerini nitelikli üretime bıraktı."
       }
     ]
   },
@@ -55539,77 +55539,77 @@ const EVENT_DECK_MODERN = [
     "id": "tr_vaka_713",
     "characters": [
       {
-        "id": "char_cumhurbaskani",
-        "name": "Cumhurbaşkanı"
+        "id": "char_kultur_turizm_bakani",
+        "name": "Kültür ve Turizm Bakanı"
       },
       {
-        "id": "char_diplomat",
-        "name": "Dışişleri Müsteşarı"
+        "id": "char_adalet_bakani",
+        "name": "Adalet Bakanı"
       }
     ],
     "source": "Kültür ve Turizm Bakanlığı",
-    "title": "Orhan Pamuk'un 2006 Nobel Edebiyat Ödülü'nü Kazanması",
-    "desc": "Türk edebiyat tarihinin ilk Nobel ödülü 'kentinin melankolik ruhunun izlerini süren' yazara verildi.",
+    "title": "Nobel ve Uluslararası Edebiyat Ödüllerinde Siyasi Şart Dayatması",
+    "desc": "Batılı edebiyat komitelerinin Türk yazarlara ödül vermeden önce Ermeni tehciri ve etnik meseleler hakkında Türkiye'yi mahkum eden siyasi demeçler vermesini şart koştuğu iddiaları kamuoyunu ikiye böldü.",
     "options": [
       {
-        "label": "Nobel ödüllü bilim insanlarımızın ve yazarlarımızın düşünce ve bilimsel hürriyetini anayasal güvenceye bağla.",
-        "preview": "Adalet +9, Halk +8, Otorite +3 | Hazine -2",
-        "effects": {
-          "justice": 9,
-          "people": 8,
-          "treasury": -2,
-          "military": 0,
-          "authority": 3
-        },
-        "log": "Bilim ve edebiyat onurlandırıldı; Prof. Dr. Aziz Sancar Nobel madalyasını Anıtkabir'e armağan ederek milli hafızaya kazıdı."
-      },
-      {
-        "label": "Genç bilim insanlarını ve araştırmacıları desteklemek için TÜBİTAK bünyesinde 'Aziz Sancar Bilim Köyü ve Bursu' kur.",
-        "preview": "Adalet +3, Halk +9, Otorite +6 | Hazine -4",
-        "effects": {
-          "justice": 3,
-          "people": 9,
-          "treasury": -4,
-          "military": 0,
-          "authority": 6
-        },
-        "log": "Gençliğe ilham verildi; Anadolu'nun dört bir yanındaki öğrenciler moleküler biyoloji ve temel bilimlere yöneldi."
-      },
-      {
-        "label": "Temel bilimler ve araştırma üniversitelerine Hazine bütçesinden özel Ar-Ge ve laboratuvar fonu sağla.",
-        "preview": "Hazine +8, Otorite +4 | Halk -5",
-        "effects": {
-          "justice": 0,
-          "people": -5,
-          "treasury": 8,
-          "military": 0,
-          "authority": 4
-        },
-        "log": "Üniversitelerin araştırma bütçeleri artırıldı; beyin göçünün tersine dönmesi için kaynak sağlandı."
-      },
-      {
-        "label": "Stratejik biyoteknoloji ve genetik araştırma laboratuvarlarını yabancı veri hırsızlığına karşı koruma kalkanına al.",
-        "preview": "Adalet +3, Güvenlik +4, Otorite +7 | Halk -2, Hazine -3",
-        "effects": {
-          "justice": 3,
-          "people": -2,
-          "treasury": -3,
-          "military": 4,
-          "authority": 7
-        },
-        "log": "Milli DNA ve biyolojik veriler korundu; Türkiye'nin gen haritası güvenliğe alındı."
-      },
-      {
-        "label": "Bilim insanlarına tam bağımsız araştırma ve patent tescili imkanı sağlayan 'Milli Bilim ve Araştırma Kanunu' çıkar.",
-        "preview": "Adalet +8, Halk +8, Güvenlik +1, Otorite +6 | Hazine -4",
+        "label": "Fikir ve edebiyat özgürlüğünü korurken, Türk tarihinin siyasi ödüllerle yargılanamayacağını diplomatik bildiriyle vurgula.",
+        "preview": "Adalet +8, Halk +7, Otorite +7",
         "effects": {
           "justice": 8,
+          "people": 7,
+          "treasury": 0,
+          "military": 0,
+          "authority": 7
+        },
+        "log": "Edebiyata saygı duyulurken devletin haysiyeti ve tarihi hakikatleri uluslararası alanda savunuldu."
+      },
+      {
+        "label": "Türk edebiyatının dünya dillerine çevrilmesini sağlayan TEDA projesini 10 kat büyüterek kültürel diplomasiyi devlete bağla.",
+        "preview": "Adalet +7, Halk +8, Otorite +7 | Hazine -4",
+        "effects": {
+          "justice": 7,
           "people": 8,
           "treasury": -4,
-          "military": 1,
+          "military": 0,
+          "authority": 7
+        },
+        "log": "Klasik ve çağdaş yüzlerce Türk eseri 60 dünya diline tercüme edilerek küresel okura ulaştı."
+      },
+      {
+        "label": "Türk dünyası ve Doğu edebiyatlarını kapsayan bağımsız 'Avrasya Edebiyat ve Barış Ödülleri' tesis et.",
+        "preview": "Adalet +7, Halk +7, Otorite +6 | Hazine -3",
+        "effects": {
+          "justice": 7,
+          "people": 7,
+          "treasury": -3,
+          "military": 0,
           "authority": 6
         },
-        "log": "Bilim insanları bürokratik engellerden kurtarıldı; Türkiye'nin küresel bilimsel yayın sayısı rekor kırdı."
+        "log": "Batı merkezli edebiyat hiyerarşisine karşı güçlü ve saygın bir doğu-batı köprüsü kuruldu."
+      },
+      {
+        "label": "Siyasi demeçler veren yazarlara karşı linç kampanyalarını önlemek için fikir hürriyetini adli güvenceye al.",
+        "preview": "Adalet +9, Halk +6, Otorite +6",
+        "effects": {
+          "justice": 9,
+          "people": 6,
+          "treasury": 0,
+          "military": 0,
+          "authority": 6
+        },
+        "log": "Hukuk devleti ilkesi işletildi; fikirlerinden ötürü kimsenin hedef gösterilmesine izin verilmedi."
+      },
+      {
+        "label": "Milli kütüphaneler ve üniversiteler aracılığıyla Türk edebiyatının klasikleri için küresel tanıtım atağı başlat.",
+        "preview": "Adalet +7, Halk +8, Otorite +6 | Hazine -3",
+        "effects": {
+          "justice": 7,
+          "people": 8,
+          "treasury": -3,
+          "military": 0,
+          "authority": 6
+        },
+        "log": "Yunus Emre'den Tanpınar'a Türk edebiyat dehaları dünyada hak ettiği ilgiyi gördü."
       }
     ]
   },
@@ -55617,77 +55617,77 @@ const EVENT_DECK_MODERN = [
     "id": "tr_vaka_714",
     "characters": [
       {
-        "id": "char_cumhurbaskani",
-        "name": "Cumhurbaşkanı"
+        "id": "char_sanayi_bakani",
+        "name": "Sanayi ve Teknoloji Bakanı"
       },
       {
-        "id": "char_diplomat",
-        "name": "Dışişleri Müsteşarı"
+        "id": "char_hazine_bakani",
+        "name": "Hazine ve Maliye Bakanı"
       }
     ],
     "source": "Kültür ve Turizm Bakanlığı",
-    "title": "Prof. Dr. Aziz Sancar'ın 2015 Nobel Kimya Ödülü",
-    "desc": "Mardin Savur doğumlu bilim insanı DNA onarımı mekanizması keşfiyle Nobel ödülünü Anıtkabir'e hediye etti.",
+    "title": "Prof. Dr. Aziz Sancar ve Tersine Beyin Göçü: Stratejik Moleküler Laboratuvar",
+    "desc": "Nobel Kimya Ödülü sonrası Türk bilim insanlarının yurtdışına kaçışını önlemek ve savunma sanayiine biyoteknolojik güç katmak için stratejik enstitü kurulması talebi masaya geldi.",
     "options": [
       {
-        "label": "Nobel ödüllü bilim insanlarımızın ve yazarlarımızın düşünce ve bilimsel hürriyetini anayasal güvenceye bağla.",
-        "preview": "Adalet +9, Halk +8, Otorite +3 | Hazine -2",
+        "label": "Savur'dan dünyaya uzanan başarıyı model alarak Aziz Sancar Moleküler Biyoloji ve DNA Araştırma Merkezi'ni kur.",
+        "preview": "Adalet +7, Halk +9, Güvenlik +3, Otorite +7 | Hazine -6",
         "effects": {
-          "justice": 9,
-          "people": 8,
-          "treasury": -2,
-          "military": 0,
-          "authority": 3
+          "justice": 7,
+          "people": 9,
+          "treasury": -6,
+          "military": 3,
+          "authority": 7
         },
-        "log": "Bilim ve edebiyat onurlandırıldı; Prof. Dr. Aziz Sancar Nobel madalyasını Anıtkabir'e armağan ederek milli hafızaya kazıdı."
+        "log": "Türkiye'nin en donanımlı moleküler laboratuvarı açıldı; milli tıp araştırmaları hız kazandı."
       },
       {
-        "label": "Genç bilim insanlarını ve araştırmacıları desteklemek için TÜBİTAK bünyesinde 'Aziz Sancar Bilim Köyü ve Bursu' kur.",
-        "preview": "Adalet +3, Halk +9, Otorite +6 | Hazine -4",
+        "label": "Yurtdışındaki kritik Türk bilim insanlarına tam araştırma bütçesi ve bürokrasisiz çalışma güvencesiyle tersine beyin göçü başlat.",
+        "preview": "Adalet +8, Halk +8, Güvenlik +4, Otorite +7 | Hazine -7",
         "effects": {
-          "justice": 3,
+          "justice": 8,
+          "people": 8,
+          "treasury": -7,
+          "military": 4,
+          "authority": 7
+        },
+        "log": "Yüzlerce dahi Türk bilim insanı vatanına dönerek kritik projelerin başına geçti."
+      },
+      {
+        "label": "TÜBİTAK ve üniversitelerdeki genç araştırmacılara uluslararası fon yerine yerli Ar-Ge teşvik bursu bağla.",
+        "preview": "Adalet +7, Halk +8, Otorite +6 | Hazine -5",
+        "effects": {
+          "justice": 7,
+          "people": 8,
+          "treasury": -5,
+          "military": 0,
+          "authority": 6
+        },
+        "log": "Genç akademisyenlerin yabancı burs arayışına girmeden ülkede kalması sağlandı."
+      },
+      {
+        "label": "Kanser ve genetik araştırmalarında dışa bağımlılığı bitirecek yerli ilaç sanayii konsorsiyumu ilan et.",
+        "preview": "Adalet +7, Halk +8, Güvenlik +2, Otorite +7 | Hazine -6",
+        "effects": {
+          "justice": 7,
+          "people": 8,
+          "treasury": -6,
+          "military": 2,
+          "authority": 7
+        },
+        "log": "Stratejik ilaç ve aşı üretiminde dışa bağımlılık kırılarak sağlık güvenliği tahkim edildi."
+      },
+      {
+        "label": "Temel bilimler liseleri ve olimpiyat kampları açarak yeni nesil bilim insanlarını devlet himayesine al.",
+        "preview": "Adalet +8, Halk +9, Otorite +6 | Hazine -4",
+        "effects": {
+          "justice": 8,
           "people": 9,
           "treasury": -4,
           "military": 0,
           "authority": 6
         },
-        "log": "Gençliğe ilham verildi; Anadolu'nun dört bir yanındaki öğrenciler moleküler biyoloji ve temel bilimlere yöneldi."
-      },
-      {
-        "label": "Temel bilimler ve araştırma üniversitelerine Hazine bütçesinden özel Ar-Ge ve laboratuvar fonu sağla.",
-        "preview": "Hazine +8, Otorite +4 | Halk -5",
-        "effects": {
-          "justice": 0,
-          "people": -5,
-          "treasury": 8,
-          "military": 0,
-          "authority": 4
-        },
-        "log": "Üniversitelerin araştırma bütçeleri artırıldı; beyin göçünün tersine dönmesi için kaynak sağlandı."
-      },
-      {
-        "label": "Stratejik biyoteknoloji ve genetik araştırma laboratuvarlarını yabancı veri hırsızlığına karşı koruma kalkanına al.",
-        "preview": "Adalet +3, Güvenlik +4, Otorite +7 | Halk -2, Hazine -3",
-        "effects": {
-          "justice": 3,
-          "people": -2,
-          "treasury": -3,
-          "military": 4,
-          "authority": 7
-        },
-        "log": "Milli DNA ve biyolojik veriler korundu; Türkiye'nin gen haritası güvenliğe alındı."
-      },
-      {
-        "label": "Bilim insanlarına tam bağımsız araştırma ve patent tescili imkanı sağlayan 'Milli Bilim ve Araştırma Kanunu' çıkar.",
-        "preview": "Adalet +8, Halk +8, Güvenlik +1, Otorite +6 | Hazine -4",
-        "effects": {
-          "justice": 8,
-          "people": 8,
-          "treasury": -4,
-          "military": 1,
-          "authority": 6
-        },
-        "log": "Bilim insanları bürokratik engellerden kurtarıldı; Türkiye'nin küresel bilimsel yayın sayısı rekor kırdı."
+        "log": "Anadolu'nun zeki çocukları keşfedilip geleceğin Nobel adayı olarak yetiştirilmeye başlandı."
       }
     ]
   },
@@ -55695,77 +55695,77 @@ const EVENT_DECK_MODERN = [
     "id": "tr_vaka_715",
     "characters": [
       {
-        "id": "char_cumhurbaskani",
-        "name": "Cumhurbaşkanı"
+        "id": "char_hazine_bakani",
+        "name": "Hazine ve Maliye Bakanı"
       },
       {
-        "id": "char_diplomat",
-        "name": "Dışişleri Müsteşarı"
+        "id": "char_adalet_bakani",
+        "name": "Adalet Bakanı"
       }
     ],
     "source": "Kültür ve Turizm Bakanlığı",
-    "title": "Prof. Dr. Daron Acemoğlu'nun 2024 Nobel Ekonomi Ödülü",
-    "desc": "Kurumların refah ve demokrasi üzerindeki etkisini kanıtlayan tarihi çalışmasıyla Nobel ödülünü kazandı.",
+    "title": "Kurumsal Reformlar ve Şeffaflık: Nobel Tezlerinin Ekonomiye Uyarlanması",
+    "desc": "Kurumların hukuki bağımsızlığı ve kapsayıcı ekonomi tezleri tartışılırken, piyasalardaki güvensizlik ve bürokratik vesayet baskısı kapsamlı bir hukuk-ekonomi reformunu zorunlu kıldı.",
     "options": [
       {
-        "label": "Nobel ödüllü bilim insanlarımızın ve yazarlarımızın düşünce ve bilimsel hürriyetini anayasal güvenceye bağla.",
-        "preview": "Adalet +9, Halk +8, Otorite +3 | Hazine -2",
+        "label": "Yargı bağımsızlığı, mülkiyet güvencesi ve ihale şeffaflığını garanti eden 'Kurumsal Adalet ve Ekonomi Reform Paketi' çıkar.",
+        "preview": "Adalet +9, Halk +8, Hazine +4, Otorite +7",
         "effects": {
           "justice": 9,
           "people": 8,
-          "treasury": -2,
+          "treasury": 4,
           "military": 0,
-          "authority": 3
-        },
-        "log": "Bilim ve edebiyat onurlandırıldı; Prof. Dr. Aziz Sancar Nobel madalyasını Anıtkabir'e armağan ederek milli hafızaya kazıdı."
-      },
-      {
-        "label": "Genç bilim insanlarını ve araştırmacıları desteklemek için TÜBİTAK bünyesinde 'Aziz Sancar Bilim Köyü ve Bursu' kur.",
-        "preview": "Adalet +3, Halk +9, Otorite +6 | Hazine -4",
-        "effects": {
-          "justice": 3,
-          "people": 9,
-          "treasury": -4,
-          "military": 0,
-          "authority": 6
-        },
-        "log": "Gençliğe ilham verildi; Anadolu'nun dört bir yanındaki öğrenciler moleküler biyoloji ve temel bilimlere yöneldi."
-      },
-      {
-        "label": "Temel bilimler ve araştırma üniversitelerine Hazine bütçesinden özel Ar-Ge ve laboratuvar fonu sağla.",
-        "preview": "Hazine +8, Otorite +4 | Halk -5",
-        "effects": {
-          "justice": 0,
-          "people": -5,
-          "treasury": 8,
-          "military": 0,
-          "authority": 4
-        },
-        "log": "Üniversitelerin araştırma bütçeleri artırıldı; beyin göçünün tersine dönmesi için kaynak sağlandı."
-      },
-      {
-        "label": "Stratejik biyoteknoloji ve genetik araştırma laboratuvarlarını yabancı veri hırsızlığına karşı koruma kalkanına al.",
-        "preview": "Adalet +3, Güvenlik +4, Otorite +7 | Halk -2, Hazine -3",
-        "effects": {
-          "justice": 3,
-          "people": -2,
-          "treasury": -3,
-          "military": 4,
           "authority": 7
         },
-        "log": "Milli DNA ve biyolojik veriler korundu; Türkiye'nin gen haritası güvenliğe alındı."
+        "log": "Hukuki güvence piyasalara güven getirdi; doğrudan yabancı yatırımlar rekor kırdı."
       },
       {
-        "label": "Bilim insanlarına tam bağımsız araştırma ve patent tescili imkanı sağlayan 'Milli Bilim ve Araştırma Kanunu' çıkar.",
-        "preview": "Adalet +8, Halk +8, Güvenlik +1, Otorite +6 | Hazine -4",
+        "label": "Düzenleyici kurulların (BDDK, SPK, Rekabet Kurumu) siyasi müdahalelerden arındırılmış bağımsız liyakat yapısını pekiştir.",
+        "preview": "Adalet +8, Halk +7, Hazine +5, Otorite +6",
         "effects": {
           "justice": 8,
-          "people": 8,
-          "treasury": -4,
-          "military": 1,
+          "people": 7,
+          "treasury": 5,
+          "military": 0,
           "authority": 6
         },
-        "log": "Bilim insanları bürokratik engellerden kurtarıldı; Türkiye'nin küresel bilimsel yayın sayısı rekor kırdı."
+        "log": "Ekonomide kurumların kurallarla yönetildiği öngörülebilir bir piyasa düzeni kuruldu."
+      },
+      {
+        "label": "İktisadi planlamada yerli ve milli sanayileşmeyi ön planda tutan dengeli bir karma kalkınma modeli uygula.",
+        "preview": "Adalet +7, Halk +8, Güvenlik +3, Otorite +7 | Hazine -4",
+        "effects": {
+          "justice": 7,
+          "people": 8,
+          "treasury": -4,
+          "military": 3,
+          "authority": 7
+        },
+        "log": "Stratejik sektörler kamu öncülüğünde korunurken özel sektörün önü açıldı."
+      },
+      {
+        "label": "Akademik ve ekonomik düşünce kuruluşlarının hazırladığı bağımsız denetim raporlarını hükümet politikalarına entegre et.",
+        "preview": "Adalet +8, Halk +6, Hazine +2, Otorite +5",
+        "effects": {
+          "justice": 8,
+          "people": 6,
+          "treasury": 2,
+          "military": 0,
+          "authority": 5
+        },
+        "log": "Karar alma süreçlerinde ortak akıl ve liyakat hakim kılındı."
+      },
+      {
+        "label": "Bürokratik işlemleri ve keyfi kamulaştırma risklerini sıfıra indiren uluslararası yatırım güvence yasasını onayla.",
+        "preview": "Adalet +7, Halk +5, Hazine +7, Otorite +6",
+        "effects": {
+          "justice": 7,
+          "people": 5,
+          "treasury": 7,
+          "military": 0,
+          "authority": 6
+        },
+        "log": "Bürokrasi azaltıldı; sanayiciye üretim ve istihdam için tam güvence verildi."
       }
     ]
   },
@@ -56319,77 +56319,77 @@ const EVENT_DECK_MODERN = [
     "id": "tr_vaka_723",
     "characters": [
       {
-        "id": "char_cumhurbaskani",
-        "name": "Cumhurbaşkanı"
+        "id": "char_kultur_turizm_bakani",
+        "name": "Kültür ve Turizm Bakanı"
       },
       {
-        "id": "char_sehir_plancisi",
-        "name": "Mimarlar ve Şehir Plancıları Temsilcisi"
+        "id": "char_hazine_bakani",
+        "name": "Hazine ve Maliye Bakanı"
       }
     ],
     "source": "Kültür ve Turizm Bakanlığı",
-    "title": "Cumhurbaşkanlığı Senfoni Orkestrası'nın (CSO) Yeni Binası",
-    "desc": "Ankara'da 23 yıl süren inşaatın ardından fütüristik mimarisiyle dev konser salonu açıldı.",
+    "title": "CSO Tarihi İnşaatında Bütçe Aşımı ve Kültürde İsraf İddiaları",
+    "desc": "Başkentin simgesi Cumhurbaşkanlığı Senfoni Orkestrası binasının 23 yıldır süren inşaatında dönen yolsuzluk iddiaları ve bütçe aşımı teftişe takıldı.",
     "options": [
       {
-        "label": "Tarihi ve kültürel varlıkların korunmasında vakfiye şartları, Anayasa ve evrensel koruma ilkelerini gözet.",
-        "preview": "Adalet +9, Halk +8, Otorite +3 | Hazine -2",
+        "label": "Müteahhit ve müşavir firmaların 23 yıllık harcama kayıtlarını Sayıştay ve Mülkiye Teftiş Kurulu'na inceletip hesabı sor.",
+        "preview": "Adalet +9, Halk +7, Hazine +4, Otorite +8",
         "effects": {
           "justice": 9,
-          "people": 8,
-          "treasury": -2,
+          "people": 7,
+          "treasury": 4,
           "military": 0,
-          "authority": 3
+          "authority": 8
         },
-        "log": "Kültürel miras korundu; ecdat yadigarı eserlerin restorasyonunda tarihi aslına sadık kalındı."
+        "log": "Yılların ihmal ve vurgun defterleri açıldı; kamunun hakkı kuruşu kuruşuna tahsil edildi."
       },
       {
-        "label": "Sanatçılar, kültür insanları ve sivil toplumla istişare kurulları toplayarak milli kültür politikasını güçlendir.",
-        "preview": "Adalet +3, Halk +9, Otorite +6 | Hazine -4",
+        "label": "İnşaatı TOKİ disipliniyle 6 ayda tamamlayıp başkente dünya çapında bir akustik konser salonu kazandır.",
+        "preview": "Adalet +6, Halk +8, Otorite +7 | Hazine -6",
         "effects": {
-          "justice": 3,
+          "justice": 6,
+          "people": 8,
+          "treasury": -6,
+          "military": 0,
+          "authority": 7
+        },
+        "log": "23 yıllık yılan hikayesi bitti; Ankara dünyanın en modern konser salonlarından birine kavuştu."
+      },
+      {
+        "label": "Binayı sadece Batı klasik müziğine değil, Türk Sanat ve Halk Müziği topluluklarına da eşit oranda tahsis et.",
+        "preview": "Adalet +8, Halk +9, Otorite +6",
+        "effects": {
+          "justice": 8,
           "people": 9,
-          "treasury": -4,
+          "treasury": 0,
           "military": 0,
           "authority": 6
         },
-        "log": "Kültür hayatında toplumsal mutabakat sağlandı; sanatçıların eser üretmesi desteklendi."
+        "log": "Kültürel ayrımcılık sona erdi; milletin tüm ezgileri aynı çatı altında buluştu."
       },
       {
-        "label": "Müze, kütüphane ve tarihi restorasyon projeleri için Hazine bütçesinden özel ödenekler ayır.",
-        "preview": "Hazine +8, Otorite +4 | Halk -5",
+        "label": "Salonun işletmesini özel sanat vakıflarına devrederek kamu bütçesi üzerindeki cari işletme yükünü sıfırla.",
+        "preview": "Adalet +6, Halk +5, Hazine +6, Otorite +5",
         "effects": {
-          "justice": 0,
-          "people": -5,
-          "treasury": 8,
-          "military": 0,
-          "authority": 4
-        },
-        "log": "Kültür yatırımları finanse edildi; Türkiye'nin tarihi mirası ihya edilerek turizme kazandırıldı."
-      },
-      {
-        "label": "Tarihi eser kaçakçılarına ve sit alanlarını tahrip eden rant odaklarına karşı kolluk devriyelerini artır.",
-        "preview": "Adalet +5, Halk +5, Güvenlik +9, Otorite +8 | Hazine -5",
-        "effects": {
-          "justice": 5,
+          "justice": 6,
           "people": 5,
-          "treasury": -5,
-          "military": 9,
-          "authority": 8
-        },
-        "log": "Sit alanları korundu; tarihi dokuyu bozan kaçak yapılaşmalar dozerlerle yıkıldı."
-      },
-      {
-        "label": "Türkiye'nin kültürel diplomasisini ve tarihi mirasını koruyan 'Milli Kültür ve Sanat Reform Kanunu' çıkar.",
-        "preview": "Adalet +7, Halk +8, Otorite +5 | Hazine -4",
-        "effects": {
-          "justice": 7,
-          "people": 8,
-          "treasury": -4,
+          "treasury": 6,
           "military": 0,
           "authority": 5
         },
-        "log": "Kültür politikası kanunlaştı; Türkiye'nin tarihi derinliği dünyaya gururla tanıtıldı."
+        "log": "Hazine bütçesi hafifletildi; profesyonel sanat yönetimiyle gelir artırıldı."
+      },
+      {
+        "label": "Anadolu'daki tüm genç yeteneklerin ücretsiz konser verebileceği ulusal bir orkestra staj akademisi kur.",
+        "preview": "Adalet +7, Halk +8, Otorite +6 | Hazine -3",
+        "effects": {
+          "justice": 7,
+          "people": 8,
+          "treasury": -3,
+          "military": 0,
+          "authority": 6
+        },
+        "log": "Genç müzisyenler devlet himayesinde sahneye çıktı, sanatta fırsat eşitliği sağlandı."
       }
     ]
   },
@@ -56475,77 +56475,77 @@ const EVENT_DECK_MODERN = [
     "id": "tr_vaka_725",
     "characters": [
       {
-        "id": "char_cumhurbaskani",
-        "name": "Cumhurbaşkanı"
+        "id": "char_disisleri_bakani",
+        "name": "Dışişleri Bakanı"
       },
       {
-        "id": "char_sehir_plancisi",
-        "name": "Mimarlar ve Şehir Plancıları Temsilcisi"
+        "id": "char_kultur_turizm_bakani",
+        "name": "Kültür ve Turizm Bakanı"
       }
     ],
     "source": "Kültür ve Turizm Bakanlığı",
-    "title": "Boğaziçi Caz Korosu'nun Dünya Koro Olimpiyatları Şampiyonluğu",
-    "desc": "Genç koro müzisyenleri Çin ve ABD'deki yarışmalarda Türkiye'ye altın madalyalar getirdi.",
+    "title": "Genç Müzisyenlerin Uluslararası Vize Ambargosu ve Koro Diplomasisi",
+    "desc": "Dünya koro şampiyonu olan genç müzisyenlerin ve sanatçıların Avrupa ve ABD vizelerinin siyasi bahanelerle reddedilmesi uluslararası skandala dönüştü.",
     "options": [
       {
-        "label": "Tarihi ve kültürel varlıkların korunmasında vakfiye şartları, Anayasa ve evrensel koruma ilkelerini gözet.",
-        "preview": "Adalet +9, Halk +8, Otorite +3 | Hazine -2",
+        "label": "Milli sporcu ve sanatçılara diplomatik/yeşil pasaport hakkı tanıyarak vize ambargosunu kökten aşmalarını sağla.",
+        "preview": "Adalet +8, Halk +9, Otorite +7 | Hazine -2",
         "effects": {
-          "justice": 9,
-          "people": 8,
+          "justice": 8,
+          "people": 9,
           "treasury": -2,
           "military": 0,
-          "authority": 3
+          "authority": 7
         },
-        "log": "Kültürel miras korundu; ecdat yadigarı eserlerin restorasyonunda tarihi aslına sadık kalındı."
+        "log": "Genç sanatçıların seyahat engeli aşıldı; Türk bayrağı dünya sahnelerinde dalgalandı."
       },
       {
-        "label": "Sanatçılar, kültür insanları ve sivil toplumla istişare kurulları toplayarak milli kültür politikasını güçlendir.",
-        "preview": "Adalet +3, Halk +9, Otorite +6 | Hazine -4",
+        "label": "Türk sanatçılara vize çıkarmayan Batılı ülkelerin kültür heyetlerine mütekabiliyet esasıyla vize kısıtlaması getir.",
+        "preview": "Adalet +7, Halk +6, Güvenlik +2, Otorite +8",
         "effects": {
-          "justice": 3,
-          "people": 9,
-          "treasury": -4,
-          "military": 0,
-          "authority": 6
-        },
-        "log": "Kültür hayatında toplumsal mutabakat sağlandı; sanatçıların eser üretmesi desteklendi."
-      },
-      {
-        "label": "Müze, kütüphane ve tarihi restorasyon projeleri için Hazine bütçesinden özel ödenekler ayır.",
-        "preview": "Hazine +8, Otorite +4 | Halk -5",
-        "effects": {
-          "justice": 0,
-          "people": -5,
-          "treasury": 8,
-          "military": 0,
-          "authority": 4
-        },
-        "log": "Kültür yatırımları finanse edildi; Türkiye'nin tarihi mirası ihya edilerek turizme kazandırıldı."
-      },
-      {
-        "label": "Tarihi eser kaçakçılarına ve sit alanlarını tahrip eden rant odaklarına karşı kolluk devriyelerini artır.",
-        "preview": "Adalet +5, Halk +5, Güvenlik +9, Otorite +8 | Hazine -5",
-        "effects": {
-          "justice": 5,
-          "people": 5,
-          "treasury": -5,
-          "military": 9,
+          "justice": 7,
+          "people": 6,
+          "treasury": 0,
+          "military": 2,
           "authority": 8
         },
-        "log": "Sit alanları korundu; tarihi dokuyu bozan kaçak yapılaşmalar dozerlerle yıkıldı."
+        "log": "Mütekabiliyet ilkesi işletildi; Batılı misyonlar Türk vizesi için geri adım attı."
       },
       {
-        "label": "Türkiye'nin kültürel diplomasisini ve tarihi mirasını koruyan 'Milli Kültür ve Sanat Reform Kanunu' çıkar.",
-        "preview": "Adalet +7, Halk +8, Otorite +5 | Hazine -4",
+        "label": "Gençlerin yarışma ve turne masraflarını Kültür Diplomasi Fonu'ndan karşılayarak resmi devlet koruması ver.",
+        "preview": "Adalet +7, Halk +8, Otorite +6 | Hazine -4",
         "effects": {
           "justice": 7,
           "people": 8,
           "treasury": -4,
           "military": 0,
-          "authority": 5
+          "authority": 6
         },
-        "log": "Kültür politikası kanunlaştı; Türkiye'nin tarihi derinliği dünyaya gururla tanıtıldı."
+        "log": "Genç koro hiçbir bürokratik engelle karşılaşmadan şampiyonluk ödüllerini topladı."
+      },
+      {
+        "label": "Uluslararası sanat komitelerine resmi şikayet mektubu yazarak sanatçıların seyahat hakkının engellenmesini kına.",
+        "preview": "Adalet +7, Halk +7, Otorite +6",
+        "effects": {
+          "justice": 7,
+          "people": 7,
+          "treasury": 0,
+          "military": 0,
+          "authority": 6
+        },
+        "log": "Uluslararası kültür kamuoyu Türkiye'nin haklı protestosuna destek verdi."
+      },
+      {
+        "label": "Balkan ve Asya ülkeleriyle vizesiz kültür festivalleri paktı imzalayarak alternatif sanat sahneleri aç.",
+        "preview": "Adalet +6, Halk +7, Otorite +6 | Hazine -3",
+        "effects": {
+          "justice": 6,
+          "people": 7,
+          "treasury": -3,
+          "military": 0,
+          "authority": 6
+        },
+        "log": "Doğu ve Akdeniz ekseninde yeni kültür koridorları ve işbirlikleri inşa edildi."
       }
     ]
   },
@@ -56709,77 +56709,77 @@ const EVENT_DECK_MODERN = [
     "id": "tr_vaka_728",
     "characters": [
       {
-        "id": "char_cumhurbaskani",
-        "name": "Cumhurbaşkanı"
+        "id": "char_icisleri_bakani",
+        "name": "İçişleri Bakanı"
       },
       {
-        "id": "char_sehir_plancisi",
-        "name": "Mimarlar ve Şehir Plancıları Temsilcisi"
+        "id": "char_kultur_turizm_bakani",
+        "name": "Kültür ve Turizm Bakanı"
       }
     ],
     "source": "Kültür ve Turizm Bakanlığı",
-    "title": "Sümela Manastırı'nın Kaya Düşmesi Önleme Restorasyonu",
-    "desc": "Trabzon Maçka'daki sarp kayalıklara asılı tarihi manastır çelik ağlarla örülerek ziyarete açıldı.",
+    "title": "Sümela Manastırı Restorasyonunda Yabancı Misyon Ayinleri ve İstihbarat Hassasiyeti",
+    "desc": "Sümela'nın sarp kayalıklarının restorasyonu biterken Fener Rum Patrikhanesi ve yabancı heyetlerin Pontus propagandasına alet edilen kontrolsüz ayin talepleri Karadeniz'de gerilim yarattı.",
     "options": [
       {
-        "label": "Tarihi ve kültürel varlıkların korunmasında vakfiye şartları, Anayasa ve evrensel koruma ilkelerini gözet.",
-        "preview": "Adalet +9, Halk +8, Otorite +3 | Hazine -2",
+        "label": "Ayin iznini sadece resmi heyetle ve Türk emniyetinin sıkı gözetimi altında yılda tek günle sınırlandırarak egemenliği koru.",
+        "preview": "Adalet +7, Halk +7, Hazine +1, Güvenlik +3, Otorite +8",
         "effects": {
-          "justice": 9,
-          "people": 8,
-          "treasury": -2,
-          "military": 0,
-          "authority": 3
+          "justice": 7,
+          "people": 7,
+          "treasury": 1,
+          "military": 3,
+          "authority": 8
         },
-        "log": "Kültürel miras korundu; ecdat yadigarı eserlerin restorasyonunda tarihi aslına sadık kalındı."
+        "log": "Ayin ibadet sınırları içinde tutuldu, siyasi provokasyona sıfır tolerans gösterildi."
       },
       {
-        "label": "Sanatçılar, kültür insanları ve sivil toplumla istişare kurulları toplayarak milli kültür politikasını güçlendir.",
-        "preview": "Adalet +3, Halk +9, Otorite +6 | Hazine -4",
+        "label": "Tarihi fresklerin ve sarp kayalıkların korunmasını gerekçe göstererek ziyaretçi sayısına sıkı kota ve güvenlik araması koy.",
+        "preview": "Adalet +7, Halk +6, Hazine +2, Güvenlik +2, Otorite +7",
         "effects": {
-          "justice": 3,
-          "people": 9,
-          "treasury": -4,
+          "justice": 7,
+          "people": 6,
+          "treasury": 2,
+          "military": 2,
+          "authority": 7
+        },
+        "log": "Bin yıllık tarihi miras tahribattan ve vandalizmden kurtarıldı."
+      },
+      {
+        "label": "Ayin bahanesiyle bölgede etnik ve siyasi ajanda yürüten yabancı istihbarat unsurlarını deşifre edip sınır dışı et.",
+        "preview": "Adalet +8, Halk +6, Güvenlik +5, Otorite +8",
+        "effects": {
+          "justice": 8,
+          "people": 6,
+          "treasury": 0,
+          "military": 5,
+          "authority": 8
+        },
+        "log": "Karadeniz'de fitne çıkarmaya çalışan yabancı ajan ağları tasfiye edildi."
+      },
+      {
+        "label": "Sümela'yı Türk-İslam ve Doğu Roma ortak mimari mirası olarak tüm dünyaya tanıtan yüksek profilli bir müze projesi başlat.",
+        "preview": "Adalet +8, Halk +8, Hazine +5, Otorite +6",
+        "effects": {
+          "justice": 8,
+          "people": 8,
+          "treasury": 5,
           "military": 0,
           "authority": 6
         },
-        "log": "Kültür hayatında toplumsal mutabakat sağlandı; sanatçıların eser üretmesi desteklendi."
+        "log": "Trabzon'a yılda yüz binlerce yabancı turist çeken devasa bir turizm geliri sağlandı."
       },
       {
-        "label": "Müze, kütüphane ve tarihi restorasyon projeleri için Hazine bütçesinden özel ödenekler ayır.",
-        "preview": "Hazine +8, Otorite +4 | Halk -5",
-        "effects": {
-          "justice": 0,
-          "people": -5,
-          "treasury": 8,
-          "military": 0,
-          "authority": 4
-        },
-        "log": "Kültür yatırımları finanse edildi; Türkiye'nin tarihi mirası ihya edilerek turizme kazandırıldı."
-      },
-      {
-        "label": "Tarihi eser kaçakçılarına ve sit alanlarını tahrip eden rant odaklarına karşı kolluk devriyelerini artır.",
-        "preview": "Adalet +5, Halk +5, Güvenlik +9, Otorite +8 | Hazine -5",
-        "effects": {
-          "justice": 5,
-          "people": 5,
-          "treasury": -5,
-          "military": 9,
-          "authority": 8
-        },
-        "log": "Sit alanları korundu; tarihi dokuyu bozan kaçak yapılaşmalar dozerlerle yıkıldı."
-      },
-      {
-        "label": "Türkiye'nin kültürel diplomasisini ve tarihi mirasını koruyan 'Milli Kültür ve Sanat Reform Kanunu' çıkar.",
-        "preview": "Adalet +7, Halk +8, Otorite +5 | Hazine -4",
+        "label": "Bölgedeki yerel halk ve sivil toplum kuruluşlarıyla kriz masası toplayıp provokasyonlara karşı sağduyu çağrısı yap.",
+        "preview": "Adalet +7, Halk +8, Otorite +6",
         "effects": {
           "justice": 7,
           "people": 8,
-          "treasury": -4,
+          "treasury": 0,
           "military": 0,
-          "authority": 5
+          "authority": 6
         },
-        "log": "Kültür politikası kanunlaştı; Türkiye'nin tarihi derinliği dünyaya gururla tanıtıldı."
+        "log": "Yerel halkın hassasiyetleri gözetildi, toplumsal barış sağlandı."
       }
     ]
   },
@@ -60141,77 +60141,77 @@ const EVENT_DECK_MODERN = [
     "id": "tr_vaka_772",
     "characters": [
       {
-        "id": "char_hazine_bakani",
-        "name": "Hazine ve Maliye Bakanı"
+        "id": "char_enerji_bakani",
+        "name": "Enerji ve Tabii Kaynaklar Bakanı"
       },
       {
-        "id": "char_sanayi_bakani",
-        "name": "Sanayi ve Teknoloji Bakanı"
+        "id": "char_mit_mustesari",
+        "name": "MİT Müsteşarı / Başkanı"
       }
     ],
     "source": "Enerji ve Tabii Kaynaklar Bakanlığı",
-    "title": "Eskişehir Beylikova Nadir Toprak Elementleri Keşfi",
-    "desc": "Hafif ve ağır nadir elementlerde dünyanın en büyük ikinci sahası bulunarak pilot işleme tesisi açıldı.",
+    "title": "Eskişehir Beylikova Nadir Toprak Elementleri: Çin Karteli ve Batı İstihbaratı",
+    "desc": "Dünyanın en büyük ikinci nadir toprak elementi rezervi Beylikova'da keşfedilirken, hammaddeyi ucuza kapatmak isteyen Çin tekeli ile tesislere sızmaya çalışan Batılı casusluk şebekeleri tespit edildi.",
     "options": [
       {
-        "label": "Beylikova'daki 694 milyon tonluk nadir toprak elementleri ve Eti Maden rezervlerini milli egemenlik tesciline al.",
-        "preview": "Adalet +8, Halk +5, Hazine +4, Otorite +4",
-        "effects": {
-          "justice": 8,
-          "people": 5,
-          "treasury": 4,
-          "military": 0,
-          "authority": 4
-        },
-        "log": "Milli maden hakları korundu; dünyanın 2. büyük nadir element rezervi devletin kontrolünde tescillendi."
-      },
-      {
-        "label": "Bandırma ve Eskişehir tesislerinde yerli üniversite ve kimya mühendisleriyle ortak Ar-Ge şurası topla.",
-        "preview": "Adalet +3, Halk +9, Otorite +6 | Hazine -4",
-        "effects": {
-          "justice": 3,
-          "people": 9,
-          "treasury": -4,
-          "military": 0,
-          "authority": 6
-        },
-        "log": "Yerli teknoloji ekosistemi kuruldu; lityum, bor ve çip üretiminde milli kabiliyet geliştirildi."
-      },
-      {
-        "label": "Ham bor satmak yerine tonu 40 bin dolar olan Bor Karbür ve zırh malzemesi üreterek Hazineye devasa ihracat geliri sağla.",
-        "preview": "Adalet +1, Halk +4, Hazine +8, Otorite +5",
-        "effects": {
-          "justice": 1,
-          "people": 4,
-          "treasury": 8,
-          "military": 0,
-          "authority": 5
-        },
-        "log": "Katma değerli madencilik başladı; Türkiye ham cevher satıcılığından ileri teknoloji ihracatçılığına geçti."
-      },
-      {
-        "label": "Milli maden tesisleri ve zenginleştirme fabrikalarını yabancı siber casusluk ve sabotajlara karşı askeri korumaya al.",
-        "preview": "Adalet +5, Halk +5, Güvenlik +9, Otorite +8 | Hazine -5",
-        "effects": {
-          "justice": 5,
-          "people": 5,
-          "treasury": -5,
-          "military": 9,
-          "authority": 8
-        },
-        "log": "Stratejik maden üsleri korundu; Türkiye'nin nadir element formüllerinin dışarı sızması engellendi."
-      },
-      {
-        "label": "Stratejik madenlerin yabancılara imtiyaz olarak devredilmesini yasaklayan 'Milli Maden ve Tabii Kaynaklar Kanunu' çıkar.",
-        "preview": "Adalet +7, Halk +5, Otorite +6 | Hazine -4",
+        "label": "Maden sahasını 'Özel Askeri Güvenlik Bölgesi' ilan edip ham cevher ihracatını yasakla; sadece yerli rafine ürün satışı şartı koy.",
+        "preview": "Adalet +7, Halk +8, Hazine +8, Güvenlik +6, Otorite +9",
         "effects": {
           "justice": 7,
-          "people": 5,
-          "treasury": -4,
+          "people": 8,
+          "treasury": 8,
+          "military": 6,
+          "authority": 9
+        },
+        "log": "Milli servetin hammadde olarak sömürülmesi önlendi; Türkiye katma değerli teknoloji üreticisi oldu."
+      },
+      {
+        "label": "Eti Maden bünyesinde ileri teknoloji arıtma ve oksit ayrıştırma pilot tesisini kamu yatırımıyla ivedilikle kur.",
+        "preview": "Adalet +6, Halk +7, Güvenlik +4, Otorite +7 | Hazine -8",
+        "effects": {
+          "justice": 6,
+          "people": 7,
+          "treasury": -8,
+          "military": 4,
+          "authority": 7
+        },
+        "log": "Çin tekeline meydan okuyan yerli arıtma tesisi kuruldu; stratejik elementler millileştirildi."
+      },
+      {
+        "label": "Maden sahasında çalışan yabancı mühendislerin iletişimini MİT sinyal istihbaratıyla 24 saat kriptolu takibe al.",
+        "preview": "Adalet +6, Halk +4, Güvenlik +7, Otorite +8 | Hazine -2",
+        "effects": {
+          "justice": 6,
+          "people": 4,
+          "treasury": -2,
+          "military": 7,
+          "authority": 8
+        },
+        "log": "Gizli numuneleri yurtdışına kaçırmaya çalışan yabancı casusluk hücresi yakalandı."
+      },
+      {
+        "label": "Batılı ve Asyalı otomotiv devleriyle yerli elektrikli araç bataryası üretimi için stratejik ortaklık masasına otur.",
+        "preview": "Adalet +6, Halk +7, Hazine +9, Otorite +6",
+        "effects": {
+          "justice": 6,
+          "people": 7,
+          "treasury": 9,
           "military": 0,
           "authority": 6
         },
-        "log": "Bor ve nadir elementler anayasal korumaya alındı; Türkiye'nin yer altı zenginliği geleceğe mühürlendi."
+        "log": "Milyarlarca dolarlık doğrudan yabancı yatırım ve teknoloji transferi sağlandı."
+      },
+      {
+        "label": "Beylikova'daki maden gelirlerinin yüzde 25'ini doğrudan Gelecek Nesiller Varlık Fonu'na aktararak gençliğe miras bırak.",
+        "preview": "Adalet +8, Halk +9, Hazine +5, Otorite +7",
+        "effects": {
+          "justice": 8,
+          "people": 9,
+          "treasury": 5,
+          "military": 0,
+          "authority": 7
+        },
+        "log": "Doğal kaynak zenginliği bugünkü harcamalara değil milletin geleceğine yatırıldı."
       }
     ]
   },
@@ -61545,77 +61545,77 @@ const EVENT_DECK_MODERN = [
     "id": "tr_vaka_790",
     "characters": [
       {
-        "id": "char_hazine_bakani",
-        "name": "Hazine ve Maliye Bakanı"
+        "id": "char_sehir_plancisi",
+        "name": "Mimarlar ve Şehir Plancıları Temsilcisi"
       },
       {
-        "id": "char_sanayi_bakani",
-        "name": "Sanayi ve Teknoloji Bakanı"
+        "id": "char_enerji_bakani",
+        "name": "Enerji ve Tabii Kaynaklar Bakanı"
       }
     ],
     "source": "Enerji ve Tabii Kaynaklar Bakanlığı",
-    "title": "Enerji Tasarrufu ve Yalıtım Kredisi Desteği",
-    "desc": "Binaların dış cephe mantolama ve ısı yalıtım masrafları için düşük faizli kamu bankası kredisi açıldı.",
+    "title": "Binalarda Isı Yalıtımı Seferberliği ve Yanıcı Mantolama Yangın Tehdidi",
+    "desc": "Doğalgaz faturasını düşürmek için başlatılan dış cephe yalıtım kredisi hamlesinde, merdiven altı firmaların alev alan strafor köpükler kullanarak binaları ölümcül yangın kapanına çevirdiği ortaya çıktı.",
     "options": [
       {
-        "label": "Madencilik ve enerji faaliyetlerinde iş güvenliği, çevre kanunları ve ruhsat şartlarını bağımsız denetle.",
-        "preview": "Adalet +8, Halk +5, Hazine +4, Otorite +4",
+        "label": "Yanıcı plastik köpük kullanımını derhal yasakla; sadece yanmaz taşyünü ve mineral yün kullanan binalara kredi onayı ver.",
+        "preview": "Adalet +9, Halk +8, Otorite +8 | Hazine -4",
         "effects": {
-          "justice": 8,
-          "people": 5,
-          "treasury": 4,
+          "justice": 9,
+          "people": 8,
+          "treasury": -4,
           "military": 0,
-          "authority": 4
+          "authority": 8
         },
-        "log": "Madenlerde iş güvenliği korundu; çevreye zarar veren kuralsız işletmeler durduruldu."
+        "log": "Olası Londra Grenfell kule benzeri yangın faciaları önlendi; can güvenliği tescillendi."
       },
       {
-        "label": "Maden işçileri, sendikalar ve sektör temsilcileriyle ortak istişare meclisi kurarak madencilik barışını sağla.",
-        "preview": "Adalet +3, Halk +9, Otorite +6 | Hazine -4",
+        "label": "Merdiven altı sahte yalıtım malzemesi üreten fabrikaları zabıta ve polis baskınlarıyla mühürleyip mallarına el koy.",
+        "preview": "Adalet +8, Halk +7, Hazine +3, Güvenlik +2, Otorite +8",
         "effects": {
-          "justice": 3,
+          "justice": 8,
+          "people": 7,
+          "treasury": 3,
+          "military": 2,
+          "authority": 8
+        },
+        "log": "Halkın canını hiçe sayan sahtekarlar adalete teslim edildi."
+      },
+      {
+        "label": "Doğalgaz tüketiminde yüzde 35 tasarruf sağlayan yalıtımlı apartmanlara faturalarda yüzde 20 devlet indirimi tanımla.",
+        "preview": "Adalet +7, Halk +9, Otorite +6 | Hazine -6",
+        "effects": {
+          "justice": 7,
           "people": 9,
+          "treasury": -6,
+          "military": 0,
+          "authority": 6
+        },
+        "log": "Yalıtım seferberliği patladı, Türkiye'nin doğalgaz ithalat faturası milyarlarca dolar geriledi."
+      },
+      {
+        "label": "Tüm apartman ve sitelere zorunlu yangın merdiveni ve duman tahliye sensörü denetimi getir.",
+        "preview": "Adalet +8, Halk +7, Otorite +7 | Hazine -3",
+        "effects": {
+          "justice": 8,
+          "people": 7,
+          "treasury": -3,
+          "military": 0,
+          "authority": 7
+        },
+        "log": "Binalarda yangın güvenliği standartları Avrupa seviyesine çıkarıldı."
+      },
+      {
+        "label": "Yerli taşyünü üreticilerine düşük faizli yatırım kredisi vererek yalıtım malzemesi arzını ucuzlat.",
+        "preview": "Adalet +6, Halk +7, Otorite +6 | Hazine -4",
+        "effects": {
+          "justice": 6,
+          "people": 7,
           "treasury": -4,
           "military": 0,
           "authority": 6
         },
-        "log": "Sosyal diyalog sağlandı; maden işçilerinin çalışma koşulları ve ücretleri iyileştirildi."
-      },
-      {
-        "label": "Yerli maden üretimi ve cevher zenginleştirme yatırımlarına Hazine bütçesinden teşvik ve vergi indirimi sağla.",
-        "preview": "Hazine +8, Otorite +4 | Halk -5",
-        "effects": {
-          "justice": 0,
-          "people": -5,
-          "treasury": 8,
-          "military": 0,
-          "authority": 4
-        },
-        "log": "Milli madencilik desteklendi; yerli kaynaklarla sanayinin hammadde ihtiyacı karşılandı."
-      },
-      {
-        "label": "Ruhsatsız kaçak maden ocaklarına ve kömür hırsızlığına karşı jandarma komandolarıyla baskınlar yap.",
-        "preview": "Adalet +5, Halk +5, Güvenlik +9, Otorite +8 | Hazine -5",
-        "effects": {
-          "justice": 5,
-          "people": 5,
-          "treasury": -5,
-          "military": 9,
-          "authority": 8
-        },
-        "log": "Kaçak madenler kapatıldı; can güvenliğini hiçe sayan merdiven altı işletmeler mühürlendi."
-      },
-      {
-        "label": "Maden çalışanlarına yıpranma payı ve erken emeklilik getiren 'Maden İşçileri ve Sektörel Reform Kanunu' çıkar.",
-        "preview": "Adalet +6, Halk +4, Hazine +5, Otorite +6",
-        "effects": {
-          "justice": 6,
-          "people": 4,
-          "treasury": 5,
-          "military": 0,
-          "authority": 6
-        },
-        "log": "Madencilerin özlük hakları kanunlaştı; işçi sağlığı en yüksek yasal korumaya alındı."
+        "log": "Yerli hammaddeyle güvenli yalıtım maliyetleri yarı yarıya düştü."
       }
     ]
   },
@@ -62637,77 +62637,77 @@ const EVENT_DECK_MODERN = [
     "id": "tr_vaka_804",
     "characters": [
       {
-        "id": "char_sehir_plancisi",
-        "name": "Mimarlar ve Şehir Plancıları Temsilcisi"
+        "id": "char_kultur_turizm_bakani",
+        "name": "Kültür ve Turizm Bakanı"
       },
       {
-        "id": "char_esnaf_odasi_baskani",
-        "name": "Esnaf Odaları Başkanı"
+        "id": "char_sehir_plancisi",
+        "name": "Mimarlar ve Şehir Plancıları Temsilcisi"
       }
     ],
     "source": "İçişleri Bakanlığı & Çevre Şehircilik",
-    "title": "Bursa Tarihi Ulu Cami Çevresindeki Çarpık Binaların Yıkılması",
-    "desc": "Tarihi hanlar ve cami silüetini kapatan çok katlı binalar yıkılarak devasa bir tarihi meydan açıldı.",
+    "title": "Tarihi Kent Merkezlerinde Rant Baskısı: Bursa Hanlar Bölgesi Yıkım İhtilafı",
+    "desc": "Ulu Cami ve tarihi hanların silüetini boğan betonarme iş merkezlerinin yıkımı planlanırken, mülk sahiplerinin kamulaştırma bedellerine isyan etmesi ve rant lobilerinin davaları süreci tıkadı.",
     "options": [
       {
-        "label": "Şehirleşme, imar ve yerel yönetim hizmetlerinde hukukun üstünlüğü ve imar planı ilkelerini tavizsiz koru.",
-        "preview": "Adalet +8, Halk +6, Otorite +2 | Hazine -2",
+        "label": "Kamulaştırma bedellerini hakkaniyetle ödeyerek tarihi hanları kuşatan tüm ucube binaları tavizsiz yıkıp meydanı aç.",
+        "preview": "Adalet +8, Halk +9, Otorite +8 | Hazine -7",
         "effects": {
           "justice": 8,
-          "people": 6,
-          "treasury": -2,
-          "military": 0,
-          "authority": 2
-        },
-        "log": "İmar disiplini sağlandı; şehir planlarına aykırı keyfi yapılaşmalar engellendi."
-      },
-      {
-        "label": "Mahalle muhtarları, sivil toplum ve ilçe sakinleriyle diyalog kurarak yerel hizmetlerde halkın rızasını al.",
-        "preview": "Adalet +2, Halk +9, Hazine +4, Güvenlik +2, Otorite +5",
-        "effects": {
-          "justice": 2,
           "people": 9,
-          "treasury": 4,
-          "military": 2,
-          "authority": 5
-        },
-        "log": "Vatandaşın talepleri karşılandı; mahalle ölçeğinde katılımcı belediyecilik uygulandı."
-      },
-      {
-        "label": "Yerel altyapı, çevre ve park yatırımları için İller Bankası ve Hazine bütçesinden planlı finansman sağla.",
-        "preview": "Adalet +2, Halk +8, Otorite +4 | Hazine -6",
-        "effects": {
-          "justice": 2,
-          "people": 8,
-          "treasury": -6,
+          "treasury": -7,
           "military": 0,
-          "authority": 4
-        },
-        "log": "Belediye yatırımları bütçeden karşılandı; şehirlerin altyapı eksikleri tamamlandı."
-      },
-      {
-        "label": "Kaçak otopark mafyası ve kaldırımları işgal eden kanunsuz unsurlara karşı zabıta ve polis denetimini artır.",
-        "preview": "Adalet +5, Halk +5, Güvenlik +9, Otorite +8 | Hazine -5",
-        "effects": {
-          "justice": 5,
-          "people": 5,
-          "treasury": -5,
-          "military": 9,
           "authority": 8
         },
-        "log": "Şehirlerde kamu nizamı korundu; sokak eşkıyalığına ve korsan otoparkçılara son verildi."
+        "log": "Bursa Hanlar Bölgesi 600 yıl önceki ihtişamına kavuştu; UNESCO mirası korundu."
       },
       {
-        "label": "Büyükşehir ve ilçe belediyelerinin imar yetkilerini şeffaf kurallara bağlayan 'Belediyeler ve İmar Kanunu Reformu' çıkar.",
-        "preview": "Adalet +7, Halk +5, Otorite +6 | Hazine -4",
+        "label": "Mülk sahibi esnafa yıkılan dükkanları yerine şehrin ticaret aksında modern çarşı dükkanları takas hakkı tanı.",
+        "preview": "Adalet +8, Halk +8, Otorite +6 | Hazine -4",
         "effects": {
-          "justice": 7,
-          "people": 5,
+          "justice": 8,
+          "people": 8,
           "treasury": -4,
           "military": 0,
           "authority": 6
         },
-        "log": "Yerel yönetim mevzuatı güncellendi; çarpık kentleşmenin önüne kalıcı kanuni set çekildi."
+        "log": "Esnaf mağdur edilmeden uzlaşma sağlandı, yıkım alkışlarla tamamlandı."
+      },
+      {
+        "label": "Tarihi silüeti kapatan yapay gökdelen ve AVM projelerine karşı koruma imar planını Meclis'te kanunlaştır.",
+        "preview": "Adalet +9, Halk +7, Otorite +8",
+        "effects": {
+          "justice": 9,
+          "people": 7,
+          "treasury": 0,
+          "military": 0,
+          "authority": 8
+        },
+        "log": "Tarihi kent merkezlerinde rant lobilerinin önü kanunen ebediyen kesildi."
+      },
+      {
+        "label": "Hanlar Bölgesi'ni sadece yayalaştırılmış turizm ve zanaat merkezine dönüştürerek araç trafiğini tamamen men et.",
+        "preview": "Adalet +7, Halk +8, Otorite +6 | Hazine -3",
+        "effects": {
+          "justice": 7,
+          "people": 8,
+          "treasury": -3,
+          "military": 0,
+          "authority": 6
+        },
+        "log": "Hava kirliliği ve egzoz gazından arınan tarihi taş yapılar koruma altına alındı."
+      },
+      {
+        "label": "Restorasyon masraflarını karşılamak için tarihi hanlarda geleneksel Türk el sanatları fuarları aç.",
+        "preview": "Adalet +6, Halk +8, Hazine +3, Otorite +5",
+        "effects": {
+          "justice": 6,
+          "people": 8,
+          "treasury": 3,
+          "military": 0,
+          "authority": 5
+        },
+        "log": "Hem kültürel miras yaşatıldı hem de Bursa ekonomisine turizm dopingi yapıldı."
       }
     ]
   },
@@ -64041,77 +64041,77 @@ const EVENT_DECK_MODERN = [
     "id": "tr_vaka_822",
     "characters": [
       {
-        "id": "char_hazine_bakani",
-        "name": "Hazine ve Maliye Bakanı"
+        "id": "char_calisma_bakani",
+        "name": "Çalışma ve Sosyal Güvenlik Bakanı"
       },
       {
-        "id": "char_esnaf_odasi_baskani",
-        "name": "Esnaf Odaları Başkanı"
+        "id": "char_hazine_bakani",
+        "name": "Hazine ve Maliye Bakanı"
       }
     ],
     "source": "Çalışma ve Sosyal Güvenlik Bakanlığı",
-    "title": "2023 Tarihli EYT Kanunu ile 2 Milyondan Fazla Vatandaşın Emekliliği",
-    "desc": "Cumhurbaşkanı kararıyla yaş şartı tamamen kaldırılarak prim gününü dolduranlara emeklilik yolu açıldı.",
+    "title": "2023 EYT Talebi: SGK Aktüeryal Dengesi ve Erken Emeklilik Baskısı",
+    "desc": "Seçim arifesinde 2.5 milyondan fazla vatandaşın yaş şartı olmaksızın emeklilik talebi meydanları doldururken, SGK'nın bütçe açığının çökme noktasına gelmesi ve kalifiye işgücü kaybı hükümeti tarihi bir ikileme sürükledi.",
     "options": [
       {
-        "label": "Çalışma hayatında emeğin hakkı, anayasal sendika özgürlüğü ve iş sağlığı ilkelerini tavizsiz gözet.",
-        "preview": "Adalet +9, Halk +8, Otorite +3 | Hazine -2",
-        "effects": {
-          "justice": 9,
-          "people": 8,
-          "treasury": -2,
-          "military": 0,
-          "authority": 3
-        },
-        "log": "İşçi hakları korundu; çalışma hayatında adil ücret ve güvenli çalışma ortamı sağlandı."
-      },
-      {
-        "label": "İşçi sendikaları, işveren örgütleri ve hükümetle Üçlü Danışma Kurulu'nda sosyal mutabakat sağla.",
-        "preview": "Adalet +3, Halk +9, Otorite +6 | Hazine -4",
-        "effects": {
-          "justice": 3,
-          "people": 9,
-          "treasury": -4,
-          "military": 0,
-          "authority": 6
-        },
-        "log": "Sosyal diyalog korundu; çalışma barışını bozan gerilimler uzlaşıyla aşıldı."
-      },
-      {
-        "label": "Sosyal güvenlik prim gelirlerini artırarak SGK aktüeryal dengesini ve Hazine disiplinini koru.",
-        "preview": "Hazine +8, Otorite +4 | Halk -5",
-        "effects": {
-          "justice": 0,
-          "people": -5,
-          "treasury": 8,
-          "military": 0,
-          "authority": 4
-        },
-        "log": "Kamu maliyesi korundu; sosyal güvenlik açıkları kontrol altında tutuldu."
-      },
-      {
-        "label": "Kayıtdışı kaçak işçi çalıştıran ve çocuk emeğini istismar eden işletmelere polis ve müfettişle baskın yap.",
-        "preview": "Adalet +5, Halk +5, Güvenlik +9, Otorite +8 | Hazine -5",
-        "effects": {
-          "justice": 5,
-          "people": 5,
-          "treasury": -5,
-          "military": 9,
-          "authority": 8
-        },
-        "log": "Kayıtdışı istihdamla mücadele edildi; kaçak işçi çalıştıranlara ağır cezalar kesildi."
-      },
-      {
-        "label": "Çalışma hayatını ve kıdem tazminatı güvencesini tanzim eden 'Milli İstihdam ve İş Kanunu Reformu' çıkar.",
-        "preview": "Adalet +6, Halk +4, Hazine +5, Otorite +6",
+        "label": "Vatandaşın haklı beklentisini karşılayarak yaş şartını tamamen kaldır; 2.5 milyon kişiyi derhal emekli et.",
+        "preview": "Adalet +6, Halk +9, Otorite +7 | Hazine -10",
         "effects": {
           "justice": 6,
-          "people": 4,
-          "treasury": 5,
+          "people": 9,
+          "treasury": -10,
+          "military": 0,
+          "authority": 7
+        },
+        "log": "Milyonlarca vatandaş bayram sevinci yaşadı; ancak Hazine ve SGK sırtına devasa bir aktüeryal yük bindi."
+      },
+      {
+        "label": "Kademeli bir geçiş modeli uygulayarak yıla ve prim gününe göre aşamalı emeklilik formülünü kanunlaştır.",
+        "preview": "Adalet +8, Halk +6, Otorite +7 | Hazine -5",
+        "effects": {
+          "justice": 8,
+          "people": 6,
+          "treasury": -5,
+          "military": 0,
+          "authority": 7
+        },
+        "log": "Bütçe dengesi ile vatandaş talebi arasında dengeli ve sürdürülebilir bir orta yol bulundu."
+      },
+      {
+        "label": "Emekli olan nitelikli ustaların sanayide çalışmaya devam etmesi için işveren SGK prim desteği getir.",
+        "preview": "Adalet +7, Halk +7, Otorite +6 | Hazine -3",
+        "effects": {
+          "justice": 7,
+          "people": 7,
+          "treasury": -3,
           "military": 0,
           "authority": 6
         },
-        "log": "İş kanunu çağdaşlaştırıldı; çalışanların özlük hakları yasal teminata bağlandı."
+        "log": "Sanayide tecrübeli işgücü kaybı önlendi; üretim aksamadan devam etti."
+      },
+      {
+        "label": "SGK'nın bütçe açığını kapatmak için kayıt dışı istihdama ve kaçak işçiliğe karşı dijital teftiş seferberliği başlat.",
+        "preview": "Adalet +9, Halk +6, Hazine +7, Otorite +8",
+        "effects": {
+          "justice": 9,
+          "people": 6,
+          "treasury": 7,
+          "military": 0,
+          "authority": 8
+        },
+        "log": "Kayıt dışı istihdam darbe yedi; Hazineye giren taze primlerle emeklilik yükü dengelendi."
+      },
+      {
+        "label": "Erken emeklilik hakkı kazananlara kamu bankalarından düşük faizli kıdem tazminatı finansman kredisi ver.",
+        "preview": "Adalet +6, Halk +8, Otorite +5 | Hazine -4",
+        "effects": {
+          "justice": 6,
+          "people": 8,
+          "treasury": -4,
+          "military": 0,
+          "authority": 5
+        },
+        "log": "İşverenlerin toplu kıdem tazminatı yükü hafifletildi, işçi-işveren barışı sağlandı."
       }
     ]
   },
@@ -66303,77 +66303,77 @@ const EVENT_DECK_MODERN = [
     "id": "tr_vaka_851",
     "characters": [
       {
-        "id": "char_tbmm_baskani",
-        "name": "TBMM Başkanı"
-      },
-      {
         "id": "char_adalet_bakani",
         "name": "Adalet Bakanı"
+      },
+      {
+        "id": "char_tbmm_baskani",
+        "name": "TBMM Başkanı"
       }
     ],
     "source": "Adalet Bakanlığı & Danıştay",
-    "title": "Kamu Denetçiliği Kurumu'nun (Ombudsman) Kurulması",
-    "desc": "Vatandaşların idareyle yaşadığı haksızlıklarda mahkemesiz tavsiye kararı veren denetim kurumu açıldı.",
+    "title": "Kamu Denetçiliği Kurumu (Ombudsman) Kararlarının İdarece Uygulanmaması Krizi",
+    "desc": "Vatandaşların bürokrasiye karşı hak arayışında Ombudsman'ın verdiği tavsiye kararlarının bakanlıklar ve belediyeler tarafından kasten sümen altı edilmesi vatandaşın adalet inancını sarstı.",
     "options": [
       {
-        "label": "Kamu Denetçiliği Kurumu'nun (Ombudsman) idare aleyhine verdiği 'hukuka aykırılık' kararlarını bakanlıklara zorunlu uygulat.",
-        "preview": "Adalet +9, Halk +8, Otorite +3 | Hazine -2",
+        "label": "Ombudsman kararlarına uymayan kamu yöneticilerine idari para cezası ve terfi engeli getiren kanun değişikliği yap.",
+        "preview": "Adalet +9, Halk +8, Hazine +1, Otorite +8",
         "effects": {
           "justice": 9,
           "people": 8,
+          "treasury": 1,
+          "military": 0,
+          "authority": 8
+        },
+        "log": "Bürokrasinin keyfi tutumu kırıldı; vatandaşın haklı talepleri mahkemesiz çözüldü."
+      },
+      {
+        "label": "Ombudsman raporlarını her yıl TBMM Genel Kurulu'nda canlı yayında tartıştırıp kusurlu bakanları hesap vermeye çağır.",
+        "preview": "Adalet +8, Halk +8, Otorite +7",
+        "effects": {
+          "justice": 8,
+          "people": 8,
+          "treasury": 0,
+          "military": 0,
+          "authority": 7
+        },
+        "log": "Meclis denetimi işletildi; halkın şikayetleri doğrudan milletvekillerinin önüne geldi."
+      },
+      {
+        "label": "İdarenin hukuka aykırı işlemlerini otomatik iptal edebilecek bir 'Bağlayıcı Ombudsman Yargı Kararı' statüsü oluştur.",
+        "preview": "Adalet +8, Halk +7, Otorite +6 | Hazine -2",
+        "effects": {
+          "justice": 8,
+          "people": 7,
           "treasury": -2,
           "military": 0,
-          "authority": 3
-        },
-        "log": "Vatandaşın hakkı idareye karşı korundu; kamu kurumlarının mahkemesiz hatasından dönmesi sağlandı."
-      },
-      {
-        "label": "Ombudsmanlık kararlarıyla idare ile mağdur vatandaşlar arasında arabuluculuk masaları kurarak ihtilafları çöz.",
-        "preview": "Adalet +2, Halk +8, Otorite +5 | Hazine -2",
-        "effects": {
-          "justice": 2,
-          "people": 8,
-          "treasury": -2,
-          "military": 0,
-          "authority": 5
-        },
-        "log": "İdare ile vatandaş barıştırıldı; yüz binlerce dava mahkemeye gitmeden sulh ile sonuçlandı."
-      },
-      {
-        "label": "İdare mahkemelerinin dava yükünü hafifleterek devletin yıllık 2 milyar liralık avukatlık ve harç masrafını tasarruf et.",
-        "preview": "Adalet +1, Halk +4, Hazine +8, Otorite +5",
-        "effects": {
-          "justice": 1,
-          "people": 4,
-          "treasury": 8,
-          "military": 0,
-          "authority": 5
-        },
-        "log": "Hazine kasasına tasarruf sağlandı; gereksiz idari davaların masrafları önlendi."
-      },
-      {
-        "label": "Ombudsman teftişine direnen ve vatandaşın evrakını gizleyen liyakatsiz bürokratlar hakkında idari ceza ver.",
-        "preview": "Adalet +2, Halk +8, Güvenlik +6, Otorite +6 | Hazine -4",
-        "effects": {
-          "justice": 2,
-          "people": 8,
-          "treasury": -4,
-          "military": 6,
           "authority": 6
         },
-        "log": "Bürokraside hesap verilebilirlik sağlandı; devlet kapısında vatandaşa eziyet eden memurlar uyarıldı."
+        "log": "İdari yargının yüz binlerce dosyalık yükü hafifletildi; hızlı adalet sağlandı."
       },
       {
-        "label": "Kamu Denetçiliği tavsiye kararlarını idare için bağlayıcı kılan 'Ombudsmanlık Reform Kanunu' çıkar.",
-        "preview": "Adalet +7, Halk +5, Otorite +6 | Hazine -4",
+        "label": "Tüm bakanlık ve belediyelerde vatandaşın dilekçelerini 15 günde sonuçlandırmak zorunda olan 'Halk Masaları' kur.",
+        "preview": "Adalet +7, Halk +8, Otorite +6 | Hazine -3",
         "effects": {
           "justice": 7,
-          "people": 5,
-          "treasury": -4,
+          "people": 8,
+          "treasury": -3,
           "military": 0,
           "authority": 6
         },
-        "log": "İyi yönetim ilkeleri kanunlaştı; Türkiye'de idarenin hukuka bağlılığı tescillendi."
+        "log": "Bürokratik hantallık kırıldı, vatandaş-devlet barışına katkı sunuldu."
+      },
+      {
+        "label": "Kamu denetçiliği başvurularını e-Devlet üzerinden ücretsiz ve yapay zeka destekli dosya takibine bağla.",
+        "preview": "Adalet +8, Halk +8, Otorite +6 | Hazine -2",
+        "effects": {
+          "justice": 8,
+          "people": 8,
+          "treasury": -2,
+          "military": 0,
+          "authority": 6
+        },
+        "log": "Hak arama yolu tamamen dijitalleşti ve şeffaflaştı."
       }
     ]
   },
@@ -66697,73 +66697,73 @@ const EVENT_DECK_MODERN = [
         "name": "Adalet Bakanı"
       },
       {
-        "id": "char_adli_yargi_hakimi",
-        "name": "Cumhuriyet Başsavcısı"
+        "id": "char_icisleri_bakani",
+        "name": "İçişleri Bakanı"
       }
     ],
     "source": "Adalet Bakanlığı & Danıştay",
-    "title": "KPSS Mülakatlarında Kamera Kaydı ve Objektif Puanlama Talebi",
-    "desc": "Yüksek puan alıp mülakatta elenen gençlerin feryatları üzerine mülakat kriterleri tartışmaya açıldı.",
+    "title": "Kamuda Personel Alımında Mülakat Tartışması ve Liyakat Güvencesi İkilemi",
+    "desc": "KPSS'den 90 üstü puan alan adayların mülakatlarda elendiği iddiaları liyakat tartışmalarını alevlendirirken, güvenlik bürokrasisi kritik kadrolara sızmaları önlemek için mülakatın şart olduğunu savunuyor.",
     "options": [
       {
-        "label": "Yargısal denetim, anayasal kurallar ve tabi hakim güvencesini tüm kamu işlemlerinde tavizsiz işlet.",
-        "preview": "Adalet +8, Halk +6, Otorite +2 | Hazine -2",
+        "label": "Öğretmenlik ve sivil memur alımlarında mülakatı tamamen kaldır; sadece KPSS puan üstünlüğüne göre otomatik yerleştirme yap.",
+        "preview": "Adalet +9, Halk +9, Otorite +6 | Güvenlik -2",
+        "effects": {
+          "justice": 9,
+          "people": 9,
+          "treasury": 0,
+          "military": -2,
+          "authority": 6
+        },
+        "log": "Gençlerin devlete olan güveni tazelendi; torpil iddiaları tamamen sona erdi."
+      },
+      {
+        "label": "Tüm mülakatları kamera kaydına aldır ve adaya mülakat puanı olarak KPSS puanının artı/eksi 3 puanından fazla verilmesini yasakla.",
+        "preview": "Adalet +8, Halk +8, Güvenlik +2, Otorite +7 | Hazine -2",
         "effects": {
           "justice": 8,
-          "people": 6,
-          "treasury": -2,
-          "military": 0,
-          "authority": 2
-        },
-        "log": "Hukuk devleti korundu; idari tasarruflar bağımsız yargı denetimine tabi tutuldu."
-      },
-      {
-        "label": "Yargı mensupları, akademisyenler ve sivil toplumla hukuk şuraları toplayarak kanunlaştırma uzlaşısı sağla.",
-        "preview": "Adalet +2, Halk +9, Hazine +4, Güvenlik +2, Otorite +5",
-        "effects": {
-          "justice": 2,
-          "people": 9,
-          "treasury": 4,
-          "military": 2,
-          "authority": 5
-        },
-        "log": "Hukuk camiasında uzlaşı sağlandı; mevzuat hazırlıklarında katılımcılık sağlandı."
-      },
-      {
-        "label": "Adalet sarayları ve adli tıp altyapısı yatırımları için Hazine bütçesinden planlı finansman sağla.",
-        "preview": "Adalet +2, Halk +8, Otorite +4 | Hazine -6",
-        "effects": {
-          "justice": 2,
           "people": 8,
-          "treasury": -6,
-          "military": 0,
-          "authority": 4
-        },
-        "log": "Adli bütçe korundu; mahkemelerin fiziki ve dijital altyapısı tamamlandı."
-      },
-      {
-        "label": "Adliyelerde provokasyon, rüşvet ve sahte evrak şebekelerine karşı adli kolluğu teyakkuzda tut.",
-        "preview": "Adalet +3, Güvenlik +4, Otorite +7 | Halk -2, Hazine -3",
-        "effects": {
-          "justice": 3,
-          "people": -2,
-          "treasury": -3,
-          "military": 4,
+          "treasury": -2,
+          "military": 2,
           "authority": 7
         },
-        "log": "Adliyelerde güvenlik sağlandı; yargı mekanizmasına sızmaya çalışan çeteler engellendi."
+        "log": "Kamera kaydı güvencesiyle keyfi puanlamanın önü kesildi; yargı denetimi sağlandı."
       },
       {
-        "label": "Yargı bağımsızlığı ve şeffaflığı tahkim eden 'Kamu Hukuku ve Adli Teşkilat Reform Kanunu' çıkar.",
-        "preview": "Adalet +7, Halk +5, Otorite +6 | Hazine -4",
+        "label": "Güvenlik, yargı ve istihbarat kadrolarında mülakat ve detaylı güvenlik soruşturması şartını tavizsiz muhafaza et.",
+        "preview": "Adalet +5, Halk +2, Güvenlik +7, Otorite +8",
         "effects": {
-          "justice": 7,
-          "people": 5,
-          "treasury": -4,
+          "justice": 5,
+          "people": 2,
+          "treasury": 0,
+          "military": 7,
+          "authority": 8
+        },
+        "log": "Devletin stratejik kurumlarına zararlı örgüt sızmaları önlendi."
+      },
+      {
+        "label": "Mülakat komisyonlarında bağımsız akademisyenler ve baro temsilcilerine yer vererek şeffaflığı tahkim et.",
+        "preview": "Adalet +8, Halk +7, Otorite +6 | Hazine -1",
+        "effects": {
+          "justice": 8,
+          "people": 7,
+          "treasury": -1,
           "military": 0,
           "authority": 6
         },
-        "log": "Hukuk mevzuatı modernleştirildi; adalet hizmetleri çağdaş standartlara kavuşturuldu."
+        "log": "Komisyonların tarafsızlığı kamuoyu vicdanında onay gördü."
+      },
+      {
+        "label": "Mülakatta elenen tüm adaylara yazılı gerekçeli rapor alma ve 7 günde idari mahkemeye itiraz hakkı tanı.",
+        "preview": "Adalet +8, Halk +8, Otorite +6 | Hazine -1",
+        "effects": {
+          "justice": 8,
+          "people": 8,
+          "treasury": -1,
+          "military": 0,
+          "authority": 6
+        },
+        "log": "Hukuki güvence mekanizması kurularak haksızlık şüpheleri giderildi."
       }
     ]
   },
@@ -66932,72 +66932,72 @@ const EVENT_DECK_MODERN = [
       },
       {
         "id": "char_adli_yargi_hakimi",
-        "name": "Cumhuriyet Başsavcısı"
+        "name": "Adli Yargı Hakimi"
       }
     ],
     "source": "Adalet Bakanlığı & Danıştay",
-    "title": "Bölge Adliye Mahkemelerinin (Adli İstinaf) Faaliyete Başlaması",
-    "desc": "Ceza ve hukuk davalarında Yargıtay'a gitmeden önceki ikinci derece temyiz mahkemeleri açıldı.",
+    "title": "İstinaf Mahkemelerinde Dosya Yığılması ve Geciken Adalet Sorunu",
+    "desc": "Yargıtay ve Danıştay'ın iş yükünü hafifletmek için kurulan Bölge Adliye Mahkemeleri'nde dosyaların yıllarca beklemesi, tutukluların mağduriyeti ve ticaret davalarının tıkanması adalet krizine dönüştü.",
     "options": [
       {
-        "label": "Yargısal denetim, anayasal kurallar ve tabi hakim güvencesini tüm kamu işlemlerinde tavizsiz işlet.",
-        "preview": "Adalet +8, Halk +6, Otorite +2 | Hazine -2",
+        "label": "İstinaf daire sayısını ve kıdemli yargıç kadrosunu iki katına çıkarıp duruşmasız incelenebilecek usul davalarını hızlandır.",
+        "preview": "Adalet +8, Halk +7, Otorite +7 | Hazine -5",
         "effects": {
           "justice": 8,
-          "people": 6,
-          "treasury": -2,
+          "people": 7,
+          "treasury": -5,
           "military": 0,
-          "authority": 2
-        },
-        "log": "Hukuk devleti korundu; idari tasarruflar bağımsız yargı denetimine tabi tutuldu."
-      },
-      {
-        "label": "Yargı mensupları, akademisyenler ve sivil toplumla hukuk şuraları toplayarak kanunlaştırma uzlaşısı sağla.",
-        "preview": "Adalet +2, Halk +9, Hazine +4, Güvenlik +2, Otorite +5",
-        "effects": {
-          "justice": 2,
-          "people": 9,
-          "treasury": 4,
-          "military": 2,
-          "authority": 5
-        },
-        "log": "Hukuk camiasında uzlaşı sağlandı; mevzuat hazırlıklarında katılımcılık sağlandı."
-      },
-      {
-        "label": "Adalet sarayları ve adli tıp altyapısı yatırımları için Hazine bütçesinden planlı finansman sağla.",
-        "preview": "Adalet +2, Halk +8, Otorite +4 | Hazine -6",
-        "effects": {
-          "justice": 2,
-          "people": 8,
-          "treasury": -6,
-          "military": 0,
-          "authority": 4
-        },
-        "log": "Adli bütçe korundu; mahkemelerin fiziki ve dijital altyapısı tamamlandı."
-      },
-      {
-        "label": "Adliyelerde provokasyon, rüşvet ve sahte evrak şebekelerine karşı adli kolluğu teyakkuzda tut.",
-        "preview": "Adalet +3, Güvenlik +4, Otorite +7 | Halk -2, Hazine -3",
-        "effects": {
-          "justice": 3,
-          "people": -2,
-          "treasury": -3,
-          "military": 4,
           "authority": 7
         },
-        "log": "Adliyelerde güvenlik sağlandı; yargı mekanizmasına sızmaya çalışan çeteler engellendi."
+        "log": "Mahkemelerin kadro kapasitesi artırıldı; dosya bekleme süreleri yarı yarıya indi."
       },
       {
-        "label": "Yargı bağımsızlığı ve şeffaflığı tahkim eden 'Kamu Hukuku ve Adli Teşkilat Reform Kanunu' çıkar.",
-        "preview": "Adalet +7, Halk +5, Otorite +6 | Hazine -4",
+        "label": "Ticari davalarda ve işçi alacaklarında zorunlu arabuluculuk kapsamını genişleterek dosyaları mahkemeye gelmeden çöz.",
+        "preview": "Adalet +7, Halk +8, Hazine +3, Otorite +6",
         "effects": {
           "justice": 7,
-          "people": 5,
-          "treasury": -4,
+          "people": 8,
+          "treasury": 3,
           "military": 0,
           "authority": 6
         },
-        "log": "Hukuk mevzuatı modernleştirildi; adalet hizmetleri çağdaş standartlara kavuşturuldu."
+        "log": "Yüz binlerce ticari ihtilaf uzlaşmayla çözüldü, mahkemelerin yükü hafifletildi."
+      },
+      {
+        "label": "Belirli bir meblağın altındaki hukuk davalarında ilk derece mahkemesi kararını kesin hüküm sayarak istinaf yolunu kapat.",
+        "preview": "Adalet +5, Halk +4, Hazine +4, Otorite +6",
+        "effects": {
+          "justice": 5,
+          "people": 4,
+          "treasury": 4,
+          "military": 0,
+          "authority": 6
+        },
+        "log": "Yargı süreci hızlandı; ancak alt mahkeme hatalarına karşı denetim yolu sınırlandı."
+      },
+      {
+        "label": "Uzun tutukluluk ve geciken adalet sebebiyle mağdur olan vatandaşlara tazminat ödenmesini sağlayan fon kur.",
+        "preview": "Adalet +8, Halk +8, Otorite +5 | Hazine -4",
+        "effects": {
+          "justice": 8,
+          "people": 8,
+          "treasury": -4,
+          "military": 0,
+          "authority": 5
+        },
+        "log": "Sosyal hukuk devleti ilkesiyle vatandaşın hakkı teslim edildi."
+      },
+      {
+        "label": "Yapay zeka tabanlı tensip ve emsal karar destek yazılımlarını tüm mahkemelerde zorunlu kılarak süreci hızlandır.",
+        "preview": "Adalet +7, Halk +6, Otorite +6 | Hazine -3",
+        "effects": {
+          "justice": 7,
+          "people": 6,
+          "treasury": -3,
+          "military": 0,
+          "authority": 6
+        },
+        "log": "Yargıda dijitalleşmeyle karar yazım süreleri haftalardan saatlere indi."
       }
     ]
   },
@@ -69579,77 +69579,77 @@ const EVENT_DECK_MODERN = [
     "id": "tr_vaka_893",
     "characters": [
       {
-        "id": "char_ticaret_bakani",
-        "name": "Ticaret Bakanı"
+        "id": "char_tarim_bakani",
+        "name": "Tarım ve Orman Bakanı"
       },
       {
-        "id": "char_tuketici_dernekleri_baskani",
-        "name": "Tüketici Hakları Temsilcisi"
+        "id": "char_saglik_bakani",
+        "name": "Sağlık Bakanı"
       }
     ],
     "source": "Tarım ve Orman Bakanlığı",
-    "title": "Tohumculuk Kanunu: Sertifikalı Tohum Şartı ve Ata Tohumları",
-    "desc": "Hibrit tohum zorunluluğu tartışılırken Cumhurbaşkanlığı öncülüğünde yerli Ata Tohumu seferberliği açıldı.",
+    "title": "Hibrit Tohum Tekelleri ve Yerli Ata Tohumlarının Biyolojik Güvenliği",
+    "desc": "Sertifikalı tohum zorunluluğunun küresel biyoteknoloji şirketlerine bağımlılık yaratması ve yerli ata tohumlarının takasının suç sayılması Anadolu köylüsünü ve gıda egemenliğini tehdit ediyor.",
     "options": [
       {
-        "label": "Tarımsal üretimde kalite standartları, gıda güvenliği ve çiftçi haklarını yasal güvencede tut.",
-        "preview": "Adalet +8, Halk +6, Otorite +2 | Hazine -2",
+        "label": "Ata tohumlarının takasını ve satışını serbest bırakan 'Milli Tohum ve Biyoçeşitlilik Kanunu'nu Meclis'ten geçir.",
+        "preview": "Adalet +9, Halk +9, Otorite +7 | Hazine -3",
         "effects": {
-          "justice": 8,
-          "people": 6,
-          "treasury": -2,
-          "military": 0,
-          "authority": 2
-        },
-        "log": "Gıda güvenliği gözetildi; halkın sağlıklı ve güvenilir gıdaya erişimi sağlandı."
-      },
-      {
-        "label": "Ziraat odaları, besiciler ve köylülerle istişare kurulları toplayarak tarımsal kalkınma uzlaşısı sağla.",
-        "preview": "Adalet +2, Halk +9, Hazine +4, Güvenlik +2, Otorite +5",
-        "effects": {
-          "justice": 2,
+          "justice": 9,
           "people": 9,
-          "treasury": 4,
-          "military": 2,
-          "authority": 5
-        },
-        "log": "Köylünün sesi dinlendi; tarım ve hayvancılıkta üretici memnuniyeti sağlandı."
-      },
-      {
-        "label": "Tarımsal destekleme primleri ve faizsiz sübvansiyonlu krediler için Hazine bütçesinden kaynak aktar.",
-        "preview": "Adalet +2, Halk +8, Otorite +4 | Hazine -6",
-        "effects": {
-          "justice": 2,
-          "people": 8,
-          "treasury": -6,
-          "military": 0,
-          "authority": 4
-        },
-        "log": "Tarımsal ekonomi desteklendi; girdi maliyetlerine karşı çiftçi sübvanse edildi."
-      },
-      {
-        "label": "Kaçak hayvan nakilleri ve gıdada tağşiş yapan sahtekarlara karşı gıda zabıtası ve kolluğu görevlendir.",
-        "preview": "Adalet +3, Güvenlik +4, Otorite +7 | Halk -2, Hazine -3",
-        "effects": {
-          "justice": 3,
-          "people": -2,
           "treasury": -3,
-          "military": 4,
+          "military": 0,
           "authority": 7
         },
-        "log": "Sahte gıda depoları basıldı; halkın sağlığıyla oynayan fırsatçılar cezalandırıldı."
+        "log": "Anadolu'nun bin yıllık genetik mirası köylünün ellerinde güvenceye kavuştu."
       },
       {
-        "label": "Sözleşmeli besicilik ve lisanslı depoculuğu teşvik eden 'Tarımsal Üretim Planlama Kanunu' çıkar.",
-        "preview": "Adalet +7, Halk +5, Otorite +6 | Hazine -4",
+        "label": "TİGEM ve üniversiteler işbirliğiyle kuraklığa ve hastalığa dayanıklı yerli tohum bankaları ve üretim üsleri kur.",
+        "preview": "Adalet +7, Halk +8, Güvenlik +3, Otorite +7 | Hazine -6",
         "effects": {
           "justice": 7,
-          "people": 5,
-          "treasury": -4,
+          "people": 8,
+          "treasury": -6,
+          "military": 3,
+          "authority": 7
+        },
+        "log": "Küresel tohum kartellerine karşı Türkiye'nin gıda güvenliği kalkanı inşa edildi."
+      },
+      {
+        "label": "Yabancı biyoteknoloji tekellerinin Türkiye'deki tohum patentlerine ve GDO girişimlerine sıkı denetim ve vergi koy.",
+        "preview": "Adalet +8, Halk +7, Hazine +4, Otorite +8",
+        "effects": {
+          "justice": 8,
+          "people": 7,
+          "treasury": 4,
+          "military": 0,
+          "authority": 8
+        },
+        "log": "Topraklarımızın genetik istilaya uğraması sert regülasyonlarla önlendi."
+      },
+      {
+        "label": "Yerli tohum kullanan çiftçilere gübre, mazot ve doğrudan alım garantisi teşviki sağla.",
+        "preview": "Adalet +7, Halk +8, Otorite +6 | Hazine -5",
+        "effects": {
+          "justice": 7,
+          "people": 8,
+          "treasury": -5,
           "military": 0,
           "authority": 6
         },
-        "log": "Tarım planlaması kanunlaştı; arz fazlası ve ürün ziyanının önüne geçildi."
+        "log": "Milli tohumla üretim yapan çiftçiler ödüllendirildi, rekolte arttı."
+      },
+      {
+        "label": "Ankara ve İzmir'de dünyanın en büyük 'Milli Gen Bankası'nı kurup tüm Anadolu bitki örtüsünü kriptolu arşivle.",
+        "preview": "Adalet +8, Halk +8, Güvenlik +2, Otorite +7 | Hazine -4",
+        "effects": {
+          "justice": 8,
+          "people": 8,
+          "treasury": -4,
+          "military": 2,
+          "authority": 7
+        },
+        "log": "Biyolojik çeşitliliğimiz nükleer korumalı tohum kasalarında sonsuza dek saklandı."
       }
     ]
   },
@@ -70671,77 +70671,77 @@ const EVENT_DECK_MODERN = [
     "id": "tr_vaka_907",
     "characters": [
       {
-        "id": "char_ticaret_bakani",
-        "name": "Ticaret Bakanı"
+        "id": "char_tarim_bakani",
+        "name": "Tarım ve Orman Bakanı"
       },
       {
-        "id": "char_tuketici_dernekleri_baskani",
-        "name": "Tüketici Hakları Temsilcisi"
+        "id": "char_adalet_bakani",
+        "name": "Adalet Bakanı"
       }
     ],
     "source": "Tarım ve Orman Bakanlığı",
-    "title": "Atıl Tarım Arazilerinin Kiralanması ve Tarıma Kazandırılması",
-    "desc": "Miras yoluyla bölünmüş ve 2 yıldır ekilmeyen tarlaların devlet eliyle komşu çiftçiye kiralanması yasalaştı.",
+    "title": "Atıl Tarım Arazilerinin Zorunlu Kiralanması ve Mülkiyet Hakkı Tartışması",
+    "desc": "Miras yoluyla bölünmüş ve 2 yıldır ekilmeyen 2 milyon hektar verimli arazinin devlet eliyle kiralanması planı gıda krizine çare ararken, mülk sahiplerinin mülkiyet gasbı tepkisiyle karşılaştı.",
     "options": [
       {
-        "label": "Tarımsal üretimde kalite standartları, gıda güvenliği ve çiftçi haklarını yasal güvencede tut.",
-        "preview": "Adalet +8, Halk +6, Otorite +2 | Hazine -2",
+        "label": "Ekilmeyen arazileri sadece o köyün genç çiftçilerine kiralat; kira bedelini eksiksiz mülk sahibinin hesabına yatır.",
+        "preview": "Adalet +8, Halk +8, Hazine +3, Otorite +7",
         "effects": {
           "justice": 8,
-          "people": 6,
-          "treasury": -2,
-          "military": 0,
-          "authority": 2
-        },
-        "log": "Gıda güvenliği gözetildi; halkın sağlıklı ve güvenilir gıdaya erişimi sağlandı."
-      },
-      {
-        "label": "Ziraat odaları, besiciler ve köylülerle istişare kurulları toplayarak tarımsal kalkınma uzlaşısı sağla.",
-        "preview": "Adalet +2, Halk +9, Hazine +4, Güvenlik +2, Otorite +5",
-        "effects": {
-          "justice": 2,
-          "people": 9,
-          "treasury": 4,
-          "military": 2,
-          "authority": 5
-        },
-        "log": "Köylünün sesi dinlendi; tarım ve hayvancılıkta üretici memnuniyeti sağlandı."
-      },
-      {
-        "label": "Tarımsal destekleme primleri ve faizsiz sübvansiyonlu krediler için Hazine bütçesinden kaynak aktar.",
-        "preview": "Adalet +2, Halk +8, Otorite +4 | Hazine -6",
-        "effects": {
-          "justice": 2,
           "people": 8,
-          "treasury": -6,
+          "treasury": 3,
           "military": 0,
-          "authority": 4
-        },
-        "log": "Tarımsal ekonomi desteklendi; girdi maliyetlerine karşı çiftçi sübvanse edildi."
-      },
-      {
-        "label": "Kaçak hayvan nakilleri ve gıdada tağşiş yapan sahtekarlara karşı gıda zabıtası ve kolluğu görevlendir.",
-        "preview": "Adalet +3, Güvenlik +4, Otorite +7 | Halk -2, Hazine -3",
-        "effects": {
-          "justice": 3,
-          "people": -2,
-          "treasury": -3,
-          "military": 4,
           "authority": 7
         },
-        "log": "Sahte gıda depoları basıldı; halkın sağlığıyla oynayan fırsatçılar cezalandırıldı."
+        "log": "Mülkiyet hakkı çiğnenmeden atıl topraklar üretime kazandırıldı; gıda enflasyonu düştü."
       },
       {
-        "label": "Sözleşmeli besicilik ve lisanslı depoculuğu teşvik eden 'Tarımsal Üretim Planlama Kanunu' çıkar.",
-        "preview": "Adalet +7, Halk +5, Otorite +6 | Hazine -4",
+        "label": "Miras kalan hisseli arazilerin satış ve intikal harçlarını sıfırlayarak arazilerin birleştirilmesini teşvik et.",
+        "preview": "Adalet +8, Halk +8, Otorite +6 | Hazine -3",
         "effects": {
-          "justice": 7,
-          "people": 5,
-          "treasury": -4,
+          "justice": 8,
+          "people": 8,
+          "treasury": -3,
           "military": 0,
           "authority": 6
         },
-        "log": "Tarım planlaması kanunlaştı; arz fazlası ve ürün ziyanının önüne geçildi."
+        "log": "Miras davaları çözüldü, tarım arazilerinin bölünmesi hukuken durduruldu."
+      },
+      {
+        "label": "Toprağını kasten boş bırakan ve spekülasyon yapan rant sahiplerine kademeli artan nadas ve boş arazi vergisi koy.",
+        "preview": "Adalet +7, Halk +6, Hazine +7, Otorite +8",
+        "effects": {
+          "justice": 7,
+          "people": 6,
+          "treasury": 7,
+          "military": 0,
+          "authority": 8
+        },
+        "log": "Toprak spekülasyonu cezalandırıldı, araziler hızla kiraya verilmeye başlandı."
+      },
+      {
+        "label": "Tarımsal sulama altyapısı ve güneş enerjili kuyu açma masraflarını devlet olarak üstlenip kurak alanları canlandır.",
+        "preview": "Adalet +7, Halk +9, Otorite +6 | Hazine -7",
+        "effects": {
+          "justice": 7,
+          "people": 9,
+          "treasury": -7,
+          "military": 0,
+          "authority": 6
+        },
+        "log": "Kurak topraklar suya kavuştu, çiftçinin yüzü güldü."
+      },
+      {
+        "label": "Organik ve sözleşmeli tarım yapan üreticilere sıfır faizli traktör ve tohum kredisi tahsis et.",
+        "preview": "Adalet +6, Halk +8, Otorite +5 | Hazine -5",
+        "effects": {
+          "justice": 6,
+          "people": 8,
+          "treasury": -5,
+          "military": 0,
+          "authority": 5
+        },
+        "log": "Kırsalda üretim seferberliği şahlandı."
       }
     ]
   },
@@ -71295,77 +71295,77 @@ const EVENT_DECK_MODERN = [
     "id": "tr_vaka_915",
     "characters": [
       {
-        "id": "char_sehir_plancisi",
-        "name": "Mimarlar ve Şehir Plancıları Temsilcisi"
+        "id": "char_mit_mustesari",
+        "name": "MİT Müsteşarı / Başkanı"
       },
       {
-        "id": "char_icisleri_bakani",
-        "name": "İçişleri Bakanı"
+        "id": "char_enerji_bakani",
+        "name": "Enerji ve Tabii Kaynaklar Bakanı"
       }
     ],
     "source": "İçişleri Bakanlığı & Çevre Şehircilik",
-    "title": "Bergama Köylüleri ve Eurogold Siyanürlü Altın Madeni Direnişi",
-    "desc": "1990'larda yarı çıplak yürüyen köylüler Danıştay'da kazandıkları iptal kararlarıyla tarihe geçti.",
+    "title": "Bergama Siyanürlü Altın Madeni ve Yabancı Vakıfların Etki Ajanlığı İddiaları",
+    "desc": "Bergama köylülerinin siyanürlü altın madenciliğine karşı başlattığı direnişte, çevreci eylemlerin arkasında Türkiye'nin altın üretmesini engellemek isteyen Alman vakıflarının bulunduğu MİT raporuyla ifşa oldu.",
     "options": [
       {
-        "label": "Çevre ve tabiat varlıklarının korunmasında Anayasa'nın 56. maddesindeki sağlıklı çevrede yaşama hakkını tavizsiz uygula.",
-        "preview": "Adalet +8, Halk +6, Otorite +2 | Hazine -2",
+        "label": "Maden şirketine sıfır atık ve siyanürsüz gravite teknolojisi şartı koy; çevreye en ufak sızıntıda ruhsatı anında iptal et.",
+        "preview": "Adalet +9, Halk +8, Hazine +4, Otorite +7",
         "effects": {
-          "justice": 8,
-          "people": 6,
-          "treasury": -2,
-          "military": 0,
-          "authority": 2
-        },
-        "log": "Çevre hakkı korundu; tabiat varlıklarını bozan usulsüzlüklere karşı yargı yolu işletildi."
-      },
-      {
-        "label": "Çevre dernekleri, yerel halk ve bilim insanlarıyla diyalog kurarak kalkınma ile doğa koruma dengesinde uzlaş.",
-        "preview": "Adalet +2, Halk +8, Otorite +5 | Hazine -2",
-        "effects": {
-          "justice": 2,
+          "justice": 9,
           "people": 8,
-          "treasury": -2,
+          "treasury": 4,
           "military": 0,
-          "authority": 5
+          "authority": 7
         },
-        "log": "Toplumsal mutabakat sağlandı; çevre ihtilafları sivil diyalogla çözüldü."
+        "log": "Çevre ve köylü sağlığı güvenceye alınırken yerli altın madenciliği şeffaflaştırıldı."
       },
       {
-        "label": "Çevre koruma, atık su arıtma ve sıfır atık projeleri için İller Bankası ve Hazine kaynaklarını seferber et.",
-        "preview": "Hazine +8, Otorite +4 | Halk -5",
-        "effects": {
-          "justice": 0,
-          "people": -5,
-          "treasury": 8,
-          "military": 0,
-          "authority": 4
-        },
-        "log": "Yeşil projeler finanse edildi; çevre altyapısı kamu bütçesiyle güçlendirildi."
-      },
-      {
-        "label": "Doğal sit alanlarında kaçak yapılaşma ve çevre sabotajlarına karşı kolluk devriyelerini artır.",
-        "preview": "Adalet +5, Halk +5, Güvenlik +9, Otorite +8 | Hazine -5",
-        "effects": {
-          "justice": 5,
-          "people": 5,
-          "treasury": -5,
-          "military": 9,
-          "authority": 8
-        },
-        "log": "Çevre asayişi sağlandı; doğa harikalarının rant odaklarınca işgal edilmesi önlendi."
-      },
-      {
-        "label": "Sıfır Atık vizyonunu ve iklim adaleti ilkelerini yasal teminata bağlayan 'Çevre ve Doğa Reform Kanunu' çıkar.",
-        "preview": "Adalet +7, Halk +5, Otorite +6 | Hazine -4",
+        "label": "Türkiye'nin altın çıkarmasını baltalamak için eylemleri finanse eden yabancı vakıfları deşifre edip faaliyetlerini durdur.",
+        "preview": "Adalet +7, Halk +5, Hazine +1, Güvenlik +6, Otorite +8",
         "effects": {
           "justice": 7,
           "people": 5,
-          "treasury": -4,
+          "treasury": 1,
+          "military": 6,
+          "authority": 8
+        },
+        "log": "Yabancı etki ajanlarının enerji ve maden sabotajları açığa çıkarıldı."
+      },
+      {
+        "label": "Maden gelirlerinin belirli bir yüzdesini doğrudan Bergama köylerinin altyapı ve tarım kalkınmasına hibe et.",
+        "preview": "Adalet +8, Halk +8, Otorite +6 | Hazine -3",
+        "effects": {
+          "justice": 8,
+          "people": 8,
+          "treasury": -3,
           "military": 0,
           "authority": 6
         },
-        "log": "Çevre mevzuatı çağdaşlaştırıldı; gelecek nesillere temiz bir vatan bırakıldı."
+        "log": "Köylülerin haklı refah payı teslim edildi, toplumsal uzlaşma sağlandı."
+      },
+      {
+        "label": "Tüm maden sahalarında bağımsız üniversite ve çevre örgütlerinden oluşan daimi teftiş heyeti görevlendir.",
+        "preview": "Adalet +8, Halk +7, Otorite +6 | Hazine -2",
+        "effects": {
+          "justice": 8,
+          "people": 7,
+          "treasury": -2,
+          "military": 0,
+          "authority": 6
+        },
+        "log": "Halkın devlete güveni sağlandı, spekülasyonların önü kesildi."
+      },
+      {
+        "label": "Merkez Bankası'nın tüm yerli altını TL üzerinden doğrudan satın almasını sağlayarak milli altın rezervini büyüt.",
+        "preview": "Adalet +7, Halk +7, Hazine +8, Güvenlik +2, Otorite +8",
+        "effects": {
+          "justice": 7,
+          "people": 7,
+          "treasury": 8,
+          "military": 2,
+          "authority": 8
+        },
+        "log": "Yerli madenlerden çıkarılan altınlar Londra'ya değil Merkez Bankası kasalarına aktı."
       }
     ]
   },
@@ -72153,77 +72153,77 @@ const EVENT_DECK_MODERN = [
     "id": "tr_vaka_926",
     "characters": [
       {
-        "id": "char_sehir_plancisi",
-        "name": "Mimarlar ve Şehir Plancıları Temsilcisi"
+        "id": "char_enerji_bakani",
+        "name": "Enerji ve Tabii Kaynaklar Bakanı"
       },
       {
-        "id": "char_icisleri_bakani",
-        "name": "İçişleri Bakanı"
+        "id": "char_kultur_turizm_bakani",
+        "name": "Kültür ve Turizm Bakanı"
       }
     ],
     "source": "İçişleri Bakanlığı & Çevre Şehircilik",
-    "title": "Halfeti Batık Kenti ve Birecik Barajı Suları Altındaki Köyler",
-    "desc": "Gaziantep ve Urfa arasındaki Fırat suları altında kalan minaresi batık cami dünya turizmine kazandırıldı.",
+    "title": "Halfeti ve Fırat Havzası Baraj Projeleri: Enerji Arzı ve Tarihi Miras İkilemi",
+    "desc": "Birecik Barajı'nın Fırat suları altında bırakacağı antik Zeugma ve Halfeti mirası uluslararası alanda tartışılırken, barajın üreteceği elektriğe sanayinin acil ihtiyacı devleti kritik bir karara zorladı.",
     "options": [
       {
-        "label": "Çevre ve tabiat varlıklarının korunmasında Anayasa'nın 56. maddesindeki sağlıklı çevrede yaşama hakkını tavizsiz uygula.",
-        "preview": "Adalet +8, Halk +6, Otorite +2 | Hazine -2",
+        "label": "Baraj su tutma takvimini 6 ay erteleyerek arkeolog ordusuyla Zeugma mozaiklerini ve eserlerini eksiksiz kurtarıp müzeye taşı.",
+        "preview": "Adalet +9, Halk +8, Otorite +7 | Hazine -6",
+        "effects": {
+          "justice": 9,
+          "people": 8,
+          "treasury": -6,
+          "military": 0,
+          "authority": 7
+        },
+        "log": "Dünyanın en büyük mozaik müzesi kuruldu; insanlık mirası sulara gömülmekten kurtarıldı."
+      },
+      {
+        "label": "Sular altında kalan köylüler için modern konutlar ve sulu tarım arazileri inşa ederek ekonomik mağduriyeti sıfırla.",
+        "preview": "Adalet +8, Halk +9, Otorite +6 | Hazine -7",
         "effects": {
           "justice": 8,
-          "people": 6,
-          "treasury": -2,
-          "military": 0,
-          "authority": 2
-        },
-        "log": "Çevre hakkı korundu; tabiat varlıklarını bozan usulsüzlüklere karşı yargı yolu işletildi."
-      },
-      {
-        "label": "Çevre dernekleri, yerel halk ve bilim insanlarıyla diyalog kurarak kalkınma ile doğa koruma dengesinde uzlaş.",
-        "preview": "Adalet +2, Halk +8, Otorite +5 | Hazine -2",
-        "effects": {
-          "justice": 2,
-          "people": 8,
-          "treasury": -2,
-          "military": 0,
-          "authority": 5
-        },
-        "log": "Toplumsal mutabakat sağlandı; çevre ihtilafları sivil diyalogla çözüldü."
-      },
-      {
-        "label": "Çevre koruma, atık su arıtma ve sıfır atık projeleri için İller Bankası ve Hazine kaynaklarını seferber et.",
-        "preview": "Hazine +8, Otorite +4 | Halk -5",
-        "effects": {
-          "justice": 0,
-          "people": -5,
-          "treasury": 8,
-          "military": 0,
-          "authority": 4
-        },
-        "log": "Yeşil projeler finanse edildi; çevre altyapısı kamu bütçesiyle güçlendirildi."
-      },
-      {
-        "label": "Doğal sit alanlarında kaçak yapılaşma ve çevre sabotajlarına karşı kolluk devriyelerini artır.",
-        "preview": "Adalet +5, Halk +5, Güvenlik +9, Otorite +8 | Hazine -5",
-        "effects": {
-          "justice": 5,
-          "people": 5,
-          "treasury": -5,
-          "military": 9,
-          "authority": 8
-        },
-        "log": "Çevre asayişi sağlandı; doğa harikalarının rant odaklarınca işgal edilmesi önlendi."
-      },
-      {
-        "label": "Sıfır Atık vizyonunu ve iklim adaleti ilkelerini yasal teminata bağlayan 'Çevre ve Doğa Reform Kanunu' çıkar.",
-        "preview": "Adalet +7, Halk +5, Otorite +6 | Hazine -4",
-        "effects": {
-          "justice": 7,
-          "people": 5,
-          "treasury": -4,
+          "people": 9,
+          "treasury": -7,
           "military": 0,
           "authority": 6
         },
-        "log": "Çevre mevzuatı çağdaşlaştırıldı; gelecek nesillere temiz bir vatan bırakıldı."
+        "log": "Yörede halkın refahı arttı; yeni Halfeti modern bir turizm cazibe merkezine dönüştü."
+      },
+      {
+        "label": "Barajı planlanan tarihte devreye alarak Güneydoğu sanayisine kesintisiz ve ucuz hidroelektrik sağla.",
+        "preview": "Adalet +5, Halk +5, Hazine +8, Otorite +7",
+        "effects": {
+          "justice": 5,
+          "people": 5,
+          "treasury": 8,
+          "military": 0,
+          "authority": 7
+        },
+        "log": "Bölge sanayisi enerjiyle şahlandı; ancak tarihi mirasa dair itirazlar sürdü."
+      },
+      {
+        "label": "Batık Halfeti'yi dalış turizmi ve su sporları merkezi ilan ederek eko-turizm gelirlerini yöre halkına bırak.",
+        "preview": "Adalet +7, Halk +8, Hazine +3, Otorite +6",
+        "effects": {
+          "justice": 7,
+          "people": 8,
+          "treasury": 3,
+          "military": 0,
+          "authority": 6
+        },
+        "log": "Fırat'ın saklı cenneti dünya çapında eşsiz bir turizm markasına dönüştü."
+      },
+      {
+        "label": "Fırat ve Dicle havzasındaki su paylaşımı konusunda sınır aşan sular diplomasisini güçlendiren bölgesel pakt imzala.",
+        "preview": "Adalet +7, Halk +6, Hazine +1, Güvenlik +4, Otorite +8",
+        "effects": {
+          "justice": 7,
+          "people": 6,
+          "treasury": 1,
+          "military": 4,
+          "authority": 8
+        },
+        "log": "Komşu ülkelerle su krizleri barışçıl ve adil anlaşmalarla güvenceye alındı."
       }
     ]
   },
@@ -75667,73 +75667,73 @@ const EVENT_DECK_MODERN = [
         "name": "Cumhurbaşkanı"
       },
       {
-        "id": "char_tbmm_baskani",
-        "name": "TBMM Başkanı"
+        "id": "char_genelkurmay_baskani",
+        "name": "Genelkurmay Başkanı"
       }
     ],
     "source": "Cumhurbaşkanlığı & TBMM",
-    "title": "29 Ekim 2023: Türkiye Cumhuriyeti'nin 100. Yılının Kutlanması",
-    "desc": "Gazi Mustafa Kemal Atatürk'ün emaneti cumhuriyet 85 milyonun tek yürek olduğu tarihi törenlerle kutlandı.",
+    "title": "Cumhuriyetin 100. Yılında Boğaz'da 100 Savaş Gemisi Gösterisi ve Mavi Vatan Mesajı",
+    "desc": "Cumhuriyetin 100. yılı kutlamalarında İstanbul Boğazı'ndan TCG Anadolu önderliğinde 100 savaş gemisinin geçmesi ve Türk Yıldızları uçuşu planlanırken, Ege ve Doğu Akdeniz'deki yabancı donanmaların askeri taciz ve provokasyon hazırlığı istihbarat edildi.",
     "options": [
       {
-        "label": "Gazi Mustafa Kemal Atatürk'ün emaneti Cumhuriyetimizin 100. yılını anayasal meşruiyet ve millet iradesiyle taçlandır.",
-        "preview": "Adalet +8, Halk +6, Otorite +2 | Hazine -2",
+        "label": "Planlanan Boğaz geçidini tavizsiz gerçekleştir; 100 savaş gemisiyle gövde gösterisi yaparak dosta güven düşmana korku sal.",
+        "preview": "Adalet +6, Halk +10, Güvenlik +8, Otorite +9 | Hazine -4",
+        "effects": {
+          "justice": 6,
+          "people": 10,
+          "treasury": -4,
+          "military": 8,
+          "authority": 9
+        },
+        "log": "Millet tek yürek oldu; 100 yıllık cumhuriyetin deniz ve hava gücü tüm dünyaya haykırıldı."
+      },
+      {
+        "label": "Aynı anda Doğu Akdeniz ve Ege'de teyakkuzdaki fırkateyn ve SİHA'larla 'Mavi Vatan Tatbikatı' icra ederek her türlü tacizi anında püskürt.",
+        "preview": "Adalet +6, Halk +8, Güvenlik +9, Otorite +9 | Hazine -5",
+        "effects": {
+          "justice": 6,
+          "people": 8,
+          "treasury": -5,
+          "military": 9,
+          "authority": 9
+        },
+        "log": "Milli savunma caydırıcılığı zirveye çıktı; hasım unsurlar geri çekilmek zorunda kaldı."
+      },
+      {
+        "label": "Kutlamaları sadece askeri değil, 81 ilde bilim, teknoloji ve kültür festivalleriyle taçlandırarak milli birlik şölenine çevir.",
+        "preview": "Adalet +8, Halk +9, Güvenlik +2, Otorite +7 | Hazine -6",
         "effects": {
           "justice": 8,
-          "people": 6,
-          "treasury": -2,
-          "military": 0,
-          "authority": 2
-        },
-        "log": "Cumhuriyetimizin 100. yılı şanla kutlandı; Atatürk'ün 'En büyük eserim' dediği Cumhuriyet ebediyen payidar kılındı."
-      },
-      {
-        "label": "85 milyon vatandaşın ellerinde al bayraklarla meydanları doldurduğu tarihi 29 Ekim gecesini milli bayram coşkusuyla kutla.",
-        "preview": "Adalet +2, Halk +9, Hazine +4, Güvenlik +2, Otorite +5",
-        "effects": {
-          "justice": 2,
           "people": 9,
-          "treasury": 4,
+          "treasury": -6,
           "military": 2,
-          "authority": 5
-        },
-        "log": "Millet tek yürek oldu; 100. yıl kutlamaları Türkiye'nin birlik ve beraberliğini tüm dünyaya haykırdı."
-      },
-      {
-        "label": "100. yıl hatırası olarak 81 ilde 100 yeni kütüphane, bilim merkezi ve müzeyi Hazine yatırımlarıyla aç.",
-        "preview": "Hazine +8, Otorite +4 | Halk -5",
-        "effects": {
-          "justice": 0,
-          "people": -5,
-          "treasury": 8,
-          "military": 0,
-          "authority": 4
-        },
-        "log": "Cumhuriyetin mirası abideleşti; 100. yıl kalıcı eserlerle gelecek nesillere armağan edildi."
-      },
-      {
-        "label": "Donanmanın 100 savaş gemisi ve SoloTürk'ün Boğaz semalarındaki geçit töreniyle dosta düşmana Türkiye'nin kudretini göster.",
-        "preview": "Adalet +3, Güvenlik +4, Otorite +7 | Halk -2, Hazine -3",
-        "effects": {
-          "justice": 3,
-          "people": -2,
-          "treasury": -3,
-          "military": 4,
           "authority": 7
         },
-        "log": "Boğaz'da tarihi donanma geçişi yapıldı; TCG Anadolu öncülüğündeki leventler şanlı Cumhuriyetimizi selamladı."
+        "log": "Cumhuriyetin 100. yılı 85 milyonun ortak gururu ve şöleni haline geldi."
       },
       {
-        "label": "Cumhuriyetin ikinci yüzyılını kalkınma ve adaletle mühürleyen 'Türkiye Yüzyılı Çerçeve Kanunu'nu Meclis'te kabul et.",
-        "preview": "Adalet +8, Halk +8, Güvenlik +1, Otorite +6 | Hazine -4",
+        "label": "Yabancı elçilikler ve uluslararası basına özel brifing vererek Türkiye'nin barış ve istikrar vizyonunu diplomatik dille duyur.",
+        "preview": "Adalet +7, Halk +7, Güvenlik +3, Otorite +7 | Hazine -1",
         "effects": {
-          "justice": 8,
-          "people": 8,
-          "treasury": -4,
-          "military": 1,
-          "authority": 6
+          "justice": 7,
+          "people": 7,
+          "treasury": -1,
+          "military": 3,
+          "authority": 7
         },
-        "log": "İkinci yüzyılın vizyonu kanunlaştı; Türkiye küresel liderlik rotasına oturdu."
+        "log": "Uluslararası kamuoyunda Türkiye'nin bölgesel barışın teminatı olduğu algısı pekişti."
+      },
+      {
+        "label": "100. yıl vesilesiyle savunma sanayiinde yerlilik oranını yüzde 90'a çıkarma taahhüdünü 'Türkiye Yüzyılı Vizyon Belgesi' ile ilan et.",
+        "preview": "Adalet +7, Halk +8, Güvenlik +7, Otorite +8 | Hazine -5",
+        "effects": {
+          "justice": 7,
+          "people": 8,
+          "treasury": -5,
+          "military": 7,
+          "authority": 8
+        },
+        "log": "Gelecek yüzyılın teknolojik ve askeri bağımsızlık rotası çizildi."
       }
     ]
   },
