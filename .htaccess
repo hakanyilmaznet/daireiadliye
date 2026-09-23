@@ -1,0 +1,31 @@
+# Dâire-i Adliyye Web Sunucusu Yapılandırması (.htaccess)
+
+# 1. Doğru MIME Türleri
+<IfModule mod_mime.c>
+  AddType application/javascript .js
+  AddType application/json .json
+  AddType image/svg+xml .svg
+  AddType image/x-icon .ico
+  AddType image/png .png
+  AddType image/jpeg .jpg .jpeg
+</IfModule>
+
+# 2. Header & Güvenlik Politikası Düzeltmeleri
+<IfModule mod_headers.c>
+  # Chrome Privacy Sandbox (join-ad-interest-group / run-ad-auction) uyarısını gider
+  Header unset Permissions-Policy
+  Header set Permissions-Policy "interest-cohort=(), browsing-topics=()"
+  
+  # CORS Desteği
+  Header set Access-Control-Allow-Origin "*"
+</IfModule>
+
+# 3. Önbellek Yönetimi
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/svg+xml "access plus 1 month"
+  ExpiresByType image/png "access plus 1 month"
+  ExpiresByType image/jpeg "access plus 1 month"
+  ExpiresByType image/x-icon "access plus 1 month"
+  ExpiresByType application/javascript "access plus 1 day"
+</IfModule>

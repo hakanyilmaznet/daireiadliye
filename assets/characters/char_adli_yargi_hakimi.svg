@@ -1,0 +1,118 @@
+
+<svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1c1917"/>
+      <stop offset="60%" stop-color="#0c0a09"/>
+      <stop offset="100%" stop-color="#02050c"/>
+    </linearGradient>
+    <radialGradient id="rimLight" cx="30%" cy="20%" r="70%">
+      <stop offset="0%" stop-color="#7f1d1d" stop-opacity="0.35"/>
+      <stop offset="70%" stop-color="#000" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="skinGrad" x1="0.3" y1="0" x2="0.7" y2="1">
+      <stop offset="0%" stop-color="#f8d7b8"/>
+      <stop offset="50%" stop-color="#e2b490"/>
+      <stop offset="100%" stop-color="#ba8260"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="512" height="512" fill="url(#bgGrad)"/>
+  <rect width="512" height="512" fill="url(#rimLight)"/>
+
+  <!-- Institutional Background Silhouette -->
+  
+      <line x1="256" y1="50" x2="256" y2="280" stroke="#f59e0b" stroke-width="2" opacity="0.2"/>
+      <line x1="160" y1="90" x2="352" y2="90" stroke="#f59e0b" stroke-width="3" opacity="0.25"/>
+      <path d="M 160 90 L 135 150 L 185 150 Z" fill="none" stroke="#f59e0b" stroke-width="2" opacity="0.25"/>
+      <path d="M 352 90 L 327 150 L 377 150 Z" fill="none" stroke="#f59e0b" stroke-width="2" opacity="0.25"/>
+    
+
+  <!-- Body / Attire -->
+  
+      <!-- Black Judicial Robe -->
+      <path d="M 50 512 C 60 410 115 330 180 315 L 256 360 L 332 315 C 397 330 452 410 462 512 Z" fill="#09090b"/>
+      <!-- Rich Crimson Satin Lapels / Collar -->
+      <polygon points="180,315 256,410 235,512 110,512 60,450" fill="#991b1b"/>
+      <polygon points="332,315 256,410 277,512 402,512 452,450" fill="#991b1b"/>
+      <!-- Gold Braid Trim -->
+      <path d="M 180 315 L 256 410 L 332 315" stroke="#f59e0b" stroke-width="3.5" fill="none"/>
+      <!-- White Shirt/Jabot Collar -->
+      <polygon points="256,360 215,290 256,305 297,290" fill="#f8fafc"/>
+      <polygon points="256,360 230,290 256,340 282,290" fill="#e2e8f0"/>
+      <!-- Golden Scales Brooch -->
+      <circle cx="256" cy="405" r="9" fill="#f59e0b"/>
+      <text x="256" y="409" fill="#09090b" font-size="11" font-family="sans-serif" text-anchor="middle" font-weight="bold">⚖</text>
+    
+
+  <!-- Neck -->
+  <path d="M 220 225 L 220 300 C 220 320 292 320 292 300 L 292 225 Z" fill="url(#skinGrad)"/>
+
+  <!-- Lapel Pin -->
+  
+      <circle cx="202" cy="365" r="8" fill="#f59e0b"/>
+      <text x="202" y="369" fill="#020617" font-size="10" font-family="sans-serif" text-anchor="middle" font-weight="bold">⚖</text>
+    
+
+  <!-- Head & Ears -->
+  <ellipse cx="188" cy="205" rx="14" ry="24" fill="#d99b77"/>
+  <ellipse cx="324" cy="205" rx="14" ry="24" fill="#c6835d"/>
+  <ellipse cx="189" cy="205" rx="8" ry="15" fill="#ba8260"/>
+  <ellipse cx="323" cy="205" rx="8" ry="15" fill="#a76846"/>
+
+  <!-- Face Contour -->
+  <path d="M 195 170 C 190 230 205 275 256 275 C 307 275 322 230 317 170 C 317 115 195 115 195 170 Z" fill="url(#skinGrad)"/>
+
+  <!-- Cheeks / Chin shadow -->
+  <path d="M 220 260 C 235 275 277 275 292 260 C 285 272 227 272 220 260 Z" fill="#9e623f" opacity="0.35"/>
+
+  <!-- Mouth -->
+  <path d="M 234 236 Q 256 242 278 236" stroke="#8d4b32" stroke-width="3" stroke-linecap="round" fill="none"/>
+  
+
+  <!-- Nose -->
+  <path d="M 256 165 L 251 210 L 244 216 Q 256 220 268 216 L 261 210 Z" fill="#c98a63"/>
+  <path d="M 244 214 Q 256 218 268 214" stroke="#8d4b32" stroke-width="2" fill="none"/>
+
+  <!-- Eyebrows -->
+  <path d="M 210 162 Q 230 156 244 164" stroke="#334155" stroke-width="4.2" stroke-linecap="round" fill="none"/>
+  <path d="M 302 162 Q 282 156 268 164" stroke="#1e293b" stroke-width="4.2" stroke-linecap="round" fill="none"/>
+
+  <!-- Eyes -->
+  <ellipse cx="228" cy="176" rx="9.5" ry="6" fill="#f8fafc"/>
+  <ellipse cx="284" cy="176" rx="9.5" ry="6" fill="#f8fafc"/>
+  <circle cx="229" cy="176" r="4.2" fill="#2d1c0b"/>
+  <circle cx="283" cy="176" r="4.2" fill="#2d1c0b"/>
+  <circle cx="230" cy="175" r="1.5" fill="#ffffff"/>
+  <circle cx="284" cy="175" r="1.5" fill="#ffffff"/>
+  <path d="M 216 172 Q 228 167 240 172" stroke="#663b22" stroke-width="1.4" fill="none"/>
+  <path d="M 272 172 Q 284 167 296 172" stroke="#663b22" stroke-width="1.4" fill="none"/>
+
+  <!-- Glasses if applicable -->
+  
+      <!-- Glasses Frame -->
+      <rect x="210" y="166" width="36" height="24" rx="4" fill="none" stroke="#94a3b8" stroke-width="2.2" opacity="0.9"/>
+      <rect x="266" y="166" width="36" height="24" rx="4" fill="none" stroke="#94a3b8" stroke-width="2.2" opacity="0.9"/>
+      <line x1="246" y1="176" x2="266" y2="176" stroke="#94a3b8" stroke-width="2.2"/>
+      <line x1="196" y1="174" x2="210" y2="176" stroke="#94a3b8" stroke-width="1.8"/>
+      <line x1="302" y1="176" x2="316" y2="174" stroke="#94a3b8" stroke-width="1.8"/>
+      <!-- Lens glare -->
+      <line x1="214" y1="172" x2="230" y2="186" stroke="#ffffff" stroke-width="1.2" opacity="0.6"/>
+      <line x1="270" y1="172" x2="286" y2="186" stroke="#ffffff" stroke-width="1.2" opacity="0.6"/>
+    
+
+  <!-- Hair -->
+  
+      <path d="M 188 170 C 182 130 195 95 228 88 C 256 82 280 86 304 96 C 328 108 332 135 324 170 C 318 135 305 112 285 108 C 265 106 240 112 222 122 C 205 132 195 150 188 170 Z" fill="#64748b"/>
+      <path d="M 220 98 Q 256 90 292 100" stroke="#cbd5e1" stroke-width="3" stroke-linecap="round" fill="none"/>
+      <path d="M 210 110 Q 256 102 285 112" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" fill="none"/>
+    
+
+  <!-- Dignity forehead lines -->
+  <path d="M 232 142 Q 256 138 280 142" stroke="#b47b59" stroke-width="1.2" stroke-linecap="round" fill="none" opacity="0.6"/>
+
+  <!-- Modern Gold Border Trim -->
+  <rect x="6" y="6" width="500" height="500" rx="20" fill="none" stroke="#c99738" stroke-width="2" opacity="0.45"/>
+  <rect x="12" y="12" width="488" height="488" rx="16" fill="none" stroke="#f59e0b" stroke-width="0.75" stroke-dasharray="4,8" opacity="0.25"/>
+</svg>

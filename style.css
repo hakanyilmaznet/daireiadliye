@@ -1,0 +1,1410 @@
+:root {
+  --bg-base: #06090e;
+  --panel-bg: rgba(15, 23, 42, 0.88);
+  --card-bg: rgba(17, 24, 39, 0.92);
+  --border-gold: #c99738;
+  --border-gold-soft: rgba(201, 151, 56, 0.35);
+  --border-gold-subtle: rgba(201, 151, 56, 0.15);
+  --gold-glow: rgba(224, 175, 74, 0.45);
+  --gold-bright: #f5d485;
+  --text-main: #f1f5f9;
+  --text-muted: #94a3b8;
+  --text-dim: #64748b;
+  --danger: #ef4444;
+  --danger-glow: rgba(239, 68, 68, 0.4);
+  --success: #10b981;
+  --success-glow: rgba(16, 185, 129, 0.35);
+  --font-serif: "Cinzel", "Amiri", Georgia, serif;
+  --font-arabic: "Amiri", serif;
+  --font-sans: "Outfit", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+body {
+  background: radial-gradient(circle at 50% 15%, #162032 0%, #0a0f18 55%, var(--bg-base) 100%);
+  color: var(--text-main);
+  font-family: var(--font-sans);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px 12px 32px 12px;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* Background Ambient Lighting */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0; right: 0; height: 350px;
+  background: radial-gradient(ellipse at 50% 0%, rgba(201, 151, 56, 0.12) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Screen Shake Animation */
+.shake-screen {
+  animation: screenShake 0.45s cubic-bezier(.36,.07,.19,.97) both;
+}
+
+@keyframes screenShake {
+  10%, 90% { transform: translate3d(-2px, 1px, 0); }
+  20%, 80% { transform: translate3d(3px, -2px, 0); }
+  30%, 50%, 70% { transform: translate3d(-5px, 3px, 0); }
+  40%, 60% { transform: translate3d(5px, -3px, 0); }
+}
+
+/* Header */
+header {
+  width: 100%;
+  max-width: 1040px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 18px;
+  border-bottom: 1px solid var(--border-gold-soft);
+  margin-bottom: 22px;
+  background: rgba(11, 17, 28, 0.7);
+  backdrop-filter: blur(16px);
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
+  position: relative;
+  z-index: 10;
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+}
+
+.brand h1 {
+  font-family: var(--font-serif);
+  font-size: 1.55rem;
+  letter-spacing: 2.5px;
+  background: linear-gradient(135deg, #ffffff 15%, var(--gold-bright) 55%, var(--border-gold) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 20px var(--gold-glow);
+}
+
+.brand span {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  margin-top: 2px;
+}
+
+.header-controls {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.deck-pill {
+  font-size: 0.76rem;
+  padding: 6px 14px;
+  border-radius: 20px;
+  background: rgba(15, 23, 42, 0.8);
+  border: 1px solid var(--border-gold-soft);
+  color: var(--gold-bright);
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.counter-pill {
+  background: rgba(201, 151, 56, 0.15);
+  border-color: var(--border-gold);
+  color: #fff;
+  font-weight: 600;
+}
+
+.glass-btn {
+  background: linear-gradient(180deg, rgba(30, 41, 59, 0.85) 0%, rgba(15, 23, 42, 0.95) 100%);
+  border: 1px solid var(--border-gold-soft);
+  color: var(--text-main);
+  padding: 7px 15px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.22s ease;
+  font-family: var(--font-sans);
+}
+
+.glass-btn:hover {
+  border-color: var(--gold-bright);
+  box-shadow: 0 0 16px var(--gold-glow);
+  transform: translateY(-1px);
+}
+
+/* Layout */
+.game-layout {
+  width: 100%;
+  max-width: 1040px;
+  display: grid;
+  grid-template-columns: 380px 1fr;
+  gap: 22px;
+  position: relative;
+  z-index: 5;
+}
+
+@media (max-width: 920px) {
+  .game-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Sol: HUD, Çember & İdare Merkezi */
+.hud-card {
+  background: linear-gradient(180deg, rgba(17, 24, 39, 0.95) 0%, rgba(11, 17, 28, 0.98) 100%);
+  border: 1px solid var(--border-gold-soft);
+  border-radius: 18px;
+  padding: 16px 14px 18px 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.55), inset 0 1px 0 rgba(245, 212, 133, 0.15);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.35s ease;
+}
+
+.hud-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 10%;
+  right: 10%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold-bright), transparent);
+  opacity: 0.7;
+}
+
+/* 1. Görsel Dönem / Çağ Seçici (Segmented Era Tabs) */
+.era-switcher-wrap {
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.era-switcher-label {
+  font-size: 0.63rem;
+  letter-spacing: 2px;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 6px;
+  text-align: center;
+}
+
+.era-tabs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  background: rgba(7, 11, 18, 0.9);
+  padding: 5px;
+  border-radius: 12px;
+  border: 1px solid var(--border-gold-subtle);
+  box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+.era-tab {
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  padding: 7px 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  text-align: left;
+  position: relative;
+  font-family: var(--font-sans);
+}
+
+.era-tab:hover {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.era-tab.active {
+  background: linear-gradient(135deg, rgba(30, 41, 59, 0.95) 0%, rgba(15, 23, 42, 0.95) 100%);
+  border-color: var(--border-gold);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4), 0 0 12px var(--gold-glow);
+}
+
+#tabOttoman.active {
+  border-color: var(--border-gold);
+  background: linear-gradient(135deg, rgba(40, 30, 15, 0.7) 0%, rgba(15, 23, 42, 0.95) 100%);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4), 0 0 14px var(--gold-glow);
+}
+
+#tabModern.active {
+  border-color: rgba(248, 113, 113, 0.6);
+  background: linear-gradient(135deg, rgba(75, 15, 15, 0.6) 0%, rgba(15, 23, 42, 0.95) 100%);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4), 0 0 14px rgba(239, 68, 68, 0.35);
+}
+
+.era-tab-badge {
+  font-size: 1.25rem;
+  line-height: 1;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));
+}
+
+.era-tab-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.era-tab-title {
+  font-size: 0.76rem;
+  font-weight: 700;
+  color: var(--text-main);
+  letter-spacing: 0.3px;
+  line-height: 1.2;
+}
+
+#tabOttoman.active .era-tab-title {
+  color: var(--gold-bright);
+}
+
+#tabModern.active .era-tab-title {
+  color: #fecaca;
+}
+
+.era-tab-desc {
+  font-size: 0.62rem;
+  color: var(--text-muted);
+  letter-spacing: 0.2px;
+  margin-top: 2px;
+}
+
+/* 2. Çember HUD & Animasyonlu Usturlab */
+.hud-canvas-wrap {
+  position: relative;
+  width: 100%;
+  max-width: 320px;
+  aspect-ratio: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#hudCanvas {
+  width: 100%;
+  height: 100%;
+}
+
+.hud-corner {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  pointer-events: none;
+  opacity: 0.65;
+  transition: all 0.3s ease;
+}
+
+.hud-corner.tl {
+  top: 8px;
+  left: 8px;
+  border-top: 2px solid var(--gold-bright);
+  border-left: 2px solid var(--gold-bright);
+}
+
+.hud-corner.tr {
+  top: 8px;
+  right: 8px;
+  border-top: 2px solid var(--gold-bright);
+  border-right: 2px solid var(--gold-bright);
+}
+
+.hud-corner.bl {
+  bottom: 8px;
+  left: 8px;
+  border-bottom: 2px solid var(--gold-bright);
+  border-left: 2px solid var(--gold-bright);
+}
+
+.hud-corner.br {
+  bottom: 8px;
+  right: 8px;
+  border-bottom: 2px solid var(--gold-bright);
+  border-right: 2px solid var(--gold-bright);
+}
+
+.reign-badge {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: var(--font-serif);
+  font-size: 0.84rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: var(--gold-bright);
+  text-shadow: 0 0 10px var(--gold-glow);
+  text-transform: uppercase;
+  text-align: center;
+  pointer-events: none;
+  background: rgba(6, 9, 14, 0.88);
+  padding: 5px 13px;
+  border-radius: 20px;
+  border: 1px solid var(--border-gold-soft);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* 3. Muvazene & Devlet İstikrar Endeksi */
+.equilibrium-card {
+  width: 100%;
+  background: rgba(8, 12, 20, 0.85);
+  border: 1px solid var(--border-gold-subtle);
+  border-radius: 10px;
+  padding: 9px 12px;
+  margin-top: 12px;
+  box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.45);
+}
+
+.eq-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.eq-title {
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+
+.eq-score {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--gold-bright);
+  letter-spacing: 0.4px;
+}
+
+.eq-track {
+  width: 100%;
+  height: 6px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 3px;
+  overflow: hidden;
+  position: relative;
+}
+
+.eq-fill {
+  height: 100%;
+  border-radius: 3px;
+  background: linear-gradient(90deg, #10b981 0%, #f59e0b 50%, #f5d485 100%);
+  transition: width 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+  box-shadow: 0 0 10px rgba(245, 212, 133, 0.4);
+}
+
+.eq-fill.warning {
+  background: linear-gradient(90deg, #ea580c 0%, #f59e0b 100%);
+  box-shadow: 0 0 10px rgba(245, 158, 11, 0.4);
+}
+
+.eq-fill.critical {
+  background: linear-gradient(90deg, #b91c1c 0%, #ef4444 100%);
+  box-shadow: 0 0 12px rgba(239, 68, 68, 0.6);
+  animation: pulseAlert 0.8s infinite alternate;
+}
+
+/* 4. Metrics Bar */
+.metrics-bar {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 7px;
+  width: 100%;
+  margin-top: 13px;
+}
+
+.metric-chip {
+  background: rgba(9, 13, 20, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  padding: 8px 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.metric-chip.critical {
+  border-color: var(--danger);
+  background: rgba(239, 68, 68, 0.16);
+  animation: pulseAlert 1s infinite alternate;
+}
+
+@keyframes pulseAlert {
+  from { box-shadow: 0 0 4px var(--danger-glow); }
+  to { box-shadow: 0 0 14px var(--danger); }
+}
+
+.chip-head {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.chip-head .icon {
+  font-size: 0.72rem;
+}
+
+.chip-head .lbl {
+  font-size: 0.65rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+}
+
+.metric-chip .val {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 3px 0 6px 0;
+  font-family: var(--font-sans);
+}
+
+.stat-bar-track {
+  width: 100%;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.stat-bar-fill {
+  height: 100%;
+  background: var(--border-gold);
+  border-radius: 2px;
+  transition: width 0.45s ease, background 0.45s ease;
+}
+
+.stat-bar-fill.healthy {
+  background: var(--success);
+  box-shadow: 0 0 6px var(--success-glow);
+}
+
+.stat-bar-fill.warning {
+  background: var(--gold-bright);
+}
+
+.stat-bar-fill.critical {
+  background: var(--danger);
+  box-shadow: 0 0 8px var(--danger-glow);
+}
+
+/* 5. Hükümdar Şahsiyeti & Karakter Tablosu */
+.personality-card {
+  width: 100%;
+  margin-top: 14px;
+  background: linear-gradient(135deg, rgba(20, 28, 48, 0.72) 0%, rgba(11, 16, 28, 0.88) 100%);
+  border: 1px solid var(--border-gold-soft);
+  border-radius: 12px;
+  padding: 12px 14px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.35);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.personality-card:hover {
+  border-color: var(--border-gold);
+  box-shadow: 0 6px 24px rgba(201, 151, 56, 0.15);
+}
+
+.personality-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--border-gold), transparent);
+}
+
+.personality-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--border-gold-subtle);
+  margin-bottom: 8px;
+}
+
+.personality-title-wrap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.personality-badge-icon {
+  font-size: 1.25rem;
+  background: rgba(201, 151, 56, 0.15);
+  border: 1px solid var(--border-gold);
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(201, 151, 56, 0.2);
+}
+
+.personality-label {
+  font-size: 0.64rem;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  color: var(--gold-light);
+  display: block;
+  font-weight: 700;
+}
+
+.personality-trait {
+  font-family: var(--font-serif);
+  font-size: 0.86rem;
+  font-weight: 700;
+  color: var(--gold-bright);
+  text-shadow: 0 0 8px rgba(230, 184, 86, 0.3);
+  margin-top: 1px;
+}
+
+.personality-decisions-badge {
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: #cbd5e1;
+  background: rgba(0, 0, 0, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 3px 8px;
+  border-radius: 20px;
+  letter-spacing: 0.3px;
+  white-space: nowrap;
+}
+
+.personality-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.72rem;
+  table-layout: fixed;
+}
+
+.personality-table thead th {
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  color: #94a3b8;
+  padding: 4px 6px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.personality-table tbody tr {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+  transition: background 0.2s ease;
+}
+
+.personality-table tbody tr:hover {
+  background: rgba(201, 151, 56, 0.06);
+}
+
+.personality-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.personality-table td {
+  padding: 5px 6px;
+  vertical-align: middle;
+}
+
+.trait-name {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #f1f5f9;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.trait-icon {
+  font-size: 0.82rem;
+}
+
+.trait-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.trait-count {
+  text-align: center;
+  font-weight: 700;
+  font-family: monospace;
+  color: var(--gold-light);
+  font-size: 0.76rem;
+}
+
+.trait-bar-cell {
+  width: 44%;
+}
+
+.trait-bar-wrap {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(0, 0, 0, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 6px;
+  height: 14px;
+  padding: 2px 4px 2px 2px;
+  position: relative;
+}
+
+.trait-bar-fill {
+  height: 8px;
+  border-radius: 4px;
+  min-width: 3px;
+  transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.fill-adli {
+  background: linear-gradient(90deg, #2563eb, #60a5fa);
+  box-shadow: 0 0 6px rgba(96, 165, 250, 0.4);
+}
+
+.fill-sulh {
+  background: linear-gradient(90deg, #059669, #34d399);
+  box-shadow: 0 0 6px rgba(52, 211, 153, 0.4);
+}
+
+.fill-mali {
+  background: linear-gradient(90deg, #d97706, #fbbf24);
+  box-shadow: 0 0 6px rgba(251, 191, 36, 0.4);
+}
+
+.fill-otorite {
+  background: linear-gradient(90deg, #dc2626, #f87171);
+  box-shadow: 0 0 6px rgba(248, 113, 113, 0.4);
+}
+
+.fill-nizam {
+  background: linear-gradient(90deg, #7c3aed, #a78bfa);
+  box-shadow: 0 0 6px rgba(167, 139, 250, 0.4);
+}
+
+.trait-pct {
+  font-size: 0.65rem;
+  font-weight: 700;
+  font-family: monospace;
+  color: #cbd5e1;
+  min-width: 26px;
+  text-align: right;
+  margin-left: auto;
+}
+
+/* 6. Hikmet & Düstur Kartı */
+.wisdom-card {
+  width: 100%;
+  margin-top: 13px;
+  background: linear-gradient(135deg, rgba(20, 28, 45, 0.6) 0%, rgba(10, 15, 24, 0.8) 100%);
+  border: 1px dashed var(--border-gold-soft);
+  border-radius: 10px;
+  padding: 10px 12px;
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  transition: all 0.3s ease;
+}
+
+.wisdom-card:hover {
+  border-style: solid;
+  border-color: var(--border-gold);
+  background: rgba(20, 28, 45, 0.85);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+}
+
+.wisdom-icon {
+  font-size: 1.15rem;
+  line-height: 1.2;
+}
+
+.wisdom-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.wisdom-content p {
+  font-family: var(--font-serif);
+  font-size: 0.77rem;
+  line-height: 1.45;
+  color: #e2e8f0;
+  font-style: italic;
+}
+
+.wisdom-author {
+  font-size: 0.65rem;
+  color: var(--gold-bright);
+  font-weight: 600;
+  letter-spacing: 0.4px;
+}
+
+/* Sağ Panel: Divan & Kart */
+.card-panel {
+  background: var(--panel-bg);
+  border: 1px solid var(--border-gold-soft);
+  border-radius: 16px;
+  padding: 24px 26px;
+  display: flex;
+  flex-direction: column;
+  backdrop-filter: blur(16px);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.6);
+  position: relative;
+  overflow: hidden;
+}
+
+.card-panel::before {
+  content: "";
+  position: absolute;
+  top: 0; right: 0;
+  width: 120px; height: 120px;
+  background: radial-gradient(circle at top right, rgba(201, 151, 56, 0.22) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.card-top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--border-gold-subtle);
+}
+
+.event-source {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--gold-bright);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+}
+
+.source-icon {
+  font-size: 1rem;
+}
+
+.event-badge {
+  font-size: 0.72rem;
+  padding: 4px 10px;
+  border-radius: 12px;
+  background: rgba(201, 151, 56, 0.14);
+  border: 1px solid var(--border-gold-soft);
+  color: var(--gold-bright);
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+/* Karakter Sahnesi (Portre Alanı) */
+.character-stage {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.character-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: linear-gradient(135deg, rgba(30, 41, 59, 0.7) 0%, rgba(15, 23, 42, 0.85) 100%);
+  border: 1px solid var(--border-gold-soft);
+  border-radius: 12px;
+  padding: 8px 14px 8px 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
+  transition: transform 0.2s ease, border-color 0.2s ease;
+  flex: 1 1 200px;
+  max-width: 100%;
+}
+
+.character-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--gold-bright);
+  box-shadow: 0 6px 20px var(--gold-glow);
+}
+
+.char-avatar-frame {
+  width: 54px;
+  height: 54px;
+  border-radius: 10px;
+  border: 1.5px solid var(--border-gold);
+  background: #0b111c;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+.char-avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.char-avatar-fallback {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+  background: radial-gradient(circle, rgba(201, 151, 56, 0.25) 0%, #0d1522 100%);
+  color: var(--gold-bright);
+}
+
+.char-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.char-name {
+  font-family: var(--font-serif);
+  font-size: 0.94rem;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 0.5px;
+  line-height: 1.25;
+}
+
+.char-role-tag {
+  font-size: 0.68rem;
+  color: var(--gold-bright);
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  margin-top: 3px;
+  opacity: 0.9;
+}
+
+/* =================================================================
+   Olay Bilgisi / Vaka Brifing Kutusu (Event Dossier)
+   ================================================================= */
+.event-dossier {
+  background: linear-gradient(145deg, rgba(20, 31, 52, 0.95) 0%, rgba(11, 18, 32, 0.98) 100%);
+  border: 1.5px solid var(--border-gold-soft);
+  border-radius: 14px;
+  padding: 18px 20px 20px 20px;
+  margin-bottom: 22px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  transition: border-color 0.35s ease, box-shadow 0.35s ease, transform 0.35s ease;
+}
+
+.event-dossier:hover {
+  border-color: var(--border-gold);
+}
+
+/* Üst altın tezyinat çıtası */
+.dossier-corner.tc {
+  position: absolute;
+  top: 0;
+  left: 20%;
+  right: 20%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--gold-bright), transparent);
+  pointer-events: none;
+}
+
+.event-badges-wrap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.event-category-badge {
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 3.5px 10px;
+  border-radius: 20px;
+  background: rgba(201, 151, 56, 0.18);
+  border: 1px solid rgba(245, 212, 133, 0.5);
+  color: var(--gold-bright);
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  box-shadow: 0 0 10px rgba(201, 151, 56, 0.2);
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.event-body {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.event-title-wrap {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.event-seal-icon {
+  font-size: 1.35rem;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(201, 151, 56, 0.25) 0%, rgba(13, 21, 36, 0.9) 100%);
+  border: 1.5px solid var(--border-gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 0 12px rgba(201, 151, 56, 0.3);
+}
+
+.event-title {
+  font-family: var(--font-serif);
+  font-size: 1.48rem;
+  font-weight: 700;
+  line-height: 1.32;
+  background: linear-gradient(135deg, #ffffff 40%, var(--gold-bright) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.6);
+  letter-spacing: 0.3px;
+  margin: 0;
+}
+
+.event-desc-wrap {
+  background: linear-gradient(90deg, rgba(201, 151, 56, 0.1) 0%, rgba(15, 23, 42, 0.6) 100%);
+  border-left: 3.5px solid var(--border-gold);
+  border-radius: 0 10px 10px 0;
+  padding: 14px 18px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+.event-desc {
+  font-size: 0.98rem;
+  line-height: 1.72;
+  color: #f1f5f9;
+  letter-spacing: 0.2px;
+  margin: 0;
+}
+
+/* =================================================================
+   Hüküm Sonrası Olay Kutusu Vurgulama Animasyonu (Highlight Pulse)
+   ================================================================= */
+.event-dossier.highlight-event-pulse {
+  animation: dossierHighlightPulse 1s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.event-dossier.highlight-event-pulse::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    60deg,
+    transparent 35%,
+    rgba(245, 212, 133, 0.25) 50%,
+    transparent 65%
+  );
+  animation: dossierShimmerSweep 0.9s ease-out both;
+  pointer-events: none;
+}
+
+.event-dossier.highlight-event-pulse .event-body {
+  animation: eventContentFade 0.45s ease-out both;
+}
+
+.event-dossier.highlight-event-pulse .event-badge {
+  animation: badgeGlowPulse 0.8s ease-out both;
+}
+
+@keyframes dossierHighlightPulse {
+  0% {
+    transform: translateY(-6px) scale(1.018);
+    border-color: var(--gold-bright);
+    box-shadow: 0 0 0 2px var(--gold-bright), 0 0 45px rgba(245, 212, 133, 0.75), 0 16px 40px rgba(0, 0, 0, 0.7);
+  }
+  40% {
+    transform: translateY(-3px) scale(1.01);
+    border-color: var(--border-gold);
+    box-shadow: 0 0 0 1.5px var(--gold-bright), 0 0 32px rgba(245, 212, 133, 0.5), 0 12px 35px rgba(0, 0, 0, 0.6);
+  }
+  100% {
+    transform: translateY(0) scale(1);
+    border-color: var(--border-gold-soft);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  }
+}
+
+@keyframes dossierShimmerSweep {
+  0% {
+    transform: translate(-100%, -100%) rotate(25deg);
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translate(100%, 100%) rotate(25deg);
+    opacity: 0;
+  }
+}
+
+@keyframes eventContentFade {
+  0% {
+    opacity: 0.2;
+    transform: translateY(4px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes badgeGlowPulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.12);
+    border-color: var(--gold-bright);
+    box-shadow: 0 0 16px var(--gold-glow);
+  }
+}
+
+/* Seçenek Tıklandı Geri Bildirimi */
+.choice-btn.choice-btn-selected {
+  border-color: var(--gold-bright) !important;
+  background: linear-gradient(135deg, rgba(201, 151, 56, 0.3) 0%, rgba(15, 23, 42, 0.98) 100%) !important;
+  box-shadow: 0 0 20px var(--gold-glow) !important;
+  transform: scale(0.985);
+}
+
+
+/* Seçenekler Listesi (5 Seçenek) */
+.options-header {
+  font-size: 0.72rem;
+  letter-spacing: 1.5px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.options-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.choice-btn {
+  background: linear-gradient(135deg, rgba(26, 36, 54, 0.95) 0%, rgba(15, 23, 42, 0.98) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 11px;
+  padding: 12px 16px;
+  text-align: left;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  transition: all 0.22s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+  font-family: var(--font-sans);
+}
+
+.choice-btn::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: radial-gradient(circle at 10% 50%, rgba(201, 151, 56, 0.22) 0%, transparent 60%);
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.choice-btn:hover {
+  border-color: var(--gold-bright);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5), 0 0 12px var(--gold-glow);
+}
+
+.choice-btn:hover::before {
+  opacity: 1;
+}
+
+.choice-btn:active {
+  transform: translateY(0);
+}
+
+.choice-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.strategy-badge {
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 6px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.badge-adli {
+  background: rgba(59, 130, 246, 0.2);
+  border: 1px solid rgba(59, 130, 246, 0.4);
+  color: #93c5fd;
+}
+
+.badge-sulh {
+  background: rgba(16, 185, 129, 0.2);
+  border: 1px solid rgba(16, 185, 129, 0.4);
+  color: #6ee7b7;
+}
+
+.badge-mali {
+  background: rgba(245, 158, 11, 0.2);
+  border: 1px solid rgba(245, 158, 11, 0.4);
+  color: #fcd34d;
+}
+
+.badge-otorite {
+  background: rgba(239, 68, 68, 0.2);
+  border: 1px solid rgba(239, 68, 68, 0.4);
+  color: #fca5a5;
+}
+
+.badge-nizam {
+  background: rgba(168, 85, 247, 0.2);
+  border: 1px solid rgba(168, 85, 247, 0.4);
+  color: #d8b4fe;
+}
+
+.choice-label {
+  font-size: 0.89rem;
+  line-height: 1.45;
+  color: #f8fafc;
+  font-weight: 500;
+  z-index: 1;
+}
+
+/* Görsel Efekt Çipleri (Preview Deltas) */
+.preview-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 2px;
+  z-index: 1;
+}
+
+.delta-tag {
+  font-size: 0.68rem;
+  font-weight: 600;
+  padding: 2px 7px;
+  border-radius: 4px;
+  letter-spacing: 0.4px;
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.delta-tag.pos {
+  background: rgba(16, 185, 129, 0.15);
+  border: 1px solid rgba(16, 185, 129, 0.35);
+  color: #34d399;
+}
+
+.delta-tag.neg {
+  background: rgba(239, 68, 68, 0.15);
+  border: 1px solid rgba(239, 68, 68, 0.35);
+  color: #f87171;
+}
+
+/* Uçan Sayı Efekti (Floating Deltas) */
+.delta-floater {
+  position: absolute;
+  font-weight: 700;
+  font-size: 0.95rem;
+  pointer-events: none;
+  z-index: 1000;
+  animation: floatUpFade 1.2s ease-out forwards;
+  text-shadow: 0 0 10px rgba(0,0,0,0.8);
+}
+
+@keyframes floatUpFade {
+  0% { opacity: 0; transform: translateY(0) scale(0.8); }
+  25% { opacity: 1; transform: translateY(-12px) scale(1.1); }
+  100% { opacity: 0; transform: translateY(-40px) scale(1); }
+}
+
+/* Alt: Vak'anüvis Defteri */
+.chronicle-card {
+  grid-column: 1 / -1;
+  background: rgba(12, 18, 30, 0.85);
+  border: 1px solid var(--border-gold-soft);
+  border-radius: 14px;
+  padding: 16px 20px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+.chronicle-header {
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: var(--gold-bright);
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--border-gold-subtle);
+}
+
+#chronicleEntries {
+  max-height: 120px;
+  overflow-y: auto;
+  font-size: 0.84rem;
+  color: #cbd5e1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  scrollbar-width: thin;
+  scrollbar-color: var(--border-gold-soft) transparent;
+}
+
+#chronicleEntries div {
+  line-height: 1.45;
+  border-left: 2px solid var(--border-gold-soft);
+  padding-left: 10px;
+  animation: fadeInEntry 0.3s ease;
+}
+
+@keyframes fadeInEntry {
+  from { opacity: 0; transform: translateX(-4px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+/* Oyun Sonu Modalı */
+.modal-backdrop {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(5, 8, 14, 0.94);
+  backdrop-filter: blur(12px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+  z-index: 50;
+  border-radius: 16px;
+}
+
+.modal-title {
+  font-family: var(--font-serif);
+  font-size: 2rem;
+  color: var(--danger);
+  text-shadow: 0 0 24px var(--danger);
+  margin-bottom: 16px;
+}
+
+.modal-desc {
+  font-size: 1rem;
+  color: var(--text-main);
+  max-width: 480px;
+  line-height: 1.6;
+  margin-bottom: 28px;
+}
+
+.primary-btn {
+  background: linear-gradient(135deg, var(--gold-bright) 0%, var(--border-gold) 100%);
+  color: #0b0f19;
+  font-weight: 700;
+  font-size: 0.95rem;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 24px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 18px var(--gold-glow);
+}
+
+.primary-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 26px var(--gold-glow);
+}
+
+/* Uçan Değişim Sayıları (Floating Deltas) */
+.delta-floater {
+  position: absolute;
+  pointer-events: none;
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+  font-weight: 700;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8), 0 0 12px currentColor;
+  z-index: 999;
+  animation: floatUpFade 1.15s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  letter-spacing: 0.5px;
+}
+
+@keyframes floatUpFade {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, 0) scale(0.7);
+  }
+  20% {
+    opacity: 1;
+    transform: translate(-50%, -15px) scale(1.15);
+  }
+  60% {
+    opacity: 0.95;
+    transform: translate(-50%, -35px) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -55px) scale(0.85);
+  }
+}
+

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#141e30"/>
+      <stop offset="100%" stop-color="#070c16"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="50%" stop-color="#eab308"/>
+      <stop offset="100%" stop-color="#a16207"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="url(#bgGrad)"/>
+  <rect width="60" height="60" x="2" y="2" rx="12" fill="none" stroke="url(#goldGrad)" stroke-width="1.5" opacity="0.6"/>
+  <!-- Scales of Justice -->
+  <line x1="32" y1="12" x2="32" y2="52" stroke="url(#goldGrad)" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="32" cy="12" r="3.5" fill="url(#goldGrad)"/>
+  <!-- Crossbeam -->
+  <line x1="14" y1="20" x2="50" y2="20" stroke="url(#goldGrad)" stroke-width="3" stroke-linecap="round"/>
+  <!-- Left Pan -->
+  <line x1="16" y1="21" x2="10" y2="34" stroke="url(#goldGrad)" stroke-width="1.5"/>
+  <line x1="16" y1="21" x2="22" y2="34" stroke="url(#goldGrad)" stroke-width="1.5"/>
+  <path d="M 8 34 Q 16 41 24 34 Z" fill="url(#goldGrad)"/>
+  <!-- Right Pan -->
+  <line x1="48" y1="21" x2="42" y2="34" stroke="url(#goldGrad)" stroke-width="1.5"/>
+  <line x1="48" y1="21" x2="54" y2="34" stroke="url(#goldGrad)" stroke-width="1.5"/>
+  <path d="M 40 34 Q 48 41 56 34 Z" fill="url(#goldGrad)"/>
+  <!-- Base -->
+  <path d="M 22 52 L 42 52" stroke="url(#goldGrad)" stroke-width="3.5" stroke-linecap="round"/>
+</svg>

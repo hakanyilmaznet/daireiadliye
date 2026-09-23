@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dâire-i Adliyye: Hüküm ve Nizam Simülatörü</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cinzel:wght@500;700;900&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="alternate icon" type="image/x-icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="favicon.png">
+
+  <!-- Deste Veri Kaynakları (.js formatı tarayıcıların katı MIME kontrolünü tam uyumla geçer) -->
+  <script src="event_deck.js"></script>
+  <script src="event_deck_modern.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="brand">
+      <h1 id="brandTitle">⚜️ DÂİRE-İ ADLİYYE</h1>
+      <span id="brandSub">Hüküm, Adalet ve Asabiye Simülasyonu</span>
+    </div>
+    
+    <div class="header-controls">
+      <div id="deckStatus" class="deck-pill">Deste: Yükleniyor...</div>
+      <div id="deckCounter" class="deck-pill counter-pill" title="Tekrarsız Çekme Destesi Durumu">Kalan: --</div>
+
+      <button id="soundToggle" class="glass-btn" onclick="soundFX.toggle()" title="Sesi Aç/Kapat">
+        🔊 Ses: Açık
+      </button>
+    </div>
+  </header>
+
+  <div class="game-layout" id="gameScreen">
+    
+    <!-- Sol: HUD, Çember & İdare Merkezi -->
+    <div class="hud-card">
+
+      <!-- 1. Görsel Dönem / Çağ Seçici (Segmented Era Tabs) -->
+      <div class="era-switcher-wrap">
+        <div class="era-switcher-label">HÜKÜMRANLIK DÖNEMİ</div>
+        <div class="era-tabs">
+          <button id="tabOttoman" class="era-tab active" onclick="game.setDeckMode('ottoman', true)" title="Klasik Osmanlı Dönemi (1000 Kadim Vaka)">
+            <span class="era-tab-badge">⚜️</span>
+            <div class="era-tab-text">
+              <span class="era-tab-title">Klasik Osmanlı</span>
+              <span class="era-tab-desc">Nizâm-ı Âlem</span>
+            </div>
+          </button>
+          
+          <button id="tabModern" class="era-tab" onclick="game.setDeckMode('modern', true)" title="Modern Türkiye (Son 30 Yılın Krizleri)">
+            <span class="era-tab-badge">
+              <svg width="22" height="15" viewBox="0 0 1200 800" style="border-radius: 3px; display: block; box-shadow: 0 1px 3px rgba(0,0,0,0.5);">
+                <rect width="1200" height="800" fill="#e30a17"/>
+                <circle cx="425" cy="400" r="200" fill="#ffffff"/>
+                <circle cx="475" cy="400" r="160" fill="#e30a17"/>
+                <polygon points="583.33,400 702.44,438.67 628.82,337.4 628.82,462.6 702.44,361.33" fill="#ffffff"/>
+              </svg>
+            </span>
+            <div class="era-tab-text">
+              <span class="era-tab-title">Modern Türkiye</span>
+              <span class="era-tab-desc">Son 30 Yıl</span>
+            </div>
+          </button>
+        </div>
+      </div>
+
+      <!-- 2. Çember HUD & Animasyonlu Usturlab -->
+      <div class="hud-canvas-wrap">
+        <canvas id="hudCanvas" width="600" height="600"></canvas>
+        <div id="reignBadge" class="reign-badge">Cülûs Yılı: 1</div>
+        <span class="hud-corner tl"></span>
+        <span class="hud-corner tr"></span>
+        <span class="hud-corner bl"></span>
+        <span class="hud-corner br"></span>
+      </div>
+
+      <!-- 3. Muvazene & Devlet İstikrar Endeksi (Equilibrium Gauge) -->
+      <div class="equilibrium-card" id="equilibriumCard" title="Dâire-i Adliyye Beş Direğinin Genel Muvazenesi">
+        <div class="eq-head">
+          <span class="eq-title" id="eqTitle">DÂİRE-İ ADLİYYE İSTİKRARI</span>
+          <span class="eq-score" id="eqScore">%57 • Dengeli</span>
+        </div>
+        <div class="eq-track">
+          <div class="eq-fill" id="eqFill" style="width: 57%"></div>
+        </div>
+      </div>
+
+      <!-- 4. Metrik Kartları (5 Pillar Chips) -->
+      <div class="metrics-bar">
+        <div class="metric-chip" id="chip-justice" title="Adalet Terazisi">
+          <div class="chip-head">
+            <span class="icon">⚖️</span>
+            <span class="lbl">Adalet</span>
+          </div>
+          <div class="val" id="val-justice">60</div>
+          <div class="stat-bar-track">
+            <div class="stat-bar-fill" id="bar-justice" style="width: 60%"></div>
+          </div>
+        </div>
+
+        <div class="metric-chip" id="chip-people" title="Reaya ve Milletin Refahı">
+          <div class="chip-head">
+            <span class="icon">🌾</span>
+            <span class="lbl">Reaya</span>
+          </div>
+          <div class="val" id="val-people">60</div>
+          <div class="stat-bar-track">
+            <div class="stat-bar-fill" id="bar-people" style="width: 60%"></div>
+          </div>
+        </div>
+
+        <div class="metric-chip" id="chip-treasury" title="Hazine-i Âmire">
+          <div class="chip-head">
+            <span class="icon">🪙</span>
+            <span class="lbl">Hazine</span>
+          </div>
+          <div class="val" id="val-treasury">50</div>
+          <div class="stat-bar-track">
+            <div class="stat-bar-fill" id="bar-treasury" style="width: 50%"></div>
+          </div>
+        </div>
+
+        <div class="metric-chip" id="chip-military" title="Ordu ve Kapıkulu Ocakları">
+          <div class="chip-head">
+            <span class="icon">⚔️</span>
+            <span class="lbl">Ordu</span>
+          </div>
+          <div class="val" id="val-military">55</div>
+          <div class="stat-bar-track">
+            <div class="stat-bar-fill" id="bar-military" style="width: 55%"></div>
+          </div>
+        </div>
+
+        <div class="metric-chip" id="chip-authority" title="Mülk ve Saltanat Nüfuzu">
+          <div class="chip-head">
+            <span class="icon">👑</span>
+            <span class="lbl">Mülk</span>
+          </div>
+          <div class="val" id="val-authority">60</div>
+          <div class="stat-bar-track">
+            <div class="stat-bar-fill" id="bar-authority" style="width: 60%"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5. Hükümdar Şahsiyeti & Karakter Puanlama Tablosu -->
+      <div class="personality-card" id="personalityCard" title="Oyun boyunca verilen hükümlerin idare profiline yansıması">
+        <div class="personality-head">
+          <div class="personality-title-wrap">
+            <span class="personality-badge-icon" id="personaIcon">👑</span>
+            <div>
+              <span class="personality-label" id="personaTitleLabel">HÜKÜMDAR ŞAHSİYETİ</span>
+              <div class="personality-trait" id="personaArchetype">✦ Muvazene Kutbu (Dengeli)</div>
+            </div>
+          </div>
+          <span class="personality-decisions-badge" id="personaTotalDecisions">0 Karar</span>
+        </div>
+
+        <table class="personality-table" id="personalityTable">
+          <thead>
+            <tr>
+              <th style="text-align:left;">Vasfı & Meşrebi</th>
+              <th style="text-align:center;">Adet</th>
+              <th style="text-align:right;">Ağırlık</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr id="row-adli">
+              <td class="trait-name">
+                <span class="trait-icon">⚖️</span>
+                <span class="trait-text" id="traitName-adli">Şer'i Adalet</span>
+              </td>
+              <td class="trait-count" id="traitCount-adli">0</td>
+              <td class="trait-bar-cell">
+                <div class="trait-bar-wrap">
+                  <div class="trait-bar-fill fill-adli" id="traitFill-adli" style="width: 20%"></div>
+                  <span class="trait-pct" id="traitPct-adli">%20</span>
+                </div>
+              </td>
+            </tr>
+            <tr id="row-sulh">
+              <td class="trait-name">
+                <span class="trait-icon">🤝</span>
+                <span class="trait-text" id="traitName-sulh">Sulh & Maslahat</span>
+              </td>
+              <td class="trait-count" id="traitCount-sulh">0</td>
+              <td class="trait-bar-cell">
+                <div class="trait-bar-wrap">
+                  <div class="trait-bar-fill fill-sulh" id="traitFill-sulh" style="width: 20%"></div>
+                  <span class="trait-pct" id="traitPct-sulh">%20</span>
+                </div>
+              </td>
+            </tr>
+            <tr id="row-mali">
+              <td class="trait-name">
+                <span class="trait-icon">🪙</span>
+                <span class="trait-text" id="traitName-mali">Mali Basiret</span>
+              </td>
+              <td class="trait-count" id="traitCount-mali">0</td>
+              <td class="trait-bar-cell">
+                <div class="trait-bar-wrap">
+                  <div class="trait-bar-fill fill-mali" id="traitFill-mali" style="width: 20%"></div>
+                  <span class="trait-pct" id="traitPct-mali">%20</span>
+                </div>
+              </td>
+            </tr>
+            <tr id="row-otorite">
+              <td class="trait-name">
+                <span class="trait-icon" id="traitIcon-otorite">⚔️</span>
+                <span class="trait-text" id="traitName-otorite">Sert Otorite</span>
+              </td>
+              <td class="trait-count" id="traitCount-otorite">0</td>
+              <td class="trait-bar-cell">
+                <div class="trait-bar-wrap">
+                  <div class="trait-bar-fill fill-otorite" id="traitFill-otorite" style="width: 20%"></div>
+                  <span class="trait-pct" id="traitPct-otorite">%20</span>
+                </div>
+              </td>
+            </tr>
+            <tr id="row-nizam">
+              <td class="trait-name">
+                <span class="trait-icon">📜</span>
+                <span class="trait-text" id="traitName-nizam">Nizam & Ferman</span>
+              </td>
+              <td class="trait-count" id="traitCount-nizam">0</td>
+              <td class="trait-bar-cell">
+                <div class="trait-bar-wrap">
+                  <div class="trait-bar-fill fill-nizam" id="traitFill-nizam" style="width: 20%"></div>
+                  <span class="trait-pct" id="traitPct-nizam">%20</span>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- 6. Hikmet & Düstur Kartı (Thematic Circle of Justice Wisdom) -->
+      <div class="wisdom-card" id="wisdomCard">
+        <div class="wisdom-icon">📜</div>
+        <div class="wisdom-content">
+          <p id="wisdomText">"Adl ile mülk ber-karar olur, reaya mülkün aslıdır; hazine reayanın refahından hâsıl olur; ordu hazine ile beslenir; adalet olmazsa cihan harab olur."</p>
+          <span class="wisdom-author" id="wisdomAuthor">— Kınalızâde Ali Çelebi, Ahlâk-ı Alâî</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Sağ: Olay & Seçim Kartı -->
+    <div class="card-panel" id="cardPanel">
+      
+      <!-- Olay Bilgisi / Vaka Brifing Kutusu -->
+      <div class="event-dossier" id="eventDossier">
+        <div class="dossier-corner tc"></div>
+        <div class="card-top-bar">
+          <div class="event-source" id="eventSource">
+            <span class="source-icon" id="sourceIcon">🏛️</span>
+            <span id="sourceText">Dîvân-ı Hümâyûn Maruzu</span>
+          </div>
+          <div class="event-badges-wrap">
+            <span class="event-category-badge" id="eventCategoryBadge">🇹🇷 DEVLET BRİFİNGİ</span>
+            <div class="event-badge" id="eventBadge">Vaka #001</div>
+          </div>
+        </div>
+
+        <!-- Karakter Sahnesi / Portre Alanı -->
+        <div class="character-stage" id="characterStage">
+          <!-- Dinamik karakter kartları buraya enjekte edilir -->
+        </div>
+
+        <div class="event-body" id="eventBody">
+          <div class="event-title-wrap">
+            <span class="event-seal-icon" id="eventSealIcon">🏛️</span>
+            <h2 class="event-title" id="eventTitle">Hüküm Fermanı Bekleniyor...</h2>
+          </div>
+          <div class="event-desc-wrap">
+            <p class="event-desc" id="eventDesc">Mülkün erkânı huzurda yerini aldı. Alacağınız her karar sekiz halkalı nizam çemberini döndürecektir.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="options-header">
+        <span>DİVAN MEŞVERETİ & DEVLET KARARLARI (5 HÜKÜM YOLU)</span>
+      </div>
+
+      <div class="options-stack" id="optionsStack">
+        <!-- Dinamik 5 seçenek düğmesi -->
+      </div>
+
+      <!-- Oyun Sonu Modalı -->
+      <div class="modal-backdrop" id="gameOverModal" style="display: none;">
+        <h2 class="modal-title" id="goTitle">Çember Kırıldı!</h2>
+        <p class="modal-desc" id="goReason">Mülk nizamı muhafaza edilemedi.</p>
+        <button class="primary-btn" onclick="game.restart()">Yeniden Tahta Çık</button>
+      </div>
+    </div>
+
+    <!-- Alt: Vak'anüvis Defteri -->
+    <div class="chronicle-card" id="chronicleBox">
+      <div class="chronicle-header">
+        <span>📜 VAK'ANÜVİS DEFTERİ (TARİH-İ DEVLET)</span>
+      </div>
+      <div id="chronicleEntries">
+        <div>✦ <b>Sene 1:</b> Yeni saltanat dönemi başladı. Dâire-i Adliyye çarkları adaletle dönüyor.</div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
