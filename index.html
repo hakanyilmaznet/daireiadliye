@@ -26,7 +26,14 @@
     </div>
     
     <div class="header-controls">
-      <!-- <div id="deckStatus" class="deck-pill">Deste: Yükleniyor...</div> -->
+      <!-- Kullanıcı Giriş / Profil Butonu -->
+      <div id="userProfileWidget" class="user-profile-widget">
+        <button id="userAuthBtn" class="glass-btn user-btn" onclick="authUI.openModal()" title="Kullanıcı Girişi / Kayıt">
+          <span class="user-btn-icon">👤</span>
+          <span id="userBtnLabel">Giriş Yap</span>
+        </button>
+      </div>
+
       <div id="deckCounter" class="deck-pill counter-pill" title="Tekrarsız Çekme Destesi Durumu">Kalan: --</div>
 
       <button id="soundToggle" class="glass-btn" onclick="soundFX.toggle()" title="Sesi Aç/Kapat">
@@ -309,6 +316,84 @@
       </div>
     </div>
 
+  </div>
+
+  <!-- Kaldığın Yerden Devam Et Bildirim Çubuğu (Resume Banner) -->
+  <div id="resumeBanner" class="resume-banner" style="display: none;">
+    <div class="resume-info">
+      <span class="resume-icon">💾</span>
+      <span id="resumeText">Kaydedilmiş oturumunuz bulundu: Sene 5</span>
+    </div>
+    <div class="resume-actions">
+      <button class="resume-btn resume-btn-confirm" onclick="game.resumeSavedProgress()">Devam Et</button>
+      <button class="resume-btn resume-btn-dismiss" onclick="game.dismissSavedProgress()">Yeniden Başla</button>
+    </div>
+  </div>
+
+  <!-- Kullanıcı Giriş / Kayıt Modal Penceresi -->
+  <div id="authModal" class="modal-backdrop" style="display: none;">
+    <div class="modal-content auth-modal-box">
+      <div class="auth-modal-header">
+        <h3 id="authModalTitle">🏛️ Kullanıcı Girişi / Kayıt</h3>
+        <button class="modal-close-btn" onclick="authUI.closeModal()">&times;</button>
+      </div>
+
+      <div class="auth-tabs" id="authTabs">
+        <button id="authTabLogin" class="auth-tab active" onclick="authUI.switchTab('login')">Giriş Yap</button>
+        <button id="authTabRegister" class="auth-tab" onclick="authUI.switchTab('register')">Kayıt Ol</button>
+      </div>
+
+      <!-- Giriş Formu -->
+      <form id="loginForm" class="auth-form" onsubmit="authUI.handleLogin(event)">
+        <div class="form-group">
+          <label for="loginUsername">Kullanıcı Adı veya E-Posta</label>
+          <input type="text" id="loginUsername" placeholder="Kullanıcı adı veya e-posta" required autocomplete="username">
+        </div>
+        <div class="form-group">
+          <label for="loginPassword">Şifre</label>
+          <input type="password" id="loginPassword" placeholder="••••••••" required autocomplete="current-password">
+        </div>
+        <div id="loginError" class="auth-error-msg" style="display: none;"></div>
+        <button type="submit" class="auth-submit-btn">Giriş Yap</button>
+      </form>
+
+      <!-- Kayıt Formu -->
+      <form id="registerForm" class="auth-form" style="display: none;" onsubmit="authUI.handleRegister(event)">
+        <div class="form-group">
+          <label for="regUsername">Kullanıcı Adı</label>
+          <input type="text" id="regUsername" placeholder="Örn: veziriazam" required minlength="3" maxlength="50" autocomplete="username">
+        </div>
+        <div class="form-group">
+          <label for="regEmail">E-Posta Adresi</label>
+          <input type="email" id="regEmail" placeholder="adınız@ornek.com" required autocomplete="email">
+        </div>
+        <div class="form-group">
+          <label for="regPassword">Şifre (En az 6 karakter)</label>
+          <input type="password" id="regPassword" placeholder="••••••••" required minlength="6" autocomplete="new-password">
+        </div>
+        <div id="registerError" class="auth-error-msg" style="display: none;"></div>
+        <button type="submit" class="auth-submit-btn">Hesap Oluştur</button>
+      </form>
+
+      <!-- Profil & Oturum Bilgisi (Giriş Yapılmışsa) -->
+      <div id="userProfilePanel" class="user-profile-panel" style="display: none;">
+        <div class="profile-avatar">👤</div>
+        <h4 id="profUsername" class="profile-username">Kullanıcı</h4>
+        <p id="profEmail" class="profile-email">email@ornek.com</p>
+        <div class="profile-stats-grid">
+          <div class="pstat-item"><span class="pstat-num" id="profTotalAnswers">0</span><span class="pstat-lbl">Verilen Hüküm</span></div>
+          <div class="pstat-item"><span class="pstat-num" id="profModernTurn">1</span><span class="pstat-lbl">Modern Yıl</span></div>
+          <div class="pstat-item"><span class="pstat-num" id="profOttomanTurn">1</span><span class="pstat-lbl">Osmanlı Sene</span></div>
+        </div>
+        <div class="profile-actions">
+          <button class="auth-logout-btn" onclick="authUI.handleLogout()">Oturumu Kapat</button>
+        </div>
+      </div>
+
+      <div class="auth-footer-note">
+        <span>Misafir olarak da oynayabilirsiniz; üye olduğunuzda ilerlemeniz ve verdiğiniz tüm kararlar veritabanında saklanır.</span>
+      </div>
+    </div>
   </div>
 
   <script src="app.js"></script>
